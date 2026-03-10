@@ -2450,10 +2450,6 @@ label {
     margin-left: 0;
   }
 
-  .cs_site_header.cs_style_1 .cs_nav_list>li:last-child {
-    display: none;
-  }
-
   .cs_site_header.cs_style_1 .cs_nav_list>li>a {
     height: inherit;
     display: inline-flex;
