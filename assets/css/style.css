@@ -3084,10 +3084,7 @@ label {
   }
 }
 
-.cs_about_style_2 {
-  width: min(100%, 1240px);
-  margin: 0 auto;
-}
+.cs_about_style_2 {}
 
 .cs_about_style_2 .cs_about_content {
   width: 100%;
@@ -3122,7 +3119,7 @@ label {
 
 @media (max-width: 991px) {
   .cs_about_style_2 {
-    padding: 0 4px;
+    padding: 0 18px;
   }
 
   .cs_about_style_2 .cs_about_content,
