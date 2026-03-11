@@ -2558,17 +2558,43 @@ label {
 }
 
 .cs_footer_suburbs_section {
-  padding-top: 30px;
+  padding-top: 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   margin-top: 20px;
 }
 
-.cs_footer_suburbs_title {
+.cs_footer_suburbs_toggle {
+  background: none;
+  border: none;
   color: var(--white-color);
-  font-size: 18px;
-  margin-bottom: 24px;
-  text-align: center;
-  opacity: 0.8;
+  font-size: 14px;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+  padding: 10px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.cs_footer_suburbs_toggle:hover {
+  opacity: 1;
+}
+
+.cs_footer_suburbs_toggle i {
+  font-size: 10px;
+  transition: transform 0.3s ease;
+}
+
+.cs_footer_suburbs_toggle.active i {
+  transform: rotate(180deg);
+}
+
+.cs_footer_suburbs_content {
+  overflow: hidden;
+  display: none;
 }
 
 .cs_footer_suburbs_grid {
@@ -2577,6 +2603,7 @@ label {
   justify-content: center;
   gap: 12px 24px;
   width: 100%;
+  padding-top: 20px;
 }
 
 .cs_suburb_item {
@@ -2584,10 +2611,12 @@ label {
   font-size: 13px;
   transition: all 0.3s ease;
   white-space: nowrap;
+  opacity: 0.7;
 }
 
 .cs_suburb_item:hover {
   color: var(--white-color);
+  opacity: 1;
 }
 
 .cs_footer_style_1 .cs_footer_bottom {

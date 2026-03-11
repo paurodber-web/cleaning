@@ -61,6 +61,7 @@
     review();
     counterInit();
     smoothScroll();
+    footerSuburbsAccordion();
     aosInit();
     $(".tom_select").each(function () {
       new TomSelect(this, {
@@ -459,6 +460,16 @@
       easing: "ease-in-out",
       once: true,
       mirror: false,
+    });
+  }
+
+  /*=============================================================
+    15. Footer Suburbs Accordion
+  ===============================================================*/
+  function footerSuburbsAccordion() {
+    $(".cs_footer_suburbs_toggle").on("click", function () {
+      $(this).toggleClass("active");
+      $(".cs_footer_suburbs_content").slideToggle(300);
     });
   }
 })(jQuery); // End of use strict
