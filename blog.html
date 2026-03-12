@@ -123,44 +123,23 @@
                                 </form>
                             </div>
                             <div class="cs_sidebar_item widget_categories">
-                                <h4 class="cs_sidebar_widget_title">
-                                    Categories
-                                </h4>
-                                <ul>
+                                <h4 class="cs_sidebar_widget_title">Categories</h4>
+<ul>
+<li class="cat-item"><a aria-label="Category link" href="#" class="blog-category-link" data-category="All"><i class="fa-solid fa-link"></i> All Categories</a></li>
                                     <li class="cat-item">
-                                        <a aria-label="Category link" href="blog.html">
-                                            <i class="fa-solid fa-link">
-                                            </i>
-                                            Eco-Friendly Cleaning
-                                        </a>
+                                        <a aria-label="Category link" href="#" class="blog-category-link" data-category="Eco-Friendly Cleaning"><i class="fa-solid fa-link"></i> Eco-Friendly Cleaning</a>
                                     </li>
                                     <li class="cat-item">
-                                        <a aria-label="Category link" href="blog.html">
-                                            <i class="fa-solid fa-link">
-                                            </i>
-                                            Deep Cleaning
-                                        </a>
+                                        <a aria-label="Category link" href="#" class="blog-category-link" data-category="Deep Cleaning"><i class="fa-solid fa-link"></i> Deep Cleaning</a>
                                     </li>
                                     <li class="cat-item">
-                                        <a aria-label="Category link" href="blog.html">
-                                            <i class="fa-solid fa-link">
-                                            </i>
-                                            DIY Cleaning
-                                        </a>
+                                        <a aria-label="Category link" href="#" class="blog-category-link" data-category="DIY Cleaning"><i class="fa-solid fa-link"></i> DIY Cleaning</a>
                                     </li>
                                     <li class="cat-item">
-                                        <a aria-label="Category link" href="blog.html">
-                                            <i class="fa-solid fa-link">
-                                            </i>
-                                            Commercial &amp; Office
-                                        </a>
+                                        <a aria-label="Category link" href="#" class="blog-category-link" data-category="Commercial &amp; Office"><i class="fa-solid fa-link"></i> Commercial &amp; Office</a>
                                     </li>
                                     <li class="cat-item">
-                                        <a aria-label="Category link" href="blog.html">
-                                            <i class="fa-solid fa-link">
-                                            </i>
-                                            Health &amp; Safety
-                                        </a>
+                                        <a aria-label="Category link" href="#" class="blog-category-link" data-category="Health &amp; Safety"><i class="fa-solid fa-link"></i> Health &amp; Safety</a>
                                     </li>
                                 </ul>
                             </div>
@@ -168,65 +147,7 @@
                                 <h4 class="cs_sidebar_widget_title">
                                     Recent Posts
                                 </h4>
-                                <ul class="cs_recent_posts cs_mp_0">
-                                    <li>
-                                        <article class="cs_post_style_3">
-                                            <a aria-label="Post details page link"
-                                                class="cs_post_thumbnail cs_radius_12 cs_zoom overflow-hidden"
-                                                href="blog/7-quick-cleaning-hacks.html">
-                                                <img alt="Post thumbnail" src="assets/img/post-img2.jpg" />
-                                            </a>
-                                            <div class="cs_post_info">
-                                                <h3 class="cs_post_title cs_fs_18 cs_mb_8">
-                                                    <a aria-label="Post details page link" href="blog/benefits-green-cleaning.html">
-                                                        The Benefits of Green Cleaning Products
-                                                    </a>
-                                                </h3>
-                                                <div class="cs_post_meta">
-                                                    March 18, 2035
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </li>
-                                    <li>
-                                        <article class="cs_post_style_3">
-                                            <a aria-label="Post details page link"
-                                                class="cs_post_thumbnail cs_radius_12 cs_zoom overflow-hidden"
-                                                href="blog/benefits-green-cleaning.html">
-                                                <img alt="Post thumbnail" src="assets/img/post-img3.jpg" />
-                                            </a>
-                                            <div class="cs_post_info">
-                                                <h3 class="cs_post_title cs_fs_18 cs_mb_8">
-                                                    <a aria-label="Post details page link" href="blog/spring-cleaning-checklist.html">
-                                                        Spring Cleaning Checklist You Can Follow
-                                                    </a>
-                                                </h3>
-                                                <div class="cs_post_meta">
-                                                    May 18, 2035
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </li>
-                                    <li>
-                                        <article class="cs_post_style_3">
-                                            <a aria-label="Post details page link"
-                                                class="cs_post_thumbnail cs_radius_12 cs_zoom overflow-hidden"
-                                                href="blog/spring-cleaning-checklist.html">
-                                                <img alt="Post thumbnail" src="assets/img/post-img4.jpg" />
-                                            </a>
-                                            <div class="cs_post_info">
-                                                <h3 class="cs_post_title cs_fs_18 cs_mb_8">
-                                                    <a aria-label="Post details page link" href="blog/how-often-clean-home.html">
-                                                        How Often Should You Clean Your Home?
-                                                    </a>
-                                                </h3>
-                                                <div class="cs_post_meta">
-                                                    April 18, 2035
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </li>
-                                </ul>
+                                <ul class="cs_recent_posts cs_mp_0" id="blog-recent-posts"></ul>
                             </div>
                             <div class="cs_sidebar_item widget_archive">
                                 <h4 class="cs_sidebar_widget_title">
@@ -502,65 +423,111 @@
     <script src="assets/js/main.js">
     </script>
 
+    
+    
     <script>
     document.addEventListener('DOMContentLoaded', function() {
-        const posts = [
+        // Updated posts array with category and timestamp
+                // ----------------------------------------------------
+        // HOW TO ADD A NEW POST:
+        // Copy the block below and add it to the top of the 'allPosts' array.
+        // It uses JavaScript to automatically grab today's date.
+        /*
             {
-                title: "7 Quick Cleaning Hacks for Busy Families",
-                url: "blog/7-quick-cleaning-hacks.html",
-                img: "assets/img/post-img1.jpg",
-                author: "Hannah Cole",
-                date: "March 5, 2035"
+                title: "Your New Post Title Here",
+                url: "blog/your-new-post-file.html",
+                img: "assets/img/your-new-image.jpg",
+                author: "Your Name",
+                date: new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }),
+                timestamp: new Date().getTime(),
+                category: "Your Category"
             },
+        */
+        // ----------------------------------------------------
+
+        const allPosts = [
             {
-                title: "How to Choose the Right Disinfectants",
-                url: "blog/choose-right-disinfectants.html",
-                img: "assets/img/post-img5.jpg",
-                author: "Hannah Cole",
-                date: "May 5, 2035"
-            },
-            {
-                title: "Eco-Friendly Cleaning Products Really Work",
-                url: "blog/eco-friendly-cleaning-products.html",
-                img: "assets/img/post-img6.jpg",
-                author: "Hannah Cole",
-                date: "March 5, 2035"
-            },
-            {
-                title: "The Benefits of Green Cleaning Products",
-                url: "blog/benefits-green-cleaning.html",
-                img: "assets/img/post-img2.jpg",
-                author: "Lucas Wei",
-                date: "March 18, 2035"
+                title: "How Often Should You Clean Your Home?",
+                url: "blog/how-often-clean-home.html",
+                img: "assets/img/post-img4.jpg",
+                author: "Julian Snow",
+                date: "February 12, 2025",
+                timestamp: new Date("2025-02-12").getTime(),
+                category: "Deep Cleaning"
             },
             {
                 title: "Spring Cleaning Checklist You Can Follow",
                 url: "blog/spring-cleaning-checklist.html",
                 img: "assets/img/post-img3.jpg",
                 author: "Mia Langston",
-                date: "April 1, 2035"
+                date: "March 20, 2025",
+                timestamp: new Date("2025-03-20").getTime(),
+                category: "DIY Cleaning"
             },
             {
-                title: "How Often Should You Clean Your Home?",
-                url: "blog/how-often-clean-home.html",
-                img: "assets/img/post-img4.jpg",
-                author: "Julian Snow",
-                date: "April 25, 2035"
+                title: "The Benefits of Green Cleaning Products",
+                url: "blog/benefits-green-cleaning.html",
+                img: "assets/img/post-img2.jpg",
+                author: "Lucas Wei",
+                date: "April 05, 2025",
+                timestamp: new Date("2025-04-05").getTime(),
+                category: "Eco-Friendly Cleaning"
+            },
+            {
+                title: "How to Choose the Right Disinfectants",
+                url: "blog/choose-right-disinfectants.html",
+                img: "assets/img/post-img5.jpg",
+                author: "Hannah Cole",
+                date: "May 14, 2025",
+                timestamp: new Date("2025-05-14").getTime(),
+                category: "Health & Safety"
+            },
+            {
+                title: "Eco-Friendly Cleaning Products Really Work",
+                url: "blog/eco-friendly-cleaning-products.html",
+                img: "assets/img/post-img6.jpg",
+                author: "Hannah Cole",
+                date: "June 22, 2025",
+                timestamp: new Date("2025-06-22").getTime(),
+                category: "Eco-Friendly Cleaning"
+            },
+            {
+                title: "7 Quick Cleaning Hacks for Busy Families",
+                url: "blog/7-quick-cleaning-hacks.html",
+                img: "assets/img/post-img1.jpg",
+                author: "Hannah Cole",
+                date: "July 10, 2025",
+                timestamp: new Date("2025-07-10T10:00:00").getTime(),
+                category: "DIY Cleaning"
             }
         ];
 
+        // Sort posts by date descending (newest first)
+        allPosts.sort((a, b) => b.timestamp - a.timestamp);
+
+        let filteredPosts = [...allPosts];
         const postsPerPage = 3;
         let currentPage = 1;
-        const totalPages = Math.ceil(posts.length / postsPerPage);
+        let totalPages = Math.ceil(filteredPosts.length / postsPerPage);
 
         const container = document.getElementById('blog-posts-container');
         const pagination = document.getElementById('blog-pagination');
+        const searchForm = document.getElementById('blog-search-form');
+        const searchInput = document.getElementById('blog-search-input');
+        const recentPostsContainer = document.getElementById('blog-recent-posts');
+        const categoryLinks = document.querySelectorAll('.blog-category-link');
 
         function renderPosts(page) {
             container.innerHTML = '';
+            
+            if (filteredPosts.length === 0) {
+                container.innerHTML = '<div class="col-12"><p class="cs_fs_20 text-center py-5">No articles found.</p></div>';
+                return;
+            }
+
             const start = (page - 1) * postsPerPage;
             const end = start + postsPerPage;
-            const paginatedPosts = posts.slice(start, end);
+            const paginatedPosts = filteredPosts.slice(start, end);
 
             paginatedPosts.forEach(post => {
                 const article = `
@@ -576,6 +543,7 @@
                                 <div class="cs_post_meta_wrapper cs_fs_18 cs_primary_font cs_mb_12">
                                     <div class="cs_post_meta">${post.author}</div>
                                     <div class="cs_post_meta">${post.date}</div>
+                                    <div class="cs_post_meta">${post.category}</div>
                                 </div>
                                 <a aria-label="Post details page link" class="cs_post_btn cs_medium cs_blue_dark" href="${post.url}">
                                     <span>Read More</span>
@@ -591,6 +559,8 @@
 
         function renderPagination() {
             pagination.innerHTML = '';
+            if (totalPages <= 1) return;
+
             for (let i = 1; i <= totalPages; i++) {
                 const li = document.createElement('li');
                 const a = document.createElement('a');
@@ -600,7 +570,6 @@
                 a.addEventListener('click', (e) => {
                     e.preventDefault();
                     
-                    // Get position BEFORE removing current posts
                     const blogSection = document.querySelector('.cs_blog_section');
                     let targetY = 0;
                     if(blogSection) {
@@ -611,7 +580,6 @@
                     renderPosts(currentPage);
                     renderPagination();
                     
-                    // Scroll immediately and also after a tiny delay in case the browser interrupts it due to DOM size changes
                     if(blogSection) {
                         window.scrollTo({ top: targetY, behavior: 'smooth' });
                         setTimeout(() => {
@@ -624,8 +592,91 @@
             }
         }
 
-        if (posts.length > 0) {
-            // Add a simple fade animation for smooth transitions
+        function renderRecentPosts() {
+            if(!recentPostsContainer) return;
+            recentPostsContainer.innerHTML = '';
+            // Get top 3 newest posts
+            const recent = allPosts.slice(0, 3);
+            
+            recent.forEach(post => {
+                const li = document.createElement('li');
+                li.innerHTML = `
+                    <article class="cs_post_style_3">
+                        <a aria-label="Post details page link" class="cs_post_thumbnail cs_radius_12 cs_zoom overflow-hidden" href="${post.url}">
+                            <img alt="Post thumbnail" src="${post.img}" style="object-fit:cover; width:100%; height:100%; aspect-ratio:1/1;" />
+                        </a>
+                        <div class="cs_post_info">
+                            <h3 class="cs_post_title cs_fs_18 cs_mb_8">
+                                <a aria-label="Post details page link" href="${post.url}">${post.title}</a>
+                            </h3>
+                            <div class="cs_post_meta">${post.date}</div>
+                        </div>
+                    </article>
+                `;
+                recentPostsContainer.appendChild(li);
+            });
+        }
+
+        // Category Filter
+        categoryLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const cat = this.getAttribute('data-category');
+                
+                // Optional: visual active state for categories
+                categoryLinks.forEach(l => l.style.fontWeight = 'normal');
+                this.style.fontWeight = 'bold';
+
+                if (cat === 'All') {
+                    filteredPosts = [...allPosts];
+                } else {
+                    filteredPosts = allPosts.filter(post => post.category === cat);
+                }
+
+                // Reset search box if category clicked
+                if (searchInput) searchInput.value = '';
+
+                currentPage = 1;
+                totalPages = Math.ceil(filteredPosts.length / postsPerPage);
+                renderPosts(currentPage);
+                renderPagination();
+            });
+        });
+
+        // Search Functionality
+        if (searchForm && searchInput) {
+            searchForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const query = searchInput.value.toLowerCase().trim();
+                
+                // Reset category styling
+                categoryLinks.forEach(l => l.style.fontWeight = 'normal');
+
+                filteredPosts = allPosts.filter(post => {
+                    return post.title.toLowerCase().includes(query) || 
+                           post.author.toLowerCase().includes(query) ||
+                           post.category.toLowerCase().includes(query);
+                });
+
+                currentPage = 1;
+                totalPages = Math.ceil(filteredPosts.length / postsPerPage);
+                
+                renderPosts(currentPage);
+                renderPagination();
+            });
+
+            searchInput.addEventListener('input', function(e) {
+                if (searchInput.value.trim() === '') {
+                    filteredPosts = [...allPosts];
+                    currentPage = 1;
+                    totalPages = Math.ceil(filteredPosts.length / postsPerPage);
+                    renderPosts(currentPage);
+                    renderPagination();
+                }
+            });
+        }
+
+        if (allPosts.length > 0) {
             if (!document.getElementById('blog-animations')) {
                 const style = document.createElement('style');
                 style.id = 'blog-animations';
@@ -635,9 +686,11 @@
 
             renderPosts(currentPage);
             renderPagination();
+            renderRecentPosts();
         }
     });
     </script>
+
 </body>
 
 
