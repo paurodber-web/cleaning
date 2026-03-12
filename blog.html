@@ -150,79 +150,15 @@
                                 <ul class="cs_recent_posts cs_mp_0" id="blog-recent-posts"></ul>
                             </div>
                             <div class="cs_sidebar_item widget_archive">
-                                <h4 class="cs_sidebar_widget_title">
-                                    Archives
-                                </h4>
-                                <ul>
-                                    <li>
-                                        <a aria-label="Archive link" href="blog.html">
-                                            <i class="fa-solid fa-link">
-                                            </i>
-                                            Archives
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a aria-label="Archive link" href="blog.html">
-                                            <i class="fa-solid fa-link">
-                                            </i>
-                                            15 Aug 2025
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a aria-label="Archive link" href="blog.html">
-                                            <i class="fa-solid fa-link">
-                                            </i>
-                                            20 Sep 2024
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a aria-label="Archive link" href="blog.html">
-                                            <i class="fa-solid fa-link">
-                                            </i>
-                                            11 Dec 2023
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a aria-label="Archive link" href="blog.html">
-                                            <i class="fa-solid fa-link">
-                                            </i>
-                                            25 jun 2022
-                                        </a>
-                                    </li>
+                                <h4 class="cs_sidebar_widget_title">Archives</h4>
+                                <ul id="blog-archives">
+                                    <!-- Archives will be injected here -->
                                 </ul>
                             </div>
                             <div class="cs_sidebar_item widget_tag_cloud">
-                                <h4 class="cs_sidebar_widget_title">
-                                    Tags
-                                </h4>
-                                <div class="tagcloud">
-                                    <a aria-label="Post tag link" class="tag-cloud-link" href="blog.html">
-                                        Cleaners
-                                    </a>
-                                    <a aria-label="Post tag link" class="tag-cloud-link" href="blog.html">
-                                        Ecofriendly
-                                    </a>
-                                    <a aria-label="Post tag link" class="tag-cloud-link" href="blog.html">
-                                        Hygiene
-                                    </a>
-                                    <a aria-label="Post tag link" class="tag-cloud-link" href="blog.html">
-                                        Detergents
-                                    </a>
-                                    <a aria-label="Post tag link" class="tag-cloud-link" href="blog.html">
-                                        Equipment
-                                    </a>
-                                    <a aria-label="Post tag link" class="tag-cloud-link" href="blog.html">
-                                        Janitorial
-                                    </a>
-                                    <a aria-label="Post tag link" class="tag-cloud-link" href="blog.html">
-                                        Equipment
-                                    </a>
-                                    <a aria-label="Post tag link" class="tag-cloud-link" href="blog.html">
-                                        Sanitizers
-                                    </a>
-                                    <a aria-label="Post tag link" class="tag-cloud-link" href="blog.html">
-                                        Disinfectants
-                                    </a>
+                                <h4 class="cs_sidebar_widget_title">Tags</h4>
+                                <div class="tagcloud" id="blog-tags">
+                                    <!-- Tags will be injected here -->
                                 </div>
                             </div>
                         </aside>
@@ -425,10 +361,10 @@
 
     
     
+    
     <script>
     document.addEventListener('DOMContentLoaded', function() {
-        // Updated posts array with category and timestamp
-                // ----------------------------------------------------
+        // ----------------------------------------------------
         // HOW TO ADD A NEW POST:
         // Copy the block below and add it to the top of the 'allPosts' array.
         // It uses JavaScript to automatically grab today's date.
@@ -440,7 +376,8 @@
                 author: "Your Name",
                 date: new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }),
                 timestamp: new Date().getTime(),
-                category: "Your Category"
+                category: "Your Category",
+                tags: ["Tag1", "Tag2"]
             },
         */
         // ----------------------------------------------------
@@ -453,7 +390,8 @@
                 author: "Julian Snow",
                 date: "February 12, 2025",
                 timestamp: new Date("2025-02-12").getTime(),
-                category: "Deep Cleaning"
+                category: "Deep Cleaning",
+                tags: ["Routine", "Hygiene", "Home Care"]
             },
             {
                 title: "Spring Cleaning Checklist You Can Follow",
@@ -462,7 +400,8 @@
                 author: "Mia Langston",
                 date: "March 20, 2025",
                 timestamp: new Date("2025-03-20").getTime(),
-                category: "DIY Cleaning"
+                category: "DIY Cleaning",
+                tags: ["Spring", "Checklist", "Organization"]
             },
             {
                 title: "The Benefits of Green Cleaning Products",
@@ -471,7 +410,8 @@
                 author: "Lucas Wei",
                 date: "April 05, 2025",
                 timestamp: new Date("2025-04-05").getTime(),
-                category: "Eco-Friendly Cleaning"
+                category: "Eco-Friendly Cleaning",
+                tags: ["Eco-friendly", "Health", "Products"]
             },
             {
                 title: "How to Choose the Right Disinfectants",
@@ -480,7 +420,8 @@
                 author: "Hannah Cole",
                 date: "May 14, 2025",
                 timestamp: new Date("2025-05-14").getTime(),
-                category: "Health & Safety"
+                category: "Health & Safety",
+                tags: ["Disinfectants", "Health", "Tips"]
             },
             {
                 title: "Eco-Friendly Cleaning Products Really Work",
@@ -489,7 +430,8 @@
                 author: "Hannah Cole",
                 date: "June 22, 2025",
                 timestamp: new Date("2025-06-22").getTime(),
-                category: "Eco-Friendly Cleaning"
+                category: "Eco-Friendly Cleaning",
+                tags: ["Eco-friendly", "Detergents", "Tips"]
             },
             {
                 title: "7 Quick Cleaning Hacks for Busy Families",
@@ -498,11 +440,11 @@
                 author: "Hannah Cole",
                 date: "July 10, 2025",
                 timestamp: new Date("2025-07-10T10:00:00").getTime(),
-                category: "DIY Cleaning"
+                category: "DIY Cleaning",
+                tags: ["Hacks", "Families", "Routine"]
             }
         ];
 
-        // Sort posts by date descending (newest first)
         allPosts.sort((a, b) => b.timestamp - a.timestamp);
 
         let filteredPosts = [...allPosts];
@@ -516,10 +458,11 @@
         const searchInput = document.getElementById('blog-search-input');
         const recentPostsContainer = document.getElementById('blog-recent-posts');
         const categoryLinks = document.querySelectorAll('.blog-category-link');
+        const archivesContainer = document.getElementById('blog-archives');
+        const tagsContainer = document.getElementById('blog-tags');
 
         function renderPosts(page) {
             container.innerHTML = '';
-            
             if (filteredPosts.length === 0) {
                 container.innerHTML = '<div class="col-12"><p class="cs_fs_20 text-center py-5">No articles found.</p></div>';
                 return;
@@ -557,6 +500,22 @@
             });
         }
 
+        function scrollToTop() {
+            const blogSection = document.querySelector('.cs_blog_section');
+            if(blogSection) {
+                const targetY = blogSection.getBoundingClientRect().top + window.scrollY - 100;
+                window.scrollTo({ top: targetY, behavior: 'smooth' });
+            }
+        }
+
+        function updateView() {
+            currentPage = 1;
+            totalPages = Math.ceil(filteredPosts.length / postsPerPage);
+            renderPosts(currentPage);
+            renderPagination();
+            scrollToTop();
+        }
+
         function renderPagination() {
             pagination.innerHTML = '';
             if (totalPages <= 1) return;
@@ -569,23 +528,10 @@
                 a.innerText = i;
                 a.addEventListener('click', (e) => {
                     e.preventDefault();
-                    
-                    const blogSection = document.querySelector('.cs_blog_section');
-                    let targetY = 0;
-                    if(blogSection) {
-                        targetY = blogSection.getBoundingClientRect().top + window.scrollY - 100;
-                    }
-                    
                     currentPage = i;
                     renderPosts(currentPage);
                     renderPagination();
-                    
-                    if(blogSection) {
-                        window.scrollTo({ top: targetY, behavior: 'smooth' });
-                        setTimeout(() => {
-                            window.scrollTo({ top: targetY, behavior: 'smooth' });
-                        }, 50);
-                    }
+                    scrollToTop();
                 });
                 li.appendChild(a);
                 pagination.appendChild(li);
@@ -595,7 +541,6 @@
         function renderRecentPosts() {
             if(!recentPostsContainer) return;
             recentPostsContainer.innerHTML = '';
-            // Get top 3 newest posts
             const recent = allPosts.slice(0, 3);
             
             recent.forEach(post => {
@@ -617,13 +562,99 @@
             });
         }
 
-        // Category Filter
+        function renderArchives() {
+            if(!archivesContainer) return;
+            archivesContainer.innerHTML = '<li><a aria-label="Archive link" href="#" class="blog-archive-link" data-archive="All"><i class="fa-solid fa-link"></i> All Archives</a></li>';
+            
+            // Extract unique Year-Month combinations
+            const archives = new Set();
+            allPosts.forEach(post => {
+                const d = new Date(post.timestamp);
+                const monthYear = d.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+                archives.add(monthYear);
+            });
+
+            archives.forEach(arc => {
+                const li = document.createElement('li');
+                li.innerHTML = `<a aria-label="Archive link" href="#" class="blog-archive-link" data-archive="${arc}"><i class="fa-solid fa-link"></i> ${arc}</a>`;
+                archivesContainer.appendChild(li);
+            });
+
+            // Add Event Listeners
+            document.querySelectorAll('.blog-archive-link').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const arc = this.getAttribute('data-archive');
+                    
+                    document.querySelectorAll('.blog-archive-link').forEach(l => l.style.fontWeight = 'normal');
+                    this.style.fontWeight = 'bold';
+
+                    if (arc === 'All') {
+                        filteredPosts = [...allPosts];
+                    } else {
+                        filteredPosts = allPosts.filter(post => {
+                            const d = new Date(post.timestamp);
+                            const monthYear = d.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+                            return monthYear === arc;
+                        });
+                    }
+                    if (searchInput) searchInput.value = '';
+                    updateView();
+                });
+            });
+        }
+
+        function renderTags() {
+            if(!tagsContainer) return;
+            tagsContainer.innerHTML = '<a aria-label="Post tag link" class="tag-cloud-link blog-tag-link" href="#" data-tag="All">All Tags</a>';
+            
+            // Extract unique tags
+            const tags = new Set();
+            allPosts.forEach(post => {
+                if(post.tags) {
+                    post.tags.forEach(tag => tags.add(tag));
+                }
+            });
+
+            tags.forEach(tag => {
+                const a = document.createElement('a');
+                a.href = '#';
+                a.className = 'tag-cloud-link blog-tag-link';
+                a.setAttribute('data-tag', tag);
+                a.innerText = tag;
+                tagsContainer.appendChild(a);
+            });
+
+            // Add Event Listeners
+            document.querySelectorAll('.blog-tag-link').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const tag = this.getAttribute('data-tag');
+                    
+                    document.querySelectorAll('.blog-tag-link').forEach(l => {
+                        l.style.backgroundColor = '';
+                        l.style.color = '';
+                    });
+                    this.style.backgroundColor = '#0056b3';
+                    this.style.color = '#fff';
+
+                    if (tag === 'All') {
+                        filteredPosts = [...allPosts];
+                    } else {
+                        filteredPosts = allPosts.filter(post => post.tags && post.tags.includes(tag));
+                    }
+                    if (searchInput) searchInput.value = '';
+                    updateView();
+                });
+            });
+        }
+
+        // Category Filter Event Initialization
         categoryLinks.forEach(link => {
             link.addEventListener('click', function(e) {
                 e.preventDefault();
                 const cat = this.getAttribute('data-category');
                 
-                // Optional: visual active state for categories
                 categoryLinks.forEach(l => l.style.fontWeight = 'normal');
                 this.style.fontWeight = 'bold';
 
@@ -633,13 +664,8 @@
                     filteredPosts = allPosts.filter(post => post.category === cat);
                 }
 
-                // Reset search box if category clicked
                 if (searchInput) searchInput.value = '';
-
-                currentPage = 1;
-                totalPages = Math.ceil(filteredPosts.length / postsPerPage);
-                renderPosts(currentPage);
-                renderPagination();
+                updateView();
             });
         });
 
@@ -649,29 +675,23 @@
                 e.preventDefault();
                 const query = searchInput.value.toLowerCase().trim();
                 
-                // Reset category styling
                 categoryLinks.forEach(l => l.style.fontWeight = 'normal');
+                document.querySelectorAll('.blog-archive-link').forEach(l => l.style.fontWeight = 'normal');
+                document.querySelectorAll('.blog-tag-link').forEach(l => { l.style.backgroundColor = ''; l.style.color = ''; });
 
                 filteredPosts = allPosts.filter(post => {
                     return post.title.toLowerCase().includes(query) || 
                            post.author.toLowerCase().includes(query) ||
-                           post.category.toLowerCase().includes(query);
+                           post.category.toLowerCase().includes(query) ||
+                           (post.tags && post.tags.some(t => t.toLowerCase().includes(query)));
                 });
-
-                currentPage = 1;
-                totalPages = Math.ceil(filteredPosts.length / postsPerPage);
-                
-                renderPosts(currentPage);
-                renderPagination();
+                updateView();
             });
 
             searchInput.addEventListener('input', function(e) {
                 if (searchInput.value.trim() === '') {
                     filteredPosts = [...allPosts];
-                    currentPage = 1;
-                    totalPages = Math.ceil(filteredPosts.length / postsPerPage);
-                    renderPosts(currentPage);
-                    renderPagination();
+                    updateView();
                 }
             });
         }
@@ -687,9 +707,12 @@
             renderPosts(currentPage);
             renderPagination();
             renderRecentPosts();
+            renderArchives();
+            renderTags();
         }
     });
     </script>
+
 
 </body>
 
