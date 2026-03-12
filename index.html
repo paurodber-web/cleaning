@@ -68,6 +68,11 @@
                       </a>
                     </li>
                     <li>
+                                            <a aria-label="Nav link" href="faqs.html">
+                                                FAQs
+                                            </a>
+                                        </li>
+                                        <li>
                       <a aria-label="Nav link" href="contact-us.html">
                         Contact Us
                       </a>
@@ -111,11 +116,11 @@
             <div class="cs_calculator_form">
               <div class="cs_calc_row">
                 <div class="cs_calc_field">
-                  <label for="calc_freq">Frequency</label>
-                  <select id="calc_freq">
-                    <option value="1">One-off</option>
-                    <option value="0.8">Weekly / Bi-weekly</option>
-                    <option value="0.9">3-4 Weekly</option>
+                  <label for="service_type">Service</label>
+                  <select id="service_type">
+                    <option value="standard">Standard</option>
+                    <option value="deep">Deep</option>
+                    <option value="moveinout">Move In/Out</option>
                   </select>
                 </div>
                 <div class="cs_calc_field">
@@ -128,18 +133,18 @@
               </div>
               <div class="cs_calc_row">
                 <div class="cs_calc_field">
-                  <label for="service_type">Service</label>
-                  <select id="service_type">
-                    <option value="1">Standard</option>
-                    <option value="1.5">Deep</option>
-                    <option value="2">Move In/Out</option>
+                  <label for="calc_freq">Frequency</label>
+                  <select id="calc_freq">
+                    <option value="1">One-off</option>
+                    <option value="0.9">Weekly / Bi-weekly</option>
+                    <option value="0.95">3-4 Weekly</option>
                   </select>
                 </div>
                 <div class="cs_calc_field">
                   <label>Bedrooms</label>
                   <div class="cs_stepper">
                     <button type="button" id="bed_minus">-</button>
-                    <input id="bedrooms" min="1" type="number" value="1" readonly />
+                    <input id="bedrooms" min="1" max="6" type="number" value="1" readonly />
                     <button type="button" id="bed_plus">+</button>
                   </div>
                 </div>
@@ -147,7 +152,7 @@
               <div class="cs_calc_result">
                 <span class="cs_calc_result_label" id="calc_label">Estimated Price</span>
                 <span class="cs_calc_price" id="calc_price">
-                  $120.00
+                  $155.00
                 </span>
               </div>
             </div>
@@ -162,20 +167,39 @@
                 const priceDisplay = document.getElementById('calc_price');
                 const labelDisplay = document.getElementById('calc_label');
 
-                function updatePrice() {
-                  const freq = parseFloat(freqSelect.value);
-                  const rate = rateSelect.value;
-                  const type = parseFloat(typeSelect.value);
-                  const bed = parseInt(bedInput.value) || 1;
+                const prices = {
+                  standard: [155, 175, 195, 235, 285, 315],
+                  deep: [215, 245, 275, 315, 375, 415],
+                  moveinout: [410, 440, 500, 570, 670, 710]
+                };
 
-                  if (rate === 'hourly') {
-                    let hourlyRate = 35 * type;
+                function updatePrice() {
+                  let freq = parseFloat(freqSelect.value);
+                  const rate = rateSelect.value;
+                  const type = typeSelect.value;
+                  let bed = parseInt(bedInput.value) || 1;
+                  
+                  if (bed > 6) bed = 6;
+                  if (bed < 1) bed = 1;
+
+                  if (type === 'moveinout') {
+                      freq = 1;
+                  }
+
+                  if (rate === 'hourly' && type === 'moveinout') {
+                    labelDisplay.textContent = 'Availability Note';
+                    priceDisplay.textContent = 'Flat Rate Only';
+                    priceDisplay.style.fontSize = '24px'; // Make text fit if needed
+                  } else if (rate === 'hourly') {
+                    let hourlyRate = 60 * freq;
                     labelDisplay.textContent = 'Estimated Hourly Rate';
                     priceDisplay.textContent = '$' + hourlyRate.toFixed(2) + '/hr';
+                    priceDisplay.style.fontSize = ''; // Reset to default
                   } else {
-                    let basePrice = (80 + (bed * 40)) * type * freq;
+                    let basePrice = prices[type][bed - 1] * freq;
                     labelDisplay.textContent = 'Estimated Flat Price';
                     priceDisplay.textContent = '$' + basePrice.toFixed(2);
+                    priceDisplay.style.fontSize = ''; // Reset to default
                   }
                 }
 
@@ -189,8 +213,10 @@
 
                 bedPlus.addEventListener('click', function () {
                   const val = parseInt(bedInput.value);
-                  bedInput.value = val + 1;
-                  updatePrice();
+                  if (val < 6) {
+                    bedInput.value = val + 1;
+                    updatePrice();
+                  }
                 });
 
                 [freqSelect, rateSelect, typeSelect].forEach(input => {
@@ -456,62 +482,41 @@
         <div class="cs_height_50 cs_height_lg_24">
         </div>
         <div class="row cs_gap_y_24 justify-content-center">
-          <div class="col-lg-4 col-md-6">
-            <div class="cs_card_style_1 position-relative" data-aos="fade-right">
-              <a aria-label="Service details page link" class="cs_card_thumbnail cs_radius_16 overflow-hidden"
-                href="standard-clean.html">
-                <img alt="service" src="assets/img/card-services-1.jpg" />
+          <!-- Card 1 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-right">
+              <a href="standard-clean.html" class="cs_service_card_overlay">
+                  <img alt="Standard Clean" src="assets/img/standard.png" />
+                  <div class="cs_service_overlay_content">
+                      <h3>Standard clean</h3>
+                      <p>
+                          A reliable house cleaning that covers all the basics from the kitchen to the bathroom every single time.
+                      </p>
+                  </div>
               </a>
-              <div class="cs_card_info cs_white_bg cs_radius_8 position-absolute">
-                <h3 class="cs_card_title cs_fs_20 cs_mb_12">
-                  <a aria-label="Service details page link" href="standard-clean.html">
-                    Standard clean
-                  </a>
-                </h3>
-                <p class="mb-0">
-                  A reliable house cleaning that covers all the basics from the kitchen to the bathroom every single
-                  time.
-                </p>
-              </div>
-            </div>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="cs_card_style_1 position-relative" data-aos="fade-down">
-              <a aria-label="Service details page link" class="cs_card_thumbnail cs_radius_16 overflow-hidden"
-                href="deep-clean.html">
-                <img alt="service" src="assets/img/card-services-2.jpg" />
+          <!-- Card 2 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-down">
+              <a href="deep-clean.html" class="cs_service_card_overlay">
+                  <img alt="Deep Clean" src="assets/img/deep.png" />
+                  <div class="cs_service_overlay_content">
+                      <h3>Deep clean</h3>
+                      <p>
+                          We handle the real heavy lifting for you with a thorough scrub of your kitchen, bathrooms and all the dusty corners.
+                      </p>
+                  </div>
               </a>
-              <div class="cs_card_info cs_white_bg cs_radius_8 position-absolute">
-                <h3 class="cs_card_title cs_fs_20 cs_mb_12">
-                  <a aria-label="Service details page link" href="deep-clean.html">
-                    Deep clean
-                  </a>
-                </h3>
-                <p class="mb-0">
-                  We handle the real heavy lifting for you with a thorough scrub of your kitchen, bathrooms and all the
-                  dusty corners.
-                </p>
-              </div>
-            </div>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="cs_card_style_1 position-relative" data-aos="fade-left">
-              <a aria-label="Service details page link" class="cs_card_thumbnail cs_radius_16 overflow-hidden"
-                href="move-in-out-clean.html">
-                <img alt="service" src="assets/img/card-services-3.jpg" />
+          <!-- Card 3 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-left">
+              <a href="move-in-out-clean.html" class="cs_service_card_overlay">
+                  <img alt="Move In / Out Clean" src="assets/img/move.png" />
+                  <div class="cs_service_overlay_content">
+                      <h3>Move in / out clean</h3>
+                      <p>
+                          Take the stress out of your big move with a full property clean that ensures your old or new place is totally spotless.
+                      </p>
+                  </div>
               </a>
-              <div class="cs_card_info cs_white_bg cs_radius_8 position-absolute">
-                <h3 class="cs_card_title cs_fs_20 cs_mb_12">
-                  <a aria-label="Service details page link" href="move-in-out-clean.html">
-                    Move in / out clean
-                  </a>
-                </h3>
-                <p class="mb-0">
-                  Take the stress out of your big move with a full property clean that ensures your old or new place is
-                  totally spotless.
-                </p>
-              </div>
-            </div>
           </div>
         </div>
 
@@ -541,16 +546,16 @@
           <div class="col-lg-6 order-lg-2">
             <div class="cs_steps_thumbnails_wrapper">
               <div class="cs_step_thumbnail cs_radius_20">
-                <img alt="How it works" src="assets/img/how-to-work-2.jpg" />
+                <img alt="Book cleaning" src="assets/img/book.png" />
               </div>
               <div class="cs_step_thumbnail cs_radius_20">
-                <img alt="How it works" src="assets/img/how-to-work-1.jpg" />
+                <img alt="Customize cleaning" src="assets/img/customize.png" />
               </div>
               <div class="cs_step_thumbnail cs_radius_20">
-                <img alt="How it works" src="assets/img/how-to-work-3.jpg" />
+                <img alt="Meet cleaner" src="assets/img/meet.png" />
               </div>
               <div class="cs_step_thumbnail cs_radius_20">
-                <img alt="How it works" src="assets/img/how-to-work.jpg" />
+                <img alt="Sparkling results" src="assets/img/results.png" />
               </div>
             </div>
           </div>
@@ -579,7 +584,7 @@
                 <span class="cs_iconbox_icon cs_center">
                   <svg fill="none" height="32" viewbox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
                     <path
-                      d="M16 25.3333C16.2637 25.3333 16.5215 25.2551 16.7408 25.1085C16.96 24.962 17.1309 24.7538 17.2319 24.5102C17.3328 24.2665 17.3592 23.9984 17.3077 23.7398C17.2563 23.4812 17.1293 23.2436 16.9428 23.0571C16.7564 22.8706 16.5188 22.7437 16.2601 22.6922C16.0015 22.6408 15.7334 22.6672 15.4898 22.7681C15.2461 22.869 15.0379 23.0399 14.8914 23.2592C14.7449 23.4784 14.6667 23.7362 14.6667 23.9999C14.6667 24.3535 14.8072 24.6927 15.0572 24.9427C15.3073 25.1928 15.6464 25.3333 16 25.3333ZM22.6667 25.3333C22.9304 25.3333 23.1882 25.2551 23.4074 25.1085C23.6267 24.962 23.7976 24.7538 23.8985 24.5102C23.9994 24.2665 24.0258 23.9984 23.9744 23.7398C23.923 23.4812 23.796 23.2436 23.6095 23.0571C23.423 22.8706 23.1855 22.7437 22.9268 22.6922C22.6682 22.6408 22.4001 22.6672 22.1564 22.7681C21.9128 22.869 21.7046 23.0399 21.5581 23.2592C21.4116 23.4784 21.3334 23.7362 21.3334 23.9999C21.3334 24.3535 21.4738 24.6927 21.7239 24.9427C21.9739 25.1928 22.3131 25.3333 22.6667 25.3333ZM22.6667 19.9999C22.9304 19.9999 23.1882 19.9217 23.4074 19.7752C23.6267 19.6287 23.7976 19.4205 23.8985 19.1768C23.9994 18.9332 24.0258 18.6651 23.9744 18.4065C23.923 18.1478 23.796 17.9102 23.6095 17.7238C23.423 17.5373 23.1855 17.4103 22.9268 17.3589C22.6682 17.3074 22.4001 17.3338 22.1564 17.4347C21.9128 17.5357 21.7046 17.7066 21.5581 17.9258C21.4116 18.1451 21.3334 18.4029 21.3334 18.6666C21.3334 19.0202 21.4738 19.3593 21.7239 19.6094C21.9739 19.8594 22.3131 19.9999 22.6667 19.9999ZM16 19.9999C16.2637 19.9999 16.5215 19.9217 16.7408 19.7752C16.96 19.6287 17.1309 19.4205 17.2319 19.1768C17.3328 18.9332 17.3592 18.6651 17.3077 18.4065C17.2563 18.1478 17.1293 17.9102 16.9428 17.7238C16.7564 17.5373 16.5188 17.4103 16.2601 17.3589C16.0015 17.3074 15.7334 17.3338 15.4898 17.4347C15.2461 17.5357 15.0379 17.7066 14.8914 17.9258C14.7449 18.1451 14.6667 18.4029 14.6667 18.6666C14.6667 19.0202 14.8072 19.3593 15.0572 19.6094C15.3073 19.8594 15.6464 19.9999 16 19.9999ZM25.3334 3.99992H24V2.66659C24 2.31296 23.8595 1.97382 23.6095 1.72378C23.3594 1.47373 23.0203 1.33325 22.6667 1.33325C22.3131 1.33325 21.9739 1.47373 21.7239 1.72378C21.4738 1.97382 21.3334 2.31296 21.3334 2.66659V3.99992H10.6667V2.66659C10.6667 2.31296 10.5262 1.97382 10.2762 1.72378C10.0261 1.47373 9.68698 1.33325 9.33335 1.33325C8.97973 1.33325 8.64059 1.47373 8.39055 1.72378C8.1405 1.97382 8.00002 2.31296 8.00002 2.66659V3.99992H6.66669C5.60582 3.99992 4.58841 4.42135 3.83826 5.17149C3.08811 5.92164 2.66669 6.93905 2.66669 7.99992V26.6666C2.66669 27.7274 3.08811 28.7449 3.83826 29.495C4.58841 30.2452 5.60582 30.6666 6.66669 30.6666H25.3334C26.3942 30.6666 27.4116 30.2452 28.1618 29.495C28.9119 28.7449 29.3334 27.7274 29.3334 26.6666V7.99992C29.3334 6.93905 28.9119 5.92164 28.1618 5.17149C27.4116 4.42135 26.3942 3.99992 25.3334 3.99992ZM26.6667 26.6666C26.6667 27.0202 26.5262 27.3593 26.2762 27.6094C26.0261 27.8594 25.687 27.9999 25.3334 27.9999H6.66669C6.31307 27.9999 5.97393 27.8594 5.72388 27.6094C5.47383 27.3593 5.33335 27.0202 5.33335 26.6666V14.6666H26.6667V26.6666ZM26.6667 11.9999H5.33335V7.99992C5.33335 7.6463 5.47383 7.30716 5.72388 7.05711C5.97393 6.80706 6.31307 6.66658 6.66669 6.66658H8.00002V7.99992C8.00002 8.35354 8.1405 8.69268 8.39055 8.94273C8.64059 9.19278 8.97973 9.33325 9.33335 9.33325C9.68698 9.33325 10.0261 9.19278 10.2762 8.94273C10.5262 8.69268 10.6667 8.35354 10.6667 7.99992V6.66658H21.3334V7.99992C21.3334 8.35354 21.4738 8.69268 21.7239 8.94273C21.9739 9.19278 22.3131 9.33325 22.6667 9.33325C23.0203 9.33325 23.3594 9.19278 23.6095 8.94273C23.8595 8.69268 24 8.35354 24 7.99992V6.66658H25.3334C25.687 6.66658 26.0261 6.80706 26.2762 7.05711C26.5262 7.30716 26.6667 7.6463 26.6667 7.99992V11.9999ZM9.33335 19.9999C9.59706 19.9999 9.85485 19.9217 10.0741 19.7752C10.2934 19.6287 10.4643 19.4205 10.5652 19.1768C10.6661 18.9332 10.6925 18.6651 10.6411 18.4065C10.5896 18.1478 10.4626 17.9102 10.2762 17.7238C10.0897 17.5373 9.85212 17.4103 9.59347 17.3589C9.33483 17.3074 9.06674 17.3338 8.82311 17.4347C8.57947 17.5357 8.37124 17.7066 8.22473 17.9258C8.07822 18.1451 8.00002 18.4029 8.00002 18.6666C8.00002 19.0202 8.1405 19.3593 8.39055 19.6094C8.64059 19.8594 8.97973 19.9999 9.33335 19.9999ZM9.33335 25.3333C9.59706 25.3333 9.85485 25.2551 10.0741 25.1085C10.2934 24.962 10.4643 24.7538 10.5652 24.5102C10.6661 24.2665 10.6925 23.9984 10.6411 23.7398C10.5896 23.4812 10.4626 23.2436 10.2762 23.0571C10.0897 22.8706 9.85212 22.7437 9.59347 22.6922C9.33483 22.6408 9.06674 22.6672 8.82311 22.7681C8.57947 22.869 8.37124 23.0399 8.22473 23.2592C8.07822 23.4784 8.00002 23.7362 8.00002 23.9999C8.00002 24.3535 8.1405 24.6927 8.39055 24.9427C8.64059 25.1928 8.97973 25.3333 9.33335 25.3333Z"
+                      d="M16 25.3333C16.2637 25.3333 16.5215 25.2551 16.7408 25.1085C16.96 24.962 17.1309 24.7538 17.2319 24.5102C17.3328 24.2665 17.3592 23.9984 17.3077 23.7398C17.2563 23.4812 17.1293 23.2436 16.9428 23.0571C16.7564 22.8706 16.5188 22.7437 16.2601 22.6922C16.0015 22.6408 15.7334 22.6672 15.4898 22.7681C15.2461 22.869 15.0379 23.0399 14.8914 23.2592C14.7449 23.4784 14.6667 23.7362 14.6667 23.9999C14.6667 24.3535 14.8072 24.6927 15.0572 24.9427C15.3073 25.1928 15.6464 25.3333 16 25.3333ZM22.6667 25.3333C22.9304 25.3333 23.1882 25.2551 23.4074 25.1085C23.6267 24.962 23.7976 24.7538 23.8985 24.5102C23.9994 24.2665 24.0258 23.9984 23.9744 23.7398C23.923 23.4812 23.796 23.2436 23.6095 23.0571C23.423 22.8706 23.1855 22.7437 22.9268 22.6922C22.6682 22.6408 22.4001 22.6672 22.1564 22.7681C21.9128 22.869 21.7046 23.0399 21.5581 23.2592C21.4116 23.4784 21.3334 23.7362 21.3334 23.9999C21.3334 24.3535 21.4738 24.6927 21.7239 24.9427C21.9739 25.1928 22.3131 25.3333 22.6667 25.3333ZM22.6667 19.9999C22.9304 19.9999 23.1882 19.9217 23.4074 19.7752C23.6267 19.6287 23.7976 19.4205 23.8985 19.1768C23.9994 18.9332 24.0258 18.6651 23.9744 18.4065C23.923 18.1478 23.796 17.9102 23.6095 17.7238C23.423 17.5373 23.1855 17.4103 22.9268 17.3589C22.6682 17.3074 22.4001 17.3338 22.1564 17.4347C21.9128 17.5357 21.7046 17.7066 21.5581 17.9258C21.4116 18.1451 21.3334 18.4029 21.3334 18.6666C21.3334 19.0202 21.4738 19.3593 21.7239 19.6094C21.9739 19.8594 22.3131 19.9999 22.6667 19.9999ZM16 19.9999C16.2637 19.9999 16.5215 19.9217 16.7408 19.7752C16.96 19.6287 17.1309 19.4205 17.2319 19.1768C17.3328 18.9332 17.3592 18.6651 17.3077 18.4065C17.2563 18.1478 17.1293 17.9102 16.9428 17.7238C16.7564 17.5373 16.5188 17.4103 16.2601 17.3589C16.0015 17.3074 15.7334 17.3338 15.4898 17.4347C15.2461 17.5357 15.0379 17.7066 14.8914 17.9258C14.7449 18.1451 14.6667 18.4029 14.6667 18.6666C14.6667 19.0202 14.8072 19.3593 15.0572 19.6094C15.3073 19.8594 15.6464 19.9999 16 19.9999ZM25.3334 3.99992H24V2.66659C24 2.31296 23.8595 1.97382 23.6095 1.72378C23.3594 1.47373 23.0203 1.33325 22.6667 1.33325C22.3131 1.33325 21.9739 1.47373 21.7239 1.72378C21.4738 1.97382 21.3334 2.31296 21.3334 2.66659V3.99992H10.6667V2.66659C10.6667 2.31296 10.5262 1.97382 10.2762 1.72378C10.0261 1.47373 9.68698 1.33325 9.33335 1.33325C8.97973 1.33325 8.64059 1.47373 8.39055 1.72378C8.1405 1.97382 8.00002 2.31296 8.00002 2.66659V3.99992H6.66669C5.60582 3.99992 4.58841 4.42135 3.83826 5.17149C3.08811 5.92164 2.66669 6.93905 2.66669 7.99992V26.6666C2.66669 27.7274 3.08811 28.7449 3.83826 29.495C4.58841 30.2452 5.60582 30.6666 6.66669 30.6666H25.3334C26.3942 30.6666 27.4116 30.2452 28.1618 29.495C28.9119 28.7449 29.3334 27.7274 29.3334 26.6666V7.99992C29.3334 6.93905 28.9119 5.92164 28.1618 5.17149C27.4116 4.42135 26.3942 3.99992 25.3334 3.99992ZM26.6667 26.6666C26.6667 27.0202 26.5262 27.3593 26.2762 27.6094C26.0261 27.8594 25.687 27.9999 25.3334 27.9999H6.66669C6.31307 27.9999 5.97393 27.8594 5.72388 27.6094C5.47383 27.3593 5.33335 27.0202 5.33335 26.6666V14.6666H26.6667V26.6666ZM26.6667 11.9999H5.33335V7.99992C5.33335 7.6463 5.47383 7.30716 5.72388 7.05711C5.97393 6.80706 6.31307 6.66658 6.66669 6.66658H8.00002V7.99992C8.00002 8.35354 8.1405 8.69268 8.39055 8.94273C8.64059 9.19278 8.97973 9.33325 9.33335 9.33325C9.68698 9.33325 10.0261 9.19278 10.2762 8.94273C10.5262 8.69268 10.6667 8.35354 10.6667 7.99992V6.66658H21.3334V7.99992C21.3334 8.35354 21.4738 8.69268 21.7239 8.94273C21.9739 9.19278 22.3131 9.33325 22.6667 9.33325C23.0203 9.33325 23.3594 9.19278 23.6095 8.94273C23.8595 8.69268 24 8.35354 24 7.99992V6.66658H25.3334V6.66658H25.3334C25.687 6.66658 26.0261 6.80706 26.2762 7.05711C26.5262 7.30716 26.6667 7.6463 26.6667 7.99992V11.9999ZM9.33335 19.9999C9.59706 19.9999 9.85485 19.9217 10.0741 19.7752C10.2934 19.6287 10.4643 19.4205 10.5652 19.1768C10.6661 18.9332 10.6925 18.6651 10.6411 18.4065C10.5896 18.1478 10.4626 17.9102 10.2762 17.7238C10.0897 17.5373 9.85212 17.4103 9.59347 17.3589C9.33483 17.3589 9.06674 17.3338 8.82311 17.4347C8.57947 17.5357 8.37124 17.7066 8.22473 17.9258C8.07822 18.1451 8.00002 18.4029 8.00002 18.6666C8.00002 19.0202 8.1405 19.3593 8.39055 19.6094C8.64059 19.8594 8.97973 19.9999 9.33335 19.9999ZM9.33335 25.3333C9.59706 25.3333 9.85485 25.2551 10.0741 25.1085C10.2934 24.962 10.4643 24.7538 10.5652 24.5102C10.6661 24.2665 10.6925 23.9984 10.6411 23.7398C10.5896 23.4812 10.4626 23.2436 10.2762 23.0571C10.0897 22.8706 9.85212 22.7437 9.59347 22.6922C9.33483 22.6408 9.06674 22.6672 8.82311 22.7681C8.57947 22.869 8.37124 23.0399 8.22473 23.2592C8.07822 23.4784 8.00002 23.7362 8.00002 23.9999C8.00002 24.3535 8.1405 24.6927 8.39055 24.9427C8.64059 25.1928 8.97973 25.3333 9.33335 25.3333Z"
                       fill="currentcolor">
                     </path>
                   </svg>
@@ -855,52 +860,52 @@
         <div class="cs_accordian_wraper_style_1">
           <div class="cs_accordian cs_style_1 cs_gray_bg1 cs_radius_12 active">
             <div class="cs_accordian_head cs_fs_20 cs_semibold cs_primary_color cs_primary_font">
-              Do I need to be home during the cleaning?
+              What makes Maid At Home different?
               <span class="cs_accordian_toggle">
               </span>
             </div>
             <div class="cs_accordian_body cs_primary_font">
-              No, as long as we have access, you can carry on with your day.
+              At Maid At Home, we’re all about quality, reliability, and a personal touch. Over 90% of our clients return because we genuinely care about making their homes feel fresh and comfortable. We focus on attention to detail, transparent pricing, and flexible options to suit your needs.
             </div>
           </div>
           <div class="cs_accordian cs_style_1 cs_gray_bg1 cs_radius_12">
             <div class="cs_accordian_head cs_fs_20 cs_semibold cs_primary_color cs_primary_font">
-              Are your cleaning products safe for pets and kids?
+              Do you offer a satisfaction guarantee?
               <span class="cs_accordian_toggle">
               </span>
             </div>
             <div class="cs_accordian_body cs_primary_font">
-              No, as long as we have access, you can carry on with your day.
+              Yes! We take pride in our work and stand by our service. If you’re not completely satisfied, let us know within 24 hours, and we’ll make it right.
             </div>
           </div>
           <div class="cs_accordian cs_style_1 cs_gray_bg1 cs_radius_12">
             <div class="cs_accordian_head cs_fs_20 cs_semibold cs_primary_color cs_primary_font">
-              What happens if I’m not satisfied with the cleaning?
+              Are there any lock-in contracts?
               <span class="cs_accordian_toggle">
               </span>
             </div>
             <div class="cs_accordian_body cs_primary_font">
-              No, as long as we have access, you can carry on with your day.
+              No, there are no lock-in contracts! You can book our services as needed, whether it's a one-time clean or a recurring service. We believe in earning your trust through quality cleaning, not contracts.
             </div>
           </div>
           <div class="cs_accordian cs_style_1 cs_gray_bg1 cs_radius_12">
             <div class="cs_accordian_head cs_fs_20 cs_semibold cs_primary_color cs_primary_font">
-              Can I schedule recurring services?
+              How are your cleaners vetted?
               <span class="cs_accordian_toggle">
               </span>
             </div>
             <div class="cs_accordian_body cs_primary_font">
-              No, as long as we have access, you can carry on with your day.
+              We carefully select and screen all our cleaners through a thorough vetting process, which includes background checks, interviews, and skills assessments. We also ensure they align with our high standards of professionalism and customer care.
             </div>
           </div>
           <div class="cs_accordian cs_style_1 cs_gray_bg1 cs_radius_12">
             <div class="cs_accordian_head cs_fs_20 cs_semibold cs_primary_color cs_primary_font">
-              Is there a cancellation fee?
+              Are your cleaning products eco-friendly?
               <span class="cs_accordian_toggle">
               </span>
             </div>
             <div class="cs_accordian_body cs_primary_font">
-              No, as long as we have access, you can carry on with your day.
+              Yes, we use eco-friendly and non-toxic cleaning products that are safe for your family, pets, and the environment. Our goal is to provide a clean home while minimizing our impact on the planet.
             </div>
           </div>
         </div>
@@ -969,12 +974,12 @@
           <div class="col-lg-6">
             <article class="cs_post_style_1 cs_gray_bg1 cs_radius_16">
               <a aria-label="Post details page link"
-                class="cs_post_thumbnail cs_radius_16 cs_mb_16 cs_zoom overflow-hidden" href="blog-details.html">
+                class="cs_post_thumbnail cs_radius_16 cs_mb_16 cs_zoom overflow-hidden" href="blog/7-quick-cleaning-hacks.html">
                 <img alt="Post thumbnail" src="assets/img/post-img1.jpg" />
               </a>
               <div class="cs_post_info">
                 <h3 class="cs_post_title cs_fs_20 cs_mb_12">
-                  <a aria-label="Post details page link" href="blog-details.html">
+                  <a aria-label="Post details page link" href="blog/7-quick-cleaning-hacks.html">
                     7 Quick Cleaning Hacks for Busy Families
                   </a>
                 </h3>
@@ -987,7 +992,7 @@
                   </div>
                 </div>
                 <a aria-label="Post details page link" class="cs_post_btn cs_medium cs_blue_dark"
-                  href="blog-details.html">
+                  href="blog/7-quick-cleaning-hacks.html">
                   <span>
                     Read More
                   </span>
@@ -1003,12 +1008,12 @@
             <div class="cs_post_wrapper_1">
               <article class="cs_post_style_2 cs_gray_bg1 cs_radius_16">
                 <a aria-label="Post details page link" class="cs_post_thumbnail cs_radius_12 cs_zoom overflow-hidden"
-                  href="blog-details.html">
+                  href="blog/7-quick-cleaning-hacks.html">
                   <img alt="Post thumbnail" src="assets/img/post-img2.jpg" />
                 </a>
                 <div class="cs_post_info">
                   <h3 class="cs_post_title cs_fs_20 cs_mb_12">
-                    <a aria-label="Post details page link" href="blog-details.html">
+                    <a aria-label="Post details page link" href="blog/benefits-green-cleaning.html">
                       The Benefits of Green Cleaning Products
                     </a>
                   </h3>
@@ -1021,7 +1026,7 @@
                     </div>
                   </div>
                   <a aria-label="Post details page link" class="cs_post_btn cs_medium cs_blue_dark"
-                    href="blog-details.html">
+                    href="blog/benefits-green-cleaning.html">
                     <span>
                       Read More
                     </span>
@@ -1034,12 +1039,12 @@
               </article>
               <article class="cs_post_style_2 cs_gray_bg1 cs_radius_16">
                 <a aria-label="Post details page link" class="cs_post_thumbnail cs_radius_12 cs_zoom overflow-hidden"
-                  href="blog-details.html">
+                  href="blog/7-quick-cleaning-hacks.html">
                   <img alt="Post thumbnail" src="assets/img/post-img3.jpg" />
                 </a>
                 <div class="cs_post_info">
                   <h3 class="cs_post_title cs_fs_20 cs_mb_12">
-                    <a aria-label="Post details page link" href="blog-details.html">
+                    <a aria-label="Post details page link" href="blog/spring-cleaning-checklist.html">
                       Spring Cleaning Checklist You Can Follow
                     </a>
                   </h3>
@@ -1052,7 +1057,7 @@
                     </div>
                   </div>
                   <a aria-label="Post details page link" class="cs_post_btn cs_medium cs_blue_dark"
-                    href="blog-details.html">
+                    href="blog/spring-cleaning-checklist.html">
                     <span>
                       Read More
                     </span>
@@ -1065,12 +1070,12 @@
               </article>
               <article class="cs_post_style_2 cs_gray_bg1 cs_radius_16">
                 <a aria-label="Post details page link" class="cs_post_thumbnail cs_radius_12 cs_zoom overflow-hidden"
-                  href="blog-details.html">
+                  href="blog/7-quick-cleaning-hacks.html">
                   <img alt="Post thumbnail" src="assets/img/post-img4.jpg" />
                 </a>
                 <div class="cs_post_info">
                   <h3 class="cs_post_title cs_fs_20 cs_mb_12">
-                    <a aria-label="Post details page link" href="blog-details.html">
+                    <a aria-label="Post details page link" href="blog/how-often-clean-home.html">
                       How Often Should You Clean Your Home?
                     </a>
                   </h3>
@@ -1083,7 +1088,7 @@
                     </div>
                   </div>
                   <a aria-label="Post details page link" class="cs_post_btn cs_medium cs_blue_dark"
-                    href="blog-details.html">
+                    href="blog/how-often-clean-home.html">
                     <span>
                       Read More
                     </span>
@@ -1142,15 +1147,21 @@
               </a>
             </li>
             <li>
-              <a aria-label="Footer link" href="contact-us.html">
-                Contact Us
-              </a>
-            </li>
-            <li>
-              <a aria-label="Footer link" href="booking.html">
-                Booking
-              </a>
-            </li>
+                            <a aria-label="Footer link" href="contact-us.html">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-label="Footer link" href="faqs.html">
+                                FAQs
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-label="Footer link" href="booking.html">
+                                Booking
+                            </a>
+                        </li>
+                        
           </ul>
         </div>
         <!-- Start Suburbs Section -->
@@ -1241,14 +1252,10 @@
             </div>
             <ul class="cs_footer_bottom_menu cs_fs_14 cs_gray_color2 cs_primary_font cs_mp_0">
               <li>
-                <a aria-label="Footer link" href="index.html">
-                  Privacy &amp; Policy
-                </a>
+                <a aria-label="Footer link" href="privacy-policy.html">Privacy Policy</a>
               </li>
               <li>
-                <a aria-label="Footer link" href="index.html">
-                  Help Center
-                </a>
+                <a aria-label="Footer link" href="terms-conditions.html">Terms & Conditions</a>
               </li>
             </ul>
           </div>

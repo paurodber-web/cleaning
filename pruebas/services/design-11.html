@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Design 11 - Framed & Two-Tone</title>
+  <link href="../../assets/img/favicon.png" rel="icon" />
+  <link href="../../assets/css/aos.min.css" rel="stylesheet" />
+  <link href="../../assets/css/slick.min.css" rel="stylesheet" />
+  <link href="../../assets/css/odometer.min.css" rel="stylesheet" />
+  <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../../assets/css/tom-select.min.css" rel="stylesheet" />
+  <link href="../../assets/css/fontawesome.min.css" rel="stylesheet" />
+  <link href="../../assets/css/style.css" rel="stylesheet" />
+  <style>
+      /* Design 11 Custom Styles */
+      .custom_card_11 {
+          background: #ffffff;
+          border: 1px solid #e2e8f0;
+          border-radius: 16px;
+          padding: 12px;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      }
+      .custom_card_11:hover {
+          border-color: #0056b3;
+          box-shadow: 0 10px 30px rgba(0, 86, 179, 0.08);
+      }
+      .custom_card_11_img_wrap {
+          border-radius: 12px;
+          overflow: hidden;
+          height: 220px;
+      }
+      .custom_card_11_img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.6s ease;
+      }
+      .custom_card_11:hover .custom_card_11_img {
+          transform: scale(1.06);
+      }
+      .custom_card_11_body {
+          background: #f8fbff; /* Very soft blue */
+          border-radius: 12px;
+          padding: 24px;
+          margin-top: 12px;
+          display: flex;
+          flex-direction: column;
+          flex-grow: 1;
+      }
+      .custom_card_11_title {
+          font-size: 20px;
+          font-weight: 700;
+          margin-bottom: 10px;
+          color: #1a1a1a;
+      }
+      .custom_card_11_desc {
+          color: #555;
+          font-size: 15px;
+          margin-bottom: 20px;
+          flex-grow: 1;
+          line-height: 1.6;
+      }
+      .custom_card_11_btn {
+          align-self: flex-start;
+          background: #fff;
+          border: 1px solid #d1e3ff;
+          color: #0056b3;
+          font-weight: 600;
+          font-size: 14px;
+          padding: 8px 24px;
+          border-radius: 30px;
+          text-decoration: none;
+          transition: all 0.3s;
+      }
+      .custom_card_11:hover .custom_card_11_btn {
+          background: #0056b3;
+          border-color: #0056b3;
+          color: #fff;
+      }
+  </style>
+</head>
+
+<body>
+  <div class="cs_custom_content_wrapper">
+    <!-- Header -->
+    <header class="cs_site_header cs_style_1 cs_sticky_header cs_white_bg cs_primary_color cs_primary_font" style="background-color: #0056b3; color: white;">
+      <div class="cs_header_main">
+        <div class="container p-0">
+          <div class="cs_main_header_in">
+            <div class="cs_main_header_left">
+              <a aria-label="Home page link" class="cs_site_brand" href="../../index.html">
+                <img alt="Logo" src="../../assets/img/logo.svg" />
+              </a>
+            </div>
+            <div class="cs_main_header_center">
+              <div class="cs_nav">
+                <div class="cs_nav_list_wrap">
+                  <ul class="cs_nav_list cs_mp_0">
+                    <li><a href="../../index.html" style="color:white;">Home</a></li>
+                    <li><a href="../../about-us.html" style="color:white;">About</a></li>
+                    <li><a href="../../services.html" style="color:white;">Services</a></li>
+                    <li><a href="../../blog.html" style="color:white;">Blog</a></li>
+                    <li><a href="../../contact-us.html" style="color:white;">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="cs_main_header_right">
+              <a aria-label="Nav link" class="cs_btn_style_1 cs_radius_32" href="../../booking.html" style="background:white; color:#0056b3;">
+                <span>Book Now</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="cs_height_100 cs_height_lg_80"></div>
+
+    <!-- Start Services Section Test -->
+    <section class="cs_service_section">
+      <div class="container p-0">
+        <div class="cs_section_heading_style_1 cs_center_column text-center">
+          <p class="cs_section_subtitle cs_blue_bg3 cs_mb_16">Design 11</p>
+          <h2 class="cs_section_title cs_fs_36 cs_black_color cs_mb_16">
+            Framed & Two-Tone
+          </h2>
+          <p class="cs_primary_color cs_primary_font mb-0">
+            Maintains the elegant outer border, but encases the text in a subtle blue inner box, offering great visual hierarchy.
+          </p>
+        </div>
+        <div class="cs_height_50 cs_height_lg_24"></div>
+        
+        <div class="row cs_gap_y_24 justify-content-center">
+          <!-- Card 1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="custom_card_11">
+              <div class="custom_card_11_img_wrap">
+                <a href="../../standard-clean.html">
+                  <img alt="Standard Clean" src="../../assets/img/card-services-1.jpg" class="custom_card_11_img" />
+                </a>
+              </div>
+              <div class="custom_card_11_body">
+                <h3 class="custom_card_11_title"><a href="../../standard-clean.html" style="color:inherit; text-decoration:none;">Standard clean</a></h3>
+                <p class="custom_card_11_desc">
+                  A reliable house cleaning that covers all the basics from the kitchen to the bathroom every single time.
+                </p>
+                <a href="../../standard-clean.html" class="custom_card_11_btn">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="custom_card_11">
+              <div class="custom_card_11_img_wrap">
+                <a href="../../deep-clean.html">
+                  <img alt="Deep Clean" src="../../assets/img/card-services-2.jpg" class="custom_card_11_img" />
+                </a>
+              </div>
+              <div class="custom_card_11_body">
+                <h3 class="custom_card_11_title"><a href="../../deep-clean.html" style="color:inherit; text-decoration:none;">Deep clean</a></h3>
+                <p class="custom_card_11_desc">
+                  We handle the real heavy lifting for you with a thorough scrub of your kitchen, bathrooms and all the dusty corners.
+                </p>
+                <a href="../../deep-clean.html" class="custom_card_11_btn">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="custom_card_11">
+              <div class="custom_card_11_img_wrap">
+                <a href="../../move-in-out-clean.html">
+                  <img alt="Move In / Out Clean" src="../../assets/img/card-services-3.jpg" class="custom_card_11_img" />
+                </a>
+              </div>
+              <div class="custom_card_11_body">
+                <h3 class="custom_card_11_title"><a href="../../move-in-out-clean.html" style="color:inherit; text-decoration:none;">Move in / out clean</a></h3>
+                <p class="custom_card_11_desc">
+                  Take the stress out of your big move with a full property clean that ensures your old or new place is totally spotless.
+                </p>
+                <a href="../../move-in-out-clean.html" class="custom_card_11_btn">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <div class="cs_height_100 cs_height_lg_80"></div>
+
+    <!-- Footer -->
+    <footer class="cs_footer_style_1 cs_primary_bg cs_radius_16 position-relative overflow-hidden m-3">
+      <div class="container p-0 pt-5">
+        <div class="cs_footer_main cs_center_column position-relative z-1 text-center">
+          <div class="cs_footer_logo cs_mb_40 cs_mb_lg_30">
+            <img alt="Logo" src="../../assets/img/logo.svg" style="max-width: 200px;" />
+          </div>
+          <p class="text-white">This is a preview footer to show the context of the design.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  
+  <script src="../../assets/js/jquery.min.js"></script>
+  <script src="../../assets/js/bootstrap.min.js"></script>
+</body>
+</html>

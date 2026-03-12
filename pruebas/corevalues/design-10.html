@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Core Values - Premium Stacked Cards</title>
+  <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../../assets/css/fontawesome.min.css" rel="stylesheet" />
+  <link href="../../assets/css/style.css" rel="stylesheet" />
+  <style>
+      .cs_benefit_section { padding: 80px 0; }
+      
+      .cv_stacked_img {
+          width: 100%;
+          height: 100%;
+          min-height: 500px;
+          object-fit: cover;
+          border-radius: 24px;
+          box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+      }
+
+      .cv_stack_card {
+          background: #fff;
+          border-radius: 20px;
+          padding: 32px;
+          margin-bottom: 24px;
+          box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+          transition: all 0.3s ease;
+          border: 1px solid #eef2f6;
+          display: flex;
+          align-items: flex-start;
+          gap: 24px;
+      }
+      .cv_stack_card:last-child {
+          margin-bottom: 0;
+      }
+      .cv_stack_card:hover {
+          transform: translateX(-10px);
+          box-shadow: 0 15px 30px rgba(0,86,179,0.06);
+          border-color: #cce0ff;
+      }
+
+      .cv_stack_icon {
+          width: 60px;
+          height: 60px;
+          background: #f0f6ff;
+          color: #0056b3;
+          border-radius: 16px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 24px;
+          flex-shrink: 0;
+      }
+
+      .cv_stack_content h3 {
+          font-size: 22px;
+          font-weight: 800;
+          color: #111;
+          margin-bottom: 10px;
+      }
+
+      .cv_stack_content p {
+          font-size: 15px;
+          color: #555;
+          line-height: 1.6;
+          margin-bottom: 0;
+      }
+  </style>
+</head>
+<body class="cs_primary_font">
+  <div class="cs_custom_content_wrapper">
+    <div class="container p-0">
+      
+      <section class="cs_benefit_section cs_blue_bg3 cs_radius_16 mt-5">
+        <div class="container px-4">
+          <div class="cs_section_heading_style_1 cs_center_column text-center mb-5">
+            <p class="cs_section_subtitle cs_white_bg cs_mb_16">Our core values</p>
+            <h2 class="cs_section_title cs_fs_36 mb-0">Quality standards you can count on</h2>
+          </div>
+
+          <div class="row g-4 align-items-center">
+            
+            <div class="col-lg-5 order-lg-2">
+              <img src="../../assets/img/benefit-img1.jpg" alt="Our Quality" class="cv_stacked_img">
+            </div>
+
+            <div class="col-lg-7 order-lg-1">
+              
+              <div class="cv_stack_card">
+                <div class="cv_stack_icon"><i class="fa-solid fa-gem"></i></div>
+                <div class="cv_stack_content">
+                  <h3>Our foundation</h3>
+                  <p>Built on trust and professional experience, we value reliability above all else. We make sure that every corner is covered and every expectation is met with a high level of expertise.</p>
+                </div>
+              </div>
+
+              <div class="cv_stack_card">
+                <div class="cv_stack_icon"><i class="fa-solid fa-eye"></i></div>
+                <div class="cv_stack_content">
+                  <h3>Our vision</h3>
+                  <p>We are working to set a new standard for home care where quality service is the rule and every person feels like their home is our top priority.</p>
+                </div>
+              </div>
+
+              <div class="cv_stack_card">
+                <div class="cv_stack_icon"><i class="fa-solid fa-rocket"></i></div>
+                <div class="cv_stack_content">
+                  <h3>Our mission</h3>
+                  <p>To deliver a worry free cleaning experience using the best methods to keep your space fresh, healthy, and perfectly welcoming for your family.</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </div>
+</body>
+</html>

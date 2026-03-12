@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Core Values - Premium Glassmorphism</title>
+  <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../../assets/css/fontawesome.min.css" rel="stylesheet" />
+  <link href="../../assets/css/style.css" rel="stylesheet" />
+  <style>
+      .cs_benefit_section { padding: 80px 0; position: relative; overflow: hidden; }
+      
+      /* Decorative background blobs inside the wrapper */
+      .glass_blob_1 {
+          position: absolute;
+          top: -10%;
+          left: -5%;
+          width: 400px;
+          height: 400px;
+          background: rgba(255, 255, 255, 0.4);
+          filter: blur(80px);
+          border-radius: 50%;
+          z-index: 0;
+      }
+      .glass_blob_2 {
+          position: absolute;
+          bottom: -20%;
+          right: -10%;
+          width: 500px;
+          height: 500px;
+          background: rgba(0, 86, 179, 0.15);
+          filter: blur(100px);
+          border-radius: 50%;
+          z-index: 0;
+      }
+
+      .glass_card {
+          background: rgba(255, 255, 255, 0.6);
+          backdrop-filter: blur(24px);
+          -webkit-backdrop-filter: blur(24px);
+          border: 1px solid rgba(255, 255, 255, 0.8);
+          border-radius: 24px;
+          padding: 40px;
+          height: 100%;
+          position: relative;
+          z-index: 1;
+          box-shadow: 0 10px 40px rgba(0,0,0,0.03);
+          transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .glass_card:hover {
+          transform: translateY(-8px);
+          background: rgba(255, 255, 255, 0.8);
+          box-shadow: 0 20px 50px rgba(0,86,179,0.08);
+      }
+
+      .glass_icon {
+          width: 64px;
+          height: 64px;
+          border-radius: 50%;
+          background: linear-gradient(135deg, #0056b3, #00d2ff);
+          color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 24px;
+          margin-bottom: 24px;
+          box-shadow: 0 8px 20px rgba(0,86,179,0.3);
+      }
+
+      .glass_title {
+          font-size: 22px;
+          font-weight: 800;
+          color: #111;
+          margin-bottom: 16px;
+      }
+
+      .glass_desc {
+          font-size: 15px;
+          color: #555;
+          line-height: 1.7;
+          margin-bottom: 0;
+      }
+  </style>
+</head>
+<body class="cs_primary_font">
+  <div class="cs_custom_content_wrapper">
+    <div class="container p-0">
+      
+      <section class="cs_benefit_section cs_blue_bg3 cs_radius_16 mt-5">
+        <div class="glass_blob_1"></div>
+        <div class="glass_blob_2"></div>
+        
+        <div class="container px-4 position-relative z-1">
+          <div class="cs_section_heading_style_1 cs_center_column text-center mb-5">
+            <p class="cs_section_subtitle cs_white_bg cs_mb_16">Our core values</p>
+            <h2 class="cs_section_title cs_fs_36 mb-0">Quality standards you can count on</h2>
+          </div>
+
+          <div class="row g-4 justify-content-center">
+            
+            <div class="col-lg-4 col-md-6">
+              <div class="glass_card">
+                <div class="glass_icon"><i class="fa-solid fa-handshake-angle"></i></div>
+                <h3 class="glass_title">Absolute Trust</h3>
+                <p class="glass_desc">Built on trust and professional experience, we value reliability above all else. Your home is always safe in our hands.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="glass_card">
+                <div class="glass_icon"><i class="fa-solid fa-gem"></i></div>
+                <h3 class="glass_title">Impeccable Quality</h3>
+                <p class="glass_desc">We make sure that every corner is covered and every expectation is met with a high level of expertise and dedication.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="glass_card">
+                <div class="glass_icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                <h3 class="glass_title">Time Restored</h3>
+                <p class="glass_desc">We don't just clean homes; we give you back your time. Spend your weekends doing what you love, not doing chores.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</body>
+</html>

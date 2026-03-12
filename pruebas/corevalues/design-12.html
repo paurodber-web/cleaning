@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Core Values - Minimalist Timeline</title>
+  <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../../assets/css/fontawesome.min.css" rel="stylesheet" />
+  <link href="../../assets/css/style.css" rel="stylesheet" />
+  <style>
+      .cs_benefit_section { padding: 80px 0; }
+      
+      .cv_time_img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 20px;
+          min-height: 500px;
+      }
+
+      .cv_time_container {
+          background: #fff;
+          border-radius: 24px;
+          padding: 50px 40px;
+          box-shadow: 0 10px 40px rgba(0,0,0,0.03);
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+      }
+
+      .cv_time_item {
+          position: relative;
+          padding-left: 40px;
+          margin-bottom: 40px;
+      }
+      .cv_time_item:last-child {
+          margin-bottom: 0;
+      }
+
+      /* Vertical line */
+      .cv_time_item::before {
+          content: '';
+          position: absolute;
+          left: 6px;
+          top: 30px;
+          bottom: -40px;
+          width: 2px;
+          background-color: #eef2f6;
+      }
+      .cv_time_item:last-child::before {
+          display: none;
+      }
+
+      /* Dots */
+      .cv_time_item::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 6px;
+          width: 14px;
+          height: 14px;
+          border-radius: 50%;
+          background-color: #0056b3;
+          box-shadow: 0 0 0 6px #f0f6ff;
+      }
+
+      .cv_time_title {
+          font-size: 20px;
+          font-weight: 800;
+          color: #111;
+          margin-bottom: 8px;
+          text-transform: uppercase;
+      }
+
+      .cv_time_desc {
+          font-size: 15px;
+          color: #666;
+          line-height: 1.6;
+          margin-bottom: 0;
+      }
+  </style>
+</head>
+<body class="cs_primary_font">
+  <div class="cs_custom_content_wrapper">
+    <div class="container p-0">
+      
+      <section class="cs_benefit_section cs_blue_bg3 cs_radius_16 mt-5">
+        <div class="container px-4">
+          <div class="cs_section_heading_style_1 cs_center_column text-center mb-5">
+            <p class="cs_section_subtitle cs_white_bg cs_mb_16">Our core values</p>
+            <h2 class="cs_section_title cs_fs_36 mb-0">Quality standards you can count on</h2>
+          </div>
+
+          <div class="row g-4">
+            
+            <div class="col-lg-5">
+              <img src="../../assets/img/benefit-img1.jpg" alt="Quality Standard" class="cv_time_img">
+            </div>
+
+            <div class="col-lg-7">
+              <div class="cv_time_container">
+                
+                <div class="cv_time_item">
+                  <h3 class="cv_time_title">Our foundation</h3>
+                  <p class="cv_time_desc">Built on trust and professional experience, we value reliability above all else. We make sure that every corner is covered and every expectation is met with a high level of expertise.</p>
+                </div>
+
+                <div class="cv_time_item">
+                  <h3 class="cv_time_title">Our vision</h3>
+                  <p class="cv_time_desc">We are working to set a new standard for home care where quality service is the rule and every person feels like their home is our top priority.</p>
+                </div>
+
+                <div class="cv_time_item">
+                  <h3 class="cv_time_title">Our mission</h3>
+                  <p class="cv_time_desc">To deliver a worry free cleaning experience using the best methods to keep your space fresh, healthy, and perfectly welcoming for your family.</p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </div>
+</body>
+</html>
