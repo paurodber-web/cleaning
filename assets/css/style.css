@@ -4250,6 +4250,13 @@ label {
 
 .cs_steps_thumbnails_wrapper {
   padding-left: 65px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.cs_step_thumbnail {
+  grid-column: 1;
+  grid-row: 1;
 }
 
 @media (max-width: 991px) {

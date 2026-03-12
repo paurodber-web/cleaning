@@ -376,7 +376,16 @@
   if ($tabs.length > 0 && $tabContents.length > 0) {
     function activateTab(index) {
       $tabs.eq(index).addClass("active").siblings().removeClass("active");
-      $tabContents.eq(index).fadeIn(800).siblings().hide();
+      
+      // Prevent layout jump by making sure the container maintains its height during transition
+      const $wrapper = $(".cs_steps_thumbnails_wrapper");
+      const currentHeight = $wrapper.height();
+      $wrapper.css('min-height', currentHeight + 'px');
+
+      $tabContents.eq(index).stop().fadeIn(800, function() {
+          // Once animation is done, we can safely remove the min-height constraint
+          $wrapper.css('min-height', '');
+      }).siblings().stop().hide();
     }
 
     function startAutoplay() {
