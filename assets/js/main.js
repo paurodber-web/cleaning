@@ -361,6 +361,11 @@
       }
 
       requestAnimationFrame(raf);
+
+      // Fix for Bootstrap Modals: Focus the modal body to enable keyboard scrolling
+      $('.modal').on('shown.bs.modal', function () {
+        $(this).find('.modal-body').focus();
+      });
     }
   }
   /*===========================================================

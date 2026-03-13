@@ -75,9 +75,22 @@
             letter-spacing: 1.5px; 
             border-bottom: 2px solid #f0f4fb;
         }
+
+        .page-saas-container {
+            background: #fff; 
+            border-radius: 24px; 
+            overflow: hidden; 
+            box-shadow: 0 10px 40px rgba(31, 119, 214, 0.05); 
+            border: 1px solid var(--gray-color2); 
+            padding: 40px;
+        }
         
         @media (max-width: 768px) {
-            .saas-table-wrapper { padding: 10px; border-radius: 16px; }
+            .page-saas-container {
+                border-radius: 16px;
+                padding: 24px 15px;
+            }
+            .saas-table-wrapper { padding: 0; border-radius: 16px; }
             .saas-table th { font-size: 14px; padding: 15px 5px; }
             .saas-table td { padding: 15px 5px; font-size: 12px; }
             .saas-table td:first-child { padding-left: 10px; font-size: 12px; }
@@ -205,6 +218,11 @@
                                         <li>
                                             <a aria-label="Nav link" href="services.html">
                                                 Services
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a aria-label="Nav link" href="pricing.html">
+                                                Pricing
                                             </a>
                                         </li>
                                         <li>
@@ -498,79 +516,151 @@
 
             <!-- Start Service Comparison Table -->
             <div class="cs_height_80 cs_height_lg_60"></div>
-            <div class="container">
+            <div class="container p-0">
                 <div class="cs_section_heading_style_1 cs_center_column text-center cs_mb_40">
                     <div class="cs_section_label cs_fs_14 cs_blue_color1 cs_mb_14" data-aos="zoom-in">What's included</div>
                     <h2 class="cs_section_title cs_fs_36 mb-0" data-aos="zoom-in">Service inclusions by area</h2>
                     <p class="cs_heading_text mb-0 mt-2" data-aos="fade-up">A full breakdown of every task included in each cleaning package, organised by room.</p>
                 </div>
                 <div class="row justify-content-center" data-aos="fade-up">
-                    <div class="col-xl-10">
-                        <div class="matrix-table-wrapper">
-                            <table class="matrix-table">
-                                <thead>
-                                    <tr>
-                                        <th></th>
-                                        <th><span class="th-full">Standard</span><span class="th-short">S</span></th>
-                                        <th><span class="th-full">Deep</span><span class="th-short">D</span></th>
-                                        <th><span class="th-full">Move In/Out</span><span class="th-short">M</span></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="matrix-group-row"><td colspan="4">Kitchen</td></tr>
-                                    <tr><td>Clean stovetop</td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Clean rangehood (exterior)</td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Clean underside of range hood</td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Clean exhaust fans &amp; filters</td><td><i class="fa-solid fa-xmark m-cross"></i></td><td><i class="fa-solid fa-xmark m-cross"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Wipe bench tops</td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Clean visible appliances</td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Clean splash back</td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Clean / polish tap ware</td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Scrub / clean sink</td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Clean inside &amp; outside of microwave</td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Clean cupboards (exterior)</td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Polish stainless steel surfaces</td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Dust all surfaces</td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Remove food &amp; wipe inside dishwasher</td><td><i class="fa-solid fa-xmark m-cross"></i></td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Inside oven</td><td><i class="fa-solid fa-xmark m-cross"></i></td><td><i class="fa-solid fa-xmark m-cross"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Inside all drawers/cabinets</td><td><i class="fa-solid fa-xmark m-cross"></i></td><td><i class="fa-solid fa-xmark m-cross"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Vacuum &amp; mop all floors</td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
+                    <div class="col-12">
+                        <div class="page-saas-container">
+                            <div class="saas-table-wrapper">
+                                <table class="saas-table">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Standard</th>
+                                            <th class="col-highlight">
+                                                <span class="saas-badge">Most Popular</span>
+                                                Deep Clean
+                                            </th>
+                                            <th>Move In/Out</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="saas-group">
+                                            <td>Kitchen</td>
+                                            <td></td>
+                                            <td class="col-highlight"></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr><td>Clean stovetop</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Clean rangehood (exterior)</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Clean underside of range hood</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Clean exhaust fans &amp; filters</td><td><i class="fa-solid fa-xmark saas-cross"></i></td><td class="col-highlight"><i class="fa-solid fa-xmark saas-cross"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Wipe bench tops</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Clean visible appliances</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Clean splash back</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Clean / polish tap ware</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Scrub / clean sink</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Clean inside &amp; outside of microwave</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Clean cupboards (exterior)</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Polish stainless steel surfaces</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Dust all surfaces</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Remove food &amp; wipe inside dishwasher</td><td><i class="fa-solid fa-xmark saas-cross"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Inside oven</td><td><i class="fa-solid fa-xmark saas-cross"></i></td><td class="col-highlight"><i class="fa-solid fa-xmark saas-cross"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Inside all drawers/cabinets</td><td><i class="fa-solid fa-xmark saas-cross"></i></td><td class="col-highlight"><i class="fa-solid fa-xmark saas-cross"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Vacuum &amp; mop all floors</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
 
-                                    <tr class="matrix-group-row"><td colspan="4">Bathrooms</td></tr>
-                                    <tr><td>Scrub / clean bath</td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Scrub / clean shower</td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Scrub / clean sinks</td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Scrub shower floor &amp; wall</td><td><i class="fa-solid fa-xmark m-cross"></i></td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Wipe down benches</td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Clean mirrors</td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Clean / polish tapware &amp; chrome</td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Wipe down cupboards (exterior)</td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Empty bins</td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Clean / disinfect toilet</td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Floor grout</td><td><i class="fa-solid fa-xmark m-cross"></i></td><td><i class="fa-solid fa-xmark m-cross"></i></td><td><i class="fa-solid fa-xmark m-cross"></i></td></tr>
-                                    <tr><td>Clean ceiling exhaust fans</td><td><i class="fa-solid fa-xmark m-cross"></i></td><td><i class="fa-solid fa-xmark m-cross"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Inside all drawers/cabinets</td><td><i class="fa-solid fa-xmark m-cross"></i></td><td><i class="fa-solid fa-xmark m-cross"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Vacuum &amp; mop all floors</td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
+                                        <tr class="saas-group">
+                                            <td>Bathrooms</td>
+                                            <td></td>
+                                            <td class="col-highlight"></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr><td>Scrub / clean bath</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Scrub / clean shower</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Scrub / clean sinks</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Scrub shower floor &amp; wall</td><td><i class="fa-solid fa-xmark saas-cross"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Wipe down benches</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Clean mirrors</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Clean / polish tapware &amp; chrome</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Wipe down cupboards (exterior)</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Empty bins</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Clean / disinfect toilet</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Floor grout</td><td><i class="fa-solid fa-xmark saas-cross"></i></td><td class="col-highlight"><i class="fa-solid fa-xmark saas-cross"></i></td><td><i class="fa-solid fa-xmark saas-cross"></i></td></tr>
+                                        <tr><td>Clean ceiling exhaust fans</td><td><i class="fa-solid fa-xmark saas-cross"></i></td><td class="col-highlight"><i class="fa-solid fa-xmark saas-cross"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Inside all drawers/cabinets</td><td><i class="fa-solid fa-xmark saas-cross"></i></td><td class="col-highlight"><i class="fa-solid fa-xmark saas-cross"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Vacuum &amp; mop all floors</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
 
-                                    <tr class="matrix-group-row"><td colspan="4">All Areas</td></tr>
-                                    <tr><td>Light tidy up</td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Extensive tidy up</td><td><i class="fa-solid fa-xmark m-cross"></i></td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Cobweb removal</td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Empty bins</td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Dust skirting boards / window sills / doors</td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Wipe skirting boards / window sills / doors</td><td><i class="fa-solid fa-xmark m-cross"></i></td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Clean accessible light switches &amp; power points</td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Dust reachable surfaces</td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Clean mirrors</td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Vacuum / clean soft furnishing</td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Vacuum under beds / furniture / couches</td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Clean ceilings</td><td><i class="fa-solid fa-xmark m-cross"></i></td><td><i class="fa-solid fa-xmark m-cross"></i></td><td><i class="fa-solid fa-xmark m-cross"></i></td></tr>
-                                    <tr><td>Dust blinds</td><td><i class="fa-solid fa-xmark m-cross"></i></td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Inside all drawers/cabinets</td><td><i class="fa-solid fa-xmark m-cross"></i></td><td><i class="fa-solid fa-xmark m-cross"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Vacuum &amp; mop all floors</td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td><td><i class="fa-solid fa-check m-check"></i></td></tr>
-                                    <tr><td>Garage</td><td><i class="fa-solid fa-xmark m-cross"></i></td><td><i class="fa-solid fa-xmark m-cross"></i></td><td><i class="fa-solid fa-xmark m-cross"></i></td></tr>
-                                </tbody>
-                            </table>
+                                        <tr class="saas-group">
+                                            <td>All Areas</td>
+                                            <td></td>
+                                            <td class="col-highlight"></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr><td>Light tidy up</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Extensive tidy up</td><td><i class="fa-solid fa-xmark saas-cross"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Cobweb removal</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Empty bins</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Dust skirting boards / window sills / doors</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Wipe skirting boards / window sills / doors</td><td><i class="fa-solid fa-xmark saas-cross"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Clean accessible light switches &amp; power points</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Dust reachable surfaces</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Clean mirrors</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Vacuum / clean soft furnishing</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Vacuum under beds / furniture / couches</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Clean ceilings</td><td><i class="fa-solid fa-xmark saas-cross"></i></td><td class="col-highlight"><i class="fa-solid fa-xmark saas-cross"></i></td><td><i class="fa-solid fa-xmark saas-cross"></i></td></tr>
+                                        <tr><td>Dust blinds</td><td><i class="fa-solid fa-xmark saas-cross"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Inside all drawers/cabinets</td><td><i class="fa-solid fa-xmark saas-cross"></i></td><td class="col-highlight"><i class="fa-solid fa-xmark saas-cross"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Vacuum &amp; mop all floors</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
+                                        <tr><td>Garage</td><td><i class="fa-solid fa-xmark saas-cross"></i></td><td class="col-highlight"><i class="fa-solid fa-xmark saas-cross"></i></td><td><i class="fa-solid fa-xmark saas-cross"></i></td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            <div class="cs_height_40 cs_height_lg_30"></div>
+                            
+                            <div class="saas-table-wrapper">
+                                <div class="section-title-label">
+                                    <i class="fa-solid fa-plus-circle"></i> Optional Add-ons
+                                </div>
+                                <table class="extra-table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="ex-name"><div class="ex-icon"><i class="fa-solid fa-fire-burner"></i></div> Inside oven</td>
+                                            <td class="ex-price">$65</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ex-name"><div class="ex-icon"><i class="fa-solid fa-snowflake"></i></div> Inside fridge</td>
+                                            <td class="ex-price">$30</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ex-name"><div class="ex-icon"><i class="fa-solid fa-box-open"></i></div> Inside drawers / cabinets</td>
+                                            <td class="ex-price">$40 - $60</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ex-name"><div class="ex-icon"><i class="fa-solid fa-tree-city"></i></div> Balcony</td>
+                                            <td class="ex-price">$35</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ex-name"><div class="ex-icon"><i class="fa-solid fa-border-all"></i></div> Inside windows</td>
+                                            <td class="ex-price">$70 - $130</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ex-name"><div class="ex-icon"><i class="fa-solid fa-bed"></i></div> Bed changing</td>
+                                            <td class="ex-price">$10 <span style="font-size: 12px; font-weight: 500; color: var(--secondary-color);">/ bed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ex-name"><div class="ex-icon"><i class="fa-solid fa-layer-group"></i></div> Wall cleaning</td>
+                                            <td class="ex-price">$25 <span style="font-size: 12px; font-weight: 500; color: var(--secondary-color);">/ wall</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ex-name"><div class="ex-icon"><i class="fa-solid fa-wind"></i></div> Steam clean</td>
+                                            <td class="ex-price">$55 <span style="font-size: 12px; font-weight: 500; color: var(--secondary-color);">/ room</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ex-name"><div class="ex-icon"><i class="fa-solid fa-sink"></i></div> Dish washing</td>
+                                            <td class="ex-price">$30</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ex-name"><div class="ex-icon"><i class="fa-solid fa-person-shelter"></i></div> Wet wiping blinds</td>
+                                            <td class="ex-price">$20 <span style="font-size: 12px; font-weight: 500; color: var(--secondary-color);">/ blind</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -621,6 +711,11 @@
                         <li>
                             <a aria-label="Footer link" href="services.html">
                                 Services
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-label="Footer link" href="pricing.html">
+                                Pricing
                             </a>
                         </li>
                         <li>
@@ -867,7 +962,8 @@
 
                     <!-- Extra Services Section -->
                     <div class="cs_height_40 cs_height_lg_30"></div>
-                    <div class="saas-table-wrapper" style="padding: 30px 40px;">
+
+                    <div class="saas-table-wrapper">
                         <div class="section-title-label">
                             <i class="fa-solid fa-plus-circle"></i> Optional Add-ons
                         </div>
