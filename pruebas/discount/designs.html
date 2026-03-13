@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discount Popups - 10 Designs</title>
+    <!-- All CSS Files from the template -->
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../assets/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="../../assets/css/style.css" rel="stylesheet" />
+    <style>
+        .copy-success {
+            display: none;
+            color: #28a745;
+            font-size: 14px;
+            margin-top: 12px;
+            animation: fadeInOut 2.5s ease-in-out forwards;
+            font-family: var(--secondary-font);
+        }
+        @keyframes fadeInOut {
+            0% { opacity: 0; transform: translateY(-5px); }
+            10% { opacity: 1; transform: translateY(0); }
+            80% { opacity: 1; transform: translateY(0); }
+            100% { opacity: 0; }
+        }
+        .discount-code-box {
+            border: 2px dashed var(--gray-color2);
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-family: monospace;
+            font-size: 24px;
+            font-weight: bold;
+            background: var(--gray-color1);
+            letter-spacing: 2px;
+            display: inline-block;
+            color: var(--primary-color);
+        }
+        .discount-code-box.dark {
+            border-color: rgba(255,255,255,0.2);
+            background: rgba(255,255,255,0.05);
+            color: var(--white-color);
+        }
+        .copy-btn-animated {
+            transition: transform 0.15s ease;
+        }
+        .copy-btn-animated.clicked {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body class="cs_white_bg" style="padding: 50px;">
+
+<div class="container">
+    <h1 class="cs_fs_42 cs_mb_24">Discount Popups (10 Designs)</h1>
+    <p class="cs_mb_40" style="color: var(--secondary-color);">Click any button below to test the different popup designs. The copy functionality is fully working with click animations and success feedback, perfectly matching the site's aesthetic.</p>
+    
+    <div class="d-flex flex-wrap gap-3">
+        <!-- Buttons to trigger modals -->
+        <button class="cs_btn_style_1 cs_blue_bg1 cs_white_color cs_radius_32" data-bs-toggle="modal" data-bs-target="#popup1"><span>Design 1 (Clean White)</span></button>
+        <button class="cs_btn_style_1 cs_primary_bg cs_white_color cs_radius_32" data-bs-toggle="modal" data-bs-target="#popup2"><span>Design 2 (Dark Mode)</span></button>
+        <button class="cs_btn_style_1 cs_accent_bg cs_primary_color cs_radius_32" data-bs-toggle="modal" data-bs-target="#popup3"><span>Design 3 (Accent Yellow)</span></button>
+        <button class="cs_btn_style_1 cs_blue_bg3 cs_primary_color cs_radius_32" data-bs-toggle="modal" data-bs-target="#popup4"><span>Design 4 (Light Blue)</span></button>
+        <button class="cs_btn_style_1 cs_blue_bg1 cs_white_color cs_radius_32" data-bs-toggle="modal" data-bs-target="#popup5"><span>Design 5 (Split Image)</span></button>
+        <button class="cs_btn_style_1 cs_primary_bg cs_white_color cs_radius_32" data-bs-toggle="modal" data-bs-target="#popup6"><span>Design 6 (Bottom Toast)</span></button>
+        <button class="cs_btn_style_1 cs_white_bg cs_primary_color cs_radius_32" style="border: 1px solid var(--gray-color2);" data-bs-toggle="modal" data-bs-target="#popup7"><span>Design 7 (Minimal Border)</span></button>
+        <button class="cs_btn_style_1 cs_blue_bg3 cs_primary_color cs_radius_32" data-bs-toggle="modal" data-bs-target="#popup8"><span>Design 8 (Big Bold Code)</span></button>
+        <button class="cs_btn_style_1 cs_blue_bg1 cs_white_color cs_radius_32" data-bs-toggle="modal" data-bs-target="#popup9"><span>Design 9 (Icon Top Badge)</span></button>
+        <button class="cs_btn_style_1 cs_primary_bg cs_white_color cs_radius_32" data-bs-toggle="modal" data-bs-target="#popup10"><span>Design 10 (Full Overlay)</span></button>
+    </div>
+</div>
+
+<!-- ==============================================
+     MODAL 1: CLEAN WHITE
+     ============================================== -->
+<div class="modal fade" id="popup1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content cs_radius_16 border-0 shadow">
+            <div class="modal-body p-5 text-center position-relative">
+                <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="cs_mb_24">
+                    <i class="fa-solid fa-gift" style="font-size: 48px; color: var(--dark-blue);"></i>
+                </div>
+                <h3 class="cs_fs_30 cs_mb_16">Special Discount!</h3>
+                <p class="cs_mb_24" style="color: var(--secondary-color);">Get 20% off your first cleaning service with this exclusive code.</p>
+                <div class="cs_mb_24">
+                    <span class="discount-code-box" id="code1">CLEAN20</span>
+                </div>
+                <button class="cs_btn_style_1 cs_blue_bg1 cs_white_color cs_radius_32 w-100 copy-btn-animated" onclick="copyCode('code1', 'msg1', this)">
+                    <span>Copy Code <i class="fa-regular fa-copy ms-2"></i></span>
+                </button>
+                <div id="msg1" class="copy-success"><i class="fa-solid fa-check-circle"></i> Code copied to clipboard!</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ==============================================
+     MODAL 2: DARK MODE
+     ============================================== -->
+<div class="modal fade" id="popup2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content cs_primary_bg cs_white_color cs_radius_16 border-0 shadow">
+            <div class="modal-body p-5 text-center position-relative">
+                <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h3 class="cs_fs_36 cs_white_color cs_mb_16">Unlock 15% Off</h3>
+                <p class="cs_mb_24" style="color: var(--gray-color2);">Exclusive offer for our new customers. Treat your home today.</p>
+                <div class="cs_mb_24">
+                    <span class="discount-code-box dark" id="code2">NEW15</span>
+                </div>
+                <button class="cs_btn_style_1 cs_accent_bg cs_primary_color cs_radius_32 w-100 copy-btn-animated" onclick="copyCode('code2', 'msg2', this)">
+                    <span>Copy Code <i class="fa-regular fa-copy ms-2"></i></span>
+                </button>
+                <div id="msg2" class="copy-success" style="color: var(--accent-color);"><i class="fa-solid fa-check-circle"></i> Code successfully copied!</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ==============================================
+     MODAL 3: ACCENT YELLOW
+     ============================================== -->
+<div class="modal fade" id="popup3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content cs_accent_bg cs_primary_color cs_radius_16 border-0 shadow">
+            <div class="modal-body p-5 text-center position-relative">
+                <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                <i class="fa-solid fa-bolt cs_mb_24" style="font-size: 48px; color: var(--primary-color);"></i>
+                <h3 class="cs_fs_30 cs_mb_16 cs_primary_color">Flash Sale!</h3>
+                <p class="cs_mb_24 cs_primary_color">Hurry up! Save $30 on any of our deep cleaning services.</p>
+                <div class="cs_mb_24">
+                    <span class="discount-code-box" style="border-color: var(--primary-color); background: transparent;" id="code3">FLASH30</span>
+                </div>
+                <button class="cs_btn_style_1 cs_primary_bg cs_white_color cs_radius_32 w-100 copy-btn-animated" onclick="copyCode('code3', 'msg3', this)">
+                    <span>Copy Code <i class="fa-regular fa-copy ms-2"></i></span>
+                </button>
+                <div id="msg3" class="copy-success" style="color: var(--primary-color);"><i class="fa-solid fa-check-circle"></i> Saved to clipboard!</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ==============================================
+     MODAL 4: LIGHT BLUE
+     ============================================== -->
+<div class="modal fade" id="popup4" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content cs_radius_16 border-0 shadow" style="background-color: var(--lightest-blue);">
+            <div class="modal-body p-5 text-center position-relative">
+                <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h3 class="cs_fs_36 cs_mb_16" style="color: var(--dark-blue);">Save Big!</h3>
+                <p class="cs_mb_24" style="color: var(--secondary-color);">Enjoy a spotless home with our exclusive promo code.</p>
+                <div class="cs_mb_24">
+                    <span class="discount-code-box" style="background: var(--white-color); border-color: var(--dark-blue);" id="code4">SPOTLESS</span>
+                </div>
+                <button class="cs_btn_style_1 cs_blue_bg1 cs_white_color cs_radius_32 copy-btn-animated" style="padding: 15px 40px;" onclick="copyCode('code4', 'msg4', this)">
+                    <span>Copy Promo Code <i class="fa-regular fa-copy ms-2"></i></span>
+                </button>
+                <div id="msg4" class="copy-success"><i class="fa-solid fa-check-circle"></i> Code copied to clipboard!</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ==============================================
+     MODAL 5: SPLIT IMAGE
+     ============================================== -->
+<div class="modal fade" id="popup5" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content cs_radius_16 border-0 shadow overflow-hidden">
+            <div class="row g-0">
+                <div class="col-md-5 d-none d-md-block">
+                    <img src="../../assets/img/hero-img1.jpg" alt="Cleaning" class="w-100 h-100" style="object-fit: cover;">
+                </div>
+                <div class="col-md-7 position-relative">
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="p-5 text-center">
+                        <h3 class="cs_fs_30 cs_mb_16">Your Welcome Gift</h3>
+                        <p class="cs_mb_24" style="color: var(--secondary-color);">Sign up today and get 10% off your next booking.</p>
+                        <div class="cs_mb_24">
+                            <span class="discount-code-box w-100" id="code5">WELCOME10</span>
+                        </div>
+                        <button class="cs_btn_style_1 cs_primary_bg cs_white_color cs_radius_32 w-100 copy-btn-animated" onclick="copyCode('code5', 'msg5', this)">
+                            <span>Copy Code <i class="fa-regular fa-copy ms-2"></i></span>
+                        </button>
+                        <div id="msg5" class="copy-success"><i class="fa-solid fa-check-circle"></i> Copied correctly!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ==============================================
+     MODAL 6: BOTTOM TOAST
+     ============================================== -->
+<div class="modal fade" id="popup6" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-bottom m-4 position-absolute bottom-0 end-0" style="width: 380px;">
+        <div class="modal-content cs_radius_16 border-0 shadow-lg">
+            <div class="modal-body p-4 position-relative">
+                <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close" style="font-size: 12px;"></button>
+                <div class="d-flex align-items-center cs_mb_16">
+                    <div class="cs_center cs_accent_bg cs_radius_100 me-3" style="width: 40px; height: 40px; flex-shrink: 0;">
+                        <i class="fa-solid fa-tags cs_primary_color"></i>
+                    </div>
+                    <h3 class="cs_fs_20 mb-0">Here's 10% off!</h3>
+                </div>
+                <p class="cs_mb_16" style="font-size: 14px; color: var(--secondary-color);">Use this code at checkout.</p>
+                <div class="d-flex gap-2">
+                    <span class="discount-code-box py-1 px-2 fs-6 flex-grow-1 text-center mb-0" id="code6">SAVE10</span>
+                    <button class="cs_btn_style_1 cs_blue_bg1 cs_white_color cs_radius_16 px-3 copy-btn-animated" onclick="copyCode('code6', 'msg6', this)">
+                        <span>Copy</span>
+                    </button>
+                </div>
+                <div id="msg6" class="copy-success"><i class="fa-solid fa-check-circle"></i> Copied!</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ==============================================
+     MODAL 7: MINIMAL BORDER
+     ============================================== -->
+<div class="modal fade" id="popup7" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content cs_radius_16 shadow-none" style="border: 4px solid var(--gray-color2);">
+            <div class="modal-body p-5 text-center position-relative">
+                <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h3 class="cs_fs_30 cs_mb_16">A Gift For You</h3>
+                <p class="cs_mb_24" style="color: var(--secondary-color);">Take $20 off your next deep clean.</p>
+                <div class="cs_mb_24">
+                    <span class="discount-code-box" style="background: none; border-color: var(--primary-color);" id="code7">GIFT20</span>
+                </div>
+                <button class="cs_btn_style_1 cs_white_bg cs_primary_color cs_radius_32 w-100 copy-btn-animated" style="border: 2px solid var(--primary-color);" onclick="copyCode('code7', 'msg7', this)">
+                    <span>Copy Code <i class="fa-regular fa-copy ms-2"></i></span>
+                </button>
+                <div id="msg7" class="copy-success"><i class="fa-solid fa-check-circle"></i> Code copied to clipboard!</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ==============================================
+     MODAL 8: BIG BOLD CODE
+     ============================================== -->
+<div class="modal fade" id="popup8" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content cs_blue_bg1 cs_white_color cs_radius_16 border-0 shadow">
+            <div class="modal-body p-5 text-center position-relative">
+                <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                <p class="cs_mb_16 text-uppercase fw-bold" style="color: var(--accent-color); letter-spacing: 2px;">Limited Time Offer</p>
+                <div class="cs_mb_24">
+                    <span class="discount-code-box dark border-0" style="font-size: 40px; font-weight: 900; letter-spacing: 4px; padding: 20px;" id="code8">MEGA50</span>
+                </div>
+                <p class="cs_mb_24" style="color: var(--white-color);">Use this code to get $50 off your move-in/move-out cleaning!</p>
+                <button class="cs_btn_style_1 cs_accent_bg cs_primary_color cs_radius_32 w-100 copy-btn-animated" onclick="copyCode('code8', 'msg8', this)">
+                    <span>Copy Promo Code <i class="fa-regular fa-copy ms-2"></i></span>
+                </button>
+                <div id="msg8" class="copy-success" style="color: var(--accent-color);"><i class="fa-solid fa-check-circle"></i> Code copied!</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ==============================================
+     MODAL 9: ICON TOP BADGE
+     ============================================== -->
+<div class="modal fade" id="popup9" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content cs_radius_16 border-0 shadow mt-5">
+            <div class="modal-body p-5 text-center position-relative">
+                <div class="position-absolute top-0 start-50 translate-middle cs_center cs_accent_bg cs_radius_100 border border-4 border-white shadow" style="width: 80px; height: 80px;">
+                    <i class="fa-solid fa-scissors cs_fs_30 cs_primary_color"></i>
+                </div>
+                <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h3 class="cs_fs_30 cs_mb_16 mt-4">Cut Your Costs!</h3>
+                <p class="cs_mb_24" style="color: var(--secondary-color);">Claim your 15% discount on all standard cleaning services.</p>
+                <div class="cs_mb_24">
+                    <span class="discount-code-box" id="code9">CUT15</span>
+                </div>
+                <button class="cs_btn_style_1 cs_primary_bg cs_white_color cs_radius_32 w-100 copy-btn-animated" onclick="copyCode('code9', 'msg9', this)">
+                    <span>Copy Code <i class="fa-regular fa-copy ms-2"></i></span>
+                </button>
+                <div id="msg9" class="copy-success"><i class="fa-solid fa-check-circle"></i> Code copied to clipboard!</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ==============================================
+     MODAL 10: FULL OVERLAY
+     ============================================== -->
+<div class="modal fade" id="popup10" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content cs_primary_bg cs_white_color border-0">
+            <div class="modal-body d-flex flex-column justify-content-center align-items-center text-center p-5 position-relative">
+                <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-4" style="font-size: 24px;" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h2 class="cs_fs_56 cs_white_color cs_mb_24">Hello there!</h2>
+                <h3 class="cs_fs_36 cs_white_color cs_mb_24" style="font-weight: 400;">Enjoy <span style="color: var(--accent-color); font-weight: 700;">25% OFF</span> your first service</h3>
+                <div class="cs_mb_40">
+                    <span class="discount-code-box dark" style="font-size: 32px;" id="code10">HELLO25</span>
+                </div>
+                <button class="cs_btn_style_1 cs_accent_bg cs_primary_color cs_radius_32 copy-btn-animated" style="padding: 15px 50px; font-size: 18px;" onclick="copyCode('code10', 'msg10', this)">
+                    <span>Copy to Clipboard <i class="fa-regular fa-copy ms-2"></i></span>
+                </button>
+                <div id="msg10" class="copy-success" style="color: var(--accent-color); font-size: 18px;"><i class="fa-solid fa-check-circle"></i> Code copied successfully!</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="../../assets/js/jquery.min.js"></script>
+<!-- Using Bootstrap Bundle to ensure Modals work properly -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    function copyCode(elementId, msgId, btnElement) {
+        const codeText = document.getElementById(elementId).innerText;
+        navigator.clipboard.writeText(codeText).then(() => {
+            // Show Success Message
+            const msg = document.getElementById(msgId);
+            msg.style.display = 'none';
+            void msg.offsetWidth; // Trigger reflow to restart animation
+            msg.style.display = 'block';
+            
+            // Add click animation to button
+            btnElement.classList.add('clicked');
+            setTimeout(() => {
+                btnElement.classList.remove('clicked');
+            }, 150);
+        }).catch(err => {
+            console.error('Failed to copy text: ', err);
+            alert('Error copying to clipboard.');
+        });
+    }
+</script>
+</body>
+</html>
