@@ -253,6 +253,7 @@
         $(".cs_video_popup_container iframe").attr("src", `${video}`);
 
         $(".cs_video_popup").addClass("active");
+        $("html").addClass("overflow-hidden");
       });
       $(".cs_video_popup_close, .cs_video_popup-layer").on(
         "click",
@@ -363,8 +364,23 @@
       requestAnimationFrame(raf);
 
       // Fix for Bootstrap Modals: Focus the modal body to enable keyboard scrolling
+      // and stop Lenis to prevent background scroll and layout shifts
+      $('.modal').on('show.bs.modal', function () {
+        lenis.stop();
+      });
       $('.modal').on('shown.bs.modal', function () {
         $(this).find('.modal-body').focus();
+      });
+      $('.modal').on('hidden.bs.modal', function () {
+        lenis.start();
+      });
+
+      // Also for custom video popup
+      $(document).on("click", ".cs_video_open", function () {
+        lenis.stop();
+      });
+      $(document).on("click", ".cs_video_popup_close, .cs_video_popup-layer", function () {
+        lenis.start();
       });
     }
   }
@@ -487,3 +503,108 @@
     });
   }
 })(jQuery); // End of use strict
+
+function copyCode(elementId, msgId, btnElement) {
+  const codeText = document.getElementById(elementId).innerText;
+  navigator.clipboard.writeText(codeText).then(() => {
+    // Show Success Message
+    const msg = document.getElementById(msgId);
+    msg.style.setProperty('display', 'block', 'important');
+    msg.classList.remove('show');
+    void msg.offsetWidth; // Trigger reflow
+    msg.classList.add('show');
+    
+    // Hide after animation ends
+    setTimeout(() => {
+        msg.style.setProperty('display', 'none', 'important');
+        msg.classList.remove('show');
+    }, 2500);
+
+    // Add click animation to button
+    btnElement.classList.add('clicked');
+    setTimeout(() => {
+      btnElement.classList.remove('clicked');
+    }, 150);
+  }).catch(err => {
+    console.error('Failed to copy text: ', err);
+  });
+}
+
+// =====================================================================
+// FIX: Prevent Bootstrap from shifting the page when modals open.
+// Bootstrap injects padding-right as an INLINE STYLE on <body> to
+// compensate for the hidden scrollbar. Inline styles override CSS.
+// We use a MutationObserver to immediately reset it back to 0 each
+// time Bootstrap adds it, completely eliminating the page shift.
+// =====================================================================
+(function preventBootstrapScrollbarShift() {
+  const fixPadding = () => {
+    if (document.body.style.paddingRight) {
+      document.body.style.paddingRight = '0px';
+    }
+    // Also fix any fixed/sticky elements Bootstrap may have adjusted
+    document.querySelectorAll('.cs_site_header, .modal, [data-bs-padding-right]').forEach(el => {
+      if (el.style.paddingRight) {
+        el.style.paddingRight = '0px';
+      }
+    });
+  };
+
+  // Watch the body's style attribute for changes Bootstrap makes
+  const observer = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+      if (mutation.attributeName === 'style') {
+        fixPadding();
+      }
+    });
+  });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    observer.observe(document.body, {
+      attributes: true,
+      attributeFilter: ['style']
+    });
+  });
+  
+  // Also listen to Bootstrap modal events as a backup
+  document.addEventListener('show.bs.modal', () => {
+    requestAnimationFrame(fixPadding);
+    setTimeout(fixPadding, 50);
+  });
+})();
+// =====================================================================
+// AUTOMATIC DISCOUT POPUP: Triggered by scroll, only once per user.
+// Uses localStorage for persistence across browser restarts.
+// =====================================================================
+(function handleAutomaticDiscountModal() {
+  const SCROLL_THRESHOLD = 1000; // Trigger after 1000px scroll
+  const STORAGE_KEY = 'cs_discount_modal_shown';
+  const MODAL_ID = 'popup-discount-final';
+
+  const showModal = () => {
+    // Check if already shown to this user
+    if (localStorage.getItem(STORAGE_KEY)) return;
+
+    const modalElement = document.getElementById(MODAL_ID);
+    if (!modalElement) return;
+
+    // Use Bootstrap Modal API
+    const modalInstance = bootstrap.Modal.getOrCreateInstance(modalElement);
+    modalInstance.show();
+
+    // Mark as shown forever
+    localStorage.setItem(STORAGE_KEY, 'true');
+  };
+
+  const onScroll = () => {
+    if (window.scrollY > SCROLL_THRESHOLD) {
+      showModal();
+      window.removeEventListener('scroll', onScroll);
+    }
+  };
+
+  // Only add listener if not shown before
+  if (!localStorage.getItem(STORAGE_KEY)) {
+    window.addEventListener('scroll', onScroll);
+  }
+})();

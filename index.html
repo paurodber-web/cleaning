@@ -831,19 +831,20 @@
                   save money while your house shines.
                 </p>
               </div>
-              <a aria-label="Contact page link"
+              <button type="button" aria-label="Claim Discount"
                 class="cs_btn_style_1 cs_accent_bg cs_fs_14 cs_primary_color cs_radius_32" data-aos="fade-up"
-                href="contact-us.html">
+                data-bs-toggle="modal" data-bs-target="#popup-discount-final">
                 <span>
                   Claim Your Discount
                 </span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Promotion Section -->
+              </button>
+              </div>
+              </div>
+              </div>
+              </div>
+              </section>
+              <!-- End Promotion Section -->
+
     <!-- Start FAQ Section -->
     <section class="cs_faq_section">
       <div class="cs_height_80 cs_height_lg_40">
@@ -1417,6 +1418,34 @@
     </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- ==============================================
+     DISCOUNT POPUP (REFINED)
+     ============================================== -->
+<div class="modal fade" id="popup-discount-final" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-bottom m-4 position-fixed bottom-0 end-0" style="width: 380px; z-index: 1060;">
+        <div class="modal-content cs_radius_16 border-0 shadow-lg">
+            <div class="modal-body p-4 position-relative">
+                <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close" style="font-size: 12px;"></button>
+                <div class="d-flex align-items-center cs_mb_16">
+                    <div class="cs_center cs_accent_bg cs_radius_100 me-3" style="width: 40px; height: 40px; flex-shrink: 0;">
+                        <i class="fa-solid fa-tags cs_primary_color"></i>
+                    </div>
+                    <h3 class="cs_fs_20 mb-0">Here's 15% off!</h3>
+                </div>
+                <p class="cs_mb_16" style="font-size: 14px; color: var(--secondary-color);">Use this code at checkout.</p>
+                <div class="d-flex gap-2">
+                    <div class="discount-code-box flex-grow-1" id="code6-val" style="border: 2px dashed #cbd5e1 !important; padding: 12px 24px !important; border-radius: 12px !important; background: #f8fafc !important; font-family: 'Plus Jakarta Sans', sans-serif !important; font-weight: 800 !important; font-size: 22px !important; color: #0E1109 !important; letter-spacing: 2px; text-align: center; display: flex !important; align-items: center; justify-content: center;">FIRST15</div>
+                    <button class="cs_btn_style_1 cs_blue_bg1 cs_white_color cs_radius_16 px-3 copy-btn-animated" onclick="copyCode('code6-val', 'msg6-val', this)">
+                        <span>Copy</span>
+                    </button>
+                </div>
+                <div id="msg6-val" class="copy-success" style="display: none !important; color: #28a745 !important; font-weight: 600 !important; font-size: 14px !important; margin-top: 12px !important;"><i class="fa-solid fa-check-circle"></i> Copied!</div>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 
 </html>

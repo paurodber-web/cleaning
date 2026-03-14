@@ -3895,7 +3895,7 @@ label {
   left: 40px;
   z-index: 1;
   width: 100%;
-  padding-right: 76%;
+  padding-right: 69%;
 }
 
 .cs_cta_style_1 .cs_cta_thumbnail_2 {
@@ -5541,3 +5541,67 @@ label {
     font-size: 16px;
     color: #5D728A;
 }
+
+/* Discount Popup Styles */
+.copy-success {
+    display: none;
+    color: #28a745;
+    font-size: 14px;
+    margin-top: 12px;
+    font-family: var(--secondary-font);
+}
+.copy-success.show {
+    display: block;
+    animation: fadeInOut 2.5s ease-in-out forwards;
+}
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: translateY(-5px); }
+    10% { opacity: 1; transform: translateY(0); }
+    80% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; }
+}
+.discount-code-box {
+    border: 2px dashed #cbd5e1 !important;
+    padding: 10px 24px !important;
+    border-radius: 12px !important;
+    font-family: var(--primary-font) !important;
+    font-size: 20px !important;
+    font-weight: 800 !important;
+    background: #f8fafc !important;
+    letter-spacing: 2px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color) !important;
+}
+.discount-code-box.dark {
+    border-color: rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.05);
+    color: var(--white-color);
+}
+.copy-btn-animated {
+    transition: transform 0.15s ease;
+}
+.copy-btn-animated.clicked {
+    transform: scale(0.95);
+}
+
+/* TRUE FIX for Bootstrap modal background shift:
+   Force scrollbar to always be visible so Bootstrap never adds padding-right to body.
+   This matches the behavior of the test page which doesn't use Bootstrap modals. */
+html {
+  overflow-y: scroll !important;
+}
+
+/* Remove any padding Bootstrap tries to inject */
+body.modal-open {
+  padding-right: 0 !important;
+}
+
+.cs_site_header,
+.cs_site_header.cs_sticky_active,
+.modal {
+  padding-right: 0 !important;
+}
+
+
