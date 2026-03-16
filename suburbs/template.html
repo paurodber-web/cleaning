@@ -120,6 +120,7 @@
     <!-- Start Hero Section -->
     <section class="cs_hero_style_1 cs_blue_bg1 cs_radius_20 position-relative overflow-hidden">
       <div class="container p-0">
+        <div class="cs_hero_inner">
         <div class="cs_hero_content">
           <p class="cs_hero_subtitle cs_fs_14 cs_medium cs_white_color cs_primary_font cs_mb_16" data-aos="fade-down">
             WELCOME TO MAID AT HOME
@@ -130,123 +131,6 @@
           <p class="cs_hero_desc cs_white_color cs_primary_font cs_mb_56 cs_mb_lg_24">
             [[HERO_DESCRIPTION]]
           </p>
-          <div class="cs_hero_thumbnail cs_radius_32 cs_calculator_wrapper" data-aos="zoom-in">
-            <div class="cs_calculator_title cs_semibold">
-              Cleaning price estimator
-            </div>
-            <div class="cs_calculator_form">
-              <div class="cs_calc_row">
-                <div class="cs_calc_field">
-                  <label for="service_type">Service</label>
-                  <select id="service_type">
-                    <option value="standard">Standard</option>
-                    <option value="deep">Deep</option>
-                    <option value="moveinout">Move In/Out</option>
-                  </select>
-                </div>
-                <div class="cs_calc_field">
-                  <label for="calc_rate">Rate Type</label>
-                  <select id="calc_rate">
-                    <option value="flat">Flat Rate</option>
-                    <option value="hourly">Hourly</option>
-                  </select>
-                </div>
-              </div>
-              <div class="cs_calc_row">
-                <div class="cs_calc_field">
-                  <label for="calc_freq">Frequency</label>
-                  <select id="calc_freq">
-                    <option value="1">One-off</option>
-                    <option value="0.9">Weekly / Bi-weekly</option>
-                    <option value="0.95">3-4 Weekly</option>
-                  </select>
-                </div>
-                <div class="cs_calc_field">
-                  <label for="bedrooms">Bedrooms</label>
-                  <div class="cs_stepper">
-                    <button type="button" id="bed_minus" aria-label="Decrease bedrooms">-</button>
-                    <input id="bedrooms" min="1" max="6" type="number" value="1" readonly aria-label="Bedrooms" />
-                    <button type="button" id="bed_plus" aria-label="Increase bedrooms">+</button>
-                  </div>
-                </div>
-              </div>
-              <div class="cs_calc_result">
-                <span class="cs_calc_result_label" id="calc_label">Estimated Price</span>
-                <span class="cs_calc_price" id="calc_price">
-                  $155.00
-                </span>
-              </div>
-            </div>
-            <script>
-              document.addEventListener('DOMContentLoaded', function () {
-                const freqSelect = document.getElementById('calc_freq');
-                const rateSelect = document.getElementById('calc_rate');
-                const typeSelect = document.getElementById('service_type');
-                const bedInput = document.getElementById('bedrooms');
-                const bedMinus = document.getElementById('bed_minus');
-                const bedPlus = document.getElementById('bed_plus');
-                const priceDisplay = document.getElementById('calc_price');
-                const labelDisplay = document.getElementById('calc_label');
-
-                const prices = {
-                  standard: [155, 175, 195, 235, 285, 315],
-                  deep: [215, 245, 275, 315, 375, 415],
-                  moveinout: [410, 440, 500, 570, 670, 710]
-                };
-
-                function updatePrice() {
-                  let freq = parseFloat(freqSelect.value);
-                  const rate = rateSelect.value;
-                  const type = typeSelect.value;
-                  let bed = parseInt(bedInput.value) || 1;
-
-                  if (bed > 6) bed = 6;
-                  if (bed < 1) bed = 1;
-
-                  if (type === 'moveinout') {
-                    freq = 1;
-                  }
-
-                  if (rate === 'hourly' && type === 'moveinout') {
-                    labelDisplay.textContent = 'Availability Note';
-                    priceDisplay.textContent = 'Flat Rate Only';
-                    priceDisplay.style.fontSize = '24px'; // Make text fit if needed
-                  } else if (rate === 'hourly') {
-                    let hourlyRate = 60 * freq;
-                    labelDisplay.textContent = 'Estimated Hourly Rate';
-                    priceDisplay.textContent = '$' + hourlyRate.toFixed(2) + '/hr';
-                    priceDisplay.style.fontSize = ''; // Reset to default
-                  } else {
-                    let basePrice = prices[type][bed - 1] * freq;
-                    labelDisplay.textContent = 'Estimated Flat Price';
-                    priceDisplay.textContent = '$' + basePrice.toFixed(2);
-                    priceDisplay.style.fontSize = ''; // Reset to default
-                  }
-                }
-
-                bedMinus.addEventListener('click', function () {
-                  const val = parseInt(bedInput.value);
-                  if (val > 1) {
-                    bedInput.value = val - 1;
-                    updatePrice();
-                  }
-                });
-
-                bedPlus.addEventListener('click', function () {
-                  const val = parseInt(bedInput.value);
-                  if (val < 6) {
-                    bedInput.value = val + 1;
-                    updatePrice();
-                  }
-                });
-
-                [freqSelect, rateSelect, typeSelect].forEach(input => {
-                  input.addEventListener('input', updatePrice);
-                });
-                updatePrice();
-              });
-            </script>
-          </div>
           <div class="cs_hero_btns_wrapper">
             <a aria-label="Contact page link" class="cs_btn_style_1 cs_radius_32 cs_accent_bg cs_primary_color"
               data-aos="fade-right" href="../contact-us.html">
@@ -281,6 +165,124 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="cs_hero_thumbnail cs_radius_32 cs_calculator_wrapper" data-aos="zoom-in">
+          <div class="cs_calculator_title cs_semibold">
+            Cleaning price estimator
+          </div>
+          <div class="cs_calculator_form">
+            <div class="cs_calc_row">
+              <div class="cs_calc_field">
+                <label for="service_type">Service</label>
+                <select id="service_type">
+                  <option value="standard">Standard</option>
+                  <option value="deep">Deep</option>
+                  <option value="moveinout">Move In/Out</option>
+                </select>
+              </div>
+              <div class="cs_calc_field">
+                <label for="calc_rate">Rate Type</label>
+                <select id="calc_rate">
+                  <option value="flat">Flat Rate</option>
+                  <option value="hourly">Hourly</option>
+                </select>
+              </div>
+            </div>
+            <div class="cs_calc_row">
+              <div class="cs_calc_field">
+                <label for="calc_freq">Frequency</label>
+                <select id="calc_freq">
+                  <option value="1">One-off</option>
+                  <option value="0.9">Weekly / Bi-weekly</option>
+                  <option value="0.95">3-4 Weekly</option>
+                </select>
+              </div>
+              <div class="cs_calc_field">
+                <label for="bedrooms">Bedrooms</label>
+                <div class="cs_stepper">
+                  <button type="button" id="bed_minus" aria-label="Decrease bedrooms">-</button>
+                  <input id="bedrooms" min="1" max="6" type="number" value="1" readonly aria-label="Bedrooms" />
+                  <button type="button" id="bed_plus" aria-label="Increase bedrooms">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="cs_calc_result">
+              <span class="cs_calc_result_label" id="calc_label">Estimated Price</span>
+              <span class="cs_calc_price" id="calc_price">
+                $155.00
+              </span>
+            </div>
+          </div>
+          <script>
+            document.addEventListener('DOMContentLoaded', function () {
+              const freqSelect = document.getElementById('calc_freq');
+              const rateSelect = document.getElementById('calc_rate');
+              const typeSelect = document.getElementById('service_type');
+              const bedInput = document.getElementById('bedrooms');
+              const bedMinus = document.getElementById('bed_minus');
+              const bedPlus = document.getElementById('bed_plus');
+              const priceDisplay = document.getElementById('calc_price');
+              const labelDisplay = document.getElementById('calc_label');
+
+              const prices = {
+                standard: [155, 175, 195, 235, 285, 315],
+                deep: [215, 245, 275, 315, 375, 415],
+                moveinout: [410, 440, 500, 570, 670, 710]
+              };
+
+              function updatePrice() {
+                let freq = parseFloat(freqSelect.value);
+                const rate = rateSelect.value;
+                const type = typeSelect.value;
+                let bed = parseInt(bedInput.value) || 1;
+
+                if (bed > 6) bed = 6;
+                if (bed < 1) bed = 1;
+
+                if (type === 'moveinout') {
+                  freq = 1;
+                }
+
+                if (rate === 'hourly' && type === 'moveinout') {
+                  labelDisplay.textContent = 'Availability Note';
+                  priceDisplay.textContent = 'Flat Rate Only';
+                  priceDisplay.style.fontSize = '24px'; // Make text fit if needed
+                } else if (rate === 'hourly') {
+                  let hourlyRate = 60 * freq;
+                  labelDisplay.textContent = 'Estimated Hourly Rate';
+                  priceDisplay.textContent = '$' + hourlyRate.toFixed(2) + '/hr';
+                  priceDisplay.style.fontSize = ''; // Reset to default
+                } else {
+                  let basePrice = prices[type][bed - 1] * freq;
+                  labelDisplay.textContent = 'Estimated Flat Price';
+                  priceDisplay.textContent = '$' + basePrice.toFixed(2);
+                  priceDisplay.style.fontSize = ''; // Reset to default
+                }
+              }
+
+              bedMinus.addEventListener('click', function () {
+                const val = parseInt(bedInput.value);
+                if (val > 1) {
+                  bedInput.value = val - 1;
+                  updatePrice();
+                }
+              });
+
+              bedPlus.addEventListener('click', function () {
+                const val = parseInt(bedInput.value);
+                if (val < 6) {
+                  bedInput.value = val + 1;
+                  updatePrice();
+                }
+              });
+
+              [freqSelect, rateSelect, typeSelect].forEach(input => {
+                input.addEventListener('input', updatePrice);
+              });
+              updatePrice();
+            });
+          </script>
+        </div>
         </div>
       </div>
       <div class="cs_vectoe_shape1 position-absolute">
