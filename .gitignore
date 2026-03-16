@@ -1,0 +1,9 @@
+node_modules/
+*.png
+!assets/img/*.png
+old_index.html
+first_index.html
+files_changed.txt
+# Ignore screenshots
+mobile_screenshot.png
+tablet_screenshot.png
