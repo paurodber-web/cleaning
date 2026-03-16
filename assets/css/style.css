@@ -3464,7 +3464,7 @@ label {
   .cs_hero_style_1 {
     min-height: auto;
     height: auto;
-    padding: 160px 18px 60px;
+    padding: 140px 18px 60px;
   }
   .cs_trust_badges {
     gap: 24px;
@@ -3725,7 +3725,7 @@ label {
 
 @media (max-width: 991px) {
   .cs_hero_style_1 {
-    padding: 160px 18px 60px;
+    padding: 112px 18px 32px;
     border-radius: 0;
     height: auto;
   }
