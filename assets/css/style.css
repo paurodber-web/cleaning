@@ -34,6 +34,7 @@
   --secondary-color: #4A5567;
   --accent-color: #FFD643;
   --dark-blue: #1F77D6;
+  --darker-blue: #0c5ca8;
   --light-blue: #B2EAFE;
   --lightest-blue: #EAF3FC;
   --gray-color1: #FAFAFA;
@@ -1806,7 +1807,7 @@ label {
 }
 
 .cs_blue_dark {
-  color: var(--dark-blue);
+  color: var(--darker-blue);
 }
 
 .cs_blue_light {
@@ -3337,7 +3338,11 @@ label {
   12. Hero
  ===============================================================*/
 .cs_hero_style_1 {
-  padding: 150px 16px 80px;
+  padding: 100px 16px 0;
+  height: calc(100vh - 48px);
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .cs_hero_style_1 .cs_hero_content {
@@ -3412,10 +3417,64 @@ label {
   border-radius: 24px;
 }
 
+/* Trust Badges Styling */
+.cs_trust_badges {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.cs_trust_badge_item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--white-color);
+}
+
+.cs_trust_badge_icon {
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: var(--accent-color);
+  flex-shrink: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cs_trust_badge_text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.3;
+  opacity: 0.95;
+}
+
+@media (max-width: 991px) {
+  .cs_hero_style_1 {
+    min-height: auto;
+    padding: 120px 18px 60px;
+  }
+  .cs_trust_badges {
+    gap: 24px;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 575px) {
+  .cs_trust_badges {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 /* Calculator Styles */
 .cs_calculator_wrapper {
   background-color: var(--white-color);
-  padding: 40px 30px;
+  padding: 55px 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -5605,3 +5664,42 @@ body.modal-open {
 }
 
 
+
+/* Nearby Suburbs Section */
+.cs_nearby_suburbs_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.cs_nearby_suburbs_grid li a {
+  display: block;
+  padding: 12px 20px;
+  background-color: var(--white-color);
+  border-radius: 12px;
+  color: var(--primary-color);
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.cs_nearby_suburbs_grid li a:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+  color: var(--primary-color);
+}
+
+@media (max-width: 575px) {
+  .cs_nearby_suburbs_grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 10px;
+  }
+  .cs_nearby_suburbs_grid li a {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}

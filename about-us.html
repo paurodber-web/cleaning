@@ -20,6 +20,88 @@
     <title>
         Professional house cleaning services - About us
     </title>
+    <style>
+        /* Force images to fill their design-specified areas correctly */
+        .cs_about_thumbnail img, 
+        .cs_benefit_thumbnail img, 
+        .cs_cta_thumbnail img {
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: cover !important;
+        }
+
+        /* Desktop Heights and Layout */
+        @media (min-width: 992px) {
+            .cs_about_style_2 .cs_about_thumbnail,
+            .cs_about_style_2 .cs_about_thumbnail img,
+            .cs_cta_style_2 .cs_cta_thumbnail,
+            .cs_cta_style_2 .cs_cta_thumbnail img {
+                height: 455px !important;
+                max-height: 455px !important;
+            }
+
+            .cs_about_style_2 .cs_about_thumbnail {
+                width: 48% !important;
+                position: absolute;
+                left: 0;
+                top: 0;
+                padding-right: 0 !important;
+                overflow: hidden;
+            }
+
+            .cs_cta_style_2 .cs_cta_thumbnail {
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 50% !important;
+                border-radius: 0 16px 16px 0;
+                overflow: hidden;
+            }
+            
+            .cs_cta_style_2 .row {
+                min-height: 455px;
+            }
+        }
+
+        /* Tablet (max-width: 991px) */
+        @media (max-width: 991px) {
+            .cs_about_style_2 .cs_about_thumbnail,
+            .cs_about_style_2 .cs_about_thumbnail img,
+            .cs_cta_style_2 .cs_cta_thumbnail,
+            .cs_cta_style_2 .cs_cta_thumbnail img {
+                height: 533px !important; 
+                max-height: 533px !important;
+            }
+            .cs_about_style_2 .cs_about_thumbnail,
+            .cs_cta_style_2 .cs_cta_thumbnail {
+                position: relative;
+                width: 100% !important;
+                padding: 0;
+            }
+            .cs_cta_style_2 .cs_cta_thumbnail {
+                border-radius: 16px;
+                order: -1; /* Image stays on top for CTA in mobile */
+                margin-bottom: 24px; /* Exact 24px gap */
+            }
+            .cs_cta_style_2 .cs_cta_text {
+                padding-top: 0 !important; /* Remove top padding to maintain the 24px margin gap */
+            }
+            .cs_benefit_thumbnail {
+                height: 350px;
+            }
+        }
+
+        /* Mobile (max-width: 575px) */
+        @media (max-width: 575px) {
+            .cs_about_style_2 .cs_about_thumbnail,
+            .cs_about_style_2 .cs_about_thumbnail img,
+            .cs_cta_style_2 .cs_cta_thumbnail,
+            .cs_cta_style_2 .cs_cta_thumbnail img {
+                height: 300px !important;
+                max-height: 300px !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -153,7 +235,7 @@
                         </p>
                     </div>
                     <div class="cs_about_thumbnail cs_radius_16 cs_mb_24" data-aos="zoom-in">
-                        <img alt="About image" src="assets/img/about-img1.jpg" />
+                        <img alt="About image" src="assets/img/about-img1.png" />
                     </div>
                     <div class="cs_funfact_wrapper_style_1">
                         <div class="cs_funfact_style_1">
@@ -218,10 +300,10 @@
                 </div>
                 <div class="cs_height_50 cs_height_lg_24">
                 </div>
-                <div class="row cs_gap_y_24 align-items-center">
+                <div class="row cs_gap_y_24 align-items-stretch">
                     <div class="col-lg-4 order-lg-1">
                         <div class="cs_benefit_thumbnail cs_radius_16 w-100 h-100" data-aos="zoom-in">
-                            <img alt="Benefit image" class="w-100 h-100" src="assets/img/benefit-img1.jpg" style="object-fit: cover;" />
+                            <img alt="Benefit image" class="w-100 h-100" src="assets/img/benefit.png" style="object-fit: cover;" />
                         </div>
                     </div>
                     
@@ -341,14 +423,14 @@
         <!-- Start CTA Section -->
         <section class="cs_cta_style_2 cs_blue_bg3 cs_radius_16 position-relative overflow-hidden cs_mb_24 cs_mb_lg_16">
             <div class="container p-0">
-                <div class="row cs_gap_y_24">
+                <div class="row align-items-center">
                     <div class="col-lg-6 order-lg-2">
                         <div class="cs_cta_thumbnail">
-                            <img alt="cleaning table" src="assets/img/about-img2.jpg" />
+                            <img alt="cleaning table" src="assets/img/about-img2.png" />
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="cs_cta_text position-relative z-1">
+                        <div class="cs_cta_text position-relative z-1 py-5">
                             <div class="cs_mb_24">
                                 <h2 class="cs_fs_56 cs_mb_24" data-aos="fade-down">
                                     Coming home just got better.
