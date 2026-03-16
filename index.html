@@ -10,15 +10,15 @@
   <meta content="Maid at Home" name="author" />
   <!-- Favicon -->
   <link href="assets/img/favicon.png" rel="icon" />
-  <!-- CSS Files -->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <!-- Defer non-critical styles to reduce LCP critical request chain -->
-  <link rel="stylesheet" href="assets/css/fontawesome.min.css" media="print" onload="this.media='all'" />
-  <link rel="stylesheet" href="assets/css/aos.min.css" media="print" onload="this.media='all'" />
-  <link rel="stylesheet" href="assets/css/slick.min.css" media="print" onload="this.media='all'" />
-  <link rel="stylesheet" href="assets/css/odometer.min.css" media="print" onload="this.media='all'" />
-  <link rel="stylesheet" href="assets/css/tom-select.min.css" media="print" onload="this.media='all'" />
+  <!-- CSS Files - async -->
+  <link rel="preload" href="assets/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <!-- Defer non-critical styles -->
+  <link rel="preload" href="assets/css/fontawesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="assets/css/aos.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="assets/css/slick.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="assets/css/odometer.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="assets/css/tom-select.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
 
   <!-- Fallback if JS is disabled -->
   <noscript>

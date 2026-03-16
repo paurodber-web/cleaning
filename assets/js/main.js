@@ -38,10 +38,21 @@
   $(window).on("load", function () {
     preloader();
   });
-  $(window).on("scroll", function () {
-    stickyHeader();
-    showScrollUp();
-  });
+  // Use a single rAF-throttled scroll handler to avoid forced reflows.
+  let lastScrollY = 0;
+  let isTicking = false;
+  const onScroll = () => {
+    lastScrollY = window.scrollY || window.pageYOffset || 0;
+    if (!isTicking) {
+      window.requestAnimationFrame(() => {
+        stickyHeader(lastScrollY);
+        showScrollUp(lastScrollY);
+        isTicking = false;
+      });
+      isTicking = true;
+    }
+  };
+  window.addEventListener("scroll", onScroll, { passive: true });
   $(window).on("resize", function () {
     $(".cs_site_header").removeClass("active");
     $(".cs_menu_toggle")
@@ -112,8 +123,8 @@
   /*=============================================================
     03. Sticky Header
   ===============================================================*/
-  function stickyHeader() {
-    var scroll = $(window).scrollTop();
+  function stickyHeader(scrollY) {
+    var scroll = typeof scrollY === "number" ? scrollY : window.scrollY || 0;
     if (scroll >= 10) {
       $(".cs_sticky_header").addClass("cs_sticky_active");
     } else {
@@ -282,8 +293,8 @@
     });
   }
   /* For Scroll Up */
-  function showScrollUp() {
-    let scroll = $(window).scrollTop();
+  function showScrollUp(scrollY) {
+    let scroll = typeof scrollY === "number" ? scrollY : window.scrollY || 0;
     if (scroll >= 350) {
       $(".cs_scrollup").addClass("active");
     } else {
@@ -326,23 +337,41 @@
     10. Counter Animation
   =============================================================*/
   function counterInit() {
-    if ($.exists(".odometer")) {
-      $(window).on("scroll", function () {
-        function winScrollPosition() {
-          var scrollPos = $(window).scrollTop(),
-            winHeight = $(window).height();
-          var scrollPosition = Math.round(scrollPos + winHeight / 1.2);
-          return scrollPosition;
-        }
+    if (!$.exists(".odometer")) return;
 
-        $(".odometer").each(function () {
-          var elemOffset = $(this).offset().top;
-          if (elemOffset < winScrollPosition()) {
-            $(this).html($(this).data("count-to"));
-          }
-        });
+    if ("IntersectionObserver" in window) {
+      const observer = new IntersectionObserver(
+        (entries, obs) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            const el = entry.target;
+            $(el).html($(el).data("count-to"));
+            obs.unobserve(el);
+          });
+        },
+        { root: null, threshold: 0.4 }
+      );
+
+      $(".odometer").each(function () {
+        observer.observe(this);
       });
+      return;
     }
+
+    // Fallback for very old browsers
+    const checkCounters = () => {
+      const scrollPos = window.scrollY || window.pageYOffset || 0;
+      const winHeight = window.innerHeight || $(window).height();
+      const scrollPosition = Math.round(scrollPos + winHeight / 1.2);
+      $(".odometer").each(function () {
+        var elemOffset = $(this).offset().top;
+        if (elemOffset < scrollPosition) {
+          $(this).html($(this).data("count-to"));
+        }
+      });
+    };
+    window.addEventListener("scroll", checkCounters, { passive: true });
+    checkCounters();
   }
 
   /*===========================================================
@@ -605,6 +634,6 @@ function copyCode(elementId, msgId, btnElement) {
 
   // Only add listener if not shown before
   if (!localStorage.getItem(STORAGE_KEY)) {
-    window.addEventListener('scroll', onScroll);
+    window.addEventListener('scroll', onScroll, { passive: true });
   }
 })();
