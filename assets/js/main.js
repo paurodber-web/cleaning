@@ -36,7 +36,7 @@
   };
 
   $(window).on("load", function () {
-    preloader();
+    // preloader();
   });
   // Use a single rAF-throttled scroll handler to avoid forced reflows.
   let lastScrollY = 0;

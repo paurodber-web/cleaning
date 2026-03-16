@@ -7,7 +7,7 @@
 04. General
 05. Header
 06. Footer
-07. preloader
+
 08. Video Modal
 09. Slider
 10. About
@@ -2509,7 +2509,7 @@ label {
   .cs_site_header.cs_style_1 .cs_nav .cs_nav_list_wrap {
     position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
     padding: 80px 0 24px 16px;
     background-color: var(--primary-color);
     color: var(--white-color);
@@ -3391,7 +3391,7 @@ label {
  ===============================================================*/
 .cs_hero_style_1 {
   padding: 100px 16px 0;
-  height: calc(100vh - 48px);
+  height: calc(100svh - 48px);
   display: flex;
   align-items: center;
   box-sizing: border-box;
