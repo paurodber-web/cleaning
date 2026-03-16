@@ -3009,6 +3009,24 @@ label {
   cursor: ew-resize !important;
 }
 
+.cs_site_brand img,
+.cs_footer_logo img {
+  width: 158px;
+  height: 37px;
+}
+
+.cs_iconbox_icon img {
+  width: 52px;
+  height: 52px;
+}
+
+.fa-solid,
+.fa-regular,
+.fa-brands {
+  display: inline-block;
+  width: 1em;
+}
+
 .slick-slide>div {
   display: flex;
   flex-direction: column;
