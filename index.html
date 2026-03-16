@@ -10,6 +10,9 @@
   <meta content="Maid at Home" name="author" />
   <!-- Favicon -->
   <link href="assets/img/favicon.png" rel="icon" />
+  <!-- Preload Fonts -->
+  <link rel="preload" href="assets/fonts/plus-jakarta-sans-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/inter-normal.woff2" as="font" type="font/woff2" crossorigin />
   <!-- CSS Files - async -->
   <link rel="preload" href="assets/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
@@ -50,15 +53,6 @@
 </head>
 
 <body>
-  <!-- Preloader Start -->
-  <div class="cs_preloader cs_center">
-    <div class="cs_preloader_in">
-      <div class="cs_preloader_text cs_fs_72 cs_extrabold cs_primary_font" data-text="MAID AT HOME">
-        MAID AT HOME
-      </div>
-    </div>
-  </div>
-  <!-- Preloader End -->
   <div class="cs_custom_content_wrapper">
     <!-- Start Header Section -->
     <header class="cs_site_header cs_style_1 cs_sticky_header cs_white_color cs_primary_font">
@@ -347,10 +341,10 @@
                 const afterImgActual = afterImg.querySelector('img');
 
                 function updateBA() {
+                  const containerWidth = slider.parentElement.offsetWidth;
                   const val = slider.value + '%';
                   afterImg.style.width = val;
                   handle.style.left = val;
-                  const containerWidth = slider.parentElement.offsetWidth;
                   afterImgActual.style.width = containerWidth + 'px';
                 }
 
