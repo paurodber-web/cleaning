@@ -8,14 +8,39 @@
   <meta content="Maid at Home" name="author" />
   <!-- Favicon -->
   <link href="../assets/img/favicon.png" rel="icon" />
-  <!-- All CSS Files -->
-  <link href="../assets/css/aos.min.css" rel="stylesheet" />
-  <link href="../assets/css/slick.min.css" rel="stylesheet" />
-  <link href="../assets/css/odometer.min.css" rel="stylesheet" />
-  <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="../assets/css/tom-select.min.css" rel="stylesheet" />
-  <link href="../assets/css/fontawesome.min.css" rel="stylesheet" />
-  <link href="../assets/css/style.css" rel="stylesheet" />
+  <!-- CSS Files - async -->
+  <link rel="preload" href="../assets/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="../assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <!-- Defer non-critical styles -->
+  <link rel="preload" href="../assets/css/fontawesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="../assets/css/aos.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="../assets/css/slick.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="../assets/css/odometer.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="../assets/css/tom-select.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+
+  <!-- Fallback if JS is disabled -->
+  <noscript>
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <link href="../assets/css/aos.min.css" rel="stylesheet" />
+    <link href="../assets/css/slick.min.css" rel="stylesheet" />
+    <link href="../assets/css/odometer.min.css" rel="stylesheet" />
+    <link href="../assets/css/tom-select.min.css" rel="stylesheet" />
+  </noscript>
+  <!-- Critical CSS -->
+  <style>
+    :root {
+      --primary-color: #0E1109;
+      --dark-blue: #1F77D6;
+      --white-color: #fff;
+    }
+    .cs_preloader { width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: 999999; background-color: var(--white-color); display: flex; align-items: center; justify-content: center; }
+    .cs_preloader .cs_preloader_text { position: relative; color: var(--dark-blue); font-family: sans-serif; font-weight: 800; font-size: 72px; }
+    .cs_hero_style_1 { background-color: #1F77D6; border-radius: 20px; min-height: 400px; }
+    .cs_site_brand img { width: 158px; height: 37px; display: block; }
+    .cs_iconbox_icon img { width: 52px; height: 52px; display: block; }
+  </style>
   <!-- Site Title -->
   <title>
     [[META_TITLE]]
@@ -40,7 +65,7 @@
           <div class="cs_main_header_in">
             <div class="cs_main_header_left">
               <a aria-label="Home page link" class="cs_site_brand" href="../index.html">
-                <img alt="Logo" src="../assets/img/logo.svg" />
+                <img alt="Logo" src="../assets/img/logo.svg" width="158" height="37" />
               </a>
             </div>
             <div class="cs_main_header_center">
@@ -295,10 +320,10 @@
         <div class="cs_height_50 cs_height_lg_24">
         </div>
         <div class="cs_ba_slider cs_radius_16" data-aos="fade-up">
-          <img alt="Before" class="cs_ba_image cs_ba_before" src="../assets/img/before.png" />
+          <img alt="Before" class="cs_ba_image cs_ba_before" src="../assets/img/before.png" loading="lazy" width="2816" height="1536" />
           <div class="cs_ba_after" id="ba_after_img"
             style="position: absolute; top: 0; left: 0; height: 100%; overflow: hidden; width: 50%; z-index: 1;">
-            <img alt="After" src="../assets/img/after.png"
+            <img alt="After" src="../assets/img/after.png" loading="lazy" width="2816" height="1536"
               style="position: absolute; top: 0; left: 0; width: 100vw; max-width: none; height: 100%; object-fit: cover;" />
           </div>
           <div class="cs_ba_slider_handle" id="ba_handle">
@@ -399,7 +424,7 @@
             <div class="cs_icon_wrapper_style_1">
               <div class="cs_iconbox_style_1">
                 <span class="cs_iconbox_icon cs_center cs_mb_32">
-                  <img alt="User icon" src="../assets/img/icons/Like.svg" />
+                  <img alt="User icon" src="../assets/img/icons/Like.svg" loading="lazy" width="52" height="52" />
                 </span>
                 <div class="cs_iconbox_info">
                   <h3 class="cs_iconbox_title cs_fs_20 cs_semibold cs_mb_12">
@@ -412,7 +437,7 @@
               </div>
               <div class="cs_iconbox_style_1">
                 <span class="cs_iconbox_icon cs_center cs_mb_32">
-                  <img alt="Calendar icon" src="../assets/img/icons/notes.svg" />
+                  <img alt="Calendar icon" src="../assets/img/icons/notes.svg" loading="lazy" width="52" height="52" />
                 </span>
                 <div class="cs_iconbox_info">
                   <h3 class="cs_iconbox_title cs_fs_20 cs_semibold cs_mb_12">
@@ -425,7 +450,7 @@
               </div>
               <div class="cs_iconbox_style_1">
                 <span class="cs_iconbox_icon cs_center cs_mb_32">
-                  <img alt="Stars icon" src="../assets/img/icons/Trees.svg" />
+                  <img alt="Stars icon" src="../assets/img/icons/Trees.svg" loading="lazy" width="52" height="52" />
                 </span>
                 <div class="cs_iconbox_info">
                   <h3 class="cs_iconbox_title cs_fs_20 cs_mb_12">
@@ -438,7 +463,7 @@
               </div>
               <div class="cs_iconbox_style_1">
                 <span class="cs_iconbox_icon cs_center cs_mb_32">
-                  <img alt="Handshake icon" src="../assets/img/icons/notes.svg" />
+                  <img alt="Handshake icon" src="../assets/img/icons/notes.svg" loading="lazy" width="52" height="52" />
                 </span>
                 <div class="cs_iconbox_info">
                   <h3 class="cs_iconbox_title cs_fs_20 cs_semibold cs_mb_12">
@@ -478,7 +503,7 @@
           <!-- Card 1 -->
           <div class="col-lg-4 col-md-6" data-aos="fade-right">
             <a href="../standard-clean.html" class="cs_service_card_overlay">
-              <img alt="Standard Clean" src="../assets/img/standard.png" />
+              <img alt="Standard Clean" src="../assets/img/standard.png" loading="lazy" width="640" height="640" />
               <div class="cs_service_overlay_content">
                 <h3>Standard clean</h3>
                 <p>
@@ -490,7 +515,7 @@
           <!-- Card 2 -->
           <div class="col-lg-4 col-md-6" data-aos="fade-down">
             <a href="../deep-clean.html" class="cs_service_card_overlay">
-              <img alt="Deep Clean" src="../assets/img/deep.png" />
+              <img alt="Deep Clean" src="../assets/img/deep.png" loading="lazy" width="1000" height="1000" />
               <div class="cs_service_overlay_content">
                 <h3>Deep clean</h3>
                 <p>
@@ -502,7 +527,7 @@
           <!-- Card 3 -->
           <div class="col-lg-4 col-md-6" data-aos="fade-left">
             <a href="../move-in-out-clean.html" class="cs_service_card_overlay">
-              <img alt="Move In / Out Clean" src="../assets/img/move.png" />
+              <img alt="Move In / Out Clean" src="../assets/img/move.png" loading="lazy" width="1000" height="1000" />
               <div class="cs_service_overlay_content">
                 <h3>Move in / out clean</h3>
                 <p>
@@ -538,16 +563,16 @@
           <div class="col-lg-6 order-lg-2">
             <div class="cs_steps_thumbnails_wrapper">
               <div class="cs_step_thumbnail cs_radius_20">
-                <img alt="Book cleaning" src="../assets/img/book.png" />
+                <img alt="Book cleaning" src="../assets/img/book.png" loading="lazy" width="1000" height="1000" />
               </div>
               <div class="cs_step_thumbnail cs_radius_20">
-                <img alt="Customize cleaning" src="../assets/img/customize.png" />
+                <img alt="Customize cleaning" src="../assets/img/customize.png" loading="lazy" width="640" height="640" />
               </div>
               <div class="cs_step_thumbnail cs_radius_20">
-                <img alt="Meet cleaner" src="../assets/img/meet.png" />
+                <img alt="Meet cleaner" src="../assets/img/meet.png" loading="lazy" width="1000" height="1000" />
               </div>
               <div class="cs_step_thumbnail cs_radius_20">
-                <img alt="Sparkling results" src="../assets/img/results.png" />
+                <img alt="Sparkling results" src="../assets/img/results.png" loading="lazy" width="640" height="640" />
               </div>
             </div>
           </div>
@@ -671,7 +696,7 @@
                   </blockquote>
                   <div class="cs_avatar_style_1">
                     <div class="cs_avatar_icon cs_center cs_radius_100">
-                      <img alt="testimonial" src="../assets/img/testimonial-avatar-1.jpg" />
+                      <img alt="testimonial" src="../assets/img/testimonial-avatar-1.jpg" loading="lazy" width="60" height="60" />
                     </div>
                     <div class="cs_avatar_info">
                       <h3 class="cs_fs_18 mb-0">
@@ -692,7 +717,7 @@
                   </blockquote>
                   <div class="cs_avatar_style_1">
                     <div class="cs_avatar_icon cs_center cs_radius_100">
-                      <img alt="testimonial" src="../assets/img/testimonial-avatar-2.jpg" />
+                      <img alt="testimonial" src="../assets/img/testimonial-avatar-2.jpg" loading="lazy" width="61" height="60" />
                     </div>
                     <div class="cs_avatar_info">
                       <h3 class="cs_fs_18 mb-0">
@@ -713,7 +738,7 @@
                   </blockquote>
                   <div class="cs_avatar_style_1">
                     <div class="cs_avatar_icon cs_center cs_radius_100">
-                      <img alt="testimonial" src="../assets/img/testimonial-avatar-3.jpg" />
+                      <img alt="testimonial" src="../assets/img/testimonial-avatar-3.jpg" loading="lazy" width="61" height="60" />
                     </div>
                     <div class="cs_avatar_info">
                       <h3 class="cs_fs_18 mb-0">
@@ -735,7 +760,7 @@
                   </blockquote>
                   <div class="cs_avatar_style_1">
                     <div class="cs_avatar_icon cs_center cs_radius_100">
-                      <img alt="testimonial" src="../assets/img/avatar-3.png" />
+                      <img alt="testimonial" src="../assets/img/avatar-3.png" loading="lazy" width="52" height="52" />
                     </div>
                     <div class="cs_avatar_info">
                       <h3 class="cs_fs_18 mb-0">
@@ -954,16 +979,16 @@
           </a>
         </div>
         <div class="cs_cta_thumbnail_1 position-absolute">
-          <img alt="Cleaner image" src="../assets/img/cta-img1.png" />
+          <img alt="Cleaner image" src="../assets/img/cta-img1.png" loading="lazy" width="1500" height="1380" />
         </div>
         <div class="cs_cta_thumbnail_2 position-absolute">
-          <img alt="Cleaner image" src="../assets/img/cta-img2.png" />
+          <img alt="Cleaner image" src="../assets/img/cta-img2.png" loading="lazy" width="1500" height="1380" />
         </div>
         <div class="cs_vector_shape1 position-absolute">
-          <img alt="Vector shape" src="../assets/img/vector-2.svg" />
+          <img alt="Vector shape" src="../assets/img/vector-2.svg" loading="lazy" width="490" height="412" />
         </div>
         <div class="cs_vector_shape2 position-absolute">
-          <img alt="Vector shape" src="../assets/img/vector-3.svg" />
+          <img alt="Vector shape" src="../assets/img/vector-3.svg" loading="lazy" width="490" height="412" />
         </div>
       </div>
     </section>
@@ -1015,7 +1040,7 @@
         </div>
         <div class="cs_footer_main cs_center_column position-relative z-1">
           <div class="cs_footer_logo cs_mb_40 cs_mb_lg_30" data-aos="zoom-in">
-            <img alt="Logo" src="../assets/img/logo.svg" />
+            <img alt="Logo" src="../assets/img/logo.svg" width="158" height="37" />
           </div>
           <ul class="cs_footer_menu cs_mp_0">
             <li>
@@ -1157,10 +1182,10 @@
           </div>
         </div>
         <div class="cs_vector_shape1 position-absolute">
-          <img alt="Vector shape" src="../assets/img/vector-4.svg" />
+          <img alt="Vector shape" src="../assets/img/vector-4.svg" loading="lazy" width="320" height="405" />
         </div>
         <div class="cs_vector_shape2 position-absolute">
-          <img alt="Vector shape" src="../assets/img/vector-5.svg" />
+          <img alt="Vector shape" src="../assets/img/vector-5.svg" loading="lazy" width="320" height="405" />
         </div>
       </div>
     </footer>
@@ -1174,21 +1199,14 @@
     </button>
   </div>
   <!-- End Scroll Top Button -->
-  <script src="../assets/js/aos.min.js">
-  </script>
-  <script src="../assets/js/lenis.min.js">
-  </script>
-  <script src="../assets/js/jquery.min.js">
-  </script>
-  <script src="../assets/js/slick.min.js">
-  </script>
-  <script src="../assets/js/odometer.min.js">
-  </script>
-  <script src="../assets/js/tom-select.min.js">
-  </script>
-  <script src="../assets/js/main.js">
-  </script>
-  <script src="../assets/js/blog-data.js"></script>
+  <script src="../assets/js/aos.min.js" defer></script>
+  <script src="../assets/js/lenis.min.js" defer></script>
+  <script src="../assets/js/jquery.min.js" defer></script>
+  <script src="../assets/js/slick.min.js" defer></script>
+  <script src="../assets/js/odometer.min.js" defer></script>
+  <script src="../assets/js/tom-select.min.js" defer></script>
+  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/blog-data.js" defer></script>
   <script>
     (function () {
       function initHomeBlog() {
@@ -1211,7 +1229,7 @@
                   <div class="col-lg-6">
                       <article class="cs_post_style_1 cs_gray_bg1 cs_radius_16 h-100 mb-0">
                           <a aria-label="Post details page link" class="cs_post_thumbnail cs_radius_16 cs_mb_16 cs_zoom overflow-hidden" href="../${p1.url}">
-                              <img alt="Post thumbnail" src="${p1.img}" />
+                              <img alt="Post thumbnail" src="${p1.img}" loading="lazy" />
                           </a>
                           <div class="cs_post_info">
                               <h3 class="cs_post_title cs_fs_20 cs_mb_12">
@@ -1237,7 +1255,7 @@
             html += `
                           <article class="cs_post_style_2 cs_gray_bg1 cs_radius_16">
                               <a aria-label="Post details page link" class="cs_post_thumbnail cs_radius_12 cs_zoom overflow-hidden" href="../${p.url}">
-                                  <img alt="Post thumbnail" src="${p.img}" />
+                                  <img alt="Post thumbnail" src="${p.img}" loading="lazy" />
                               </a>
                               <div class="cs_post_info">
                                   <h3 class="cs_post_title cs_fs_20 cs_mb_12">
@@ -1525,7 +1543,7 @@
     </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
 
   <!-- ==============================================
      DISCOUNT POPUP (REFINED)
