@@ -2295,6 +2295,13 @@ label {
 .cs_site_header.cs_style_1 .cs_site_brand {
   position: relative;
   z-index: 22;
+  display: flex;
+  align-items: center;
+}
+
+.cs_site_header.cs_style_1 .cs_site_brand img {
+  max-height: 40px;
+  width: auto;
 }
 
 .cs_site_header.cs_style_1 .cs_btn_style_1 {
@@ -3338,8 +3345,8 @@ label {
   12. Hero
  ===============================================================*/
 .cs_hero_style_1 {
-  padding: 100px 16px 0;
-  height: calc(100vh - 48px);
+  padding: 120px 16px 60px;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   box-sizing: border-box;
@@ -3456,7 +3463,7 @@ label {
 @media (max-width: 991px) {
   .cs_hero_style_1 {
     min-height: auto;
-    padding: 120px 18px 60px;
+    padding: 140px 18px 60px;
   }
   .cs_trust_badges {
     gap: 24px;
@@ -3717,7 +3724,7 @@ label {
 
 @media (max-width: 991px) {
   .cs_hero_style_1 {
-    padding: 96px 18px 32px;
+    padding: 140px 18px 60px;
     border-radius: 0;
   }
 
@@ -5265,6 +5272,10 @@ label {
 }
 
 .cv_stack_content p {
+  font-size: 16px;
+  color: #5D728A;
+}
+
 .cs_extra_chip_left {
   display: flex;
   align-items: center;
