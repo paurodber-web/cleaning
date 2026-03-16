@@ -10,14 +10,37 @@
   <meta content="Maid at Home" name="author" />
   <!-- Favicon -->
   <link href="assets/img/favicon.png" rel="icon" />
-  <!-- All CSS Files -->
-  <link href="assets/css/aos.min.css" rel="stylesheet" />
-  <link href="assets/css/slick.min.css" rel="stylesheet" />
-  <link href="assets/css/odometer.min.css" rel="stylesheet" />
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="assets/css/tom-select.min.css" rel="stylesheet" />
-  <link href="assets/css/fontawesome.min.css" rel="stylesheet" />
-  <link href="assets/css/style.css" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Defer non-critical styles to reduce LCP critical request chain -->
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="assets/css/aos.min.css" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="assets/css/slick.min.css" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="assets/css/odometer.min.css" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="assets/css/tom-select.min.css" media="print" onload="this.media='all'" />
+
+  <!-- Fallback if JS is disabled -->
+  <noscript>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/aos.min.css" rel="stylesheet" />
+    <link href="assets/css/slick.min.css" rel="stylesheet" />
+    <link href="assets/css/odometer.min.css" rel="stylesheet" />
+    <link href="assets/css/tom-select.min.css" rel="stylesheet" />
+  </noscript>
+  <!-- Critical CSS -->
+  <style>
+    :root {
+      --primary-color: #0E1109;
+      --dark-blue: #1F77D6;
+      --white-color: #fff;
+    }
+    .cs_preloader { width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: 999999; background-color: var(--white-color); display: flex; align-items: center; justify-content: center; }
+    .cs_preloader .cs_preloader_text { position: relative; color: var(--dark-blue); font-family: sans-serif; font-weight: 800; font-size: 72px; }
+    .cs_hero_style_1 { background-color: #1F77D6; border-radius: 20px; min-height: 400px; }
+  </style>
   <!-- Site Title -->
   <title>
     Professional House Cleaning Melbourne | Maid at Home
@@ -112,7 +135,8 @@
               Melbourne homes, happy again.
             </h1>
             <p class="cs_hero_desc cs_white_color cs_primary_font cs_mb_40 cs_mb_lg_24">
-              We offer professional, reliable home cleaning tailored to your lifestyle, so you can enjoy a clean, healthy
+              We offer professional, reliable home cleaning tailored to your lifestyle, so you can enjoy a clean,
+              healthy
               home without having to worry about it.
             </p>
             <div class="cs_hero_thumbnail cs_radius_32 cs_calculator_wrapper" data-aos="zoom-in">
@@ -233,8 +257,8 @@
               </script>
             </div>
             <div class="cs_hero_btns_wrapper">
-              <a class="cs_btn_style_1 cs_radius_32 cs_accent_bg cs_primary_color"
-                data-aos="fade-right" href="contact-us.html">
+              <a class="cs_btn_style_1 cs_radius_32 cs_accent_bg cs_primary_color" data-aos="fade-right"
+                href="contact-us.html">
                 <span>
                   Book Your First Cleaning
                 </span>
@@ -246,7 +270,7 @@
                   <i class="fa-solid fa-lock"></i>
                 </div>
                 <div class="cs_trust_badge_text">
-                  No contracts.<br />Cancel anytime.
+                  No contracts.<br /> Cancel anytime.
                 </div>
               </div>
               <div class="cs_trust_badge_item">
@@ -254,7 +278,7 @@
                   <i class="fa-solid fa-calendar-check"></i>
                 </div>
                 <div class="cs_trust_badge_text">
-                  Same-day<br />availability check.
+                  Same-day<br /> availability check.
                 </div>
               </div>
               <div class="cs_trust_badge_item">
@@ -262,7 +286,7 @@
                   <i class="fa-solid fa-credit-card"></i>
                 </div>
                 <div class="cs_trust_badge_text">
-                  Secure payment<br />after service.
+                  Secure payment<br /> after service.
                 </div>
               </div>
             </div>
@@ -310,7 +334,8 @@
             </div>
             <div class="cs_ba_slider_handle" id="ba_handle">
             </div>
-            <input aria-label="Before and after slider" class="cs_ba_slider_input" id="ba_slider" max="100" min="0" type="range" value="50" />
+            <input aria-label="Before and after slider" class="cs_ba_slider_input" id="ba_slider" max="100" min="0"
+              type="range" value="50" />
             <script>
               document.addEventListener('DOMContentLoaded', function () {
                 const slider = document.getElementById('ba_slider');
@@ -396,7 +421,8 @@
                   Why we are the most reliable choice for you
                 </h2>
                 <p class="cs_primary_color cs_primary_font mb-0">
-                  Discover a higher standard of home care with professional cleaning plans tailored specifically for your
+                  Discover a higher standard of home care with professional cleaning plans tailored specifically for
+                  your
                   unique lifestyle and needs.
                 </p>
               </div>
@@ -476,7 +502,8 @@
               Our cleaning services
             </h2>
             <p class="cs_primary_color cs_primary_font mb-0">
-              From a quick refresh to a deep scrub down, we have the right service to keep every single room in your house
+              From a quick refresh to a deep scrub down, we have the right service to keep every single room in your
+              house
               feeling fresh, healthy and organized.
             </p>
           </div>
@@ -503,7 +530,8 @@
                 <div class="cs_service_overlay_content">
                   <h3>Deep clean</h3>
                   <p>
-                    We handle the real heavy lifting for you with a thorough scrub of your kitchen, bathrooms and all the
+                    We handle the real heavy lifting for you with a thorough scrub of your kitchen, bathrooms and all
+                    the
                     dusty corners.
                   </p>
                 </div>
@@ -516,7 +544,8 @@
                 <div class="cs_service_overlay_content">
                   <h3>Move in / out clean</h3>
                   <p>
-                    Take the stress out of your big move with a full property clean that ensures your old or new place is
+                    Take the stress out of your big move with a full property clean that ensures your old or new place
+                    is
                     totally spotless.
                   </p>
                 </div>
@@ -683,7 +712,8 @@
                     </blockquote>
                     <div class="cs_avatar_style_1">
                       <div class="cs_avatar_icon cs_center cs_radius_100">
-                        <img alt="Amanda Rivera - Testimonial" src="assets/img/testimonial-avatar-1.jpg" loading="lazy" />
+                        <img alt="Amanda Rivera - Testimonial" src="assets/img/testimonial-avatar-1.jpg"
+                          loading="lazy" />
                       </div>
                       <div class="cs_avatar_info">
                         <h3 class="cs_fs_18 mb-0">
@@ -700,12 +730,14 @@
                       </div>
                     </div>
                     <blockquote>
-                      Moving is such a pain so I'm glad I hired them for the final scrub. Got my full deposit back and the
+                      Moving is such a pain so I'm glad I hired them for the final scrub. Got my full deposit back and
+                      the
                       landlord didn't have any complaints.
                     </blockquote>
                     <div class="cs_avatar_style_1">
                       <div class="cs_avatar_icon cs_center cs_radius_100">
-                        <img alt="Daniel Wright - Testimonial" src="assets/img/testimonial-avatar-2.jpg" loading="lazy" />
+                        <img alt="Daniel Wright - Testimonial" src="assets/img/testimonial-avatar-2.jpg"
+                          loading="lazy" />
                       </div>
                       <div class="cs_avatar_info">
                         <h3 class="cs_fs_18 mb-0">
@@ -727,7 +759,8 @@
                     </blockquote>
                     <div class="cs_avatar_style_1">
                       <div class="cs_avatar_icon cs_center cs_radius_100">
-                        <img alt="Rachel Bennett - Testimonial" src="assets/img/testimonial-avatar-3.jpg" loading="lazy" />
+                        <img alt="Rachel Bennett - Testimonial" src="assets/img/testimonial-avatar-3.jpg"
+                          loading="lazy" />
                       </div>
                       <div class="cs_avatar_info">
                         <h3 class="cs_fs_18 mb-0">
@@ -854,7 +887,8 @@
               Some common questions
             </h2>
             <p class="cs_primary_color cs_primary_font mb-0">
-              Find everything you need to know about our cleaning services, booking process, and how we handle your home.
+              Find everything you need to know about our cleaning services, booking process, and how we handle your
+              home.
             </p>
           </div>
           <div class="cs_height_50 cs_height_lg_24">
@@ -890,7 +924,8 @@
                 </span>
               </div>
               <div class="cs_accordian_body cs_primary_font">
-                No, there are no lock-in contracts! You can book our services as needed, whether it's a one-time clean or
+                No, there are no lock-in contracts! You can book our services as needed, whether it's a one-time clean
+                or
                 a recurring service. We believe in earning your trust through quality cleaning, not contracts.
               </div>
             </div>
@@ -1000,7 +1035,8 @@
           </div>
           <form action="#" class="cs_newsletter_form position-relative">
             <label for="newsletter_email" class="visually-hidden">Email Address</label>
-            <input id="newsletter_email" autocomplete="email" name="email" placeholder="Enter your email" required="" type="email" />
+            <input id="newsletter_email" autocomplete="email" name="email" placeholder="Enter your email" required=""
+              type="email" />
             <button type="submit">
               Send
             </button>
@@ -1123,14 +1159,14 @@
     </button>
   </div>
   <!-- End Scroll Top Button -->
-  <script src="assets/js/aos.min.js"></script>
-  <script src="assets/js/lenis.min.js"></script>
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/slick.min.js"></script>
-  <script src="assets/js/odometer.min.js"></script>
-  <script src="assets/js/tom-select.min.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/blog-data.js"></script>
+  <script src="assets/js/aos.min.js" defer></script>
+  <script src="assets/js/lenis.min.js" defer></script>
+  <script src="assets/js/jquery.min.js" defer></script>
+  <script src="assets/js/slick.min.js" defer></script>
+  <script src="assets/js/odometer.min.js" defer></script>
+  <script src="assets/js/tom-select.min.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/blog-data.js" defer></script>
   <script>
     (function () {
       function initHomeBlog() {
@@ -1193,16 +1229,22 @@
         }
         container.innerHTML = html;
       }
-      initHomeBlog();
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initHomeBlog);
+      } else {
+        initHomeBlog();
+      }
     })();
   </script>
 
   <!-- MODAL: DISCOUNT -->
   <div class="modal fade" id="popup-discount-final" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-bottom m-4 position-fixed bottom-0 end-0" style="width: 380px; z-index: 1060;">
+    <div class="modal-dialog modal-dialog-bottom m-4 position-fixed bottom-0 end-0"
+      style="width: 380px; z-index: 1060;">
       <div class="modal-content cs_radius_16 border-0 shadow-lg">
         <div class="modal-body p-4 position-relative">
-          <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"
+            aria-label="Close"></button>
           <div class="d-flex align-items-center cs_mb_16">
             <div class="cs_center cs_accent_bg cs_radius_100 me-3" style="width: 40px; height: 40px; flex-shrink: 0;">
               <i class="fa-solid fa-tags cs_primary_color"></i>
@@ -1211,18 +1253,23 @@
           </div>
           <p class="cs_mb_16" style="font-size: 14px; color: var(--secondary-color);">Use this code at checkout.</p>
           <div class="d-flex gap-2">
-            <div class="discount-code-box flex-grow-1" id="code6-val" style="border: 2px dashed #cbd5e1; padding: 12px 24px; border-radius: 12px; background: #f8fafc; font-weight: 800; font-size: 22px; color: #0E1109; letter-spacing: 2px; text-align: center; display: flex; align-items: center; justify-content: center;">FIRST15</div>
-            <button class="cs_btn_style_1 cs_blue_bg1 cs_white_color cs_radius_16 px-3" onclick="copyCode('code6-val', 'msg6-val', this)">
+            <div class="discount-code-box flex-grow-1" id="code6-val"
+              style="border: 2px dashed #cbd5e1; padding: 12px 24px; border-radius: 12px; background: #f8fafc; font-weight: 800; font-size: 22px; color: #0E1109; letter-spacing: 2px; text-align: center; display: flex; align-items: center; justify-content: center;">
+              FIRST15</div>
+            <button class="cs_btn_style_1 cs_blue_bg1 cs_white_color cs_radius_16 px-3"
+              onclick="copyCode('code6-val', 'msg6-val', this)">
               <span>Copy</span>
             </button>
           </div>
-          <div id="msg6-val" class="copy-success" style="display: none; color: #28a745; font-weight: 600; font-size: 14px; margin-top: 12px;">
+          <div id="msg6-val" class="copy-success"
+            style="display: none; color: #28a745; font-weight: 600; font-size: 14px; margin-top: 12px;">
             <i class="fa-solid fa-check-circle"></i> Copied!
           </div>
         </div>
       </div>
     </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
 </body>
+
 </html>
