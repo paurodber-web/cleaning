@@ -2591,8 +2591,18 @@ label {
   justify-content: center;
   gap: 15px 24px;
   flex-wrap: wrap;
-  width: 100%;
-  text-align: center;
+}
+
+.cs_footer_style_1 .cs_footer_menu a,
+.cs_footer_style_1 .cs_footer_bottom_menu a,
+.cs_footer_style_1 .cs_copyright_text {
+  color: var(--white-color) !important;
+  opacity: 0.9;
+}
+
+.cs_footer_style_1 .cs_footer_menu a:hover,
+.cs_footer_style_1 .cs_footer_bottom_menu a:hover {
+  opacity: 1;
 }
 
 .cs_footer_suburbs_section {
@@ -2672,11 +2682,8 @@ label {
 
 .cs_footer_style_1 .cs_footer_bottom .cs_footer_bottom_menu {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
   gap: 16px;
-  width: 100%;
-  text-align: center;
+  flex-wrap: wrap;
 }
 
 .cs_footer_style_1 .cs_social_btns_style_1 {
@@ -2691,8 +2698,8 @@ label {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  color: var(--gray-color2);
-  border: 1px solid var(--gray-color2);
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
 }
 
 .cs_footer_style_1 .cs_social_btns_style_1 a:hover {
@@ -2721,6 +2728,9 @@ label {
 
   .cs_footer_style_1 .cs_footer_main .cs_footer_menu {
     gap: 16px;
+    justify-content: center !important;
+    width: 100%;
+    text-align: center;
   }
 
   .cs_footer_style_1 .cs_footer_bottom {
@@ -2732,10 +2742,24 @@ label {
   .cs_footer_style_1 .cs_bottom_content {
     flex-direction: column;
     justify-content: center;
+    text-align: center;
   }
 
   .cs_footer_style_1 .cs_bottom_content .cs_copyright_text {
     order: 3;
+    width: 100%;
+  }
+
+  .cs_footer_style_1 .cs_footer_bottom .cs_footer_bottom_menu {
+    order: 1;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .cs_footer_style_1 .cs_social_btns_style_1 {
+    order: 2;
+    margin-bottom: 20px;
   }
 }
 
@@ -4599,6 +4623,7 @@ label {
 .cs_post_style_3 .cs_post_title {
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -4981,6 +5006,7 @@ label {
   margin-bottom: 24px;
   display: -webkit-box;
   -webkit-line-clamp: 6;
+  line-clamp: 6;
   -webkit-box-orient: vertical;
   overflow: hidden;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
