@@ -2645,11 +2645,11 @@ label {
 }
 
 .cs_suburb_item {
-  color: var(--white-color);
+  color: var(--white-color) !important;
   font-size: 13px;
   transition: all 0.3s ease;
   white-space: nowrap;
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 .cs_suburb_item:hover {
