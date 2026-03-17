@@ -2574,7 +2574,7 @@ label {
  06. All Footer
 ================================================================*/
 .cs_footer_style_1 {
-  padding: 50px 0;
+  padding: 50px 24px;
 }
 
 .cs_footer_style_1 a:hover {
@@ -2588,8 +2588,11 @@ label {
 .cs_footer_style_1 .cs_footer_main .cs_footer_menu {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 15px 24px;
   flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
 }
 
 .cs_footer_suburbs_section {
@@ -2642,11 +2645,11 @@ label {
 }
 
 .cs_suburb_item {
-  color: var(--gray-color2);
+  color: var(--white-color);
   font-size: 13px;
   transition: all 0.3s ease;
   white-space: nowrap;
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .cs_suburb_item:hover {
@@ -2669,7 +2672,11 @@ label {
 
 .cs_footer_style_1 .cs_footer_bottom .cs_footer_bottom_menu {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 16px;
+  width: 100%;
+  text-align: center;
 }
 
 .cs_footer_style_1 .cs_social_btns_style_1 {
@@ -2705,7 +2712,7 @@ label {
 
 @media (max-width: 991px) {
   .cs_footer_style_1 {
-    padding: 20px 16px;
+    padding: 20px 24px;
   }
 
   .cs_footer_style_1 .cs_footer_main {
@@ -3166,7 +3173,7 @@ label {
   }
 }
 
-.cs_about_style_2 {}
+
 
 .cs_about_style_2 .cs_about_content {
   width: 100%;
@@ -3632,6 +3639,7 @@ label {
   font-weight: 600;
   height: 40px;
   -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 .cs_stepper input::-webkit-outer-spin-button,
