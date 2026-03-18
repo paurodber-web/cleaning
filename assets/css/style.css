@@ -3921,6 +3921,10 @@ label {
   max-width: 600px;
 }
 
+.cs_hero_calc_anchor {
+  display: none;
+}
+
 @media (max-width: 575px) {
   .cs_hero_style_1 .cs_logo_wrapper {
     justify-content: center;

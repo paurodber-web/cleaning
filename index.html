@@ -45,6 +45,17 @@
     .cs_site_brand img { width: 158px; height: 37px; display: block; }
     .cs_iconbox_icon img { width: 52px; height: 52px; display: block; }
     .cs_suburb_item { color: var(--white-color) !important; opacity: 1 !important; }
+
+    @media (max-width: 991px) {
+      .cs_hero_calc { margin-bottom: 30px !important; }
+    }
+    @media (max-width: 575px) {
+      .cs_hero_cta { width: 100%; }
+      .cs_hero_cta .cs_btn_snap { width: 100%; display: flex; justify-content: center; }
+      .cs_trust_badges { flex-direction: row !important; flex-wrap: nowrap !important; justify-content: space-between !important; gap: 10px !important; }
+      .cs_trust_badge_item { flex-direction: column; text-align: center; gap: 8px; }
+      .cs_trust_badge_text { font-size: 11px; line-height: 1.2; }
+    }
   </style>
   <!-- Site Title -->
   <title>
@@ -123,18 +134,18 @@
         <div class="container p-0">
           <div class="cs_hero_inner">
           <div class="cs_hero_content">
-            <p class="cs_hero_subtitle cs_fs_14 cs_medium cs_white_color cs_primary_font cs_mb_16" data-aos="fade-down">
+            <p class="cs_hero_subtitle cs_hero_badge cs_fs_14 cs_medium cs_white_color cs_primary_font cs_mb_16" data-aos="fade-down">
               WELCOME TO MAID AT HOME
             </p>
-            <h1 class="cs_hero_title cs_fs_72 cs_white_color cs_mb_16" data-aos="fade-up">
+            <h1 class="cs_hero_title cs_hero_headline cs_fs_72 cs_white_color cs_mb_16" data-aos="fade-up">
               Melbourne homes, happy again.
             </h1>
-            <p class="cs_hero_desc cs_white_color cs_primary_font cs_mb_40 cs_mb_lg_24">
+            <p class="cs_hero_desc cs_hero_subtext cs_white_color cs_primary_font cs_mb_40 cs_mb_lg_24">
               We offer professional, reliable home cleaning tailored to your lifestyle, so you can enjoy a clean,
               healthy
               home without having to worry about it.
             </p>
-            <div class="cs_hero_btns_wrapper">
+            <div class="cs_hero_btns_wrapper cs_hero_cta">
               <a class="cs_btn_snap cs_radius_32 cs_accent_bg cs_primary_color" data-aos="fade-right"
                 href="contact-us.html">
                 <span>
@@ -142,7 +153,7 @@
                 </span>
               </a>
             </div>
-            <div class="cs_trust_badges" data-aos="fade-up">
+            <div class="cs_trust_badges cs_hero_trust" data-aos="fade-up">
               <div class="cs_trust_badge_item">
                 <div class="cs_trust_badge_icon">
                   <i class="fa-solid fa-lock"></i>
@@ -169,7 +180,8 @@
               </div>
             </div>
           </div>
-          <div class="cs_hero_thumbnail cs_radius_32 cs_calculator_wrapper" data-aos="zoom-in">
+          <span class="cs_hero_calc_anchor" aria-hidden="true"></span>
+          <div class="cs_hero_thumbnail cs_hero_calc cs_radius_32 cs_calculator_wrapper" data-aos="zoom-in">
             <div class="cs_calculator_title cs_semibold">
               Cleaning price estimator
             </div>
@@ -283,6 +295,36 @@
                   input.addEventListener('input', updatePrice);
                 });
                 updatePrice();
+              });
+            </script>
+            <script>
+              document.addEventListener('DOMContentLoaded', function () {
+                const calc = document.querySelector('.cs_hero_calc');
+                const anchor = document.querySelector('.cs_hero_calc_anchor');
+                const desc = document.querySelector('.cs_hero_subtext');
+                const cta = document.querySelector('.cs_hero_cta');
+                if (!calc || !anchor || !desc) return;
+
+                const mq = window.matchMedia('(max-width: 991px)');
+                const updatePosition = () => {
+                  if (mq.matches) {
+                    // Place it between the description and the CTA button
+                    if (cta) {
+                      desc.parentNode.insertBefore(calc, cta);
+                    } else {
+                      desc.parentNode.insertBefore(calc, desc.nextSibling);
+                    }
+                  } else {
+                    anchor.parentNode.insertBefore(calc, anchor.nextSibling);
+                  }
+                };
+
+                updatePosition();
+                if (mq.addEventListener) {
+                  mq.addEventListener('change', updatePosition);
+                } else if (mq.addListener) {
+                  mq.addListener(updatePosition);
+                }
               });
             </script>
           </div>
