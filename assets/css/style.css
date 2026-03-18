@@ -2055,6 +2055,142 @@ label {
   transform: scale(1, 1);
 }
 
+.cs_btn_spray {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 20px;
+  font-weight: 600;
+  border: 1px solid var(--white-color);
+  outline: 0;
+  font-family: var(--primary-font);
+  color: var(--white-color);
+  background: transparent;
+  border-radius: 32px;
+  position: relative;
+  transition: color 0.4s ease;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.cs_btn_spray::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -5%;
+  width: 0%;
+  height: 100%;
+  background: var(--accent-color);
+  border-radius: 32px;
+  transition: width 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -1;
+}
+
+.cs_btn_spray:hover::before {
+  width: 110%;
+}
+
+.cs_btn_spray:hover {
+  color: var(--primary-color);
+  border-color: var(--accent-color);
+}
+
+.cs_btn_spray:active {
+  transform: scale(0.97);
+}
+
+.cs_btn_spray .cs_btn_icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cs_btn_spray svg {
+  width: 17px;
+  height: 17px;
+}
+
+@keyframes cs-snap {
+  0% { transform: scale(1); }
+  30% { transform: scaleX(0.88) scaleY(1.06); }
+  60% { transform: scaleX(1.06) scaleY(0.94); }
+  80% { transform: scaleX(0.97) scaleY(1.02); }
+  100% { transform: scale(1); }
+}
+
+.cs_btn_snap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 20px;
+  font-weight: 600;
+  border: 0;
+  outline: 0;
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+  background: var(--accent-color);
+  border-radius: 32px;
+  position: relative;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.cs_btn_snap:hover {
+  animation: cs-snap 0.45s cubic-bezier(0.36, 0.07, 0.19, 0.97) 1;
+  box-shadow: 0 4px 24px rgba(255, 214, 67, 0.55);
+}
+
+/* Slice Fill Button */
+.cs_btn_slice {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 24px;
+  font-weight: 600;
+  border: 2px solid var(--white-color);
+  outline: 0;
+  font-family: var(--primary-font);
+  position: relative;
+  overflow: hidden;
+  color: var(--white-color);
+  background: transparent;
+  transition: color 0.35s, border-color 0.35s;
+  z-index: 0;
+}
+
+.cs_btn_slice::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -5%;
+  width: 0;
+  height: 100%;
+  background: var(--accent-color);
+  transform: skewX(-8deg);
+  transform-origin: right center;
+  transition: width 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 0 32px 32px 0;
+  z-index: -1;
+}
+
+.cs_btn_slice:hover::before {
+  width: 115%;
+  border-radius: 32px;
+}
+
+.cs_btn_slice:hover {
+  color: var(--primary-color);
+  border-color: var(--accent-color);
+}
+
+.cs_btn_slice:active {
+  transform: scale(0.97);
+}
+
+.cs_btn_slice > * {
+  position: relative;
+  z-index: 1;
+}
+
 .cs_player_btn_style_1 span {
   width: 70px;
   height: 70px;
@@ -3043,7 +3179,15 @@ label {
 .cs_site_brand img,
 .cs_footer_logo img {
   width: 158px;
+}
+
+.cs_site_brand img {
   height: 37px;
+}
+
+.cs_footer_logo img {
+  height: auto;
+  display: block;
 }
 
 .cs_iconbox_icon img {
