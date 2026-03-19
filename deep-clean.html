@@ -20,8 +20,67 @@
     <title>
         Deep Clean | Maid at Home
     </title>
-  <style>
-    .cs_suburb_item { color: var(--white-color) !important; opacity: 1 !important; }
+    <style>
+        /* Force images to fill their design-specified areas correctly */
+        .cs_cta_thumbnail img {
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: cover !important;
+        }
+
+        /* Desktop Heights and Layout */
+        @media (min-width: 992px) {
+            .cs_cta_style_2 .cs_cta_thumbnail,
+            .cs_cta_style_2 .cs_cta_thumbnail img {
+                height: 455px !important;
+                max-height: 455px !important;
+            }
+
+            .cs_cta_style_2 .cs_cta_thumbnail {
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 50% !important;
+                border-radius: 0 16px 16px 0;
+                overflow: hidden;
+            }
+            
+            .cs_cta_style_2 .row {
+                min-height: 455px;
+            }
+        }
+
+        /* Tablet (max-width: 991px) */
+        @media (max-width: 991px) {
+            .cs_cta_style_2 .cs_cta_thumbnail,
+            .cs_cta_style_2 .cs_cta_thumbnail img {
+                height: 533px !important; 
+                max-height: 533px !important;
+            }
+            .cs_cta_style_2 .cs_cta_thumbnail {
+                position: relative;
+                width: 100% !important;
+                padding: 0;
+            }
+            .cs_cta_style_2 .cs_cta_thumbnail {
+                border-radius: 16px;
+                order: -1; /* Image stays on top for CTA in mobile */
+                margin-bottom: 24px; /* Exact 24px gap */
+            }
+            .cs_cta_style_2 .cs_cta_text {
+                padding-top: 0 !important; /* Remove top padding to maintain the 24px margin gap */
+            }
+        }
+
+        /* Mobile (max-width: 575px) */
+        @media (max-width: 575px) {
+            .cs_cta_style_2 .cs_cta_thumbnail,
+            .cs_cta_style_2 .cs_cta_thumbnail img {
+                height: 300px !important;
+                max-height: 300px !important;
+            }
+        }
+        .cs_suburb_item { color: var(--white-color) !important; opacity: 1 !important; }
   </style>
 </head>
 
@@ -108,7 +167,7 @@
                 <div class="cs_height_50 cs_height_lg_24">
                 </div>
                 <div class="cs_service_details_banner cs_radius_16" data-aos="fade-up">
-                    <img alt="Service details banner" class="d-block w-100" src="assets/img/card-services-2.jpg" style="height: 450px; object-fit: cover;" />
+                    <img alt="Service details banner" class="d-block w-100" src="assets/img/deep-clean.png" style="height: 450px; object-fit: cover;" />
                 </div>
                 <div class="cs_height_50 cs_height_lg_24">
                 </div>
@@ -400,7 +459,7 @@
                 <div class="row cs_gap_y_24">
                     <div class="col-lg-6 order-lg-2">
                         <div class="cs_cta_thumbnail">
-                            <img alt="cleaning table" src="assets/img/about-img2.jpg" />
+                            <img alt="cleaning table" src="assets/img/table.png" />
                         </div>
                     </div>
                     <div class="col-lg-6">
