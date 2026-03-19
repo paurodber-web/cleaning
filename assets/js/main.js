@@ -480,7 +480,7 @@
       var json = JSON.stringify(object);
       result.innerHTML = "Please wait...";
 
-      fetch("https://api.web3forms.com/submit", {
+      fetch("https://formspree.io/f/xgoldvgo", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -489,12 +489,15 @@
         body: json,
       })
         .then(async (response) => {
-          let json = await response.json();
-          if (response.status == 200) {
-            result.innerHTML = json.message;
+          if (response.ok) {
+            result.innerHTML = "Form successfully submitted";
           } else {
-            console.log(response);
-            result.innerHTML = json.message;
+            let json = await response.json();
+            if (Object.hasOwn(json, 'errors')) {
+              result.innerHTML = json.errors.map(error => error.message).join(", ");
+            } else {
+              result.innerHTML = "Oops! There was a problem submitting your form";
+            }
           }
         })
         .catch((error) => {
