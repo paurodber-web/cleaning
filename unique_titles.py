@@ -97,7 +97,7 @@ def update_suburbs_with_unique_titles(file_path):
         "Comprehensive Maintenance for a Fresh Home", "The Full Suite of Professional Cleaning",
         "Dedicated Support for Your Domestic Needs", "Reliable Options for Every Type of Property",
         "A Fresh Start for Your Interior Spaces", "Routine Care That Keeps Your Home Perfect",
-        "Specialized Cleaning for Discerning Clients", "The Most Thorough Cleaning Menu Available",
+        "Specialized Cleaning for Discerning Clients", "The Most Thorough Cleaning Selection Available",
         "Your All-in-One Solution for Home Care", "Premium Services for a Healthier Interior",
         "Meticulous Care from Top to Bottom", "Standard, Deep, and Specialized Cleaning",
         "The Perfect Cleaning Plan for Your Needs", "Reliable Maintenance for Every Season",
