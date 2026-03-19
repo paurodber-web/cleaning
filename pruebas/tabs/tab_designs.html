@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Tab Designs - Minimalist & Blue Variants</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --white-color: #fff;
+            --black-color: #000;
+            --primary-color: #0E1109;
+            --secondary-color: #4A5567;
+            --accent-color: #FFD643;
+            --dark-blue: #1F77D6;
+            --darker-blue: #0c5ca8;
+            --light-blue: #B2EAFE;
+            --lightest-blue: #EAF3FC;
+            --gray-color1: #FAFAFA;
+            --gray-color2: #E3E8EF;
+            --gray-color3: #677489;
+            --primary-font: "Plus Jakarta Sans", sans-serif;
+            --secondary-font: "Inter", sans-serif;
+        }
+
+        body {
+            font-family: var(--secondary-font);
+            background-color: #f8fafc;
+            padding: 80px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 100px;
+        }
+
+        h2 {
+            font-family: var(--primary-font);
+            margin-bottom: 30px;
+            color: var(--primary-color);
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .design-section {
+            text-align: center;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .tab-btn {
+            border: none;
+            outline: none;
+            cursor: pointer;
+            font-family: var(--primary-font);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+            z-index: 2;
+            padding: 12px 30px;
+            font-size: 15px;
+            font-weight: 600;
+            background: transparent;
+            min-width: 140px;
+        }
+
+        /* --- PREVIOUS FAVORITES --- */
+        .switcher-base {
+            background: #E8EEF5; padding: 6px; border-radius: 100px; display: inline-flex; position: relative;
+        }
+        .switcher-base .tab-btn.active { color: #fff; }
+        .switcher-base .active-bg {
+            position: absolute; top: 6px; left: 6px; bottom: 6px; width: calc(50% - 6px);
+            background: var(--dark-blue); border-radius: 100px; z-index: 1;
+            transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            box-shadow: 0 4px 15px rgba(31, 119, 214, 0.3);
+        }
+        .switcher-base.hourly-active .active-bg { transform: translateX(100%); }
+
+        .switcher-gradient {
+            background: var(--white-color); padding: 5px; border-radius: 100px; display: inline-flex; position: relative;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06); border: 1px solid #eee;
+        }
+        .switcher-gradient .tab-btn { color: var(--gray-color3); }
+        .switcher-gradient .tab-btn.active { color: #fff; }
+        .switcher-gradient .active-bg {
+            position: absolute; top: 5px; left: 5px; bottom: 5px; width: calc(50% - 5px);
+            background: linear-gradient(135deg, var(--dark-blue), #5D9DFF); border-radius: 100px; z-index: 1;
+            transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+            box-shadow: 0 8px 18px rgba(31, 119, 214, 0.3);
+        }
+        .switcher-gradient.hourly-active .active-bg { transform: translateX(100%); }
+
+        /* --- NEW MINIMALIST STYLES --- */
+
+        /* Design 6: The Thin Underline Slide */
+        .switcher-minimal-line {
+            display: inline-flex;
+            gap: 20px;
+            position: relative;
+        }
+        .switcher-minimal-line .tab-btn {
+            min-width: 120px;
+            color: var(--gray-color3);
+            font-weight: 500;
+            padding: 10px 0;
+        }
+        .switcher-minimal-line .tab-btn.active {
+            color: var(--dark-blue);
+            font-weight: 700;
+        }
+        .switcher-minimal-line .underline {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 2px;
+            width: 120px;
+            background: var(--dark-blue);
+            transition: transform 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+            border-radius: 4px;
+        }
+        .switcher-minimal-line.hourly-active .underline { transform: translateX(140px); }
+
+        /* Design 7: The Soft Ghost Switcher */
+        .switcher-ghost {
+            display: inline-flex;
+            gap: 5px;
+            padding: 4px;
+            border-radius: 12px;
+            border: 1px solid var(--gray-color2);
+        }
+        .switcher-ghost .tab-btn {
+            border-radius: 8px;
+            min-width: 120px;
+            padding: 10px 20px;
+            color: var(--secondary-color);
+            transition: background 0.3s ease;
+        }
+        .switcher-ghost .tab-btn.active {
+            background: var(--lightest-blue);
+            color: var(--dark-blue);
+        }
+
+        /* Design 8: Floating Invisible Pill */
+        .switcher-invisible {
+            display: inline-flex;
+            position: relative;
+            background: transparent;
+        }
+        .switcher-invisible .tab-btn {
+            color: var(--gray-color3);
+            z-index: 2;
+        }
+        .switcher-invisible .tab-btn.active {
+            color: var(--dark-blue);
+        }
+        .switcher-invisible .active-bg {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            height: 40px;
+            width: 140px;
+            background: var(--lightest-blue);
+            border-radius: 100px;
+            transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+            z-index: 1;
+        }
+        .switcher-invisible.hourly-active .active-bg { transform: translate(140px, -50%); }
+
+        /* Design 9: Bullet Indicator Slide */
+        .switcher-bullet {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .switcher-bullet .btn-row {
+            display: flex;
+            gap: 20px;
+        }
+        .switcher-bullet .tab-btn {
+            min-width: 100px;
+            color: var(--gray-color2);
+            transition: color 0.3s;
+        }
+        .switcher-bullet .tab-btn.active {
+            color: var(--primary-color);
+        }
+        .switcher-bullet .bullet-track {
+            width: 100%;
+            height: 4px;
+            position: relative;
+            margin-top: 5px;
+        }
+        .switcher-bullet .bullet {
+            position: absolute;
+            left: 45px; /* halfway of first button center roughly */
+            top: 0;
+            width: 6px;
+            height: 6px;
+            background: var(--dark-blue);
+            border-radius: 50%;
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .switcher-bullet.hourly-active .bullet { transform: translateX(120px); }
+
+    </style>
+</head>
+<body>
+
+    <div class="design-section">
+        <h2>1. The Original Sliding Pill</h2>
+        <div class="switcher-base" data-switcher="base">
+            <div class="active-bg"></div>
+            <button class="tab-btn active" onclick="toggleSwitch(this)">Flat Rate</button>
+            <button class="tab-btn" onclick="toggleSwitch(this)">Hourly Rate</button>
+        </div>
+    </div>
+
+    <div class="design-section">
+        <h2>2. Floating Gradient Pill</h2>
+        <div class="switcher-2-wrapper">
+            <div class="switcher-gradient" data-switcher="gradient">
+                <div class="active-bg"></div>
+                <button class="tab-btn active" onclick="toggleSwitch(this)">Flat Rate</button>
+                <button class="tab-btn" onclick="toggleSwitch(this)">Hourly Rate</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="design-section">
+        <h2>6. Pure Minimalist Underline</h2>
+        <div class="switcher-minimal-line" data-switcher="line">
+            <button class="tab-btn active" onclick="toggleSwitch(this)">Flat Rate</button>
+            <button class="tab-btn" onclick="toggleSwitch(this)">Hourly Rate</button>
+            <div class="underline"></div>
+        </div>
+    </div>
+
+    <div class="design-section">
+        <h2>7. The Ghost Switcher (Semi-Flat)</h2>
+        <div class="switcher-ghost">
+            <button class="tab-btn active" onclick="toggleSimple(this)">Flat Rate</button>
+            <button class="tab-btn" onclick="toggleSimple(this)">Hourly Rate</button>
+        </div>
+    </div>
+
+    <div class="design-section">
+        <h2>8. Floating Invisible Pill</h2>
+        <div class="switcher-invisible" data-switcher="invisible">
+            <div class="active-bg"></div>
+            <button class="tab-btn active" onclick="toggleSwitch(this)">Flat Rate</button>
+            <button class="tab-btn" onclick="toggleSwitch(this)">Hourly Rate</button>
+        </div>
+    </div>
+
+    <div class="design-section">
+        <h2>9. Bullet Indicator Slide</h2>
+        <div class="switcher-bullet" data-switcher="bullet">
+            <div class="btn-row">
+                <button class="tab-btn active" onclick="toggleSwitch(this)">Flat Rate</button>
+                <button class="tab-btn" onclick="toggleSwitch(this)">Hourly Rate</button>
+            </div>
+            <div class="bullet-track">
+                <div class="bullet"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleSwitch(btn) {
+            const container = btn.closest('[data-switcher]');
+            const buttons = container.querySelectorAll('.tab-btn');
+            
+            buttons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            
+            if (btn === buttons[1]) {
+                container.classList.add('hourly-active');
+            } else {
+                container.classList.remove('hourly-active');
+            }
+        }
+
+        function toggleSimple(btn) {
+            const parent = btn.parentElement;
+            const buttons = parent.querySelectorAll('.tab-btn');
+            buttons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+        }
+    </script>
+</body>
+</html>

@@ -63,6 +63,43 @@
             white-space: nowrap;
         }
 
+        /* Pricing Switcher Styling */
+        .cs_pricing_switcher {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 50px;
+            background-color: var(--gray-bg1);
+            padding: 6px;
+            border-radius: 50px;
+            width: fit-content;
+            position: relative;
+            z-index: 10;
+        }
+
+        .cs_pricing_switcher button {
+            padding: 10px 30px;
+            border-radius: 40px;
+            font-size: 15px;
+            font-weight: 600;
+            border: none;
+            background: transparent;
+            color: var(--primary-color);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 2;
+        }
+
+        .cs_pricing_switcher button.active {
+            color: var(--white-color);
+            background-color: var(--dark-blue);
+        }
+
+        .cs_pricing_hourly {
+            display: none;
+        }
+        </style>
         .saas-check { color: var(--dark-blue); font-size: 18px; }
         .saas-cross { color: var(--gray-color2); font-size: 18px; }
         .saas-group td { 
@@ -257,7 +294,7 @@
                 <div class="cs_hero_content cs_center_column text-center position-relative z-1">
                     <p class="cs_hero_subtitle cs_fs_14 cs_medium cs_white_color cs_primary_font cs_mb_16 cs_radius_32"
                         data-aos="fade-down">
-                        Transparent Pricing
+                        TRANSPARENT PRICING
                     </p>
                     <h1 class="cs_hero_title cs_fs_72 cs_white_color cs_mb_16" data-aos="fade-up">
                         Simple prices, no surprises.
@@ -293,7 +330,7 @@
             <div class="container p-0">
                 <div class="cs_section_heading_style_1 cs_center_column text-center">
                     <p class="cs_section_subtitle cs_blue_bg3 cs_mb_16">
-                        Our cleaning rates
+                        OUR CLEANING RATES
                     </p>
                     <h2 class="cs_section_title cs_fs_36 cs_mb_16" data-aos="zoom-in">
                         Simple prices, no surprises.
@@ -303,9 +340,13 @@
                         great cleaning.
                     </p>
                 </div>
-                <div class="cs_height_50 cs_height_lg_24">
+                                <div class="cs_height_50 cs_height_lg_24">
                 </div>
-                <div class="row cs_gap_y_24 justify-content-center">
+                <div class="cs_pricing_switcher">
+                    <button class="active" id="btn_flat_rate">Flat Rate</button>
+                    <button id="btn_hourly">Hourly</button>
+                </div>
+                <div class="row cs_gap_y_24 justify-content-center cs_pricing_flat">
                     <div class="col-lg-4 col-md-6">
                         <div class="cs_pricing_table_style_1 cs_gray_bg1 cs_radius_16 cs_primary_font">
                             <div class="cs_pricing_head cs_mb_32 cs_mb_lg_24">
@@ -317,16 +358,16 @@
                                     fresh.
                                 </p>
                                 <h2 class="cs_pricing cs_mb_32 cs_mb_lg_24 cs_fs_56">
-                                    $59
-                                    <small>
-                                        /session
+                                    $155
+                                    <small style="margin-left: 8px;">
+                                        Starting price
                                     </small>
                                 </h2>
-                                <a aria-label="Contact page link"
+                                <a aria-label="Book this service"
                                     class="cs_btn_snap cs_primary_color cs_accent_bg cs_center cs_radius_32 w-100"
-                                    data-aos="zoom-in" data-bs-toggle="modal" data-bs-target="#modalDesignMatrix" href="#">
+                                    href="booking.html">
                                     <span>
-                                        What's included
+                                        Book this service
                                     </span>
                                 </a>
                             </div>
@@ -384,16 +425,16 @@
                                     shine.
                                 </p>
                                 <h2 class="cs_pricing cs_mb_32 cs_mb_lg_24 cs_fs_56">
-                                    $129
-                                    <small>
-                                        /session
+                                    $215
+                                    <small style="margin-left: 8px;">
+                                        Starting price
                                     </small>
                                 </h2>
-                                <a aria-label="Contact page link"
+                                <a aria-label="Book this service"
                                     class="cs_btn_snap cs_primary_color cs_accent_bg cs_center cs_radius_32 w-100"
-                                    data-aos="zoom-in" data-bs-toggle="modal" data-bs-target="#modalDesignMatrix" href="#">
+                                    href="booking.html">
                                     <span>
-                                        What's included
+                                        Book this service
                                     </span>
                                 </a>
                             </div>
@@ -451,16 +492,16 @@
                                     or inspections.
                                 </p>
                                 <h2 class="cs_pricing cs_mb_32 cs_mb_lg_24 cs_fs_56">
-                                    $179
-                                    <small>
-                                        /session
+                                    $410
+                                    <small style="margin-left: 8px;">
+                                        Starting price
                                     </small>
                                 </h2>
-                                <a aria-label="Contact page link"
+                                <a aria-label="Book this service"
                                     class="cs_btn_snap cs_primary_color cs_accent_bg cs_center cs_radius_32 w-100"
-                                    data-aos="zoom-in" data-bs-toggle="modal" data-bs-target="#modalDesignMatrix" href="#">
+                                    href="booking.html">
                                     <span>
-                                        What's included
+                                        Book this service
                                     </span>
                                 </a>
                             </div>
@@ -501,8 +542,209 @@
                                         </i>
                                     </span>
                                     <span>
-                                        Detailed window and track clean
+                                        Deep cleaning of all surfaces
                                     </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row cs_gap_y_24 justify-content-center cs_pricing_hourly" style="display: none;">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="cs_pricing_table_style_1 cs_gray_bg1 cs_radius_16 cs_primary_font">
+                            <div class="cs_pricing_head cs_mb_32 cs_mb_lg_24">
+                                <h3 class="cs_fs_20 cs_mb_8">
+                                    One-off
+                                </h3>
+                                <p class="cs_fs_14 cs_mb_16">
+                                    Perfect for those who need a single, thorough cleaning session without any recurring commitment.
+                                </p>
+                                <h2 class="cs_pricing cs_mb_32 cs_mb_lg_24 cs_fs_56">
+                                    $60
+                                    <small>
+                                        / hour
+                                    </small>
+                                </h2>
+                                <a aria-label="Book this service"
+                                    class="cs_btn_snap cs_primary_color cs_accent_bg cs_center cs_radius_32 w-100"
+                                    href="booking.html">
+                                    <span>
+                                        Book this service
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="cs_feature_heading cs_primary_color cs_fs_18 cs_mb_16 cs_medium">
+                                Includes:
+                            </div>
+                            <ul class="cs_pricing_feature cs_mp_0 cs_medium cs_primary_font">
+                                <li>
+                                    <span class="cs_feature_icon">
+                                        <i class="fa-solid fa-circle-check">
+                                        </i>
+                                    </span>
+                                    <span>
+                                        Minimum 3 hours booking
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="cs_feature_icon">
+                                        <i class="fa-solid fa-circle-check">
+                                        </i>
+                                    </span>
+                                    <span>
+                                        All standard cleaning tasks
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="cs_feature_icon">
+                                        <i class="fa-solid fa-circle-check">
+                                        </i>
+                                    </span>
+                                    <span>
+                                        Customizable task list
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="cs_feature_icon">
+                                        <i class="fa-solid fa-circle-check">
+                                        </i>
+                                    </span>
+                                    <span>
+                                        Professional equipment used
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="cs_pricing_table_style_1 cs_gray_bg1 cs_radius_16 active">
+                            <div class="cs_pricing_head cs_mb_32 cs_mb_lg_24">
+                                <h3 class="cs_fs_20 cs_mb_8">
+                                    Weekly / Bi-weekly
+                                </h3>
+                                <p class="cs_fs_14 cs_mb_16">
+                                    The best value for consistent maintenance, keeping your home perfectly clean all year round.
+                                </p>
+                                <h2 class="cs_pricing cs_mb_32 cs_mb_lg_24 cs_fs_56">
+                                    $54
+                                    <small>
+                                        / hour
+                                    </small>
+                                </h2>
+                                <a aria-label="Book this service"
+                                    class="cs_btn_snap cs_primary_color cs_accent_bg cs_center cs_radius_32 w-100"
+                                    href="booking.html">
+                                    <span>
+                                        Book this service
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="cs_feature_heading cs_primary_color cs_fs_18 cs_mb_16 cs_medium">
+                                Includes:
+                            </div>
+                            <ul class="cs_pricing_feature cs_mp_0 cs_medium cs_primary_font">
+                                <li>
+                                    <span class="cs_feature_icon">
+                                        <i class="fa-solid fa-circle-check">
+                                        </i>
+                                    </span>
+                                    <span>
+                                        Discounted recurring rate
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="cs_feature_icon">
+                                        <i class="fa-solid fa-circle-check">
+                                        </i>
+                                    </span>
+                                    <span>
+                                        Same trusted cleaner each time
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="cs_feature_icon">
+                                        <i class="fa-solid fa-circle-check">
+                                        </i>
+                                    </span>
+                                    <span>
+                                        Flexible scheduling
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="cs_feature_icon">
+                                        <i class="fa-solid fa-circle-check">
+                                        </i>
+                                    </span>
+                                    <span>
+                                        Priority support
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="cs_pricing_table_style_1 cs_gray_bg1 cs_radius_16 cs_primary_font">
+                            <div class="cs_pricing_head cs_mb_32 cs_mb_lg_24">
+                                <h3 class="cs_fs_20 cs_mb_8">
+                                    3-4 Weekly
+                                </h3>
+                                <p class="cs_fs_14 cs_mb_16">
+                                    A great middle-ground for homes that need a regular refresh but not every week.
+                                </p>
+                                <h2 class="cs_pricing cs_mb_32 cs_mb_lg_24 cs_fs_56">
+                                    $57
+                                    <small>
+                                        / hour
+                                    </small>
+                                </h2>
+                                <a aria-label="Book this service"
+                                    class="cs_btn_snap cs_primary_color cs_accent_bg cs_center cs_radius_32 w-100"
+                                    href="booking.html">
+                                    <span>
+                                        Book this service
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="cs_feature_heading cs_primary_color cs_fs_18 cs_mb_16 cs_medium">
+                                Includes:
+                            </div>
+                            <ul class="cs_pricing_feature cs_mp_0 cs_medium cs_primary_font">
+                                <li>
+                                    <span class="cs_feature_icon">
+                                        <i class="fa-solid fa-circle-check">
+                                        </i>
+                                    </span>
+                                    <span>
+                                        Reliable monthly refresh
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="cs_feature_icon">
+                                        <i class="fa-solid fa-circle-check">
+                                        </i>
+                                    </span>
+                                    <span>
+                                        Consistent quality service
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="cs_feature_icon">
+                                        <i class="fa-solid fa-circle-check">
+                                        </i>
+                                    </span>
+                                    <span>
+                                        Tailored cleaning plan
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="cs_feature_icon">
+                                        <i class="fa-solid fa-circle-check">
+                                        </i>
+                                    </span>
+                                    <span>
+                                        No long-term contracts
+                                    </span>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -518,7 +760,7 @@
                 <div class="cs_height_80 cs_height_lg_40"></div>
                 <div class="container p-0">
                     <div class="cs_section_heading_style_1 cs_center_column text-center cs_mb_40">
-                        <p class="cs_section_subtitle cs_white_bg cs_mb_16" data-aos="zoom-in">What's included</p>
+                        <p class="cs_section_subtitle cs_white_bg cs_mb_16" data-aos="zoom-in">WHAT'S INCLUDED</p>
                         <h2 class="cs_section_title cs_fs_36 mb-0" data-aos="zoom-in">Service inclusions by area</h2>
                         <p class="cs_heading_text mb-0 mt-2" data-aos="fade-up">A full breakdown of every task included in each cleaning package, organised by room.</p>
                     </div>
@@ -532,7 +774,7 @@
                                                 <th></th>
                                                 <th>Standard<br class="d-md-none"> Clean</th>
                                                 <th class="col-highlight">
-                                                    <span class="saas-badge">Popular</span>
+                                                    <span class="saas-badge">POPULAR</span>
                                                     Deep<br class="d-md-none"> Clean
                                                 </th>
                                                 <th>Move<br class="d-md-none"> In/Out</th>
@@ -693,7 +935,11 @@
                         <img alt="Logo" src="assets/img/logo-white.webp" />
                     </div>
                     <ul class="cs_footer_menu cs_fs_14 cs_gray_color2 cs_primary_font cs_mp_0">
-                        
+                        <li>
+                            <a aria-label="Footer link" href="index.html">
+                                Home
+                            </a>
+                        </li>
                         <li>
                             <a aria-label="Footer link" href="about-us.html">
                                 About
@@ -710,8 +956,8 @@
                             </a>
                         </li>
                         <li>
-                            <a aria-label="Footer link" href="contact-us.html">
-                                Contact
+                            <a aria-label="Footer link" href="blog.html">
+                                Blog
                             </a>
                         </li>
                         <li>
@@ -720,11 +966,15 @@
                             </a>
                         </li>
                         <li>
+                            <a aria-label="Footer link" href="contact-us.html">
+                                Contact
+                            </a>
+                        </li>
+                        <li>
                             <a aria-label="Footer link" href="booking.html">
                                 Booking
                             </a>
                         </li>
-                        
                     </ul>
                 </div>
                 <!-- Start Suburbs Section -->
@@ -824,11 +1074,14 @@
                             Maid at Home. All rights reserved.
                         </div>
                         <div class="cs_social_btns_style_1">
-                            <a aria-label="Social link" href="https://instagram.com/YOUR_PROFILE" target="_blank">
-                                IG
+                            <a aria-label="Social link" href="https://www.facebook.com/profile.php?id=61573169063177" target="_blank">
+                                <img src="assets/img/icons/facebook-f-brands-solid-full.svg" alt="Facebook" width="20" height="20">
+                            </a>
+                            <a aria-label="Social link" href="https://www.instagram.com/maidathome_melb/" target="_blank">
+                                <img src="assets/img/icons/instagram-brands-solid-full.svg" alt="Instagram" width="20" height="20">
                             </a>
                             <a aria-label="Social link" href="https://wa.me/61413398546" target="_blank">
-                                WA
+                                <img src="assets/img/icons/whatsapp-brands-solid-full.svg" alt="WhatsApp" width="20" height="20">
                             </a>
                         </div>
                         <ul class="cs_footer_bottom_menu cs_fs_14 cs_gray_color2 cs_primary_font cs_mp_0">
@@ -891,7 +1144,7 @@
                                     <th></th>
                                     <th>Standard<br class="d-md-none"> Clean</th>
                                     <th class="col-highlight">
-                                        <span class="saas-badge">Popular</span>
+                                        <span class="saas-badge">POPULAR</span>
                                         Deep<br class="d-md-none"> Clean
                                     </th>
                                     <th>Move<br class="d-md-none"> In/Out</th>
@@ -1026,6 +1279,30 @@
         </div>
     </div>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const btnFlatRate = document.getElementById('btn_flat_rate');
+            const btnHourly = document.getElementById('btn_hourly');
+            const flatSection = document.querySelector('.cs_pricing_flat');
+            const hourlySection = document.querySelector('.cs_pricing_hourly');
+
+            if (btnFlatRate && btnHourly && flatSection && hourlySection) {
+                btnFlatRate.addEventListener('click', function() {
+                    btnFlatRate.classList.add('active');
+                    btnHourly.classList.remove('active');
+                    flatSection.style.display = 'flex';
+                    hourlySection.style.display = 'none';
+                });
+
+                btnHourly.addEventListener('click', function() {
+                    btnHourly.classList.add('active');
+                    btnFlatRate.classList.remove('active');
+                    flatSection.style.display = 'none';
+                    hourlySection.style.display = 'flex';
+                });
+            }
+        });
+    </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

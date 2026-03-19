@@ -5104,22 +5104,29 @@ label {
 .cs_pricing_table_style_1.active,
 .cs_pricing_table_style_1:hover {
   background-color: var(--dark-blue);
-  color: var(--white-color);
+  color: var(--primary-color);
 }
 
 .cs_pricing_table_style_1.active h2,
 .cs_pricing_table_style_1.active h3,
+.cs_pricing_table_style_1.active p,
 .cs_pricing_table_style_1.active li,
 .cs_pricing_table_style_1.active small,
 .cs_pricing_table_style_1.active .cs_feature_icon,
 .cs_pricing_table_style_1.active .cs_feature_heading,
 .cs_pricing_table_style_1:hover h2,
 .cs_pricing_table_style_1:hover h3,
+.cs_pricing_table_style_1:hover p,
 .cs_pricing_table_style_1:hover li,
 .cs_pricing_table_style_1:hover small,
 .cs_pricing_table_style_1:hover .cs_feature_icon,
 .cs_pricing_table_style_1:hover .cs_feature_heading {
   color: var(--white-color);
+}
+
+.cs_pricing_table_style_1:hover .cs_btn_snap span,
+.cs_pricing_table_style_1:hover .cs_btn_snap {
+  color: var(--primary-color);
 }
 
 @media (max-width: 575px) {
