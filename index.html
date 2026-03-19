@@ -46,6 +46,32 @@
     .cs_iconbox_icon img { width: 52px; height: 52px; display: block; }
     .cs_suburb_item { color: var(--white-color) !important; opacity: 1 !important; }
 
+    .cs_header_btn_mobile {
+      display: none;
+    }
+    @media (max-width: 1199px) {
+      .cs_header_btn_mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 16px;
+        font-weight: 600;
+        font-size: 14px;
+        margin-left: auto;
+        margin-right: 50px;
+        position: relative;
+        z-index: 21;
+        line-height: 1;
+        height: 38px;
+        text-decoration: none;
+      }
+    }
+    @media (max-width: 991px) {
+      .cs_header_btn_mobile {
+        margin-right: 40px;
+      }
+    }
+
     @media (max-width: 991px) {
       .cs_hero_calc { margin-bottom: 30px !important; }
     }
@@ -75,6 +101,9 @@
                 <img alt="Logo" src="assets/img/logo-white.webp" width="158" height="37" fetchpriority="high" />
               </a>
             </div>
+            <a href="booking.html" class="cs_header_btn_mobile cs_radius_32 cs_accent_bg cs_primary_color">
+              <span>Book Now</span>
+            </a>
             <div class="cs_main_header_center">
               <div class="cs_nav">
                 <div class="cs_nav_list_wrap">
