@@ -106,6 +106,13 @@ def main() -> int:
                     raw_value = texts[suburb][token]
                     # Apply sentence casing logic
                     processed_value = fix_sentence_case(raw_value, suburb)
+                    
+                    # If it's HERO_TITLE, remove the "in Suburb" part if it exists
+                    if ph == "HERO_TITLE":
+                        # Match " in " followed by suburb name (case-insensitive) at the end of the string
+                        suburb_pattern = re.compile(rf"\s+in\s+{re.escape(suburb)}", re.IGNORECASE)
+                        processed_value = suburb_pattern.sub("", processed_value).strip()
+                    
                     value = html.escape(processed_value)
                 else:
                     value = token
