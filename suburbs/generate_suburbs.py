@@ -11,20 +11,21 @@ def slugify(name: str) -> str:
     slug = re.sub(r"-{2,}", "-", slug).strip("-")
     return slug
 
-def fix_sentence_case(text: str, suburb_name: str, is_name: bool = False) -> str:
+def fix_sentence_case(text: str, suburb_name: str, is_name: bool = False, is_title: bool = False) -> str:
     """
     Lowercase everything except:
     1. The very first letter of the string.
     2. Any letter following a period, exclamation, or question mark (sentence start).
     3. The suburb name itself.
     4. The pronoun 'I'.
-    5. If is_name is True, capitalize all words.
+    5. If is_name is True or is_title is True, capitalize all important words (Title Case).
     """
     if not text:
         return text
     
-    if is_name:
-        # Title case for names
+    if is_name or is_title:
+        # Title case for names and section titles
+        # We capitalize every word for simplicity, which fits 'capitalizar' requirement
         return ' '.join(word.capitalize() for word in text.split())
 
     # Lowercase everything first
@@ -111,8 +112,9 @@ def main() -> int:
                 if token in texts.get(suburb, {}):
                     raw_value = texts[suburb][token]
                     is_name_ph = "NAME" in ph
+                    is_title_ph = "SECTION_TITLE" in ph or ph.endswith("_TITLE") and ph != "HERO_TITLE"
                     # Apply sentence casing logic
-                    processed_value = fix_sentence_case(raw_value, suburb, is_name=is_name_ph)
+                    processed_value = fix_sentence_case(raw_value, suburb, is_name=is_name_ph, is_title=is_title_ph)
                     
                     # If it's HERO_TITLE, remove the "in Suburb" part if it exists
                     if ph == "HERO_TITLE":
