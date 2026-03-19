@@ -11,16 +11,22 @@ def slugify(name: str) -> str:
     slug = re.sub(r"-{2,}", "-", slug).strip("-")
     return slug
 
-def fix_sentence_case(text: str, suburb_name: str) -> str:
+def fix_sentence_case(text: str, suburb_name: str, is_name: bool = False) -> str:
     """
     Lowercase everything except:
     1. The very first letter of the string.
     2. Any letter following a period, exclamation, or question mark (sentence start).
-    3. The suburb name itself (case-insensitive match replaced with original casing).
+    3. The suburb name itself.
+    4. The pronoun 'I'.
+    5. If is_name is True, capitalize all words.
     """
     if not text:
         return text
     
+    if is_name:
+        # Title case for names
+        return ' '.join(word.capitalize() for word in text.split())
+
     # Lowercase everything first
     text = text.lower()
     
@@ -28,16 +34,16 @@ def fix_sentence_case(text: str, suburb_name: str) -> str:
     text = text[0].upper() + text[1:]
     
     # 2. Capitalize after sentence-ending punctuation (., !, ?)
-    # Matches punctuation followed by optional whitespace
     def capitalize_match(m):
         return m.group(1) + m.group(2).upper()
     
     text = re.sub(r'([.!?]\s+)([a-z])', capitalize_match, text)
     
-    # 3. Restore Suburb Name casing (e.g. "abbotsford" -> "Abbotsford")
-    # Handle multi-word suburbs like "East Melbourne"
-    # We use a case-insensitive regex to find the lowercase version and replace it with the original
+    # 3. Restore Suburb Name casing
     text = re.sub(re.escape(suburb_name), suburb_name, text, flags=re.IGNORECASE)
+
+    # 4. Always capitalize pronoun 'I' (isolated word)
+    text = re.sub(r'\bi\b', 'I', text)
     
     return text
 
@@ -104,8 +110,9 @@ def main() -> int:
             else:
                 if token in texts.get(suburb, {}):
                     raw_value = texts[suburb][token]
+                    is_name_ph = "NAME" in ph
                     # Apply sentence casing logic
-                    processed_value = fix_sentence_case(raw_value, suburb)
+                    processed_value = fix_sentence_case(raw_value, suburb, is_name=is_name_ph)
                     
                     # If it's HERO_TITLE, remove the "in Suburb" part if it exists
                     if ph == "HERO_TITLE":

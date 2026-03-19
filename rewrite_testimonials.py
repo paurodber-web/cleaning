@@ -42,6 +42,10 @@ def rewrite_testimonials(file_path):
         "They are super thorough and efficient with their work. The place is always glowing by the time they're finished.",
     ]
 
+    # Names lists for variety
+    first_names = ["Sarah", "Mark", "Emma", "Paul", "Chloe", "David", "Mia", "Ben", "Eleanor", "James", "Sophie", "Liam"]
+    last_names = ["Thompson", "Davis", "Wilson", "Roberts", "Smith", "Anderson", "Clarke", "Walker", "White", "Taylor", "Martin", "Lewis"]
+
     def replace_testimonials(match):
         suburb_block = match.group(0)
         
@@ -50,10 +54,19 @@ def rewrite_testimonials(file_path):
         t2 = random.choice(templates_2)
         t3 = random.choice(templates_3)
         
+        # Pick 3 random names
+        n1 = f"{random.choice(first_names)} {random.choice(last_names)}"
+        n2 = f"{random.choice(first_names)} {random.choice(last_names)}"
+        n3 = f"{random.choice(first_names)} {random.choice(last_names)}"
+        
         # Replace the tags
         suburb_block = re.sub(r'\[\[TESTIMONIAL_1_TEXT\]\]: .*', f'[[TESTIMONIAL_1_TEXT]]: {t1}', suburb_block)
         suburb_block = re.sub(r'\[\[TESTIMONIAL_2_TEXT\]\]: .*', f'[[TESTIMONIAL_2_TEXT]]: {t2}', suburb_block)
         suburb_block = re.sub(r'\[\[TESTIMONIAL_3_TEXT\]\]: .*', f'[[TESTIMONIAL_3_TEXT]]: {t3}', suburb_block)
+
+        suburb_block = re.sub(r'\[\[TESTIMONIAL_1_NAME\]\]: .*', f'[[TESTIMONIAL_1_NAME]]: {n1}', suburb_block)
+        suburb_block = re.sub(r'\[\[TESTIMONIAL_2_NAME\]\]: .*', f'[[TESTIMONIAL_2_NAME]]: {n2}', suburb_block)
+        suburb_block = re.sub(r'\[\[TESTIMONIAL_3_NAME\]\]: .*', f'[[TESTIMONIAL_3_NAME]]: {n3}', suburb_block)
         
         return suburb_block
 
