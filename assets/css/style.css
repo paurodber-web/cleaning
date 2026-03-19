@@ -2828,20 +2828,29 @@ label {
 }
 
 .cs_footer_style_1 .cs_social_btns_style_1 a {
-  width: 40px;
-  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  color: var(--white-color);
-  border: 1px solid var(--white-color);
+  transition: all 0.3s ease;
+}
+
+.cs_footer_style_1 .cs_social_btns_style_1 a img {
+  filter: brightness(0) invert(1);
+  width: 26px;
+  height: auto;
+  transition: all 0.3s ease;
 }
 
 .cs_footer_style_1 .cs_social_btns_style_1 a:hover {
-  border-color: var(--dark-blue);
-  background-color: var(--dark-blue);
+  background-color: transparent;
+  border-color: transparent;
 }
+
+.cs_footer_style_1 .cs_social_btns_style_1 a:hover img {
+  /* Using filter to achieve a blue color (approximate to var(--dark-blue)) */
+  filter: invert(44%) sepia(91%) saturate(3054%) hue-rotate(193deg) brightness(87%) contrast(101%);
+}
+
 
 .cs_footer_style_1 .cs_vector_shape1 {
   left: 0;
@@ -3841,8 +3850,8 @@ label {
   display: block;
 }
 
-/* Before After Slider Styles */
-.cs_ba_slider {
+/* Before After Section */
+.cs_ba_slider, .cs_ba_image_wrapper {
   position: relative;
   width: 100%;
   max-width: 100%;
@@ -3853,12 +3862,12 @@ label {
 }
 
 @media (max-width: 991px) {
-  .cs_ba_slider {
+  .cs_ba_slider, .cs_ba_image_wrapper {
     height: 350px;
   }
 }
 
-.cs_ba_image {
+.cs_ba_image, .cs_ba_image_static {
   position: absolute;
   top: 0;
   left: 0;
@@ -3914,16 +3923,6 @@ label {
   z-index: 3;
 }
 
-.cs_hero_style_1 .cs_logo_wrapper {
-  display: flex;
-  gap: 20px 40px;
-  flex-wrap: wrap;
-  max-width: 600px;
-}
-
-.cs_hero_calc_anchor {
-  display: none;
-}
 
 @media (max-width: 575px) {
   .cs_hero_style_1 .cs_logo_wrapper {

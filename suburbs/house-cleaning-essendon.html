@@ -356,39 +356,8 @@
         </div>
         <div class="cs_height_50 cs_height_lg_24">
         </div>
-        <div class="cs_ba_slider cs_radius_16" data-aos="fade-up">
-          <img alt="Before" class="cs_ba_image cs_ba_before" src="../assets/img/before.png" loading="lazy" width="2816" height="1536" />
-          <div class="cs_ba_after" id="ba_after_img"
-            style="position: absolute; top: 0; left: 0; height: 100%; overflow: hidden; width: 50%; z-index: 1;">
-            <img alt="After" src="../assets/img/after.png" loading="lazy" width="2816" height="1536"
-              style="position: absolute; top: 0; left: 0; width: 100vw; max-width: none; height: 100%; object-fit: cover;" />
-          </div>
-          <div class="cs_ba_slider_handle" id="ba_handle">
-          </div>
-          <label for="ba_slider" class="visually-hidden">Before and after comparison slider</label>
-          <input aria-label="Before and after slider" class="cs_ba_slider_input" id="ba_slider" max="100" min="0" type="range" value="50" />
-          <script>
-            document.addEventListener('DOMContentLoaded', function () {
-              const slider = document.getElementById('ba_slider');
-              const afterImg = document.getElementById('ba_after_img');
-              const handle = document.getElementById('ba_handle');
-              const afterImgActual = afterImg.querySelector('img');
-
-              function updateBA() {
-                const containerWidth = slider.parentElement.offsetWidth;
-                const val = slider.value + '%';
-                afterImg.style.width = val;
-                handle.style.left = val;
-                // Ensure the after image doesn't move/resize, it just gets clipped
-                // Using 100% width on the image container's parent to keep it stable
-                afterImgActual.style.width = containerWidth + 'px';
-              }
-
-              slider.addEventListener('input', updateBA);
-              window.addEventListener('resize', updateBA);
-              updateBA();
-            });
-          </script>
+        <div class="cs_ba_image_wrapper cs_radius_16" data-aos="fade-up">
+          <img alt="Before and After Cleaning result" class="cs_ba_image_static" src="../assets/img/before-after.png" loading="lazy" width="2816" height="1536" />
         </div>
         <div class="cs_height_50 cs_height_lg_24">
         </div>
@@ -733,9 +702,6 @@
                     Managing a big house used to be exhausting. These wonderful experts save my sanity by keeping the main levels perfectly neat every week.
                   </blockquote>
                   <div class="cs_avatar_style_1">
-                    <div class="cs_avatar_icon cs_center cs_radius_100">
-                      <img alt="testimonial" src="../assets/img/testimonial-avatar-1.jpg" loading="lazy" width="60" height="60" />
-                    </div>
                     <div class="cs_avatar_info">
                       <h3 class="cs_fs_18 mb-0">
                         Sarah l.
@@ -754,9 +720,6 @@
                     Outstanding quality every time. I can finally focus on my career knowing our home is consistently hygienic and beautifully organized too.
                   </blockquote>
                   <div class="cs_avatar_style_1">
-                    <div class="cs_avatar_icon cs_center cs_radius_100">
-                      <img alt="testimonial" src="../assets/img/testimonial-avatar-2.jpg" loading="lazy" width="61" height="60" />
-                    </div>
                     <div class="cs_avatar_info">
                       <h3 class="cs_fs_18 mb-0">
                         Mark d.
@@ -775,9 +738,6 @@
                     The top local option for our family. They are punctual, reliable, and our kids love how clean their rooms look after every visit.
                   </blockquote>
                   <div class="cs_avatar_style_1">
-                    <div class="cs_avatar_icon cs_center cs_radius_100">
-                      <img alt="testimonial" src="../assets/img/testimonial-avatar-3.jpg" loading="lazy" width="61" height="60" />
-                    </div>
                     <div class="cs_avatar_info">
                       <h3 class="cs_fs_18 mb-0">
                         Emma c.
@@ -998,9 +958,7 @@
       class="cs_cta_style_1 cs_blue_bg1 cs_radius_16 cs_center_column text-center position-relative overflow-hidden cs_mb_24 cs_mb_lg_16">
       <div class="container p-0">
         <div class="cs_cta_text position-relative z-2">
-          <h2 class="cs_cta_title cs_fs_56 cs_white_color cs_mb_16 text-capitalize" data-aos="fade-down">
-            <span class="cs_blue_light">
-            </span>
+          <h2 class="cs_cta_title cs_fs_56 cs_white_color cs_mb_16" data-aos="fade-down">
             Ready for a perfectly
             <span class="cs_blue_light">
               clean house?
@@ -1215,11 +1173,14 @@
                             Maid at Home. All rights reserved.
                         </div>
                         <div class="cs_social_btns_style_1">
+                            <a aria-label="Social link" href="https://facebook.com/YOUR_PROFILE" target="_blank">
+                                <img src="../assets/img/icons/facebook-f-brands-solid-full.svg" alt="Facebook">
+                            </a>
                             <a aria-label="Social link" href="https://instagram.com/YOUR_PROFILE" target="_blank">
-                                IG
+                                <img src="../assets/img/icons/instagram-brands-solid-full.svg" alt="Instagram">
                             </a>
                             <a aria-label="Social link" href="https://wa.me/YOUR_PHONE_NUMBER" target="_blank">
-                                WA
+                                <img src="../assets/img/icons/whatsapp-brands-solid-full.svg" alt="WhatsApp">
                             </a>
                         </div>
                         <ul class="cs_footer_bottom_menu cs_fs_14 cs_gray_color2 cs_primary_font cs_mp_0">
