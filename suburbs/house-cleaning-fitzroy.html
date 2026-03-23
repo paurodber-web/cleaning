@@ -978,7 +978,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="cs_height_50 cs_height_lg_24"></div>
         <div class="cs_nearby_suburbs_grid_wrapper" data-aos="fade-up">
-          <ul class="cs_nearby_suburbs_grid cs_mp_0"><li><a href="house-cleaning-collingwood.html">Collingwood</a></li><li><a href="house-cleaning-carlton.html">Carlton</a></li><li><a href="house-cleaning-carlton-north.html">Carlton North</a></li><li><a href="house-cleaning-fitzroy-north.html">Fitzroy North</a></li><li><a href="house-cleaning-richmond.html">Richmond</a></li><li><a href="house-cleaning-east-melbourne.html">East Melbourne</a></li><li><a href="house-cleaning-abbotsford.html">Abbotsford</a></li><li><a href="house-cleaning-melbourne-cbd.html">Melbourne CBD</a></li><li><a href="house-cleaning-brunswick-east.html">Brunswick East</a></li><li><a href="house-cleaning-northcote.html">Northcote</a></li><li><a href="house-cleaning-parkville.html">Parkville</a></li><li><a href="house-cleaning-southbank.html">Southbank</a></li></ul>
+          <ul class="cs_nearby_suburbs_grid cs_mp_0"><li><a href="house-cleaning-collingwood.html" title="Professional House Cleaning in Collingwood">Collingwood</a></li><li><a href="house-cleaning-carlton.html" title="Professional House Cleaning in Carlton">Carlton</a></li><li><a href="house-cleaning-carlton-north.html" title="Professional House Cleaning in Carlton North">Carlton North</a></li><li><a href="house-cleaning-fitzroy-north.html" title="Professional House Cleaning in Fitzroy North">Fitzroy North</a></li><li><a href="house-cleaning-richmond.html" title="Professional House Cleaning in Richmond">Richmond</a></li><li><a href="house-cleaning-east-melbourne.html" title="Professional House Cleaning in East Melbourne">East Melbourne</a></li><li><a href="house-cleaning-abbotsford.html" title="Professional House Cleaning in Abbotsford">Abbotsford</a></li><li><a href="house-cleaning-melbourne-cbd.html" title="Professional House Cleaning in Melbourne CBD">Melbourne CBD</a></li><li><a href="house-cleaning-brunswick-east.html" title="Professional House Cleaning in Brunswick East">Brunswick East</a></li><li><a href="house-cleaning-northcote.html" title="Professional House Cleaning in Northcote">Northcote</a></li><li><a href="house-cleaning-parkville.html" title="Professional House Cleaning in Parkville">Parkville</a></li><li><a href="house-cleaning-southbank.html" title="Professional House Cleaning in Southbank">Southbank</a></li></ul>
         </div>
       </div>
       <div class="cs_height_80 cs_height_lg_40"></div>
@@ -1280,7 +1280,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <div class="col-lg-6">
                       <article class="cs_post_style_1 cs_gray_bg1 cs_radius_16 h-100 mb-0" data-aos="fade-up" data-aos-delay="150">
                           <a aria-label="Post details page link" class="cs_post_thumbnail cs_radius_16 cs_mb_16 cs_zoom overflow-hidden" href="../${p1.url}">
-                              <img alt="Post thumbnail" src="${p1.img}" loading="lazy" />
+                              <img alt="Post thumbnail" src="${p1.img.startsWith('http') ? p1.img : '../' + p1.img}" loading="lazy" />
                           </a>
                           <div class="cs_post_info">
                               <h3 class="cs_post_title cs_fs_20 cs_mb_12">
@@ -1306,7 +1306,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             html += `
                           <article class="cs_post_style_2 cs_gray_bg1 cs_radius_16" data-aos="fade-up" data-aos-delay="300">
                               <a aria-label="Post details page link" class="cs_post_thumbnail cs_radius_12 cs_zoom overflow-hidden" href="../${p.url}">
-                                  <img alt="Post thumbnail" src="${p.img}" loading="lazy" />
+                                  <img alt="Post thumbnail" src="${p.img.startsWith('http') ? p.img : '../' + p.img}" loading="lazy" />
                               </a>
                               <div class="cs_post_info">
                                   <h3 class="cs_post_title cs_fs_20 cs_mb_12">

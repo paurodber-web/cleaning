@@ -978,7 +978,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="cs_height_50 cs_height_lg_24"></div>
         <div class="cs_nearby_suburbs_grid_wrapper" data-aos="fade-up">
-          <ul class="cs_nearby_suburbs_grid cs_mp_0"><li><a href="house-cleaning-brighton.html">Brighton</a></li><li><a href="house-cleaning-elwood.html">Elwood</a></li><li><a href="house-cleaning-elsternwick.html">Elsternwick</a></li><li><a href="house-cleaning-ripponlea.html">Ripponlea</a></li><li><a href="house-cleaning-st-kilda.html">St Kilda</a></li><li><a href="house-cleaning-st-kilda-east.html">St Kilda East</a></li><li><a href="house-cleaning-windsor.html">Windsor</a></li><li><a href="house-cleaning-prahran.html">Prahran</a></li><li><a href="house-cleaning-middle-park.html">Middle Park</a></li><li><a href="house-cleaning-albert-park.html">Albert Park</a></li><li><a href="house-cleaning-toorak.html">Toorak</a></li><li><a href="house-cleaning-south-yarra.html">South Yarra</a></li></ul>
+          <ul class="cs_nearby_suburbs_grid cs_mp_0"><li><a href="house-cleaning-brighton.html" title="Professional House Cleaning in Brighton">Brighton</a></li><li><a href="house-cleaning-elwood.html" title="Professional House Cleaning in Elwood">Elwood</a></li><li><a href="house-cleaning-elsternwick.html" title="Professional House Cleaning in Elsternwick">Elsternwick</a></li><li><a href="house-cleaning-ripponlea.html" title="Professional House Cleaning in Ripponlea">Ripponlea</a></li><li><a href="house-cleaning-st-kilda.html" title="Professional House Cleaning in St Kilda">St Kilda</a></li><li><a href="house-cleaning-st-kilda-east.html" title="Professional House Cleaning in St Kilda East">St Kilda East</a></li><li><a href="house-cleaning-windsor.html" title="Professional House Cleaning in Windsor">Windsor</a></li><li><a href="house-cleaning-prahran.html" title="Professional House Cleaning in Prahran">Prahran</a></li><li><a href="house-cleaning-middle-park.html" title="Professional House Cleaning in Middle Park">Middle Park</a></li><li><a href="house-cleaning-albert-park.html" title="Professional House Cleaning in Albert Park">Albert Park</a></li><li><a href="house-cleaning-toorak.html" title="Professional House Cleaning in Toorak">Toorak</a></li><li><a href="house-cleaning-south-yarra.html" title="Professional House Cleaning in South Yarra">South Yarra</a></li></ul>
         </div>
       </div>
       <div class="cs_height_80 cs_height_lg_40"></div>
@@ -1280,7 +1280,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <div class="col-lg-6">
                       <article class="cs_post_style_1 cs_gray_bg1 cs_radius_16 h-100 mb-0" data-aos="fade-up" data-aos-delay="150">
                           <a aria-label="Post details page link" class="cs_post_thumbnail cs_radius_16 cs_mb_16 cs_zoom overflow-hidden" href="../${p1.url}">
-                              <img alt="Post thumbnail" src="${p1.img}" loading="lazy" />
+                              <img alt="Post thumbnail" src="${p1.img.startsWith('http') ? p1.img : '../' + p1.img}" loading="lazy" />
                           </a>
                           <div class="cs_post_info">
                               <h3 class="cs_post_title cs_fs_20 cs_mb_12">
@@ -1306,7 +1306,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             html += `
                           <article class="cs_post_style_2 cs_gray_bg1 cs_radius_16" data-aos="fade-up" data-aos-delay="300">
                               <a aria-label="Post details page link" class="cs_post_thumbnail cs_radius_12 cs_zoom overflow-hidden" href="../${p.url}">
-                                  <img alt="Post thumbnail" src="${p.img}" loading="lazy" />
+                                  <img alt="Post thumbnail" src="${p.img.startsWith('http') ? p.img : '../' + p.img}" loading="lazy" />
                               </a>
                               <div class="cs_post_info">
                                   <h3 class="cs_post_title cs_fs_20 cs_mb_12">

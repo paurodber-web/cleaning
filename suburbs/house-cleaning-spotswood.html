@@ -978,7 +978,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="cs_height_50 cs_height_lg_24"></div>
         <div class="cs_nearby_suburbs_grid_wrapper" data-aos="fade-up">
-          <ul class="cs_nearby_suburbs_grid cs_mp_0"><li><a href="house-cleaning-newport.html">Newport</a></li><li><a href="house-cleaning-south-kingsville.html">South Kingsville</a></li><li><a href="house-cleaning-yarraville.html">Yarraville</a></li><li><a href="house-cleaning-seddon.html">Seddon</a></li><li><a href="house-cleaning-footscray.html">Footscray</a></li><li><a href="house-cleaning-kingsville.html">Kingsville</a></li><li><a href="house-cleaning-williamstown.html">Williamstown</a></li><li><a href="house-cleaning-williamstown-north.html">Williamstown North</a></li><li><a href="house-cleaning-port-melbourne.html">Port Melbourne</a></li><li><a href="house-cleaning-docklands.html">Docklands</a></li><li><a href="house-cleaning-south-melbourne.html">South Melbourne</a></li><li><a href="house-cleaning-altona.html">Altona</a></li></ul>
+          <ul class="cs_nearby_suburbs_grid cs_mp_0"><li><a href="house-cleaning-newport.html" title="Professional House Cleaning in Newport">Newport</a></li><li><a href="house-cleaning-south-kingsville.html" title="Professional House Cleaning in South Kingsville">South Kingsville</a></li><li><a href="house-cleaning-yarraville.html" title="Professional House Cleaning in Yarraville">Yarraville</a></li><li><a href="house-cleaning-seddon.html" title="Professional House Cleaning in Seddon">Seddon</a></li><li><a href="house-cleaning-footscray.html" title="Professional House Cleaning in Footscray">Footscray</a></li><li><a href="house-cleaning-kingsville.html" title="Professional House Cleaning in Kingsville">Kingsville</a></li><li><a href="house-cleaning-williamstown.html" title="Professional House Cleaning in Williamstown">Williamstown</a></li><li><a href="house-cleaning-williamstown-north.html" title="Professional House Cleaning in Williamstown North">Williamstown North</a></li><li><a href="house-cleaning-port-melbourne.html" title="Professional House Cleaning in Port Melbourne">Port Melbourne</a></li><li><a href="house-cleaning-docklands.html" title="Professional House Cleaning in Docklands">Docklands</a></li><li><a href="house-cleaning-south-melbourne.html" title="Professional House Cleaning in South Melbourne">South Melbourne</a></li><li><a href="house-cleaning-altona.html" title="Professional House Cleaning in Altona">Altona</a></li></ul>
         </div>
       </div>
       <div class="cs_height_80 cs_height_lg_40"></div>
@@ -1280,7 +1280,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <div class="col-lg-6">
                       <article class="cs_post_style_1 cs_gray_bg1 cs_radius_16 h-100 mb-0" data-aos="fade-up" data-aos-delay="150">
                           <a aria-label="Post details page link" class="cs_post_thumbnail cs_radius_16 cs_mb_16 cs_zoom overflow-hidden" href="../${p1.url}">
-                              <img alt="Post thumbnail" src="${p1.img}" loading="lazy" />
+                              <img alt="Post thumbnail" src="${p1.img.startsWith('http') ? p1.img : '../' + p1.img}" loading="lazy" />
                           </a>
                           <div class="cs_post_info">
                               <h3 class="cs_post_title cs_fs_20 cs_mb_12">
@@ -1306,7 +1306,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             html += `
                           <article class="cs_post_style_2 cs_gray_bg1 cs_radius_16" data-aos="fade-up" data-aos-delay="300">
                               <a aria-label="Post details page link" class="cs_post_thumbnail cs_radius_12 cs_zoom overflow-hidden" href="../${p.url}">
-                                  <img alt="Post thumbnail" src="${p.img}" loading="lazy" />
+                                  <img alt="Post thumbnail" src="${p.img.startsWith('http') ? p.img : '../' + p.img}" loading="lazy" />
                               </a>
                               <div class="cs_post_info">
                                   <h3 class="cs_post_title cs_fs_20 cs_mb_12">
