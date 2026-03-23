@@ -4,7 +4,7 @@ const allPosts = [
         url: "blog/house-cleaning-tips-melbourne-families",
         img: "assets/img/blog/family_cleaning_tips.webp",
         author: "Maid At Home",
-        date: "January 12, 2026",
+        date: "January 12, 2024",
         timestamp: 1768176000000,
         category: "DIY Cleaning",
         tags: ["House cleaning", "Melbourne", "Time-saving"]
@@ -14,7 +14,7 @@ const allPosts = [
         url: "blog/green-cleaning-benefits-melbourne",
         img: "assets/img/blog/green_cleaning_benefits.webp",
         author: "Maid At Home",
-        date: "January 26, 2026",
+        date: "January 26, 2024",
         timestamp: 1769385600000,
         category: "Eco-Friendly Cleaning",
         tags: ["Green cleaning", "Non-toxic", "Melbourne homes"]
@@ -24,7 +24,7 @@ const allPosts = [
         url: "blog/best-way-to-disinfect-home-melbourne",
         img: "assets/img/blog/disinfect_home_melbourne.webp",
         author: "Maid At Home",
-        date: "February 10, 2026",
+        date: "February 10, 2024",
         timestamp: 1770681600000,
         category: "Health & Safety",
         tags: ["Disinfectants", "Hygiene", "Home safety"]
@@ -34,7 +34,7 @@ const allPosts = [
         url: "blog/eco-friendly-cleaning-products-that-work",
         img: "assets/img/blog/eco_products_work.webp",
         author: "Maid At Home",
-        date: "February 24, 2026",
+        date: "February 24, 2024",
         timestamp: 1771891200000,
         category: "Eco-Friendly Cleaning",
         tags: ["Eco friendly", "Products", "Stain removal"]
@@ -44,7 +44,7 @@ const allPosts = [
         url: "blog/house-cleaning-schedule-melbourne",
         img: "assets/img/blog/cleaning_schedule.webp",
         author: "Maid At Home",
-        date: "March 09, 2026",
+        date: "March 09, 2024",
         timestamp: 1773014400000,
         category: "Deep Cleaning",
         tags: ["Cleaning schedule", "Routine", "Home care"]
@@ -54,7 +54,7 @@ const allPosts = [
         url: "blog/deep-cleaning-checklist-melbourne",
         img: "assets/img/blog/deep_cleaning_checklist.webp",
         author: "Maid At Home",
-        date: "March 22, 2026",
+        date: "March 22, 2024",
         timestamp: 1774137600000,
         category: "Deep Cleaning",
         tags: ["Deep clean", "Checklist", "Melbourne"]
@@ -64,7 +64,7 @@ const allPosts = [
         url: "blog/end-of-lease-cleaning-melbourne-bond-back",
         img: "assets/img/blog/end_of_lease_cleans.webp",
         author: "Maid At Home",
-        date: "April 06, 2026",
+        date: "April 06, 2024",
         timestamp: 1775433600000,
         category: "Deep Cleaning",
         tags: ["End of lease", "Bond back", "Moving"]
@@ -74,7 +74,7 @@ const allPosts = [
         url: "blog/house-cleaning-cost-melbourne",
         img: "assets/img/blog/cleaning_cost_melbourne.webp",
         author: "Maid At Home",
-        date: "April 20, 2026",
+        date: "April 20, 2024",
         timestamp: 1776643200000,
         category: "Commercial & Office",
         tags: ["House cleaning cost", "Pricing", "Melbourne"]
@@ -84,7 +84,7 @@ const allPosts = [
         url: "blog/carpet-cleaning-tips-melbourne",
         img: "assets/img/blog/carpet_cleaning_tips.webp",
         author: "Maid At Home",
-        date: "May 05, 2026",
+        date: "May 05, 2024",
         timestamp: 1777939200000,
         category: "DIY Cleaning",
         tags: ["Carpet cleaning", "Stains", "Maintenance"]
@@ -94,7 +94,7 @@ const allPosts = [
         url: "blog/weekly-cleaning-service-melbourne",
         img: "assets/img/blog/weekly_cleaning_melbourne.webp",
         author: "Maid At Home",
-        date: "May 18, 2026",
+        date: "May 18, 2024",
         timestamp: 1779062400000,
         category: "Deep Cleaning",
         tags: ["Weekly cleaning", "Service", "Melbourne"]
