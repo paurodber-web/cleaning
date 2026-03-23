@@ -27,10 +27,10 @@ html_template = """<h2>{title}</h2>
 <article>
         <div class="row cs_gap_y_24 cs_mb_24">
                 <div class="col-md-6" data-aos="fade-right">
-                        <img alt="Blog Details" class="cs_radius_16 w-100" src="../assets/img/post-img6.jpg" />
+                        <img alt="Blog Details" class="cs_radius_16 w-100" src="../assets/img/post-img6.webp" />
                 </div>
                 <div class="col-md-6" data-aos="fade-left">
-                        <img alt="Blog Details" class="cs_radius_16 w-100" src="../assets/img/post-img5.jpg" />
+                        <img alt="Blog Details" class="cs_radius_16 w-100" src="../assets/img/post-img5.webp" />
                 </div>
         </div>
         <h3>{h5}</h3>
@@ -51,7 +51,7 @@ html_template = """<h2>{title}</h2>
 <blockquote>
         {quote}
 </blockquote>
-<div class="cs_video_block_style_1 cs_center cs_bg_filed cs_radius_16 cs_mb_24" data-aos="zoom-in" data-src="../assets/img/video-bg1.jpg">
+<div class="cs_video_block_style_1 cs_center cs_bg_filed cs_radius_16 cs_mb_24" data-aos="zoom-in" data-src="../assets/img/video-bg1.webp">
         <a aria-label="Video link" class="cs_player_btn_style_1 cs_video_open cs_center cs_radius_100 position-relative" href="https://www.youtube.com/embed/oCOq0L2xeag">
                 <span class="cs_white_bg cs_blue_dark cs_player_btn_icon cs_center">
                         <i class="fa-solid fa-play"></i>
