@@ -610,6 +610,40 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </script>
         <script src="../assets/js/main.js">
         </script>
+<script src="../assets/js/cookie-consent.js" defer></script>
+<!-- MODAL: DISCOUNT -->
+<div class="modal fade" id="popup-discount-final" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog position-fixed bottom-0 end-0 m-3 m-sm-4"
+      style="width: 380px; max-width: calc(100vw - 2rem); z-index: 1060;">
+      <div class="modal-content cs_radius_16 border-0 shadow-lg">
+        <div class="modal-body p-4 position-relative">
+          <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+          <div class="d-flex align-items-center cs_mb_16">
+            <div class="cs_center cs_accent_bg cs_radius_100 me-3" style="width: 40px; height: 40px; flex-shrink: 0;">
+              <i class="fa-solid fa-tags cs_primary_color"></i>
+            </div>
+            <h3 class="cs_fs_20 mb-0">Here's 15% off!</h3>
+          </div>
+          <p class="cs_mb_16" style="font-size: 14px; color: var(--secondary-color);">Use this code at checkout.</p>
+          <div class="d-flex gap-2">
+            <div class="discount-code-box flex-grow-1" id="code6-val"
+              style="border: 2px dashed #cbd5e1; padding: 10px 15px; border-radius: 12px; background: #f8fafc; font-weight: 800; font-size: 20px; color: #0E1109; letter-spacing: 1px; text-align: center; display: flex; align-items: center; justify-content: center;">
+              FIRST15</div>
+            <button class="cs_btn_snap cs_accent_bg cs_primary_color cs_radius_16 px-3"
+              onclick="copyCode('code6-val', 'msg6-val', this)">
+              <span>Copy</span>
+            </button>
+          </div>
+          <div id="msg6-val" class="copy-success"
+            style="display: none; color: #28a745; font-weight: 600; font-size: 14px; margin-top: 12px;">
+            <i class="fa-solid fa-check-circle"></i> Copied!
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 
 </html>

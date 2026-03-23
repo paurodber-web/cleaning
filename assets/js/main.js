@@ -614,17 +614,13 @@ function copyCode(elementId, msgId, btnElement) {
   const MODAL_ID = 'popup-discount-final';
 
   const showModal = () => {
-    // Check if already shown to this user
     if (localStorage.getItem(STORAGE_KEY)) return;
 
     const modalElement = document.getElementById(MODAL_ID);
     if (!modalElement) return;
 
-    // Use Bootstrap Modal API
     const modalInstance = bootstrap.Modal.getOrCreateInstance(modalElement);
     modalInstance.show();
-
-    // Mark as shown forever
     localStorage.setItem(STORAGE_KEY, 'true');
   };
 
@@ -635,7 +631,6 @@ function copyCode(elementId, msgId, btnElement) {
     }
   };
 
-  // Only add listener if not shown before
   if (!localStorage.getItem(STORAGE_KEY)) {
     window.addEventListener('scroll', onScroll, { passive: true });
   }
