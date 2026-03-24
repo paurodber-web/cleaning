@@ -604,6 +604,65 @@ function copyCode(elementId, msgId, btnElement) {
     setTimeout(fixPadding, 50);
   });
 })();
+
+// =====================================================================
+// NEWSLETTER FOOTER FORM: shared submit handler for all site footers.
+// Sends email to the same Google Apps Script endpoint used on home.
+// =====================================================================
+(function handleNewsletterForms() {
+  const NEWSLETTER_ENDPOINT =
+    "https://script.google.com/macros/s/AKfycbx-B1He7qGzZGq8HMQ2-ZsvfBU4dHyCaFBiQlowZCp_dmJd4xEFv03SSNg9smKfxOmi/exec";
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const forms = document.querySelectorAll(".cs_newsletter_form");
+    if (!forms.length) return;
+
+    forms.forEach((form) => {
+      if (form.dataset.newsletterBound === "true") return;
+      form.dataset.newsletterBound = "true";
+
+      form.setAttribute("action", NEWSLETTER_ENDPOINT);
+      form.setAttribute("method", "POST");
+
+      const submitButton = form.querySelector('button[type="submit"]');
+      if (!submitButton) return;
+
+      submitButton.dataset.originalText = submitButton.textContent.trim();
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const originalText = submitButton.dataset.originalText || "Send";
+        submitButton.textContent = "Sending...";
+        submitButton.disabled = true;
+
+        const formData = new FormData(form);
+
+        fetch(form.action, {
+          method: "POST",
+          body: formData,
+          mode: "no-cors",
+        })
+          .then(() => {
+            submitButton.textContent = "Subscribed";
+            form.reset();
+            setTimeout(() => {
+              submitButton.textContent = originalText;
+              submitButton.disabled = false;
+            }, 5000);
+          })
+          .catch((error) => {
+            console.error("Newsletter submission failed:", error);
+            submitButton.textContent = "Error";
+            setTimeout(() => {
+              submitButton.textContent = originalText;
+              submitButton.disabled = false;
+            }, 3000);
+          });
+      });
+    });
+  });
+})();
 // =====================================================================
 // AUTOMATIC DISCOUT POPUP: Triggered by scroll, only once per user.
 // Uses localStorage for persistence across browser restarts.
