@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting... | Maid at Home</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8fafc;
+            color: #0E1109;
+            text-align: center;
+        }
+        .loader-box {
+            padding: 2rem;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+        .spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #1F77D6;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </script>
+    <script>
+        // Maid at Home - Automatic Redirection Manager for GitHub Pages
+        (function() {
+            var currentUrl = window.location.pathname;
+            
+            // Log for debugging (visible in console)
+            console.log("Maid at Home Redirector: Path detected - " + currentUrl);
+            
+            // 1. Handle old "/suburbs/" to new "/locations/"
+            if (currentUrl.includes('/suburbs/')) {
+                var newUrl = currentUrl.replace('/suburbs/', '/locations/');
+                window.location.replace(newUrl);
+                return;
+            }
+            
+            // 2. Handle old "/suburbs" (without trailing slash)
+            if (currentUrl.endsWith('/suburbs')) {
+                window.location.replace('/locations/');
+                return;
+            }
+
+            // 3. Fallback: If it's a real 404, go back home after 2 seconds
+            setTimeout(function() {
+                window.location.replace('/');
+            }, 1000);
+        })();
+    </script>
+</head>
+<body>
+    <div class="loader-box">
+        <div class="spinner"></div>
+        <p style="font-weight: 600; margin-bottom: 5px;">Redirecting you to the right page...</p>
+        <p style="font-size: 14px; color: #64748b;">Please wait a moment while we update your link.</p>
+    </div>
+</body>
+</html>
