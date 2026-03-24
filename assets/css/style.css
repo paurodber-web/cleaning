@@ -3571,6 +3571,11 @@ label {
   margin-bottom: 0;
 }
 
+.cs_faq_section .cs_accordian.cs_style_1 {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
 /*==============================================================
   12. Hero
  ===============================================================*/
