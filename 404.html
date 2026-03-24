@@ -2,67 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting... | Maid at Home</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f8fafc;
-            color: #0E1109;
-            text-align: center;
-        }
-        .loader-box {
-            padding: 2.5rem;
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-            max-width: 90%;
-        }
-        .spinner {
-            border: 3px solid #f3f3f3;
-            border-top: 3px solid #1F77D6;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            animation: spin 1s linear infinite;
-            margin: 0 auto 1.5rem;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        .btn-link {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #1F77D6;
-            color: white;
-            text-decoration: none;
-            border-radius: 30px;
-            font-weight: 600;
-        }
-    </style>
+    <title>Redirecting...</title>
 </head>
 <body>
-    <div class="loader-box">
-        <div class="spinner"></div>
-        <h2 style="margin: 0 0 10px 0;">Moving things around...</h2>
-        <p style="color: #64748b; margin-bottom: 20px;">We're redirecting you to our new page structure.</p>
-        <p id="status-msg">If you are not redirected automatically, <a id="manual-link" href="/" class="btn-link">click here</a></p>
-    </div>
-
     <script>
         (function() {
             var path = window.location.pathname;
             var search = window.location.search;
             var hash = window.location.hash;
-
-            console.log("Current path: " + path);
 
             // 1. Detect if it's an old /suburbs/ path
             if (path.includes('/suburbs/')) {
@@ -74,29 +21,20 @@
                 }
                 
                 var finalUrl = window.location.origin + newPath + search + hash;
-                console.log("Redirecting to: " + finalUrl);
-                
-                document.getElementById('manual-link').href = finalUrl;
-                
-                // Un pequeño retraso ayuda a estabilizar la redirección en navegadores móviles/GitHub Pages
-                setTimeout(function() {
-                    window.location.replace(finalUrl);
-                }, 150);
+                window.location.replace(finalUrl);
             } 
             // 2. Handle /suburbs/ index
             else if (path.endsWith('/suburbs') || path.endsWith('/suburbs/')) {
                 var finalUrl = window.location.origin + '/locations/' + search + hash;
-                document.getElementById('manual-link').href = finalUrl;
                 window.location.replace(finalUrl);
             }
             // 3. General Fallback
             else {
-                console.log("Not a /suburbs/ path. Redirecting to home in 3 seconds.");
                 setTimeout(function() {
                     if (window.location.pathname !== '/') {
                         window.location.replace('/');
                     }
-                }, 3000);
+                }, 150);
             }
         })();
     </script>
