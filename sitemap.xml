@@ -73,6 +73,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://maidathome.com.au/services/steam-clean</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://maidathome.com.au/locations</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
