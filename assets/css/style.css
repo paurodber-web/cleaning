@@ -6045,3 +6045,4 @@ body.modal-open {
 @media (max-width: 767px) {
     .cs_footer_final_grid { grid-template-columns: 1fr; gap: 30px; padding: 40px 0; }
 }
+
