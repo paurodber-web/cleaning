@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <style>
+        /* Estilos específicos para el nuevo bloque del footer */
+        .cs_footer_popular_areas {
+            margin-top: 40px;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        .cs_popular_areas_title {
+            color: var(--white-color);
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .cs_popular_areas_list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px 30px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .cs_popular_areas_list li a {
+            color: var(--gray-color2);
+            font-size: 13px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .cs_popular_areas_list li a:hover {
+            color: var(--accent-color);
+        }
+        @media (max-width: 767px) {
+            .cs_popular_areas_list {
+                gap: 10px 20px;
+            }
+            .cs_popular_areas_list li a {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body style="background-color: #f4f4f4; padding: 50px;">
+
+    <!-- Start Footer Section (OPTIMIZED) -->
+    <footer class="cs_footer_style_1 cs_primary_bg cs_radius_16 position-relative overflow-hidden">
+        <div class="container p-0">
+            <!-- Newsletter -->
+            <div class="cs_newsletter_style_1 cs_blue_bg1 cs_radius_16 position-relative z-1">
+                <div class="cs_newsletter_text">
+                    <h3 class="cs_fs_24 cs_white_color cs_mb_16">Join our local community</h3>
+                    <p class="cs_white_color cs_primary_font mb-0">We occasionally send out special offers and helpful advice.</p>
+                </div>
+                <!-- Form truncated for preview -->
+                <div class="cs_newsletter_form">...</div>
+            </div>
+
+            <div class="cs_footer_main cs_center_column position-relative z-1">
+                <div class="cs_footer_logo cs_mb_40 cs_mb_lg_30">
+                    <img alt="Logo" src="../assets/img/logo-white.webp" />
+                </div>
+                <!-- Main Nav -->
+                <ul class="cs_footer_menu cs_fs_14 cs_gray_color2 cs_primary_font cs_mp_0">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about-us">About</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/pricing">Pricing</a></li>
+                    <li><a href="/locations">Locations</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/faqs">FAQs</a></li>
+                    <li><a href="/contact-us">Contact</a></li>
+                    <li><a href="/booking">Booking</a></li>
+                </ul>
+
+                <!-- NEW: POPULAR AREAS BLOCK (SEO POWER) -->
+                <div class="cs_footer_popular_areas" data-aos="fade-up">
+                    <h4 class="cs_popular_areas_title">Our Popular House Cleaning Areas</h4>
+                    <ul class="cs_popular_areas_list cs_primary_font">
+                        <li><a href="/locations/house-cleaning-melbourne-cbd">Melbourne CBD</a></li>
+                        <li><a href="/locations/house-cleaning-south-yarra">South Yarra</a></li>
+                        <li><a href="/locations/house-cleaning-richmond">Richmond</a></li>
+                        <li><a href="/locations/house-cleaning-toorak">Toorak</a></li>
+                        <li><a href="/locations/house-cleaning-st-kilda">St Kilda</a></li>
+                        <li><a href="/locations/house-cleaning-albert-park">Albert Park</a></li>
+                        <li><a href="/locations/house-cleaning-brunswick">Brunswick</a></li>
+                        <li><a href="/locations/house-cleaning-hawthorn">Hawthorn</a></li>
+                        <li><a href="/locations/house-cleaning-fitzroy">Fitzroy</a></li>
+                        <li><a href="/locations/house-cleaning-footscray">Footscray</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="cs_footer_bottom position-relative z-1">
+                <div class="cs_bottom_content">
+                    <div class="cs_copyright_text cs_fs_14 cs_gray_color2">
+                        &copy; 2026 Maid at Home. All rights reserved.
+                    </div>
+                    <!-- Social Buttons and Legal Links -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

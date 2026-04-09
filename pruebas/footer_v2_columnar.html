@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Cargamos tus fuentes originales -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <link href="../assets/css/fontawesome.min.css" rel="stylesheet" />
+    <style>
+        /* Forzamos el uso de tus variables de estilo originales */
+        .cs_footer_v2_grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 2fr 1.2fr;
+            gap: 40px;
+            padding: 60px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .cs_footer_v2_col h4 {
+            color: var(--white-color);
+            font-family: var(--primary-font); /* Fuente original */
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        .cs_v2_list { list-style: none; padding: 0; margin: 0; }
+        .cs_v2_list li { margin-bottom: 12px; }
+        .cs_v2_list li a { 
+            color: var(--gray-color2); 
+            font-family: var(--primary-font); /* Fuente original */
+            font-size: 14px; 
+            text-decoration: none; 
+            transition: 0.3s; 
+        }
+        .cs_v2_list li a:hover { color: var(--accent-color); padding-left: 5px; }
+        
+        .cs_v2_suburbs_grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px 20px;
+        }
+        
+        .cs_v2_description {
+            color: var(--gray-color2);
+            font-family: var(--primary-font);
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .cs_v2_contact_info { 
+            color: var(--gray-color2); 
+            font-family: var(--primary-font); 
+            font-size: 14px; 
+        }
+        .cs_v2_contact_info i { color: var(--accent-color); margin-right: 10px; width: 20px; }
+
+        @media (max-width: 1199px) {
+            .cs_footer_v2_grid { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 767px) {
+            .cs_footer_v2_grid { grid-template-columns: 1fr; gap: 30px; padding: 40px 0; }
+        }
+    </style>
+</head>
+<body style="background-color: #f4f4f4; padding: 30px;">
+
+    <!-- VERSION V2 FIX: COLUMNAR CORRECT FONTS -->
+    <footer class="cs_footer_style_1 cs_primary_bg cs_radius_16 position-relative overflow-hidden">
+        <div class="container pb-0">
+            <!-- Newsletter original -->
+            <div class="cs_newsletter_style_1 cs_blue_bg1 cs_radius_16 position-relative z-1">
+                <div class="cs_newsletter_text">
+                    <h3 class="cs_fs_24 cs_white_color cs_mb_16 cs_primary_font">Join our local community</h3>
+                    <p class="cs_white_color cs_primary_font mb-0">We occasionally send out special offers and helpful advice.</p>
+                </div>
+                <form action="#" class="cs_newsletter_form position-relative">
+                    <input autocomplete="email" name="email" placeholder="Enter your email" required="" type="email" />
+                    <button type="submit" class="cs_primary_font">Send</button>
+                </form>
+            </div>
+
+            <div class="cs_footer_v2_grid position-relative z-1">
+                <!-- Col 1: Brand -->
+                <div class="cs_footer_v2_col">
+                    <img alt="Logo" src="../assets/img/logo-white.webp" style="width: 158px; height:37px; margin-bottom: 25px;" />
+                    <p class="cs_v2_description">Professional house cleaning across Melbourne. We deliver detailed, reliable care for your home.</p>
+                    <div class="cs_social_btns_style_1 mt-4">
+                        <a href="#"><img src="../assets/img/icons/facebook-f-brands-solid-full.svg" width="20" height="20" /></a>
+                        <a href="#"><img src="../assets/img/icons/instagram-brands-solid-full.svg" width="20" height="20" /></a>
+                        <a href="#"><img src="../assets/img/icons/whatsapp-brands-solid-full.svg" width="20" height="20" /></a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Navigation -->
+                <div class="cs_footer_v2_col">
+                    <h4>Company</h4>
+                    <ul class="cs_v2_list">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about-us">About Us</a></li>
+                        <li><a href="/services">Our Services</a></li>
+                        <li><a href="/pricing">Pricing</a></li>
+                        <li><a href="/booking">Book a Clean</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Popular Suburbs (SEO BOOST) -->
+                <div class="cs_footer_v2_col">
+                    <h4>Popular Areas</h4>
+                    <div class="cs_v2_suburbs_grid">
+                        <ul class="cs_v2_list">
+                            <li><a href="/locations/house-cleaning-melbourne-cbd">Melbourne CBD</a></li>
+                            <li><a href="/locations/house-cleaning-south-yarra">South Yarra</a></li>
+                            <li><a href="/locations/house-cleaning-richmond">Richmond</a></li>
+                            <li><a href="/locations/house-cleaning-toorak">Toorak</a></li>
+                            <li><a href="/locations/house-cleaning-st-kilda">St Kilda</a></li>
+                        </ul>
+                        <ul class="cs_v2_list">
+                            <li><a href="/locations/house-cleaning-albert-park">Albert Park</a></li>
+                            <li><a href="/locations/house-cleaning-brunswick">Brunswick</a></li>
+                            <li><a href="/locations/house-cleaning-hawthorn">Hawthorn</a></li>
+                            <li><a href="/locations/house-cleaning-fitzroy">Fitzroy</a></li>
+                            <li><a href="/locations">All Locations</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Col 4: Contact -->
+                <div class="cs_footer_v2_col">
+                    <h4>Contact Us</h4>
+                    <div class="cs_v2_contact_info">
+                        <p class="mb-2"><i class="fa-solid fa-phone"></i> +61 413 398 546</p>
+                        <p class="mb-3"><i class="fa-solid fa-envelope"></i> hello@maidathome.com.au</p>
+                        <a href="/booking" class="cs_btn_spray mt-1" style="padding: 10px 20px; font-size: 14px;">
+                            <span class="cs_btn_text">Secure Booking</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="cs_footer_bottom position-relative z-1 py-4">
+                <div class="cs_bottom_content d-flex justify-content-between align-items-center">
+                    <p class="cs_gray_color2 cs_fs_14 cs_primary_font mb-0">&copy; 2026 Maid at Home. All rights reserved.</p>
+                    <ul class="cs_footer_bottom_menu cs_mp_0" style="display:flex; gap:20px; list-style:none;">
+                        <li><a href="/privacy-policy" class="cs_gray_color2 cs_fs_14 cs_primary_font">Privacy</a></li>
+                        <li><a href="/terms-conditions" class="cs_gray_color2 cs_fs_14 cs_primary_font">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Shapes originales -->
+            <div class="cs_vector_shape1 position-absolute"><img src="../assets/img/vector-4.svg" /></div>
+            <div class="cs_vector_shape2 position-absolute"><img src="../assets/img/vector-5.svg" /></div>
+        </div>
+    </footer>
+
+</body>
+</html>
