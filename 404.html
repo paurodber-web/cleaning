@@ -11,30 +11,29 @@
             var search = window.location.search;
             var hash = window.location.hash;
 
+            // Normalize path: remove trailing slash for easier comparison
+            var cleanPath = path.replace(/\/$/, "");
+
             // 1. Detect if it's an old /suburbs/ path
-            if (path.includes('/suburbs/')) {
-                var newPath = path.replace('/suburbs/', '/locations/');
-                
-                // Ensure the URL is clean (without .html)
-                if (newPath.endsWith('.html')) {
-                    newPath = newPath.substring(0, newPath.length - 5);
+            if (cleanPath.includes('/suburbs')) {
+                var newPath = cleanPath.replace('/suburbs', '/locations');
+                // Ensure it ends with .html for the server
+                if (!newPath.endsWith('.html')) {
+                    newPath += '.html';
                 }
-                
-                var finalUrl = window.location.origin + newPath + search + hash;
-                window.location.replace(finalUrl);
+                window.location.replace(window.location.origin + newPath + search + hash);
             } 
-            // 2. Handle /suburbs/ index
-            else if (path.endsWith('/suburbs') || path.endsWith('/suburbs/')) {
-                var finalUrl = window.location.origin + '/locations/' + search + hash;
-                window.location.replace(finalUrl);
+            // 2. Handle /locations/ without .html (fixes Sitemap/Google issues)
+            else if (cleanPath.includes('/locations/') && !cleanPath.endsWith('.html')) {
+                window.location.replace(window.location.origin + cleanPath + '.html' + search + hash);
             }
-            // 3. General Fallback
+            // 3. General Fallback to Home (only if not already home and not a valid subpage)
             else {
                 setTimeout(function() {
-                    if (window.location.pathname !== '/') {
+                    if (window.location.pathname !== '/' && window.location.pathname !== '/index.html') {
                         window.location.replace('/');
                     }
-                }, 150);
+                }, 100);
             }
         })();
     </script>
