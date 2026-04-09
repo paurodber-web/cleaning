@@ -24,14 +24,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta content="Maid at Home" name="author" />
     <!-- Favicon -->
     <link href="assets/img/favicon.webp" rel="icon" />
-    <!-- All CSS Files -->
-    <link href="assets/css/aos.min.css" rel="stylesheet" />
-    <link href="assets/css/slick.min.css" rel="stylesheet" />
-    <link href="assets/css/odometer.min.css" rel="stylesheet" />
+    <link rel="preload" href="assets/fonts/plus-jakarta-sans-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="assets/fonts/inter-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <!-- Critical CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="assets/css/tom-select.min.css" rel="stylesheet" />
     <link href="assets/css/fontawesome.min.css" rel="stylesheet" />
     <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- Non-critical CSS -->
+    <link rel="preload" href="assets/css/aos.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link href="assets/css/aos.min.css" rel="stylesheet" /></noscript>
     <!-- Pricing Table Overrides -->
     <style>
         /* === MODAL SAAS HIGHLIGHTED FOCUS TABLE === */
@@ -154,6 +155,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             .saas-badge { font-size: 9px; padding: 2px 8px; }
         }
         
+        .cs_site_brand img { width: 158px; height: 37px; display: block; }
         .modal-dialog { max-width: 1000px; }
         #modalDesignMatrix .modal-content {
             border: none;
@@ -233,6 +235,54 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </style>
     <!-- Site Title -->
     <title>House Cleaning Prices | Maid at Home</title>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CleaningService",
+  "name": "Maid at Home",
+  "image": "https://maidathome.com.au/assets/img/logo-white.webp",
+  "@id": "https://maidathome.com.au",
+  "url": "https://maidathome.com.au",
+  "telePhone": "+61 413 398 546",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Melbourne Victoria",
+    "addressLocality": "Melbourne",
+    "addressRegion": "VIC",
+    "postalCode": "3000",
+    "addressCountry": "AU"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -37.8136,
+    "longitude": 144.9631
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "opens": "08:00",
+    "closes": "20:00"
+  },
+  "sameAs": [
+    "https://www.facebook.com/profile.php?id=61573169063177",
+    "https://www.instagram.com/maidathome_melb/"
+  ],
+  "areaServed": {
+    "@type": "City",
+    "name": "Melbourne"
+  }
+}
+</script>
 </head>
 
 <body>
@@ -250,7 +300,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="cs_main_header_in">
                         <div class="cs_main_header_left">
                             <a aria-label="Home page link" class="cs_site_brand" href="/">
-                                <img alt="Logo" src="assets/img/logo-white.webp" />
+                                <img alt="Logo" src="assets/img/logo-white.webp" width="158" height="37" fetchpriority="high" decoding="async" />
                             </a>
                         </div>
                         <div class="cs_main_header_center">
@@ -789,7 +839,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                     <div class="row justify-content-center" data-aos="fade-up">
                         <div class="col-12">
-                            <div class="page-saas-container">
+                            <div class="page-saas-container" id="service-comparison-content">
                                 <div class="saas-table-wrapper">
                                     <table class="saas-table">
                                         <thead>
@@ -955,7 +1005,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
                 <div class="cs_footer_main cs_center_column position-relative z-1">
                     <div class="cs_footer_logo cs_mb_40 cs_mb_lg_30" data-aos="zoom-in">
-                        <img alt="Logo" src="assets/img/logo-white.webp" />
+                        <img alt="Logo" src="assets/img/logo-white.webp" width="158" height="37" loading="lazy" decoding="async" />
                     </div>
                     <ul class="cs_footer_menu cs_fs_14 cs_gray_color2 cs_primary_font cs_mp_0">
                         <li>
@@ -1015,13 +1065,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
                         <div class="cs_social_btns_style_1">
                             <a aria-label="Social link" href="https://www.facebook.com/profile.php?id=61573169063177" target="_blank">
-                                <img src="assets/img/icons/facebook-f-brands-solid-full.svg" alt="Facebook" width="20" height="20">
+                                <img src="assets/img/icons/facebook-f-brands-solid-full.svg" alt="Facebook" width="20" height="20" loading="lazy" decoding="async">
                             </a>
                             <a aria-label="Social link" href="https://www.instagram.com/maidathome_melb/" target="_blank">
-                                <img src="assets/img/icons/instagram-brands-solid-full.svg" alt="Instagram" width="20" height="20">
+                                <img src="assets/img/icons/instagram-brands-solid-full.svg" alt="Instagram" width="20" height="20" loading="lazy" decoding="async">
                             </a>
                             <a aria-label="Social link" href="https://wa.me/61413398546" target="_blank">
-                                <img src="assets/img/icons/whatsapp-brands-solid-full.svg" alt="WhatsApp" width="20" height="20">
+                                <img src="assets/img/icons/whatsapp-brands-solid-full.svg" alt="WhatsApp" width="20" height="20" loading="lazy" decoding="async">
                             </a>
                         </div>
                         <ul class="cs_footer_bottom_menu cs_fs_14 cs_gray_color2 cs_primary_font cs_mp_0">
@@ -1035,16 +1085,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                 </div>
                 <div class="cs_vector_shape1 position-absolute">
-                    <img alt="Vector shape" src="assets/img/vector-4.svg" />
+                    <img alt="Vector shape" src="assets/img/vector-4.svg" loading="lazy" decoding="async" />
                 </div>
                 <div class="cs_vector_shape2 position-absolute">
-                    <img alt="Vector shape" src="assets/img/vector-5.svg" />
+                    <img alt="Vector shape" src="assets/img/vector-5.svg" loading="lazy" decoding="async" />
                 </div>
             </div>
         </footer>
         <!-- End Footer Section -->
         <!-- Start Scroll Top Button -->
-        <button class="cs_scrollup" type="button">
+        <button class="cs_scrollup" type="button" aria-label="Scroll to top">
             <span>
                 <i class="fa-solid fa-arrow-up">
                 </i>
@@ -1052,20 +1102,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </button>
     </div>
     <!-- End Scroll Top Button -->
-    <script src="assets/js/aos.min.js">
-    </script>
-    <script src="assets/js/lenis.min.js">
-    </script>
-    <script src="assets/js/jquery.min.js">
-    </script>
-    <script src="assets/js/slick.min.js">
-    </script>
-    <script src="assets/js/odometer.min.js">
-    </script>
-    <script src="assets/js/tom-select.min.js">
-    </script>
-    <script src="assets/js/main.js">
-    </script>
+    <script src="assets/js/jquery.min.js" defer></script>
+    <script src="assets/js/aos.min.js" defer></script>
+    <script src="assets/js/lenis.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
 
     <!-- ==============================================
          MODAL: DETAILED SERVICE MATRIX
@@ -1076,144 +1117,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="modal-header">
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body" data-lenis-prevent tabindex="0" data-lenis-prevent>
-                    <div class="saas-table-wrapper">
-                        <table class="saas-table">
-                            <thead>
-                                <tr>
-                                    <th></th>
-                                    <th>Standard<br class="d-md-none"> Clean</th>
-                                    <th class="col-highlight">
-                                        <span class="saas-badge">POPULAR</span>
-                                        Deep<br class="d-md-none"> Clean
-                                    </th>
-                                    <th>Move<br class="d-md-none"> In/Out</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="saas-group">
-                                    <td>Kitchen</td>
-                                    <td></td>
-                                    <td class="col-highlight"></td>
-                                    <td></td>
-                                </tr>
-                                <tr><td>Clean stovetop</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Clean rangehood (exterior)</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Clean underside of range hood</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Clean exhaust fans &amp; filters</td><td><i class="fa-solid fa-xmark saas-cross"></i></td><td class="col-highlight"><i class="fa-solid fa-xmark saas-cross"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Wipe bench tops</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Clean visible appliances</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Clean splash back</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Clean / polish tap ware</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Scrub / clean sink</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Clean inside &amp; outside of microwave</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Clean cupboards (exterior)</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Polish stainless steel surfaces</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Dust all surfaces</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Remove food &amp; wipe inside dishwasher</td><td><i class="fa-solid fa-xmark saas-cross"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Inside oven</td><td><i class="fa-solid fa-xmark saas-cross"></i></td><td class="col-highlight"><i class="fa-solid fa-xmark saas-cross"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Inside all drawers/cabinets</td><td><i class="fa-solid fa-xmark saas-cross"></i></td><td class="col-highlight"><i class="fa-solid fa-xmark saas-cross"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Vacuum &amp; mop all floors</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-
-                                <tr class="saas-group">
-                                    <td>Bathrooms</td>
-                                    <td></td>
-                                    <td class="col-highlight"></td>
-                                    <td></td>
-                                </tr>
-                                <tr><td>Scrub / clean bath</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Scrub / clean shower</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Scrub / clean sinks</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Scrub shower floor &amp; wall</td><td><i class="fa-solid fa-xmark saas-cross"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Wipe down benches</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Clean mirrors</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Clean / polish tapware &amp; chrome</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Wipe down cupboards (exterior)</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Empty bins</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Clean / disinfect toilet</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Floor grout</td><td><i class="fa-solid fa-xmark saas-cross"></i></td><td class="col-highlight"><i class="fa-solid fa-xmark saas-cross"></i></td><td><i class="fa-solid fa-xmark saas-cross"></i></td></tr>
-                                <tr><td>Clean ceiling exhaust fans</td><td><i class="fa-solid fa-xmark saas-cross"></i></td><td class="col-highlight"><i class="fa-solid fa-xmark saas-cross"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Inside all drawers/cabinets</td><td><i class="fa-solid fa-xmark saas-cross"></i></td><td class="col-highlight"><i class="fa-solid fa-xmark saas-cross"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Vacuum &amp; mop all floors</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-
-                                <tr class="saas-group">
-                                    <td>All Areas</td>
-                                    <td></td>
-                                    <td class="col-highlight"></td>
-                                    <td></td>
-                                </tr>
-                                <tr><td>Light tidy up</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Extensive tidy up</td><td><i class="fa-solid fa-xmark saas-cross"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Cobweb removal</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Empty bins</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Dust skirting boards / window sills / doors</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Wipe skirting boards / window sills / doors</td><td><i class="fa-solid fa-xmark saas-cross"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Clean accessible light switches &amp; power points</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Dust reachable surfaces</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Clean mirrors</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Vacuum / clean soft furnishing</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Vacuum under beds / furniture / couches</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Clean ceilings</td><td><i class="fa-solid fa-xmark saas-cross"></i></td><td class="col-highlight"><i class="fa-solid fa-xmark saas-cross"></i></td><td><i class="fa-solid fa-xmark saas-cross"></i></td></tr>
-                                <tr><td>Dust blinds</td><td><i class="fa-solid fa-xmark saas-cross"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Inside all drawers/cabinets</td><td><i class="fa-solid fa-xmark saas-cross"></i></td><td class="col-highlight"><i class="fa-solid fa-xmark saas-cross"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Vacuum &amp; mop all floors</td><td><i class="fa-solid fa-check saas-check"></i></td><td class="col-highlight"><i class="fa-solid fa-check saas-check"></i></td><td><i class="fa-solid fa-check saas-check"></i></td></tr>
-                                <tr><td>Garage</td><td><i class="fa-solid fa-xmark saas-cross"></i></td><td class="col-highlight"><i class="fa-solid fa-xmark saas-cross"></i></td><td><i class="fa-solid fa-xmark saas-cross"></i></td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <!-- Extra Services Section -->
-                    <div class="cs_height_40 cs_height_lg_30"></div>
-
-                    <div class="saas-table-wrapper">
-                        <div class="section-title-label">
-                            <i class="fa-solid fa-plus-circle"></i> Optional Add-ons
-                        </div>
-                        <table class="extra-table">
-                            <tbody>
-                                <tr>
-                                    <td class="ex-name"><div class="ex-icon"><i class="fa-solid fa-fire-burner"></i></div> Inside oven</td>
-                                    <td class="ex-price">$65</td>
-                                </tr>
-                                <tr>
-                                    <td class="ex-name"><div class="ex-icon"><i class="fa-solid fa-snowflake"></i></div> Inside fridge</td>
-                                    <td class="ex-price">$30</td>
-                                </tr>
-                                <tr>
-                                    <td class="ex-name"><div class="ex-icon"><i class="fa-solid fa-box-open"></i></div> Inside drawers / cabinets</td>
-                                    <td class="ex-price">$40 - $60</td>
-                                </tr>
-                                <tr>
-                                    <td class="ex-name"><div class="ex-icon"><i class="fa-solid fa-tree-city"></i></div> Balcony</td>
-                                    <td class="ex-price">$35</td>
-                                </tr>
-                                <tr>
-                                    <td class="ex-name"><div class="ex-icon"><i class="fa-solid fa-border-all"></i></div> Inside windows</td>
-                                    <td class="ex-price">$70 - $130</td>
-                                </tr>
-                                <tr>
-                                    <td class="ex-name"><div class="ex-icon"><i class="fa-solid fa-bed"></i></div> Bed changing</td>
-                                    <td class="ex-price">$10 <span style="font-size: 12px; font-weight: 500; color: var(--secondary-color);">/ bed</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="ex-name"><div class="ex-icon"><i class="fa-solid fa-layer-group"></i></div> Wall cleaning</td>
-                                    <td class="ex-price">$25 <span style="font-size: 12px; font-weight: 500; color: var(--secondary-color);">/ wall</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="ex-name"><div class="ex-icon"><i class="fa-solid fa-wind"></i></div> Steam clean</td>
-                                    <td class="ex-price">$55 <span style="font-size: 12px; font-weight: 500; color: var(--secondary-color);">/ room</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="ex-name"><div class="ex-icon"><i class="fa-solid fa-sink"></i></div> Dish washing</td>
-                                    <td class="ex-price">$30</td>
-                                </tr>
-                                <tr>
-                                    <td class="ex-name"><div class="ex-icon"><i class="fa-solid fa-person-shelter"></i></div> Wet wiping blinds</td>
-                                    <td class="ex-price">$20 <span style="font-size: 12px; font-weight: 500; color: var(--secondary-color);">/ blind</span></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                <div class="modal-body" data-lenis-prevent tabindex="0">
+                    <div id="modalDesignMatrixContent"></div>
                 </div>
             </div>
         </div>
@@ -1241,9 +1146,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     hourlySection.style.display = 'flex';
                 });
             }
+
+            const comparisonModal = document.getElementById('modalDesignMatrix');
+            const comparisonSource = document.getElementById('service-comparison-content');
+            const comparisonTarget = document.getElementById('modalDesignMatrixContent');
+
+            if (comparisonModal && comparisonSource && comparisonTarget) {
+                comparisonModal.addEventListener('show.bs.modal', function() {
+                    if (!comparisonTarget.childElementCount) {
+                        comparisonTarget.innerHTML = comparisonSource.innerHTML;
+                    }
+                });
+            }
         });
     </script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <!-- MODAL: DISCOUNT -->
 <div class="modal fade" id="popup-discount-final" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog position-fixed bottom-0 end-0 m-3 m-sm-4"

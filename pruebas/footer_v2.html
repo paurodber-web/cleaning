@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer Design V2 - Structural Columns</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/fontawesome.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    /* Design Overrides for V2 */
+    .cs_footer_v2 {
+      background-color: #0b0e07;
+      padding: 80px 60px 40px;
+      color: #fff;
+      border-radius: 20px;
+      margin: 20px;
+    }
+    .cs_footer_logo_v2 img {
+      max-width: 180px;
+      margin-bottom: 25px;
+    }
+    .cs_footer_company_desc {
+      color: #94a3b8;
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      max-width: 300px;
+    }
+    .cs_footer_column_title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 30px;
+      position: relative;
+    }
+    .cs_footer_column_title::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      width: 30px;
+      height: 2px;
+      background-color: #facc15;
+    }
+    .cs_footer_nav_list_v2 {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .cs_footer_nav_list_v2 li {
+      margin-bottom: 12px;
+    }
+    .cs_footer_nav_list_v2 a {
+      color: #cbd5e1;
+      text-decoration: none;
+      font-size: 15px;
+      transition: all 0.3s;
+    }
+    .cs_footer_nav_list_v2 a:hover {
+      color: #facc15;
+      padding-left: 5px;
+    }
+    .cs_footer_locations_grid_v2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+    .cs_footer_bottom_row_v2 {
+      margin-top: 60px;
+      padding-top: 30px;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #64748b;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body style="background-color: #f8fafc; padding: 50px;">
+  
+  <div class="container p-0">
+    <footer class="cs_footer_v2 position-relative">
+      <div class="container p-0">
+        
+        <!-- Newsletter Section (mismo color y diseño) -->
+        <div class="cs_newsletter_style_1 cs_blue_bg1 cs_radius_16 position-relative z-1" style="margin-bottom: 60px;">
+          <div class="cs_newsletter_text">
+            <h3 class="cs_fs_24 cs_white_color cs_mb_16">Join our local community</h3>
+            <p class="cs_white_color cs_primary_font mb-0">We occasionally send out special offers and helpful advice to help you keep your home looking its best.</p>
+          </div>
+          <form action="#" class="cs_newsletter_form position-relative">
+            <input autocomplete="email" name="email" placeholder="Enter your email" required type="email" />
+            <button type="submit">Send</button>
+          </form>
+        </div>
+
+        <div class="row">
+          <!-- Col 1: Brand -->
+          <div class="col-lg-4">
+            <div class="cs_footer_logo_v2">
+              <img src="../assets/img/logo-white.webp" alt="Maid at Home Logo">
+            </div>
+            <p class="cs_footer_company_desc">
+              Your trusted partner for home cleaning in Melbourne. Reliable, professional, and eco-friendly.
+            </p>
+            <div class="cs_social_btns_style_1">
+                <a aria-label="Social link" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a aria-label="Social link" href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a aria-label="Social link" href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+
+          <!-- Col 2: Navigation -->
+          <div class="col-lg-3 offset-lg-1">
+            <h4 class="cs_footer_column_title">Navigation</h4>
+            <ul class="cs_footer_nav_list_v2">
+              <li><a href="/">Home</a></li>
+              <li><a href="/about-us">About Company</a></li>
+              <li><a href="/services">Our Services</a></li>
+              <li><a href="/pricing">Pricing Plans</a></li>
+              <li><a href="/blog">Cleaning Blog</a></li>
+              <li><a href="/contact-us">Contact Us</a></li>
+              <li><a href="/booking">Online Booking</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Popular Locations -->
+          <div class="col-lg-4">
+            <h4 class="cs_footer_column_title">Popular Locations</h4>
+            <ul class="cs_footer_nav_list_v2 cs_footer_locations_grid_v2">
+              <li><a href="/suburbs/house-cleaning-melbourne-cbd">Melbourne CBD</a></li>
+              <li><a href="/suburbs/house-cleaning-richmond">Richmond</a></li>
+              <li><a href="/suburbs/house-cleaning-south-yarra">South Yarra</a></li>
+              <li><a href="/suburbs/house-cleaning-st-kilda">St Kilda</a></li>
+              <li><a href="/suburbs/house-cleaning-brunswick">Brunswick</a></li>
+              <li><a href="/suburbs/house-cleaning-hawthorn">Hawthorn</a></li>
+              <li><a href="/suburbs/house-cleaning-south-melbourne">South Melb</a></li>
+              <li><a href="/suburbs/house-cleaning-docklands">Docklands</a></li>
+            </ul>
+            <a href="/suburbs" style="display:inline-block; margin-top: 20px; color: #facc15; font-weight: 700; text-decoration: none;">View all locations &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="cs_footer_bottom_row_v2">
+          <div>&copy; 2024 Maid at Home. All rights reserved.</div>
+          <div class="d-flex gap-4">
+            <a href="#" style="color: inherit; text-decoration: none;">Privacy Policy</a>
+            <a href="#" style="color: inherit; text-decoration: none;">Terms & Conditions</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer Design V3 - Modern Split Row</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/fontawesome.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    /* Design Overrides for V3 */
+    .cs_footer_v3 {
+      background-color: #0b0e07;
+      padding: 60px 50px 40px;
+      color: #fff;
+      border-radius: 20px;
+      margin: 20px;
+    }
+    .cs_footer_top_v3 {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding-bottom: 50px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      margin-bottom: 50px;
+    }
+    .cs_footer_logo_v3 img {
+      max-width: 200px;
+    }
+    .cs_footer_nav_v3 {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .cs_footer_nav_v3 a {
+      color: #cbd5e1;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      transition: all 0.3s;
+      position: relative;
+    }
+    .cs_footer_nav_v3 a:hover {
+      color: #fff;
+    }
+    .cs_footer_nav_v3 a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 0;
+      height: 2px;
+      background-color: #facc15;
+      transition: width 0.3s;
+    }
+    .cs_footer_nav_v3 a:hover::after {
+      width: 100%;
+    }
+    .cs_footer_locations_header_v3 {
+      font-size: 14px;
+      font-weight: 400;
+      color: #fff;
+      opacity: 0.6;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      letter-spacing: 0px;
+    }
+    .cs_footer_locations_wrapper_v3 {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 60px;
+    }
+    .cs_footer_locations_list_v3 {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px 40px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      max-width: 800px;
+    }
+    .cs_footer_locations_list_v3 a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 400;
+      transition: color 0.3s;
+    }
+    .cs_footer_locations_list_v3 a:hover {
+      color: #facc15;
+    }
+    .cs_footer_copyright_v3 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      color: #64748b;
+    }
+    .cs_social_v3 {
+      display: flex;
+      gap: 20px;
+    }
+    .cs_social_v3 i {
+      font-size: 20px;
+      color: #fff;
+      transition: color 0.3s;
+    }
+    .cs_social_v3 i:hover {
+      color: #facc15;
+    }
+  </style>
+</head>
+<body style="background-color: #f8fafc; padding: 50px;">
+  
+  <div class="container p-0">
+    <footer class="cs_footer_v3 position-relative cs_primary_font overflow-hidden">
+      <div class="container p-0">
+        
+        <!-- Newsletter Section -->
+        <div class="cs_newsletter_style_1 cs_blue_bg1 cs_radius_16 position-relative z-1" style="margin-bottom: 60px;">
+          <div class="cs_newsletter_text">
+            <h3 class="cs_fs_24 cs_white_color cs_mb_16">Join our local community</h3>
+            <p class="cs_white_color cs_primary_font mb-0">We occasionally send out special offers and helpful advice to help you keep your home looking its best.</p>
+          </div>
+          <form action="#" class="cs_newsletter_form position-relative">
+            <input autocomplete="email" name="email" placeholder="Enter your email" required type="email" />
+            <button type="submit">Send</button>
+          </form>
+        </div>
+
+        <!-- Top Section: Brand & Main Nav -->
+        <div class="cs_footer_top_v3 position-relative z-1" data-aos="fade-up">
+          <div class="cs_footer_logo_v3">
+            <img src="../assets/img/logo-white.webp" alt="Maid at Home Logo">
+          </div>
+          <ul class="cs_footer_nav_v3">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about-us">About</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/pricing">Pricing</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/contact-us">Contact</a></li>
+            <li><a href="/booking">Booking</a></li>
+          </ul>
+        </div>
+
+        <!-- Middle Section: Locations Label & Grid -->
+        <h4 class="cs_footer_locations_header_v3 position-relative z-1">Popular Service Areas</h4>
+        <div class="cs_footer_locations_wrapper_v3 position-relative z-1" data-aos="fade-up" data-aos-delay="200">
+          <ul class="cs_footer_locations_list_v3">
+            <li><a href="/locations/house-cleaning-melbourne-cbd">Melbourne CBD</a></li>
+            <li><a href="/locations/house-cleaning-richmond">Richmond</a></li>
+            <li><a href="/locations/house-cleaning-south-yarra">South Yarra</a></li>
+            <li><a href="/locations/house-cleaning-st-kilda">St Kilda</a></li>
+            <li><a href="/locations/house-cleaning-brunswick">Brunswick</a></li>
+            <li><a href="/locations/house-cleaning-hawthorn">Hawthorn</a></li>
+          </ul>
+          <a href="/locations" style="color:#fff; text-decoration:none; font-size:13px; font-weight:700; transition: color 0.3s;" onmouseover="this.style.color='#facc15'" onmouseout="this.style.color='#fff'">
+            View all locations <i class="fa-solid fa-chevron-right" style="font-size: 10px; margin-left: 4px;"></i>
+          </a>
+        </div>
+
+        <!-- Bottom Section: Copy & Social -->
+        <div class="cs_footer_copyright_v3 position-relative z-1">
+          <div>&copy; <span class="cs_getting_year"></span> Maid at Home. All rights reserved.</div>
+          <div class="d-flex gap-4">
+            <a href="/privacy-policy" style="color: inherit; text-decoration: none;">Privacy Policy</a>
+            <a href="/terms-conditions" style="color: inherit; text-decoration: none;">Terms &amp; Conditions</a>
+          </div>
+          <div class="cs_social_v3">
+            <a href="https://www.facebook.com/profile.php?id=61573169063177"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/maidathome_melb/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/61413398546"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+        
+      </div>
+    </footer>
+  </div>
+
+</body>
+</html>
