@@ -43,7 +43,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maidathome.com.au/services</loc>
+    <loc>https://maidathome.com.au/services/</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -79,7 +79,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maidathome.com.au/locations</loc>
+    <loc>https://maidathome.com.au/locations/</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -535,7 +535,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://maidathome.com.au/blog</loc>
+    <loc>https://maidathome.com.au/blog/</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
