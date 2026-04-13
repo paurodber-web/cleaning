@@ -1768,6 +1768,29 @@ label {
   }
 }
 
+.cs_fs_64 {
+  font-size: 64px;
+  line-height: 1.25em;
+}
+
+@media (max-width: 1199px) {
+  .cs_fs_64 {
+    font-size: 56px;
+  }
+}
+
+@media (max-width: 991px) {
+  .cs_fs_64 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 575px) {
+  .cs_fs_64 {
+    font-size: 28px;
+  }
+}
+
 .cs_fs_68 {
   font-size: 68px;
   line-height: 1.25em;
