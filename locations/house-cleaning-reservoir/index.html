@@ -1300,18 +1300,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         html += `
                   <div class="col-lg-6">
                       <article class="cs_post_style_1 cs_gray_bg1 cs_radius_16 h-100 mb-0" data-aos="fade-up" data-aos-delay="150">
-                          <a aria-label="Post details page link" class="cs_post_thumbnail cs_radius_16 cs_mb_16 cs_zoom overflow-hidden" href="../${p1.url}">
-                              <img alt="Post thumbnail" src="${p1.img.startsWith('http') ? p1.img : '../' + p1.img}" loading="lazy" />
+                          <a aria-label="Post details page link" class="cs_post_thumbnail cs_radius_16 cs_mb_16 cs_zoom overflow-hidden" href="../../${p1.url}">
+                              <img alt="Post thumbnail" src="${p1.img.startsWith('http') ? p1.img : '../../' + p1.img}" loading="lazy" />
                           </a>
                           <div class="cs_post_info">
                               <h3 class="cs_post_title cs_fs_20 cs_mb_12">
-                                  <a aria-label="Post details page link" href="../${p1.url}">${p1.title}</a>
+                                  <a aria-label="Post details page link" href="../../${p1.url}">${p1.title}</a>
                               </h3>
                               <div class="cs_post_meta_wrapper cs_fs_18 cs_primary_font cs_mb_12">
                                   <div class="cs_post_meta">${p1.author}</div>
                                   <div class="cs_post_meta">${p1.date}</div>
                               </div>
-                              <a aria-label="Post details page link" class="cs_post_btn cs_medium cs_blue_dark" href="../${p1.url}">
+                              <a aria-label="Post details page link" class="cs_post_btn cs_medium cs_blue_dark" href="../../${p1.url}">
                                   <span>Read More</span>
                                   <span class="cs_btn_arrow"><i class="fa-solid fa-chevron-right"></i></span>
                               </a>
@@ -1326,18 +1326,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             const p = latestPosts[i];
             html += `
                           <article class="cs_post_style_2 cs_gray_bg1 cs_radius_16" data-aos="fade-up" data-aos-delay="300">
-                              <a aria-label="Post details page link" class="cs_post_thumbnail cs_radius_12 cs_zoom overflow-hidden" href="../${p.url}">
-                                  <img alt="Post thumbnail" src="${p.img.startsWith('http') ? p.img : '../' + p.img}" loading="lazy" />
+                              <a aria-label="Post details page link" class="cs_post_thumbnail cs_radius_12 cs_zoom overflow-hidden" href="../../${p.url}">
+                                  <img alt="Post thumbnail" src="${p.img.startsWith('http') ? p.img : '../../' + p.img}" loading="lazy" />
                               </a>
                               <div class="cs_post_info">
                                   <h3 class="cs_post_title cs_fs_20 cs_mb_12">
-                                      <a aria-label="Post details page link" href="../${p.url}">${p.title}</a>
+                                      <a aria-label="Post details page link" href="../../${p.url}">${p.title}</a>
                                   </h3>
                                   <div class="cs_post_meta_wrapper cs_fs_18 cs_primary_font cs_mb_12">
                                       <div class="cs_post_meta">${p.author}</div>
                                       <div class="cs_post_meta">${p.date}</div>
                                   </div>
-                                  <a aria-label="Post details page link" class="cs_post_btn cs_medium cs_blue_dark" href="../${p.url}">
+                                  <a aria-label="Post details page link" class="cs_post_btn cs_medium cs_blue_dark" href="../../${p.url}">
                                       <span>Read More</span>
                                       <span class="cs_btn_arrow"><i class="fa-solid fa-chevron-right"></i></span>
                                   </a>
