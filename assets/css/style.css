@@ -1,7 +1,3 @@
-* {
-  font-weight: 400 !important;
-}
-
 /*--------------------------------------------------------------
 >> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -110,7 +106,7 @@ h6 {
   clear: both;
   padding: 0;
   margin: 0 0 20px 0;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.28em;
   color: var(--primary-color);
   font-family: var(--primary-font);
@@ -208,7 +204,7 @@ table {
 }
 
 table th {
-  font-weight: 400;
+  font-weight: 600;
   color: var(--secondary-color);
 }
 
@@ -223,12 +219,12 @@ dl {
 }
 
 dl dt {
-  font-weight: 400;
+  font-weight: 600;
 }
 
 b,
 strong {
-  font-weight: 400;
+  font-weight: bold;
 }
 
 pre {
@@ -1807,23 +1803,23 @@ label {
 }
 
 .cs_medium {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .cs_semibold {
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .cs_bold {
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .cs_extrabold {
-  font-weight: 400;
+  font-weight: 800;
 }
 
 .cs_black {
-  font-weight: 400;
+  font-weight: 900;
 }
 
 /*=====================================  
@@ -2010,7 +2006,7 @@ label {
   align-items: center;
   justify-content: center;
   padding: 9px 20px;
-  font-weight: 400;
+  font-weight: 600;
   border: 0;
   outline: 0;
   font-family: var(--primary-font);
@@ -2064,7 +2060,7 @@ label {
   align-items: center;
   justify-content: center;
   padding: 9px 20px;
-  font-weight: 400;
+  font-weight: 600;
   border: 1px solid var(--white-color);
   outline: 0;
   font-family: var(--primary-font);
@@ -2127,7 +2123,7 @@ label {
   align-items: center;
   justify-content: center;
   padding: 9px 20px;
-  font-weight: 400;
+  font-weight: 600;
   border: 0;
   outline: 0;
   font-family: var(--primary-font);
@@ -2149,7 +2145,7 @@ label {
   align-items: center;
   justify-content: center;
   padding: 10px 24px;
-  font-weight: 400;
+  font-weight: 600;
   border: 2px solid var(--white-color);
   outline: 0;
   font-family: var(--primary-font);
@@ -2254,7 +2250,7 @@ label {
 =========================================================*/
 .cs_section_subtitle {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.86em;
   color: var(--dark-blue);
   text-transform: uppercase;
@@ -2374,7 +2370,7 @@ label {
 }
 
 .cs_rating_percentage::before {
-  font-weight: 400;
+  font-weight: 900;
 }
 
 /*===========================================================  
@@ -2449,7 +2445,7 @@ label {
   width: 100%;
   z-index: 999;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   transition: all 0.3s ease;
   /*======================================================
    Main Header
@@ -2683,7 +2679,7 @@ label {
     display: inline-block;
     padding: 10px 15px;
     border: 0;
-    font-weight: 400;
+    font-weight: 500;
   }
 
   .cs_site_header.cs_style_1 .cs_menu_toggle {
@@ -2946,7 +2942,7 @@ label {
   right: 20px;
   border: 0;
   outline: 0;
-  font-weight: 400;
+  font-weight: 600;
   color: var(--dark-blue);
   transform: translateY(-50%);
   background-color: transparent;
@@ -3432,7 +3428,7 @@ label {
 
 .cs_service_details .cs_service_contact small {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.7em;
 }
 
@@ -3448,7 +3444,7 @@ label {
 
 .cs_service_details .cs_service_desc h3 {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 600;
   font-family: var(--primary-font);
   margin-bottom: 20px;
 }
@@ -3704,7 +3700,7 @@ label {
 
 .cs_trust_badge_text {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.3;
   opacity: 0.95;
 }
@@ -3776,7 +3772,7 @@ label {
 
 .cs_calc_field label {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 600;
   color: var(--primary-color);
   margin-bottom: 0;
 }
@@ -3808,7 +3804,7 @@ label {
   background: var(--lightest-blue);
   color: var(--dark-blue);
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 700;
   cursor: pointer;
   transition: all 0.3s ease;
   display: flex;
@@ -3827,7 +3823,7 @@ label {
   border-radius: 0 !important;
   text-align: center;
   padding: 0 !important;
-  font-weight: 400;
+  font-weight: 600;
   height: 40px;
   -moz-appearance: textfield;
   appearance: textfield;
@@ -3859,7 +3855,7 @@ label {
 
 .cs_calc_price {
   font-size: 32px;
-  font-weight: 400;
+  font-weight: 700;
   color: var(--dark-blue);
   display: block;
 }
@@ -4346,7 +4342,7 @@ label {
 }
 
 .cs_contact_form_wrapper label {
-  font-weight: 400;
+  font-weight: 500;
   color: var(--primary-color);
   font-family: var(--primary-font);
   margin-bottom: 8px;
@@ -4392,7 +4388,7 @@ label {
   pointer-events: none;
   font-size: 14px;
   font-family: "Font Awesome 7 Free";
-  font-weight: 400;
+  font-weight: 900;
   color: var(--primary-color);
   transition: all 0.3s ease;
 }
@@ -4938,7 +4934,7 @@ label {
   font-size: 36px;
   margin-bottom: 16px;
   letter-spacing: -1px;
-  font-weight: 400;
+  font-weight: 600;
   font-family: var(--primary-font);
 }
 
@@ -4946,7 +4942,7 @@ label {
   font-size: 24px;
   margin-bottom: 16px;
   letter-spacing: -1px;
-  font-weight: 400;
+  font-weight: 600;
   font-family: var(--primary-font);
 }
 
@@ -4984,7 +4980,7 @@ label {
 .cs_post_details blockquote {
   padding: 24px;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--primary-color);
   font-family: var(--primary-font);
   border-radius: 16px;
@@ -5011,7 +5007,7 @@ label {
 }
 
 .cs_reply_form label {
-  font-weight: 400;
+  font-weight: 500;
   color: var(--primary-color);
   font-family: var(--primary-font);
   margin-bottom: 8px;
@@ -5051,7 +5047,7 @@ label {
 .cs_pagination_item {
   height: 44px;
   width: 44px;
-  font-weight: 400;
+  font-weight: 500;
   border-radius: 50%;
   font-family: var(--primary-font);
   color: var(--primary-color);
@@ -5288,7 +5284,7 @@ label {
 
 .custom_card_2_title {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 700;
   margin-bottom: 10px;
   color: #111;
 }
@@ -5306,7 +5302,7 @@ label {
   border-radius: 30px;
   background: #f0f6ff;
   color: #0056b3;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 14px;
   transition: all 0.3s;
   text-decoration: none;
@@ -5351,7 +5347,7 @@ label {
 
 .cs_extra_chip_title {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 700;
   color: #111;
   margin: 0;
   white-space: nowrap;
@@ -5361,7 +5357,7 @@ label {
 
 .cs_extra_chip_price {
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 800;
   color: #0056b3;
   background: #f0f6ff;
   padding: 4px 10px;
@@ -5418,7 +5414,7 @@ label {
 
 .cv_time_title {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 700;
   color: #111;
   margin-bottom: 8px;
 }
@@ -5468,7 +5464,7 @@ label {
 
 .cs_service_card_overlay h3 {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 600;
   color: #fff;
   margin-bottom: 10px;
   line-height: 1.2;
@@ -5525,7 +5521,7 @@ label {
 
 .cv_stack_content h3 {
   font-size: 22px;
-  font-weight: 400;
+  font-weight: 800;
   color: #111;
   margin-bottom: 10px;
 }
@@ -5549,7 +5545,7 @@ label {
 
 .cs_extra_chip_title {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 700;
   color: #111;
   margin: 0;
   white-space: nowrap;
@@ -5559,7 +5555,7 @@ label {
 
 .cs_extra_chip_price {
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 800;
   color: #0056b3;
   background: #f0f6ff;
   padding: 4px 10px;
@@ -5616,7 +5612,7 @@ label {
 
 .cv_time_title {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 700;
   color: #111;
   margin-bottom: 8px;
 }
@@ -5666,7 +5662,7 @@ label {
 
 .cs_service_card_overlay h3 {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 600;
   color: #fff;
   margin-bottom: 10px;
   line-height: 1.2;
@@ -5723,7 +5719,7 @@ label {
 
 .cv_stack_content h3 {
   font-size: 22px;
-  font-weight: 400;
+  font-weight: 800;
   color: #111;
   margin-bottom: 10px;
 }
@@ -5746,7 +5742,7 @@ label {
 .comparison-modal .modal-dialog { max-width: 1100px; }
 .comparison-modal .modal-content { border-radius: 24px; border: none; box-shadow: 0 25px 70px rgba(31, 119, 214, 0.1); background: #fff; }
 .comparison-modal .modal-header { border-bottom: none; padding: 20px 30px 10px; }
-.comparison-modal .modal-title { font-size: 28px; font-weight: 400; color: #0E1109; }
+.comparison-modal .modal-title { font-size: 28px; font-weight: 800; color: #0E1109; }
 .comparison-modal .modal-body { padding: 40px; }
 
 /* === MODERN COMPARISON TABLE === */
@@ -5771,7 +5767,7 @@ label {
   background: linear-gradient(135deg, #1a6fd4 0%, #1F77D6 60%, #2e8fe8 100%);
   color: #fff;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 800;
   letter-spacing: 0.3px;
   border: none;
 }
@@ -5807,7 +5803,7 @@ label {
   text-align: left;
   padding-left: 32px;
   color: #1a2433;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
 }
 .matrix-table tbody tr:last-child td {
@@ -5818,7 +5814,7 @@ label {
 .matrix-group-row td {
   background: #EAF3FC !important;
   color: #1F77D6 !important;
-  font-weight: 400 !important;
+  font-weight: 800 !important;
   text-transform: uppercase;
   font-size: 10.5px !important;
   letter-spacing: 1.5px;
@@ -5866,7 +5862,7 @@ label {
 .modal-body:focus { outline: none !important; }
 
 .addon-price {
-    font-weight: 400;
+    font-weight: 800;
     font-size: 16px;
     color: #5D728A;
 }
@@ -5895,7 +5891,7 @@ label {
     border-radius: 12px !important;
     font-family: var(--primary-font) !important;
     font-size: 20px !important;
-    font-weight: 400 !important;
+    font-weight: 800 !important;
     background: #f8fafc !important;
     letter-spacing: 2px;
     display: flex !important;
@@ -5950,7 +5946,7 @@ body.modal-open {
   background-color: var(--white-color);
   border-radius: 12px;
   color: var(--primary-color);
-  font-weight: 400;
+  font-weight: 600;
   text-align: center;
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px rgba(0,0,0,0.05);
@@ -6017,7 +6013,7 @@ body.modal-open {
     color: var(--white-color);
     font-family: var(--primary-font);
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 700;
     margin-bottom: 30px;
 }
 .cs_footer_link_list { list-style: none; padding: 0; margin: 0; }
