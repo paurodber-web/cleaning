@@ -80,16 +80,6 @@ const allPosts = [
         tags: ["Deep Cleaning", "Checklist", "Melbourne"]
     },
     {
-        title: "End of Lease Cleaning Melbourne: Bond Back Guide",
-        url: "/blog/end-of-lease-cleaning-melbourne-bond-back/",
-        img: "assets/img/blog/end_of_lease_cleans.webp",
-        author: "Maid At Home",
-        date: "March 12, 2026",
-        timestamp: 1773270000000,
-        category: "Deep Cleaning",
-        tags: ["End of lease", "Bond back", "Moving"]
-    },
-    {
         title: "How Much Does House Cleaning Cost in Melbourne? (2026 Pricing Guide)",
         url: "/blog/how-much-does-house-cleaning-cost-in-melbourne/",
         img: "assets/img/blog/cleaning_cost_melbourne.webp",
