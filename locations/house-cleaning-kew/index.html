@@ -1251,11 +1251,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <div class="col-lg-6">
                       <article class="cs_post_style_1 cs_gray_bg1 cs_radius_16 h-100 mb-0" data-aos="fade-up" data-aos-delay="150">
                           <a aria-label="Post details page link" class="cs_post_thumbnail cs_radius_16 cs_mb_16 cs_zoom overflow-hidden" href="${p1.url}">
-                              <img alt="Post thumbnail" src="${p1.img}" loading="lazy" />
+                              <img alt="Post thumbnail" src="../../${p1.img}" loading="lazy" />
                           </a>
                           <div class="cs_post_info">
                               <h3 class="cs_post_title cs_fs_20 cs_mb_12">
-                                  <a aria-label="Post details page link" href="${p1.url}">${P1.Title}</a>
+                                  <a aria-label="Post details page link" href="${p1.url}">${p1.title}</a>
                               </h3>
                               <div class="cs_post_meta_wrapper cs_fs_18 cs_primary_font cs_mb_12">
                                   <div class="cs_post_meta">${p1.author}</div>
@@ -1276,11 +1276,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             html += `
                           <article class="cs_post_style_2 cs_gray_bg1 cs_radius_16" data-aos="fade-up" data-aos-delay="300">
                               <a aria-label="Post details page link" class="cs_post_thumbnail cs_radius_12 cs_zoom overflow-hidden" href="${p.url}">
-                                  <img alt="Post thumbnail" src="${p.img}" loading="lazy" />
+                                  <img alt="Post thumbnail" src="../../${p.img}" loading="lazy" />
                               </a>
                               <div class="cs_post_info">
                                   <h3 class="cs_post_title cs_fs_20 cs_mb_12">
-                                      <a aria-label="Post details page link" href="${p.url}">${P.Title}</a>
+                                      <a aria-label="Post details page link" href="${p.url}">${p.title}</a>
                                   </h3>
                                   <div class="cs_post_meta_wrapper cs_fs_18 cs_primary_font cs_mb_12">
                                       <div class="cs_post_meta">${p.author}</div>

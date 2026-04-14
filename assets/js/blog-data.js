@@ -1,5 +1,15 @@
 const allPosts = [
     {
+        title: "End of Lease Cleaning Cost Melbourne: Pricing & Guide 2026",
+        url: "/blog/end-of-lease-cleaning-cost-melbourne/",
+        img: "assets/img/blog/end-of-lease-cleaning-cost-melbourne.webp",
+        author: "Maid at Home",
+        date: "April 14, 2026",
+        timestamp: 1776121200000,
+        category: "Cleaning Tips",
+        tags: ["End of Lease", "Melbourne", "Pricing"]
+    },
+    {
         title: "House Cleaning Tips for Busy Melbourne Families",
         url: "/blog/house-cleaning-tips-melbourne-families/",
         img: "assets/img/blog/family_cleaning_tips.webp",
