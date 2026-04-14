@@ -39,6 +39,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .cs_suburb_item { color: var(--white-color) !important; opacity: 1 !important; }
   </style>
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -49,7 +50,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://maidathome.com.au/"},
         {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://maidathome.com.au/services/"}
       ]
-    },
+    },,
     {
       "@type": "Organization",
       "@id": "https://maidathome.com.au/#organization",
@@ -72,11 +73,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         "postalCode": "3000",
         "addressCountry": "AU"
       },
+      "openingHoursSpecification": {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "09:00", "closes": "17:00"},
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "5",
         "reviewCount": "250"
       }
+    },
+    {
+      "@type": "Service",
+      "name": "Cleaning Services",
+      "serviceType": "House Cleaning",
+      "provider": { "@id": "https://maidathome.com.au/#localbusiness" },
+      "areaServed": { "@type": "City", "name": "Melbourne" },
+      "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Cleaning Services", "itemListElement": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Standard Cleaning"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Deep Cleaning"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Move In / Out Cleaning"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Steam Carpet Cleaning"}}]}
     }
   ]
 }

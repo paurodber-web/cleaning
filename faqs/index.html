@@ -41,7 +41,8 @@
     <link href="../assets/css/style.css" rel="stylesheet" />
     <!-- Site Title -->
     <title>Cleaning Service FAQs | Maid at Home</title>
-    <script type="application/ld+json">
+    
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -51,7 +52,7 @@
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://maidathome.com.au/"},
         {"@type": "ListItem", "position": 2, "name": "FAQs", "item": "https://maidathome.com.au/faqs/"}
       ]
-    },
+    },,
     {
       "@type": "Organization",
       "@id": "https://maidathome.com.au/#organization",
@@ -74,48 +75,12 @@
         "postalCode": "3000",
         "addressCountry": "AU"
       },
+      "openingHoursSpecification": {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "09:00", "closes": "17:00"},
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "5",
         "reviewCount": "250"
       }
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Who are you?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We're Maid At Home, a trusted cleaning service based in Melbourne, dedicated to making homes shine."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What types of cleaning services do you offer?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We offer residential cleaning, deep cleaning, move-in/out cleaning, and steam cleaning in Melbourne."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do I need to be home during the cleaning?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No, many of our clients provide access instructions (lockbox/hidden key) so we can clean while they're away."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What if I'm not satisfied with the cleaning?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "If you're not happy, let us know within 24 hours and we'll arrange a re-clean at no extra cost."
-          }
-        }
-      ]
     }
   ]
 }
