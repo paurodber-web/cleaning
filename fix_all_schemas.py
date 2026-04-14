@@ -29,7 +29,7 @@ def fix_location_schemas():
                     content = f.read()
 
                 # Extract suburb name from title
-                # <title>House Cleaning in Burnley | Trusted Local Cleaners</title>
+                # <title>House cleaning in Burnley | Trusted Local Cleaners</title>
                 title_match = re.search(r'<title>(.*?) in (.*?) \|', content)
                 suburb = "Melbourne"
                 if title_match:
@@ -50,7 +50,7 @@ def fix_location_schemas():
       "name": "What types of cleaning services do you offer in {suburb}?",
       "acceptedAnswer": {{
         "@type": "Answer",
-        "text": "We offer a range of services, including residential cleaning, Deep Cleaning, end of lease cleaning, and seasonal Deep Cleaning."
+        "text": "We offer a range of services, including residential cleaning, Deep cleaning, End of Lease cleaning, and seasonal Deep cleaning."
       }}
     }},
     {{
@@ -83,7 +83,7 @@ def fix_location_schemas():
       "itemListElement": [
         {{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://maidathome.com.au/"}},
         {{"@type": "ListItem", "position": 2, "name": "Locations", "item": "https://maidathome.com.au/locations/"}},
-        {{"@type": "ListItem", "position": 3, "name": "House Cleaning {suburb}", "item": "https://maidathome.com.au/locations/{folder}/"}}
+        {{"@type": "ListItem", "position": 3, "name": "House cleaning {suburb}", "item": "https://maidathome.com.au/locations/{folder}/"}}
       ]
     }},
     {{
@@ -116,11 +116,11 @@ def fix_location_schemas():
       }}
     }},
     {{
-      "@type": "HouseCleaningervice",
-      "name": "House Cleaning {suburb}",
+      "@type": "Housecleaningervice",
+      "name": "House cleaning {suburb}",
       "provider": {{ "@id": "https://maidathome.com.au/#localbusiness" }},
       "areaServed": {{ "@type": "City", "name": "{suburb}" }},
-      "description": "Premium house cleaning services in {suburb}, Melbourne. We offer recurring cleans, Deep Cleaning, and move-out services."
+      "description": "Premium house cleaning services in {suburb}, Melbourne. We offer recurring cleans, Deep cleaning, and move-out services."
     }},
     {{
       "@type": "FAQPage",
@@ -140,6 +140,9 @@ def fix_location_schemas():
 
 if __name__ == "__main__":
     fix_location_schemas()
+
+
+
 
 
 
