@@ -46,18 +46,18 @@ const allPosts = [
         author: "Maid At Home",
         date: "March 05, 2026",
         timestamp: 1772665200000,
-        category: "Deep cleaning",
+        category: "Deep Cleaning",
         tags: ["cleaning schedule", "Routine", "Home care"]
     },
     {
-        title: "Deep cleaning Checklist for Melbourne Homes: A Complete Reset Guide",
+        title: "Deep Cleaning Checklist for Melbourne Homes: A Complete Reset Guide",
         url: "/blog/deep-cleaning-checklist-melbourne/",
         img: "assets/img/blog/deep_cleaning_checklist.webp",
         author: "Maid At Home",
         date: "March 09, 2026",
         timestamp: 1773010800000,
-        category: "Deep cleaning",
-        tags: ["Deep cleaning", "Checklist", "Melbourne"]
+        category: "Deep Cleaning",
+        tags: ["Deep Cleaning", "Checklist", "Melbourne"]
     },
     {
         title: "End of Lease Cleaning Melbourne: Bond Back Guide",
@@ -66,7 +66,7 @@ const allPosts = [
         author: "Maid At Home",
         date: "March 12, 2026",
         timestamp: 1773270000000,
-        category: "Deep cleaning",
+        category: "Deep Cleaning",
         tags: ["End of lease", "Bond back", "Moving"]
     },
     {
@@ -96,13 +96,14 @@ const allPosts = [
         author: "Maid At Home",
         date: "March 20, 2026",
         timestamp: 1773961200000,
-        category: "Deep cleaning",
+        category: "Deep Cleaning",
         tags: ["Weekly cleaning", "Service", "Melbourne"]
     },
 ];
 
 // Sort posts by date (latest first)
 allPosts.sort((a, b) => b.timestamp - a.timestamp);
+
 
 
 
