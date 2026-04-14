@@ -98,7 +98,39 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         .cs_suburb_item { color: var(--white-color) !important; opacity: 1 !important; }
   </style>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://maidathome.com.au/"}, {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://maidathome.com.au/services/"}, {"@type": "ListItem", "position": 3, "name": "Move In/Out Clean", "item": "https://maidathome.com.au/services/move-in-out-clean/"}]}
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://maidathome.com.au/"},
+        {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://maidathome.com.au/services/"},
+        {"@type": "ListItem", "position": 3, "name": "Move In/Out Clean", "item": "https://maidathome.com.au/services/move-in-out-clean/"}
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "End of Lease Cleaning Melbourne",
+      "image": "https://maidathome.com.au/assets/img/move-out.webp",
+      "description": "Professional end of lease and move-in/out cleaning in Melbourne with 100% bond back guarantee. Real estate checklist approved.",
+      "provider": {
+        "@type": "LocalBusiness",
+        "@id": "https://maidathome.com.au/#localbusiness"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Melbourne"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "410.00",
+        "priceCurrency": "AUD",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+  ]
+}
 </script>
 </head>
 

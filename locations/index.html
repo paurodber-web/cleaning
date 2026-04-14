@@ -183,23 +183,40 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Maid at Home",
-  "url": "https://maidathome.com.au",
-  "telephone": "+61413398546",
-  "address": { "@type": "PostalAddress", "addressLocality": "Melbourne", "addressRegion": "VIC", "addressCountry": "AU" },
-  "areaServed": ["Melbourne CBD","Fitzroy","Collingwood","Richmond","South Yarra","Toorak","St Kilda","Hawthorn","Camberwell","Kew","Brunswick","Carlton","Northcote","Footscray","Yarraville"],
-  "description": "Professional house cleaning services across inner Melbourne suburbs.",
-  "priceRange": "$$"
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {"@type":"ListItem","position":1,"name":"Home","item":"https://maidathome.com.au/"},
-    {"@type":"ListItem","position":2,"name":"Locations","item":"https://maidathome.com.au/locations/"}
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://maidathome.com.au/"},
+        {"@type": "ListItem", "position": 2, "name": "Locations", "item": "https://maidathome.com.au/locations/"}
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "name": "Maid at Home",
+      "url": "https://maidathome.com.au/locations/",
+      "telePhone": "+61 413 398 546",
+      "priceRange": "$$",
+      "description": "Professional house cleaning services across all major Melbourne suburbs. Browse our comprehensive area coverage and book online.",
+      "parentOrganization": {
+        "@type": "Organization",
+        "@id": "https://maidathome.com.au/#organization"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Melbourne",
+        "containsPlace": [
+          {"@type": "City", "name": "Melbourne CBD"},
+          {"@type": "City", "name": "Richmond"},
+          {"@type": "City", "name": "South Yarra"},
+          {"@type": "City", "name": "Albert Park"},
+          {"@type": "City", "name": "Toorak"},
+          {"@type": "City", "name": "St Kilda"},
+          {"@type": "City", "name": "Hawthorn"},
+          {"@type": "City", "name": "Fitzroy"}
+        ]
+      }
+    }
   ]
 }
 </script>
