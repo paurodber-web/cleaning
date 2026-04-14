@@ -50,7 +50,7 @@ def fix_location_schemas():
       "name": "What types of cleaning services do you offer in {suburb}?",
       "acceptedAnswer": {{
         "@type": "Answer",
-        "text": "We offer a range of services, including residential cleaning, deep cleaning, move-in/move-out cleaning, and seasonal deep cleaning."
+        "text": "We offer a range of services, including residential cleaning, Deep Cleaning, end of lease cleaning, and seasonal Deep Cleaning."
       }}
     }},
     {{
@@ -116,11 +116,11 @@ def fix_location_schemas():
       }}
     }},
     {{
-      "@type": "HouseCleaningService",
+      "@type": "HouseCleaningervice",
       "name": "House Cleaning {suburb}",
       "provider": {{ "@id": "https://maidathome.com.au/#localbusiness" }},
       "areaServed": {{ "@type": "City", "name": "{suburb}" }},
-      "description": "Premium house cleaning services in {suburb}, Melbourne. We offer recurring cleans, deep cleaning, and move-out services."
+      "description": "Premium house cleaning services in {suburb}, Melbourne. We offer recurring cleans, Deep Cleaning, and move-out services."
     }},
     {{
       "@type": "FAQPage",
@@ -140,3 +140,7 @@ def fix_location_schemas():
 
 if __name__ == "__main__":
     fix_location_schemas()
+
+
+
+

@@ -15,7 +15,7 @@ def fix_general_schemas_v2():
         "itemListElement": [
             { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Standard Cleaning" } },
             { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Deep Cleaning" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Move In / Out Cleaning" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "End of Lease Cleaning" } },
             { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Steam Carpet Cleaning" } }
         ]
     }
@@ -35,7 +35,7 @@ def fix_general_schemas_v2():
         # Specific Service Pages
         ('services/standard-clean/index.html', 'Standard Cleaning', False, 'Standard Cleaning'),
         ('services/deep-clean/index.html', 'Deep Cleaning', False, 'Deep Cleaning'),
-        ('services/move-in-out-clean/index.html', 'Move In / Out Cleaning', False, 'Move In / Out Cleaning'),
+        ('services/end-of-lease-cleaning/index.html', 'End of Lease Cleaning', False, 'End of Lease Cleaning'),
         ('services/steam-clean/index.html', 'Steam Carpet Cleaning', False, 'Steam Carpet Cleaning'),
     ]
 
@@ -129,3 +129,7 @@ def fix_general_schemas_v2():
 
 if __name__ == "__main__":
     fix_general_schemas_v2()
+
+
+
+
