@@ -1,13 +1,13 @@
 const allPosts = [
     {
-        title: "house cleaning Tips for Busy Melbourne Families",
+        title: "House Cleaning Tips for Busy Melbourne Families",
         url: "/blog/house-cleaning-tips-melbourne-families/",
         img: "assets/img/blog/family_cleaning_tips.webp",
         author: "Maid At Home",
         date: "January 12, 2026",
         timestamp: 1768172400000,
         category: "DIY cleaning",
-        tags: ["house cleaning", "Melbourne", "Time-saving"]
+        tags: ["House Cleaning", "Melbourne", "Time-saving"]
     },
     {
         title: "The Real Benefits of Green cleaning for Melbourne Homes",
@@ -40,7 +40,7 @@ const allPosts = [
         tags: ["Eco friendly", "Products", "Stain removal"]
     },
     {
-        title: "house cleaning Schedule: How Often to Clean Each Room",
+        title: "House Cleaning Schedule: How Often to Clean Each Room",
         url: "/blog/house-cleaning-schedule-melbourne/",
         img: "assets/img/blog/cleaning_schedule.webp",
         author: "Maid At Home",
@@ -70,14 +70,14 @@ const allPosts = [
         tags: ["End of lease", "Bond back", "Moving"]
     },
     {
-        title: "house cleaning Cost in Melbourne: A Practical Pricing Guide",
+        title: "House Cleaning Cost in Melbourne: A Practical Pricing Guide",
         url: "/blog/house-cleaning-cost-melbourne/",
         img: "assets/img/blog/cleaning_cost_melbourne.webp",
         author: "Maid At Home",
         date: "March 16, 2026",
         timestamp: 1773615600000,
         category: "Commercial & Office",
-        tags: ["house cleaning cost", "Pricing", "Melbourne"]
+        tags: ["House Cleaning cost", "Pricing", "Melbourne"]
     },
     {
         title: "How to Keep Your Carpets Fresh Between Professional Cleans in Melbourne",
@@ -103,6 +103,7 @@ const allPosts = [
 
 // Sort posts by date (latest first)
 allPosts.sort((a, b) => b.timestamp - a.timestamp);
+
 
 
 
