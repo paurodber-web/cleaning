@@ -192,29 +192,35 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       ]
     },
     {
-      "@type": "LocalBusiness",
+      "@type": "Organization",
+      "@id": "https://maidathome.com.au/#organization",
       "name": "Maid at Home",
-      "url": "https://maidathome.com.au/locations/",
-      "telePhone": "+61 413 398 546",
+      "url": "https://maidathome.com.au/",
+      "logo": "https://maidathome.com.au/assets/img/logo.webp"
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://maidathome.com.au/#localbusiness",
+      "name": "Maid at Home",
+      "image": "https://maidathome.com.au/assets/img/logo.webp",
+      "telephone": "+61 413 398 546",
       "priceRange": "$$",
-      "description": "Professional house cleaning services across all major Melbourne suburbs. Browse our comprehensive area coverage and book online.",
-      "parentOrganization": {
-        "@type": "Organization",
-        "@id": "https://maidathome.com.au/#organization"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Melbourne CBD",
+        "addressLocality": "Melbourne",
+        "addressRegion": "VIC",
+        "postalCode": "3000",
+        "addressCountry": "AU"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "250"
       },
       "areaServed": {
         "@type": "City",
-        "name": "Melbourne",
-        "containsPlace": [
-          {"@type": "City", "name": "Melbourne CBD"},
-          {"@type": "City", "name": "Richmond"},
-          {"@type": "City", "name": "South Yarra"},
-          {"@type": "City", "name": "Albert Park"},
-          {"@type": "City", "name": "Toorak"},
-          {"@type": "City", "name": "St Kilda"},
-          {"@type": "City", "name": "Hawthorn"},
-          {"@type": "City", "name": "Fitzroy"}
-        ]
+        "name": "Melbourne"
       }
     }
   ]
