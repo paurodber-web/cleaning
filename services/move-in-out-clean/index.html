@@ -110,30 +110,60 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       ]
     },
     {
-      "@type": "Service",
-      "name": "Move In / Out Cleaning Melbourne",
-      "image": "https://maidathome.com.au/assets/img/move-out.webp",
-      "description": "Professional end of lease and move-in/out cleaning in Melbourne with 100% bond back guarantee. Real estate checklist approved.",
-      "provider": {
-        "@type": "LocalBusiness",
-        "@id": "https://maidathome.com.au/#localbusiness"
-      },
-      "alternateName": "End of Lease Cleaning",
-      "areaServed": {
-        "@type": "City",
-        "name": "Melbourne"
+      "@type": "Organization",
+      "@id": "https://maidathome.com.au/#organization",
+      "name": "Maid at Home",
+      "url": "https://maidathome.com.au/",
+      "logo": "https://maidathome.com.au/assets/img/logo.webp"
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://maidathome.com.au/#localbusiness",
+      "name": "Maid at Home",
+      "image": "https://maidathome.com.au/assets/img/logo.webp",
+      "telePhone": "+61 413 398 546",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Melbourne CBD",
+        "addressLocality": "Melbourne",
+        "addressRegion": "VIC",
+        "postalCode": "3000",
+        "addressCountry": "AU"
       },
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "5",
         "reviewCount": "250"
-      },
+      }
+    },
+    {
+      "@type": "Service",
+      "name": "Move In / Out Cleaning Melbourne",
+      "provider": { "@id": "https://maidathome.com.au/#localbusiness" },
+      "areaServed": { "@type": "City", "name": "Melbourne" },
+      "description": "Professional end of lease and move-in/out cleaning in Melbourne with 100% bond back guarantee. Real estate checklist approved.",
       "offers": {
         "@type": "Offer",
         "price": "410.00",
         "priceCurrency": "AUD",
         "availability": "https://schema.org/InStock"
       }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you offer a bond back guarantee?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes, we offer a 100% bond back guarantee on our move-out cleaning. If your agent is not satisfied, we return to fix it at no extra cost." }
+        },
+        {
+          "@type": "Question",
+          "name": "What is included in an end of lease clean?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Our end of lease clean follows a comprehensive checklist including inside cupboards, ovens, windows, and all surface areas required by property managers." }
+        }
+      ]
     }
   ]
 }

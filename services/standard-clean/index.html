@@ -110,29 +110,60 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       ]
     },
     {
-      "@type": "Service",
-      "name": "Standard House Cleaning Melbourne",
-      "image": "https://maidathome.com.au/assets/img/standard-clean.webp",
-      "description": "Consistent and reliable regular house cleaning services in Melbourne. Weekly or bi-weekly schedules tailored to your home.",
-      "provider": {
-        "@type": "LocalBusiness",
-        "@id": "https://maidathome.com.au/#localbusiness"
-      },
-      "areaServed": {
-        "@type": "City",
-        "name": "Melbourne"
+      "@type": "Organization",
+      "@id": "https://maidathome.com.au/#organization",
+      "name": "Maid at Home",
+      "url": "https://maidathome.com.au/",
+      "logo": "https://maidathome.com.au/assets/img/logo.webp"
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://maidathome.com.au/#localbusiness",
+      "name": "Maid at Home",
+      "image": "https://maidathome.com.au/assets/img/logo.webp",
+      "telePhone": "+61 413 398 546",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Melbourne CBD",
+        "addressLocality": "Melbourne",
+        "addressRegion": "VIC",
+        "postalCode": "3000",
+        "addressCountry": "AU"
       },
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "5",
         "reviewCount": "250"
-      },
+      }
+    },
+    {
+      "@type": "Service",
+      "name": "Standard House Cleaning Melbourne",
+      "provider": { "@id": "https://maidathome.com.au/#localbusiness" },
+      "areaServed": { "@type": "City", "name": "Melbourne" },
+      "description": "Consistent and reliable regular house cleaning services in Melbourne. Weekly or bi-weekly schedules tailored to your home.",
       "offers": {
         "@type": "Offer",
         "price": "155.00",
         "priceCurrency": "AUD",
         "availability": "https://schema.org/InStock"
       }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is included in a standard clean?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Our standard clean includes dusting, vacuuming, mopping, bathroom cleaning, and kitchen surfaces. It's designed for regular home maintenance." }
+        },
+        {
+          "@type": "Question",
+          "name": "How often should I book a standard cleaning?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Most clients choose weekly or fortnightly services to keep their homes consistently clean and fresh." }
+        }
+      ]
     }
   ]
 }

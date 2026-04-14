@@ -110,29 +110,60 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       ]
     },
     {
-      "@type": "Service",
-      "name": "Professional Deep Cleaning Melbourne",
-      "image": "https://maidathome.com.au/assets/img/deep-clean.webp",
-      "description": "Intensive top-to-bottom scrub for every corner of your home. We target hidden dust, grease, and grime.",
-      "provider": {
-        "@type": "LocalBusiness",
-        "@id": "https://maidathome.com.au/#localbusiness"
-      },
-      "areaServed": {
-        "@type": "City",
-        "name": "Melbourne"
+      "@type": "Organization",
+      "@id": "https://maidathome.com.au/#organization",
+      "name": "Maid at Home",
+      "url": "https://maidathome.com.au/",
+      "logo": "https://maidathome.com.au/assets/img/logo.webp"
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://maidathome.com.au/#localbusiness",
+      "name": "Maid at Home",
+      "image": "https://maidathome.com.au/assets/img/logo.webp",
+      "telePhone": "+61 413 398 546",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Melbourne CBD",
+        "addressLocality": "Melbourne",
+        "addressRegion": "VIC",
+        "postalCode": "3000",
+        "addressCountry": "AU"
       },
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "5",
         "reviewCount": "250"
-      },
+      }
+    },
+    {
+      "@type": "Service",
+      "name": "Deep House Cleaning Melbourne",
+      "provider": { "@id": "https://maidathome.com.au/#localbusiness" },
+      "areaServed": { "@type": "City", "name": "Melbourne" },
+      "description": "Thorough deep cleaning for your house in Melbourne. Ideal for seasonal cleaning or when your home needs extra attention.",
       "offers": {
         "@type": "Offer",
         "price": "215.00",
         "priceCurrency": "AUD",
         "availability": "https://schema.org/InStock"
       }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "When is a deep clean recommended?",
+          "acceptedAnswer": { "@type": "Answer", "text": "We recommend a deep clean for first-time visits, seasonal spring cleaning, or if it's been several months since your last professional clean." }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a deep clean take?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A deep clean typically takes 30-50% longer than a standard clean, as we focus on detail areas like baseboards, light switches, and door frames." }
+        }
+      ]
     }
   ]
 }
