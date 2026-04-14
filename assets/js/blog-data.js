@@ -1,5 +1,15 @@
 const allPosts = [
     {
+        title: "How Long Does Carpet Cleaning Take in Melbourne?",
+        url: "/blog/how-long-does-carpet-cleaning-take-melbourne/",
+        img: "assets/img/blog/carpet_cleaning_tips.webp",
+        author: "Maid at Home",
+        date: "April 15, 2026",
+        timestamp: 1776207600000,
+        category: "Deep Cleaning",
+        tags: ["Carpet Cleaning", "Steam Cleaning", "Dry Time"]
+    },
+    {
         title: "End of Lease Cleaning Cost Melbourne: Pricing & Guide 2026",
         url: "/blog/end-of-lease-cleaning-cost-melbourne/",
         img: "assets/img/blog/end-of-lease-cleaning-cost-melbourne.webp",
