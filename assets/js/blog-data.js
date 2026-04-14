@@ -90,14 +90,14 @@ const allPosts = [
         tags: ["End of lease", "Bond back", "Moving"]
     },
     {
-        title: "House Cleaning Cost in Melbourne: A Practical Pricing Guide",
-        url: "/blog/house-cleaning-cost-melbourne/",
+        title: "How Much Does House Cleaning Cost in Melbourne? (2026 Pricing Guide)",
+        url: "/blog/how-much-does-house-cleaning-cost-in-melbourne/",
         img: "assets/img/blog/cleaning_cost_melbourne.webp",
-        author: "Maid At Home",
-        date: "March 16, 2026",
-        timestamp: 1773615600000,
-        category: "Commercial & Office",
-        tags: ["House Cleaning cost", "Pricing", "Melbourne"]
+        author: "Maid at Home",
+        date: "April 15, 2026",
+        timestamp: 1776207600000,
+        category: "Cleaning Tips",
+        tags: ["House Cleaning", "Pricing", "Melbourne"]
     },
     {
         title: "How to Keep Your Carpets Fresh Between Professional Cleans in Melbourne",
@@ -123,6 +123,7 @@ const allPosts = [
 
 // Sort posts by date (latest first)
 allPosts.sort((a, b) => b.timestamp - a.timestamp);
+
 
 
 
