@@ -1,8 +1,8 @@
-const allPosts = [
+﻿const allPosts = [
     {
         title: "How Long Does Carpet Cleaning Take in Melbourne?",
         url: "/blog/how-long-does-carpet-cleaning-take-melbourne/",
-        img: "assets/img/blog/carpet_cleaning_tips.webp",
+        img: "assets/img/blog/how-long-does-carpet-cleaning-take-melbourne.webp",
         author: "Maid at Home",
         date: "April 15, 2026",
         timestamp: 1776207600000,
@@ -100,9 +100,9 @@ const allPosts = [
         tags: ["Carpet cleaning", "Stains", "Maintenance"]
     },
     {
-        title: "Weekly cleaning Service in Melbourne: What’s Included",
-        url: "/blog/weekly-cleaning-service-melbourne/",
-        img: "assets/img/blog/weekly_cleaning_melbourne.webp",
+        title: "Regular House Cleaning Service Melbourne: 7 Reasons to Book a Recurring Cleaner",
+        url: "/blog/regular-house-cleaning-service-melbourne/",
+        img: "assets/img/blog/regular-house-cleaning-service-melbourne.webp",
         author: "Maid At Home",
         date: "March 20, 2026",
         timestamp: 1773961200000,
@@ -113,6 +113,8 @@ const allPosts = [
 
 // Sort posts by date (latest first)
 allPosts.sort((a, b) => b.timestamp - a.timestamp);
+
+
 
 
 
