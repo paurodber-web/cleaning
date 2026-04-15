@@ -1,5 +1,15 @@
 ﻿const allPosts = [
     {
+        title: "Bond Back Cleaning Melbourne: How to Guarantee Your Full Bond Refund",
+        url: "/blog/bond-back-cleaning-melbourne/",
+        img: "assets/img/blog/bond-back-cleaning-melbourne.webp",
+        author: "Maid at Home",
+        date: "April 15, 2026",
+        timestamp: 1776211200000,
+        category: "Cleaning Tips",
+        tags: ["Bond Back Cleaning", "End of Lease", "Melbourne"]
+    },
+    {
         title: "How Long Does Carpet Cleaning Take in Melbourne?",
         url: "/blog/how-long-does-carpet-cleaning-take-melbourne/",
         img: "assets/img/blog/how-long-does-carpet-cleaning-take-melbourne.webp",
