@@ -2619,11 +2619,7 @@ label {
 }
 
 .cs_site_header.cs_style_1.cs_white_bg .cs_btn_spray {
-  padding: 8px 16px;
-  min-height: 38px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1;
+  padding: 9px 20px;
   color: var(--primary-color);
   background: var(--accent-color);
   border: 0;
@@ -2827,7 +2823,7 @@ label {
   }
 
   .cs_site_header.cs_style_1.cs_white_bg .cs_btn_spray {
-    padding: 8px 16px;
+    padding: 9px 20px;
   }
 }
 
