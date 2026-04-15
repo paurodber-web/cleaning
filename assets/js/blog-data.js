@@ -1,4 +1,54 @@
-﻿const allPosts = [
+const allPosts = [
+    {
+        title: "Airbnb Cleaning Service Melbourne: Fast Turnovers, Spotless Results, 5-Star Reviews",
+        url: "/blog/airbnb-cleaning-melbourne/",
+        img: "assets/img/standard-clean.webp",
+        author: "Maid at Home",
+        date: "April 15, 2026",
+        timestamp: 1776229200000,
+        category: "Commercial & Office",
+        tags: ["Airbnb Cleaning Melbourne", "Airbnb Cleaner Melbourne", "Turnover Cleaning"]
+    },
+    {
+        title: "Move-In Cleaning Melbourne: Complete Checklist & Why You Should Book Before Moving In",
+        url: "/blog/move-in-cleaning-melbourne/",
+        img: "assets/img/deep-clean.webp",
+        author: "Maid at Home",
+        date: "April 15, 2026",
+        timestamp: 1776225600000,
+        category: "Deep Cleaning",
+        tags: ["Move In Cleaning Melbourne", "Pre Move In Cleaning", "New Home Cleaning Checklist"]
+    },
+    {
+        title: "How to Find a Trustworthy House Cleaner in Melbourne: 10 Questions to Ask Before You Book",
+        url: "/blog/how-to-find-a-good-cleaner-melbourne/",
+        img: "assets/img/meet.webp",
+        author: "Maid at Home",
+        date: "April 15, 2026",
+        timestamp: 1776222000000,
+        category: "Health & Safety",
+        tags: ["Best House Cleaner Melbourne", "Reliable House Cleaners Melbourne", "Vetted Cleaners Melbourne"]
+    },
+    {
+        title: "Oven Cleaning Melbourne: How Much It Costs & Why DIY Always Fails",
+        url: "/blog/oven-cleaning-melbourne/",
+        img: "assets/img/end-of-lease-cleaning-banner.webp",
+        author: "Maid at Home",
+        date: "April 15, 2026",
+        timestamp: 1776218400000,
+        category: "Deep Cleaning",
+        tags: ["Oven Cleaning", "End Of Lease", "Rangehood"]
+    },
+    {
+        title: "Bathroom Cleaning Melbourne: How to Remove Soap Scum, Mould & Limescale Like a Pro",
+        url: "/blog/bathroom-cleaning-melbourne/",
+        img: "assets/img/deep-clean.webp",
+        author: "Maid at Home",
+        date: "April 15, 2026",
+        timestamp: 1776214800000,
+        category: "Deep Cleaning",
+        tags: ["Bathroom Cleaning", "Mould Removal", "Limescale"]
+    },
     {
         title: "Bond Back Cleaning Melbourne: How to Guarantee Your Full Bond Refund",
         url: "/blog/bond-back-cleaning-melbourne/",
@@ -123,19 +173,3 @@
 
 // Sort posts by date (latest first)
 allPosts.sort((a, b) => b.timestamp - a.timestamp);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
