@@ -2618,6 +2618,34 @@ label {
   z-index: 999;
 }
 
+.cs_site_header.cs_style_1.cs_white_bg .cs_btn_spray {
+  padding: 8px 16px;
+  min-height: 38px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--primary-color);
+  background: var(--accent-color);
+  border: 0;
+  white-space: nowrap;
+}
+
+.cs_site_header.cs_style_1.cs_white_bg .cs_btn_spray::before {
+  display: none;
+}
+
+.cs_site_header.cs_style_1.cs_white_bg .cs_btn_spray:hover,
+.cs_site_header.cs_style_1.cs_white_bg .cs_btn_spray:active {
+  color: var(--primary-color);
+  background: var(--accent-color);
+  border: 0;
+  transform: none;
+}
+
+.cs_site_header.cs_style_1.cs_white_bg .cs_menu_toggle {
+  color: var(--primary-color);
+}
+
 .cs_site_header.cs_style_1 .cs_menu_toggle span,
 .cs_site_header.cs_style_1 .cs_menu_toggle span:before,
 .cs_site_header.cs_style_1 .cs_menu_toggle span:after {
@@ -2788,6 +2816,19 @@ label {
     background-color: var(--white-color);
     color: var(--primary-color);
   }
+
+  .cs_site_header.cs_style_1.cs_white_bg .cs_main_header_right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 64px;
+    position: relative;
+    z-index: 20;
+  }
+
+  .cs_site_header.cs_style_1.cs_white_bg .cs_btn_spray {
+    padding: 8px 16px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -2801,6 +2842,17 @@ label {
 
   .cs_site_header.cs_style_1 .cs_menu_toggle {
     right: 18px;
+  }
+
+  .cs_site_header.cs_style_1.cs_white_bg .cs_main_header_right {
+    padding-right: 56px;
+  }
+}
+
+@media (max-width: 575px) {
+  .cs_site_header.cs_style_1.cs_white_bg .cs_btn_spray {
+    padding: 8px 16px;
+    font-size: 14px;
   }
 }
 
@@ -4657,6 +4709,12 @@ label {
   padding: 20px;
 }
 
+.cs_blog_section .cs_post_info>h1 {
+  font-size: 44px;
+  line-height: 1.12em;
+  letter-spacing: -0.02em;
+}
+
 .cs_post_style_1 .cs_post_thumbnail {
   display: block;
 }
@@ -4723,6 +4781,24 @@ label {
 @media (max-width: 991px) {
   .cs_post_style_1 {
     padding: 16px;
+  }
+
+  .cs_blog_section .cs_post_info>h1 {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cs_blog_section .cs_post_info>h1 {
+    font-size: 32px;
+    line-height: 1.15em;
+  }
+}
+
+@media (max-width: 575px) {
+  .cs_blog_section .cs_post_info>h1 {
+    font-size: 28px;
+    margin-bottom: 16px;
   }
 }
 

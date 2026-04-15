@@ -37,14 +37,43 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <title>Melbourne Home cleaning Blog | Maid at Home</title>
   <style>
     .cs_suburb_item { color: var(--white-color) !important; opacity: 1 !important; }
-  
-    .cs_blog_section .cs_post_title.cs_fs_36 {
-      font-size: 32px;
+
+    .cs_blog_page_title {
+      font-size: 30px;
+      line-height: 1.2em;
+      margin-bottom: 24px;
     }
+
+    .cs_blog_section .cs_post_title.cs_fs_36 {
+      font-size: 30px;
+      line-height: 1.18em;
+    }
+
     .cs_blog_section .cs_post_title.cs_fs_18 {
       font-size: 17px;
     }
-</style>
+
+    @media (max-width: 767px) {
+      .cs_blog_page_title {
+        font-size: 24px;
+      }
+
+      .cs_blog_section .cs_post_title.cs_fs_36 {
+        font-size: 24px;
+      }
+    }
+
+    @media (max-width: 575px) {
+      .cs_blog_page_title {
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+
+      .cs_blog_section .cs_post_title.cs_fs_36 {
+        font-size: 22px;
+      }
+    }
+  </style>
 
 
 
@@ -202,7 +231,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="row cs_gap_y_24">
                     
                     <div class="col-lg-8">
-                        <h1 class="cs_section_title cs_fs_36 cs_mb_24">Melbourne Cleaning & Home Care Blog</h1>
+                        <h1 class="cs_section_title cs_blog_page_title">Melbourne Cleaning & Home Care Blog</h1>
                         <div class="row cs_gap_y_24" id="blog-posts-container">
                             <!-- Posts will be injected here by Javascript -->
                         </div>
