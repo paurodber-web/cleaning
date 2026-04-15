@@ -5136,11 +5136,15 @@ label {
 
 @media (max-width: 575px) {
   .cs_post_details h2 {
-    font-size: 30px;
+    font-size: 24px;
+    line-height: 1.18em;
+    margin-bottom: 14px;
   }
 
   .cs_post_details h3 {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 1.22em;
+    margin-bottom: 14px;
   }
 }
 
