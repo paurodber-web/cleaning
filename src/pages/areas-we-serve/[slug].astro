@@ -1,0 +1,312 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import OptimizedImage from '../../components/OptimizedImage.astro';
+import { getTestimonialsForSuburb } from '../../data/testimonials';
+
+interface Props {
+  suburbPage: CollectionEntry<'suburbs'>;
+}
+
+export async function getStaticPaths() {
+  const pages = await getCollection('suburbs');
+  return pages
+    .filter(({ id, data }) => id === '_suburb-template' || (!data.draft && data.seoReview.reviewed))
+    .map((suburbPage) => ({
+      params: { slug: suburbPage.id === '_suburb-template' ? 'template' : suburbPage.id },
+      props: { suburbPage },
+    }));
+}
+
+const { suburbPage } = Astro.props;
+const data = suburbPage.data;
+const isTemplatePreview = suburbPage.id === '_suburb-template';
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+const origin = Astro.site ?? Astro.url.origin;
+const canonicalUrl = isTemplatePreview
+  ? undefined
+  : new URL(`${base.replace(/^\//, '')}areas-we-serve/${suburbPage.id}/`, `${origin}/`).toString();
+const absoluteImage = new URL(data.image, `${origin}/`).toString();
+const allSuburbs = await getCollection('suburbs', ({ data }) => !data.draft && data.seoReview.reviewed);
+const publishedIds = new Set(allSuburbs.map((entry) => entry.id));
+const nearby = isTemplatePreview
+  ? data.nearbySuburbs
+  : data.nearbySuburbs.filter((entry) => publishedIds.has(entry.slug));
+const selectedTestimonials = getTestimonialsForSuburb(suburbPage.id, 3);
+
+const serviceDetails = {
+  'standard-clean': ['Standard clean', 'A practical maintenance clean for lived-in homes, covering kitchens, bathrooms, floors and the frequently used surfaces that need a dependable regular reset.'],
+  'deep-clean': ['Deep clean', 'More time for accumulated dust, grease, soap residue, edges and detailed areas when the home needs a stronger starting point before regular maintenance.'],
+  'end-of-lease-clean': ['End of lease clean', 'Structured cleaning for an empty rental property, with time directed toward the rooms, fixtures and surfaces commonly reviewed at the end of a tenancy.'],
+  'move-in-clean': ['Move-in clean', 'Prepare cupboards, fixtures, surfaces and floors before furniture and boxes arrive, so the empty property feels cleaner and more comfortable from day one.'],
+  'hourly-clean': ['Hourly clean', 'Direct an agreed amount of time toward a realistic priority list, with flexibility to focus on selected rooms, detailed tasks or the areas that matter most.'],
+} as const;
+
+const schema = canonicalUrl ? {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': `${canonicalUrl}#webpage`,
+      url: canonicalUrl,
+      name: data.title,
+      description: data.description,
+      datePublished: data.publishedAt.toISOString(),
+      dateModified: (data.updatedAt ?? data.publishedAt).toISOString(),
+      primaryImageOfPage: { '@type': 'ImageObject', contentUrl: absoluteImage, caption: data.imageAlt },
+      about: { '@type': 'Place', name: `${data.suburb}, Victoria ${data.postcode}` },
+    },
+    {
+      '@type': 'Service',
+      '@id': `${canonicalUrl}#service`,
+      name: `House cleaning in ${data.suburb}`,
+      serviceType: 'House cleaning',
+      description: data.description,
+      url: canonicalUrl,
+      provider: { '@type': 'Organization', name: 'Maid At Home', url: 'https://maidathome.com.au/' },
+      areaServed: { '@type': 'Place', name: `${data.suburb}, Victoria ${data.postcode}` },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: new URL(base, `${origin}/`).toString() },
+        { '@type': 'ListItem', position: 2, name: 'Areas we serve', item: new URL(`${base.replace(/^\//, '')}areas-we-serve/`, `${origin}/`).toString() },
+        { '@type': 'ListItem', position: 3, name: data.suburb, item: canonicalUrl },
+      ],
+    },
+  ],
+} : undefined;
+
+const styles = `
+:root{--ink:#183042;--soft:#526978;--b900:#153e60;--b800:#1d5077;--b700:#286b9d;--b600:#3d86b9;--b300:#a9d1e7;--b200:#cfe7f3;--b100:#e8f5fb;--b50:#f4fafc;--white:#fff;--beige:#f4df9f;--shell:min(1180px,calc(100% - 48px));--nav:84px;--shadow:0 24px 70px rgba(23,63,93,.13)}
+*,*:before,*:after{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:105px}body{margin:0;min-width:320px;overflow-x:hidden;color:var(--ink);background:var(--white);font:16px/1.7 "DM Sans",Arial,sans-serif;-webkit-font-smoothing:antialiased}body.menu-open{overflow:hidden}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}.shell{width:var(--shell);margin-inline:auto}h1,h2,h3{font-family:"Plus Jakarta Sans",Arial,sans-serif;letter-spacing:-.04em;text-wrap:balance}p{color:var(--soft)}:focus-visible{outline:3px solid var(--beige);outline-offset:4px}
+.preview{padding:12px 18px;color:var(--b900);background:var(--beige);font-size:.75rem;font-weight:800;text-align:center}
+.hero{padding:calc(var(--nav) + 45px) 0 76px;overflow:hidden;background:var(--b50)}.breadcrumb{display:flex;flex-wrap:wrap;gap:9px;margin:0 0 38px;color:var(--soft);font-size:.72rem;font-weight:700}.breadcrumb a{color:var(--b700)}.hero__grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(360px,.72fr);align-items:center;gap:clamp(48px,7vw,94px)}.eyebrow{display:inline-flex;margin-bottom:18px;padding:8px 12px;border-radius:999px;color:var(--b900);background:var(--beige);font-size:.65rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.hero h1{max-width:740px;margin:0 0 23px;font-size:clamp(2.9rem,5.5vw,5.1rem);font-weight:650;line-height:.97;letter-spacing:-.065em}.hero__copy{max-width:680px;margin:0 0 28px;font-size:1.04rem;line-height:1.75}.actions{display:flex;flex-wrap:wrap;gap:11px}.button{display:inline-flex;min-height:56px;align-items:center;justify-content:space-between;gap:22px;padding:7px 7px 7px 22px;border:1px solid transparent;border-radius:999px;font-size:.91rem;font-weight:800;line-height:1;transition:color .3s,background .3s,border-color .3s,transform .3s,box-shadow .3s}.button:hover{transform:translateY(-2px)}.button:active{transform:scale(.98)}.button__icon{display:grid;width:42px;height:42px;flex:0 0 auto;place-items:center;border-radius:50%;transition:transform .35s,background .3s}.button:hover .button__icon{transform:rotate(-8deg) translateX(2px)}.button__icon svg{display:block;width:17px;height:17px;margin:auto}.button--primary{color:var(--ink);background:var(--beige);box-shadow:0 12px 28px rgba(26,54,72,.16)}.button--primary .button__icon{color:var(--white);background:var(--b800)}.button--primary:hover{background:#f7e7b5;box-shadow:0 18px 36px rgba(26,54,72,.2)}.button--secondary{border-color:var(--b300);color:var(--b800);background:var(--white)}.button--secondary .button__icon{color:var(--white);background:var(--b700)}.button--blue{color:var(--white);background:var(--b700)}.button--blue .button__icon{color:var(--b900);background:var(--beige)}.button--blue:hover{background:var(--b800)}.hero__image{width:100%;height:430px;border-radius:28px 125px 28px 28px;object-fit:cover;box-shadow:var(--shadow)}
+.facts{position:relative;z-index:2;margin-top:-31px}.facts__grid{display:grid;grid-template-columns:repeat(4,1fr);overflow:hidden;border:1px solid var(--b200);border-radius:21px;background:var(--white);box-shadow:0 14px 42px rgba(23,63,93,.08)}.fact{padding:23px 25px;border-left:1px solid var(--b200)}.fact:first-child{border-left:0}.fact span{display:block;margin-bottom:7px;color:var(--b700);font-size:.61rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase}.fact strong{font:700 .88rem/1.4 "Plus Jakarta Sans",Arial,sans-serif}
+.section{padding:clamp(82px,9vw,124px) 0}.soft{background:var(--b50)}.section-head{display:grid;grid-template-columns:1.1fr .72fr;align-items:end;gap:42px;margin-bottom:45px}.section-head--single{display:block}.kicker{margin:0 0 13px;color:var(--b700);font-size:.66rem;font-weight:800;letter-spacing:.11em;text-transform:uppercase}.section-head h2{max-width:730px;margin:0;font-size:clamp(2rem,4.2vw,3.45rem);line-height:1.07}.section-head>p{margin:0}
+.service-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:15px}.service-card{display:flex;min-height:255px;grid-column:span 4;padding:29px;border:1px solid var(--b200);border-radius:20px;flex-direction:column;background:var(--white);transition:transform .25s,box-shadow .25s}.service-card:first-child{min-height:310px;grid-column:span 7;color:var(--white);background:var(--b900)}.service-card:nth-child(2){grid-column:span 5;background:var(--b50)}.service-card:hover{box-shadow:0 18px 46px rgba(23,63,93,.1);transform:translateY(-4px)}.service-card h3{margin:0 0 14px;font-size:1.1rem}.service-card p{max-width:560px;margin:0;font-size:.79rem;line-height:1.75}.service-card:first-child p{color:rgba(255,255,255,.76)}.service-card a{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:auto;padding-top:28px;color:var(--b700);font-size:.75rem;font-weight:800}.service-card:first-child a{color:var(--beige)}.service-card__arrow{display:grid;width:34px;height:34px;flex:0 0 auto;place-items:center;border:1px solid var(--b200);border-radius:50%;color:var(--b700);background:var(--white);transition:transform .3s,background .3s}.service-card__arrow svg{width:14px}.service-card a:hover .service-card__arrow{transform:translateX(3px)}.service-card:first-child .service-card__arrow{border-color:rgba(255,255,255,.2);color:var(--b900);background:var(--beige)}
+.highlight-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.highlight{padding:29px;border:1px solid var(--b200);border-radius:21px;background:var(--white)}.highlight span{display:grid;width:37px;height:37px;place-items:center;margin-bottom:22px;border-radius:50%;color:var(--b900);background:var(--beige);font-weight:800}.highlight h3{margin:0 0 9px;font-size:1.08rem}.highlight p{margin:0;font-size:.77rem}.local-meta{display:grid;grid-template-columns:repeat(2,1fr);gap:15px;margin-top:15px}.local-card{padding:25px 29px;border:1px solid var(--b200);border-radius:21px;background:var(--b50)}.local-card h3{margin:0 0 13px;font-size:1rem}.local-card ul{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}.local-card li{padding:7px 10px;border-radius:8px;color:var(--soft);background:var(--white);font-size:.7rem;font-weight:700}
+.carpet{padding:clamp(80px,9vw,120px) 0;background:var(--white)}.carpet__layout{display:grid;grid-template-columns:minmax(390px,.96fr) minmax(0,1.04fr);align-items:stretch;gap:clamp(28px,5vw,65px)}.carpet__visual{position:relative;min-height:530px}.carpet__image{width:100%;height:100%;border-radius:28px 28px 110px 28px;object-fit:cover}.carpet__badge{position:absolute;bottom:22px;left:22px;width:min(230px,55%);padding:20px;border-radius:18px;color:var(--white);background:rgba(15,59,89,.9);box-shadow:var(--shadow);backdrop-filter:blur(12px)}.carpet__badge strong{display:block;margin-bottom:5px;font:700 .94rem/1.3 "Plus Jakarta Sans",Arial,sans-serif}.carpet__badge span{display:block;color:var(--b200);font-size:.68rem;line-height:1.5}.carpet__copy{display:flex;padding:12px 0;flex-direction:column;justify-content:center}.carpet__copy .button{align-self:flex-start}.carpet__copy h2{margin:0 0 18px;font-size:clamp(2rem,4vw,3.35rem);line-height:1.08}.carpet__copy>p:not(.kicker){margin:0 0 24px}.carpet__features{display:grid;gap:0;margin:0 0 29px;padding:0;border-top:1px solid var(--b200);list-style:none}.carpet__features li{display:grid;grid-template-columns:38px 1fr;gap:13px;padding:16px 0;border-bottom:1px solid var(--b200)}.carpet__features span{display:grid;width:32px;height:32px;place-items:center;border-radius:10px;color:var(--b900);background:var(--beige);font-size:.66rem;font-weight:800}.carpet__features strong{display:block;margin-bottom:2px;font:700 .82rem/1.35 "Plus Jakarta Sans",Arial,sans-serif}.carpet__features small{display:block;color:var(--soft);font-size:.68rem;line-height:1.55}
+.why{padding:clamp(84px,9vw,126px) 0;background:var(--b50)}.why__layout{display:grid;grid-template-columns:minmax(0,1.03fr) minmax(390px,.97fr);align-items:center;gap:clamp(48px,8vw,105px)}.why__visual{position:relative;height:560px}.why__image{width:100%;height:100%;border-radius:110px 28px 28px 28px;object-fit:cover}.why__proof{position:absolute;right:-24px;bottom:30px;display:grid;width:172px;height:172px;place-items:center;padding:22px;border-radius:50%;color:var(--white);background:var(--b900);box-shadow:0 0 0 9px var(--b50);text-align:center}.why__proof strong{display:block;color:var(--beige);font:700 1.35rem/1 "Plus Jakarta Sans",Arial,sans-serif}.why__proof span{display:block;margin-top:7px;color:var(--b200);font-size:.61rem;line-height:1.4}.why__copy h2{margin:0 0 20px;font-size:clamp(2rem,4vw,3.4rem);line-height:1.06}.why__copy>p:not(.kicker){margin:0 0 25px}.why__copy .button{align-self:flex-start}.why__list{display:grid;margin:0 0 30px;padding:0;border-top:1px solid var(--b200)}.why__item{display:grid;grid-template-columns:43px 1fr;gap:15px;padding:17px 0;border-bottom:1px solid var(--b200)}.why__item>span{display:grid;width:36px;height:36px;place-items:center;border-radius:11px;color:var(--b900);background:var(--beige);font-size:.64rem;font-weight:800}.why__item h3{margin:0 0 5px;font-size:.98rem}.why__item p{margin:0;font-size:.7rem}
+.recurring{padding:clamp(84px,9vw,126px) 0;background:var(--b900)}.recurring__layout{display:grid;grid-template-columns:minmax(0,.88fr) minmax(500px,1.12fr);align-items:center;gap:clamp(50px,8vw,100px)}.recurring .kicker{color:var(--beige)}.recurring h2{margin:0 0 21px;color:var(--white);font-size:clamp(2.1rem,4.3vw,3.65rem);line-height:1.07}.recurring__copy>p{margin:0 0 22px;color:var(--b200)}.recurring__note{padding:18px 20px;border-left:3px solid var(--beige);color:var(--white)!important;background:rgba(255,255,255,.06)}.frequencies{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.frequency{position:relative;min-height:158px;padding:25px;border:1px solid rgba(255,255,255,.14);border-radius:19px;background:rgba(255,255,255,.055)}.frequency--best{border-color:var(--beige);background:var(--white)}.frequency span{display:block;margin-bottom:24px;color:var(--b300);font-size:.62rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.frequency--best span{color:var(--b700)}.frequency strong{display:block;margin-bottom:7px;color:var(--white);font:700 1.05rem/1.3 "Plus Jakarta Sans",Arial,sans-serif}.frequency--best strong{color:var(--ink)}.frequency p{margin:0;color:var(--b200);font-size:.72rem}.frequency--best p{color:var(--soft)}.frequency b{position:absolute;top:18px;right:18px;padding:5px 8px;border-radius:7px;color:#2e755d;background:#e4f2eb;font-size:.58rem}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px}.step span{display:grid;width:56px;height:56px;place-items:center;margin-bottom:20px;border:1px solid var(--b200);border-radius:50%;color:var(--b700);background:var(--b50);font-size:.65rem;font-weight:800}.step h3{margin:0 0 8px;font-size:.98rem}.step p{max-width:220px;margin:0;font-size:.73rem}
+.testimonials{padding:clamp(84px,9vw,126px) 0;background:var(--b50)}.reviews-head{display:flex;align-items:end;justify-content:space-between;gap:40px;margin-bottom:43px}.reviews-head h2{max-width:650px;margin:0;font-size:clamp(2rem,4vw,3.35rem);line-height:1.08}.google-proof{display:flex;align-items:center;gap:12px;color:var(--b800);font-size:.72rem;font-weight:800}.google-proof span:first-child{display:grid;width:42px;height:42px;place-items:center;border:1px solid var(--b200);border-radius:50%;background:var(--white);font-size:1rem}.reviews-grid{display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:repeat(2,auto);gap:15px}.review-card{display:flex;min-height:190px;grid-column:8/-1;padding:27px;border:1px solid var(--b200);border-radius:20px;flex-direction:column;background:var(--white)}.review-card:first-child{min-height:395px;grid-column:1/8;grid-row:1/3;padding:clamp(30px,4vw,47px);color:var(--white);background:var(--b900)}.review-stars{margin-bottom:24px;color:#d5a82c;font-size:.78rem;letter-spacing:3px}.review-card blockquote{margin:0 0 28px;color:var(--ink);font:600 1rem/1.55 "Plus Jakarta Sans",Arial,sans-serif;letter-spacing:-.025em}.review-card:first-child blockquote{margin:auto 0;color:var(--white);font-size:clamp(1.35rem,2.5vw,2rem)}.review-person{display:flex;align-items:end;justify-content:space-between;gap:18px;margin-top:auto;padding-top:20px;border-top:1px solid var(--b200)}.review-card:first-child .review-person{border-color:rgba(255,255,255,.18)}.review-person strong,.review-person small{display:block}.review-person strong{font-size:.72rem}.review-person small{margin-top:3px;color:var(--soft);font-size:.65rem}.review-card:first-child .review-person small{color:var(--b200)}.review-source{color:var(--b700);font-size:.62rem;font-weight:800;text-transform:uppercase}.review-card:first-child .review-source{color:var(--beige)}
+.faq-layout{display:grid;grid-template-columns:minmax(260px,.72fr) minmax(0,1.28fr);gap:clamp(50px,8vw,100px)}.faq-intro{position:sticky;top:110px;align-self:start}.faq-intro h2{margin:0 0 16px;font-size:clamp(2rem,4vw,3.25rem);line-height:1.08}.faq-list{border-top:1px solid var(--b200)}.faq-item{border-bottom:1px solid var(--b200)}.faq-question{display:flex;width:100%;align-items:center;justify-content:space-between;gap:20px;padding:23px 0;border:0;cursor:pointer;color:var(--ink);background:transparent;font:650 .96rem/1.4 "Plus Jakarta Sans",Arial,sans-serif;text-align:left}.faq-question i{position:relative;width:31px;height:31px;flex:0 0 31px;border:1px solid var(--b200);border-radius:50%}.faq-question i:before,.faq-question i:after{content:"";position:absolute;top:50%;left:50%;width:11px;height:1px;background:var(--b700);transform:translate(-50%,-50%)}.faq-question i:after{transform:translate(-50%,-50%) rotate(90deg)}.faq-question[aria-expanded=true] i{background:var(--b700)}.faq-question[aria-expanded=true] i:before,.faq-question[aria-expanded=true] i:after{background:var(--white)}.faq-question[aria-expanded=true] i:after{transform:translate(-50%,-50%)}.faq-answer{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s}.faq-answer>div{overflow:hidden}.faq-answer p{margin:0;padding:0 48px 22px 0;font-size:.8rem}.faq-item.is-open .faq-answer{grid-template-rows:1fr}
+.nearby{padding:clamp(84px,9vw,126px) 0;background:var(--white)}.nearby__layout{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(260px,.7fr);align-items:start;gap:clamp(50px,8vw,100px)}.nearby__intro{position:sticky;top:110px}.nearby__intro h2{margin:0 0 18px;font-size:clamp(2rem,3.7vw,3.15rem);line-height:1.08}.nearby__intro>p:not(.kicker){margin:0 0 25px}.nearby-grid{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--b200)}.nearby-card{display:grid;grid-template-columns:45px 1fr 38px;align-items:center;gap:14px;min-height:112px;padding:21px 18px;border-bottom:1px solid var(--b200);transition:color .25s,background .25s,transform .25s}.nearby-card:nth-child(odd){border-right:1px solid var(--b200)}.nearby-card:hover{color:var(--b900);background:var(--b50);transform:translateY(-2px)}.nearby-card__number{color:var(--b600);font-size:.64rem;font-weight:800;font-variant-numeric:tabular-nums}.nearby-card strong{display:block;margin-bottom:3px;font:700 .92rem/1.3 "Plus Jakarta Sans",Arial,sans-serif}.nearby-card small{display:block;color:var(--soft);font-size:.65rem}.nearby-card__arrow{display:grid;width:36px;height:36px;place-items:center;border:1px solid var(--b200);border-radius:50%;color:var(--b700);background:var(--white);transition:transform .3s,background .3s}.nearby-card__arrow svg{width:14px}.nearby-card:hover .nearby-card__arrow{color:var(--b900);background:var(--beige);transform:translateX(3px)}
+.final{padding:22px}.final__panel{position:relative;display:flex;min-height:490px;align-items:center;overflow:hidden;isolation:isolate;border-radius:38px;color:var(--white);background:var(--b900)}.final__image{position:absolute;z-index:-3;inset:0;width:100%;height:100%;object-fit:cover}.final__panel:before{content:"";position:absolute;z-index:-2;inset:0;background:linear-gradient(90deg,rgba(14,49,73,.93),rgba(14,49,73,.62) 52%,rgba(14,49,73,.14) 88%)}.final__content{max-width:680px;padding:68px 0}.final__content>span{color:var(--beige);font-size:.68rem;font-weight:800;letter-spacing:.11em;text-transform:uppercase}.final h2{margin:17px 0;font-size:clamp(2.45rem,5vw,4.4rem);line-height:1.05}.final p{max-width:570px;margin:0 0 28px;color:rgba(255,255,255,.82)}
+@media(max-width:900px){:root{--nav:74px;--shell:min(100% - 38px,760px)}.hero__grid,.section-head,.recurring__layout,.faq-layout,.carpet__layout,.why__layout,.nearby__layout{grid-template-columns:1fr}.hero__image{height:350px}.facts__grid{grid-template-columns:repeat(2,1fr)}.fact:nth-child(3){border-top:1px solid var(--b200);border-left:0}.fact:nth-child(4){border-top:1px solid var(--b200)}.service-card,.service-card:first-child,.service-card:nth-child(2){grid-column:span 6}.carpet__visual{min-height:430px}.why__visual{height:470px}.why__proof{right:20px}.nearby__intro,.faq-intro{position:static}.nearby__intro{grid-row:1}.nearby-grid{grid-row:2}.process-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){:root{--shell:calc(100% - 30px)}.hero{padding-top:calc(var(--nav) + 34px)}.hero h1{font-size:clamp(2.55rem,13vw,3.7rem)}.hero__image{height:270px;border-radius:24px 75px 24px 24px}.actions{align-items:stretch;flex-direction:column}.actions .button{width:100%}.facts{margin-top:15px}.facts__grid,.highlight-grid,.local-meta,.frequencies,.nearby-grid{grid-template-columns:1fr}.fact,.fact:nth-child(4){border-top:1px solid var(--b200);border-left:0}.fact:first-child{border-top:0}.service-card,.service-card:first-child,.service-card:nth-child(2){min-height:260px;grid-column:1/-1}.carpet__copy{grid-row:1}.carpet__visual{min-height:360px;grid-row:2}.carpet__image{border-radius:22px 22px 60px 22px}.carpet__badge{bottom:12px;left:12px;width:calc(100% - 24px)}.why__visual{height:390px}.why__image{border-radius:60px 22px 22px 22px}.why__proof{right:14px;bottom:14px;width:125px;height:125px;padding:15px;box-shadow:0 0 0 6px var(--b50)}.why__proof strong{font-size:1.05rem}.why__item{grid-template-columns:41px 1fr;padding:17px 0}.nearby-card:nth-child(odd){border-right:0}.process-grid{grid-template-columns:1fr;gap:30px}.reviews-head{align-items:flex-start;flex-direction:column}.reviews-grid{display:grid;grid-template-columns:1fr;grid-template-rows:auto}.review-card,.review-card:first-child{min-height:240px;grid-column:1;grid-row:auto}.final{padding:10px}.final__panel{min-height:520px;border-radius:28px}.final__content{padding:50px 0}.final .button{width:100%}}
+`;
+
+const scripts = `<script>(()=>{"use strict";const header=document.getElementById("siteHeader"),toggle=document.getElementById("menuToggle"),menu=document.getElementById("mobileMenu");if(toggle&&menu){const setMenu=open=>{toggle.setAttribute("aria-expanded",String(open));toggle.setAttribute("aria-label",open?"Close menu":"Open menu");menu.setAttribute("aria-hidden",String(!open));menu.classList.toggle("is-open",open);document.body.classList.toggle("menu-open",open)};toggle.addEventListener("click",()=>setMenu(toggle.getAttribute("aria-expanded")!=="true"));menu.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>setMenu(false)));document.addEventListener("keydown",event=>{if(event.key==="Escape")setMenu(false)})}addEventListener("scroll",()=>header?.classList.toggle("is-scrolled",scrollY>24),{passive:true});document.querySelectorAll(".faq-question").forEach(button=>button.addEventListener("click",()=>{const item=button.closest(".faq-item"),open=button.getAttribute("aria-expanded")==="true";button.setAttribute("aria-expanded",String(!open));item?.classList.toggle("is-open",!open)}))})();</script>`;
+---
+
+<SiteLayout
+  title={isTemplatePreview ? 'Suburb Page Template Preview | Maid At Home' : data.title}
+  description={data.description}
+  canonicalUrl={canonicalUrl}
+  ogImage={absoluteImage}
+  structuredData={schema}
+  robots={isTemplatePreview ? 'noindex, nofollow' : undefined}
+  styles={styles}
+  scripts={scripts}
+  currentPath="/areas-we-serve"
+  skipLink={true}
+>
+  <main id="main-content">
+    {isTemplatePreview && <div class="preview">Template preview — Richmond is sample content only. This URL is excluded from Google.</div>}
+
+    <section class="hero">
+      <div class="shell">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href={base}>Home</a><span aria-hidden="true">/</span>
+          <a href={`${base}areas-we-serve/`}>Areas we serve</a><span aria-hidden="true">/</span>
+          <span aria-current="page">{data.suburb}</span>
+        </nav>
+        <div class="hero__grid">
+          <div>
+            <span class="eyebrow">{data.regionLabel} · {data.postcode}</span>
+            <h1>House cleaning in {data.suburb}</h1>
+            <p class="hero__copy">{data.heroIntro}</p>
+            <div class="actions">
+              <a class="button button--primary" href={`${base}pricing#calculator`}>Get an estimate <span class="button__icon" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor"><path d="M4 10h11M11 6l4 4-4 4"/></svg></span></a>
+              <a class="button button--secondary" href={`${base}booking/`}>Book a clean <span class="button__icon" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor"><path d="M4 10h11M11 6l4 4-4 4"/></svg></span></a>
+            </div>
+          </div>
+          <OptimizedImage src={data.image} alt={data.imageAlt} width={data.imageWidth} height={data.imageHeight} fetchpriority="high" class="hero__image" />
+        </div>
+      </div>
+    </section>
+
+    <div class="facts shell" aria-label={`${data.suburb} service summary`}>
+      <div class="facts__grid">
+        <div class="fact"><span>Service area</span><strong>{data.suburb}, VIC {data.postcode}</strong></div>
+        <div class="fact"><span>Property styles</span><strong>{data.homeTypes.slice(0, 2).join(' and ')}</strong></div>
+        <div class="fact"><span>Recurring savings</span><strong>Save 10% weekly or fortnightly</strong></div>
+        <div class="fact"><span>Booking</span><strong>Availability by address and date</strong></div>
+      </div>
+    </div>
+
+    <section class="section" aria-labelledby="services-title">
+      <div class="shell">
+        <div class="section-head">
+          <div><p class="kicker">Cleaning services in {data.suburb}</p><h2 id="services-title">The right level of help for the home.</h2></div>
+          <p>{data.servicesIntro}</p>
+        </div>
+        <div class="service-grid">
+          {data.services.map((service) => {
+            const detail = serviceDetails[service];
+            return <article class="service-card"><h3>{detail[0]}</h3><p>{detail[1]}</p><a href={`${base}services/${service}/`}>Explore {detail[0].toLowerCase()} <span class="service-card__arrow" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor"><path d="M4 10h11M11 6l4 4-4 4"/></svg></span></a></article>;
+          })}
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft" aria-labelledby="local-title">
+      <div class="shell">
+        <div class="section-head">
+          <div><p class="kicker">Cleaning needs in {data.suburb}</p><h2 id="local-title">{data.localSectionTitle}</h2></div>
+          <p>{data.summary}</p>
+        </div>
+        <div class="highlight-grid">
+          {data.localHighlights.map((item, index) => <article class="highlight"><span>{String(index + 1).padStart(2, '0')}</span><h3>{item.title}</h3><p>{item.text}</p></article>)}
+        </div>
+        <div class="local-meta">
+          <article class="local-card"><h3>Homes in {data.suburb}</h3><ul>{data.homeTypes.map((item) => <li>{item}</li>)}</ul></article>
+          <article class="local-card"><h3>Access to confirm</h3><ul>{data.accessNotes.map((item) => <li>{item}</li>)}</ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="carpet" aria-labelledby="carpet-title">
+      <div class="carpet__layout shell">
+        <div class="carpet__copy">
+          <p class="kicker">Carpet cleaning in {data.suburb}</p>
+          <h2 id="carpet-title">{data.carpetTitle}</h2>
+          <p>{data.carpetIntro}</p>
+          <ul class="carpet__features">
+            <li><span>01</span><div><strong>Condition and fibre review</strong><small>We consider the carpet type, traffic areas, visible stains and safe treatment options.</small></div></li>
+            <li><span>02</span><div><strong>Professional steam extraction</strong><small>Suitable equipment helps lift embedded soil and refresh the agreed carpeted rooms.</small></div></li>
+            <li><span>03</span><div><strong>Clear drying guidance</strong><small>Allow approximately 6–12 hours and keep normal foot traffic away while fibres dry.</small></div></li>
+          </ul>
+          <a class="button button--blue" href={`${base}services/carpet-clean/`}>Explore carpet cleaning <span class="button__icon" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor"><path d="M4 10h11M11 6l4 4-4 4"/></svg></span></a>
+        </div>
+        <div class="carpet__visual">
+          <OptimizedImage src={data.carpetImage} alt={data.carpetImageAlt} width={1600} height={1067} loading="lazy" class="carpet__image" />
+          <div class="carpet__badge"><strong>Separate specialist service</strong><span>Carpet cleaning is assessed independently from routine vacuuming and household cleaning.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why" aria-labelledby="why-title">
+      <div class="why__layout shell">
+        <div class="why__visual">
+          <OptimizedImage src={data.whyImage} alt={data.whyImageAlt} width={1600} height={1067} loading="lazy" class="why__image" />
+          <div class="why__proof"><div><strong>Since 2017</strong><span>Thoughtful home cleaning across Melbourne.</span></div></div>
+        </div>
+        <div class="why__copy">
+          <p class="kicker">Why Maid At Home</p>
+          <h2 id="why-title">Reliable care, without making booking complicated.</h2>
+          <p>From the first estimate to the completed service, we keep the process clear, practical and centred on what the home actually needs.</p>
+          <div class="why__list">
+            <article class="why__item"><span>01</span><div><h3>Insured professionals</h3><p>Experienced cleaners supported by clear service standards and expectations established before the visit.</p></div></article>
+            <article class="why__item"><span>02</span><div><h3>Clear pricing and scope</h3><p>Build an estimate around the property, service frequency and selected extras before booking.</p></div></article>
+            <article class="why__item"><span>03</span><div><h3>Local booking coordination</h3><p>We review the address, access instructions, preferred date and available cleaner routes.</p></div></article>
+          </div>
+          <a class="button button--primary" href={`${base}about-us/`}>Meet Maid At Home <span class="button__icon" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor"><path d="M4 10h11M11 6l4 4-4 4"/></svg></span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="recurring" aria-labelledby="recurring-title">
+      <div class="recurring__layout shell">
+        <div class="recurring__copy">
+          <p class="kicker">Recurring cleaning savings</p>
+          <h2 id="recurring-title">A routine that fits the way the home is used.</h2>
+          <p>{data.recurringIntro}</p>
+          <p class="recurring__note">{data.recurringRecommendation}</p>
+          <a class="button button--primary" href={`${base}pricing#calculator`}>Compare frequencies <span class="button__icon" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor"><path d="M4 10h11M11 6l4 4-4 4"/></svg></span></a>
+        </div>
+        <div class="frequencies">
+          <article class="frequency frequency--best"><span>Most frequent</span><b>Save 10%</b><strong>Weekly</strong><p>Consistent support for busy homes and high-use rooms.</p></article>
+          <article class="frequency frequency--best"><span>Popular rhythm</span><b>Save 10%</b><strong>Fortnightly</strong><p>A regular reset without booking a visit every week.</p></article>
+          <article class="frequency"><span>Longer interval</span><b>Save 5%</b><strong>Every 3 weeks</strong><p>For actively maintained homes needing periodic help.</p></article>
+          <article class="frequency"><span>Monthly rhythm</span><b>Save 5%</b><strong>Every 4 weeks</strong><p>Professional support around a household's own routine.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="process-title">
+      <div class="shell">
+        <div class="section-head"><div><p class="kicker">How booking works</p><h2 id="process-title">From your address to a confirmed clean.</h2></div><p>The suburb confirms the service area; the exact address, access and preferred date help us check the practical details.</p></div>
+        <div class="process-grid">
+          <article class="step"><span>01</span><h3>Choose a service</h3><p>Select the clean that best matches the property's current condition.</p></article>
+          <article class="step"><span>02</span><h3>Describe the home</h3><p>Add rooms, extras, access details and the priorities that matter most.</p></article>
+          <article class="step"><span>03</span><h3>Check the estimate</h3><p>Review the price and any eligible recurring saving before continuing.</p></article>
+          <article class="step"><span>04</span><h3>Confirm availability</h3><p>Choose a suitable date and complete the booking information online.</p></article>
+        </div>
+      </div>
+    </section>
+
+    {selectedTestimonials.length > 0 && (
+      <section class="testimonials" aria-labelledby="reviews-title">
+        <div class="shell">
+          <div class="reviews-head">
+            <div><p class="kicker">Customer feedback</p><h2 id="reviews-title">What customers say about Maid At Home.</h2></div>
+            <a class="google-proof" href="https://www.google.com/search?q=Maid+At+Home+Melbourne+reviews" target="_blank" rel="noopener"><span aria-hidden="true">G</span><span>View our Google profile ↗</span></a>
+          </div>
+          <div class="reviews-grid">
+            {selectedTestimonials.map((testimonial) => (
+              <article class="review-card">
+                <div class="review-stars" aria-label={`${testimonial.rating} out of 5 stars`}>{'★'.repeat(testimonial.rating)}</div>
+                <blockquote>“{testimonial.quote}”</blockquote>
+                <div class="review-person">
+                  <span><strong>{testimonial.customer}</strong><small>{testimonial.detail}</small></span>
+                  <span class="review-source">{testimonial.source}</span>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+    )}
+
+    <section class="section soft" aria-labelledby="faq-title">
+      <div class="faq-layout shell">
+        <div class="faq-intro"><p class="kicker">Local questions</p><h2 id="faq-title">House cleaning in {data.suburb}, answered.</h2><p>{data.faqIntro}</p></div>
+        <div class="faq-list">
+          {data.faqs.map((faq, index) => (
+            <article class:list={['faq-item', { 'is-open': index === 0 }]}>
+              <h3><button class="faq-question" type="button" aria-expanded={index === 0 ? 'true' : 'false'} aria-controls={`suburbFaq${index}`} id={`suburbQuestion${index}`}>{faq.question}<i aria-hidden="true"></i></button></h3>
+              <div class="faq-answer" id={`suburbFaq${index}`} role="region" aria-labelledby={`suburbQuestion${index}`}><div><p>{faq.answer}</p></div></div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {nearby.length > 0 && (
+      <section class="nearby" aria-labelledby="nearby-title">
+        <div class="nearby__layout shell">
+          <nav class="nearby-grid" aria-label={`Suburbs near ${data.suburb}`}>
+            {nearby.map((item, index) => (
+              <a class="nearby-card" href={`${base}areas-we-serve/${item.slug}/`}>
+                <span class="nearby-card__number">{String(index + 1).padStart(2, '0')}</span>
+                <span><strong>{item.name}</strong><small>House cleaning and local booking details</small></span>
+                <span class="nearby-card__arrow" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor"><path d="M4 10h11M11 6l4 4-4 4"/></svg></span>
+              </a>
+            ))}
+          </nav>
+          <div class="nearby__intro">
+            <p class="kicker">Nearby service areas</p>
+            <h2 id="nearby-title">House cleaning around {data.suburb}.</h2>
+            <p>{data.nearbyIntro}</p>
+            <a class="button button--secondary" href={`${base}areas-we-serve/`}>Explore all areas <span class="button__icon" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor"><path d="M4 10h11M11 6l4 4-4 4"/></svg></span></a>
+          </div>
+        </div>
+      </section>
+    )}
+
+    <section class="final" aria-labelledby="cta-title"><div class="final__panel"><OptimizedImage src={data.ctaImage} alt={data.ctaImageAlt} width={1600} height={1067} loading="lazy" class="final__image" /><div class="shell"><div class="final__content"><span>Cleaning in {data.suburb}</span><h2 id="cta-title">Ready for a home that feels lighter?</h2><p>Choose the service that suits your home, check your estimate and confirm current availability for {data.suburb} online.</p><a class="button button--primary" href={`${base}pricing#calculator`}>Build my clean <span class="button__icon" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor"><path d="M4 10h11M11 6l4 4-4 4"/></svg></span></a></div></div></div></section>
+  </main>
+</SiteLayout>
