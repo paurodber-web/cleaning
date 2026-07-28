@@ -1,12 +1,10 @@
 import { defineConfig } from 'astro/config';
 
-const base = process.env.ASTRO_BASE ?? '/';
-
-export default defineConfig({
+export default defineConfig(({ command }) => ({
   site: 'https://maidathome.com.au',
   // Production is served from the canonical domain root. ASTRO_BASE remains
   // available only for isolated previews (for example, a GitHub Pages demo).
-  base,
+  base: command === 'dev' || command === 'serve' ? '/' : (process.env.ASTRO_BASE ?? '/'),
   build: {
     format: 'directory',
   },
@@ -22,4 +20,4 @@ export default defineConfig({
     layout: 'full-width',
     responsiveStyles: true,
   },
-});
+}));
