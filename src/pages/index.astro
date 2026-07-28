@@ -60,7 +60,7 @@ const whyUsStyles = `.recurring-section{background:var(--white)}.why-us-section{
 
         if (open) {
           lastFocusedElement = document.activeElement;
-          window.setTimeout(() => mobileLinks[0]?.focus(), 350);
+          window.setTimeout(() => { if (menuToggle.getAttribute("aria-expanded") === "true") mobileLinks[0]?.focus(); }, 350);
         } else if (lastFocusedElement instanceof HTMLElement) {
           lastFocusedElement.focus({ preventScroll: true });
         }

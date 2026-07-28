@@ -1,4 +1,4 @@
-﻿---
+---
 import SiteLayout from "../../layouts/SiteLayout.astro";
 import OptimizedImage from "../../components/OptimizedImage.astro";
 import { calculatorExtras } from "../../data/calculator-extras.mjs";
@@ -35,7 +35,7 @@ const scripts = `<script>
         mobileMenu.classList.toggle("is-open", open);
         header.classList.toggle("menu-active", open);
         document.body.classList.toggle("menu-open", open);
-        if (open) { lastFocusedElement = document.activeElement; window.setTimeout(() => mobileLinks[0]?.focus(), 350); }
+        if (open) { lastFocusedElement = document.activeElement; window.setTimeout(() => { if (menuToggle.getAttribute("aria-expanded") === "true") mobileLinks[0]?.focus(); }, 350); }
         else if (lastFocusedElement instanceof HTMLElement) lastFocusedElement.focus({ preventScroll: true });
       };
 
