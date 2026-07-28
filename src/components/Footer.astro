@@ -11,3 +11,6 @@ const html = withoutCurrent.replace(new RegExp('(href=([\"\'])' + current + '\\2
 const basedHtml = html.replace(/(href|src)=([\"\'])\/(?!\/)/g, '$1=$2' + base);
 ---
 <Fragment set:html={basedHtml} />
+<style is:global>
+  footer .footer-brand .brand { z-index: 0; }
+</style>

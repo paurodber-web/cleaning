@@ -145,9 +145,7 @@ const scripts = `<script>
       const defaultExtraLabel = (key) => {
         const item = extraConfig[key];
         const band = activeBand(item);
-        return band
-          ? money(band.price).replace(".00", "") + " · " + band.minBedrooms + "–" + band.maxBedrooms + " bedrooms"
-          : extraLabels.get(key);
+        return band ? money(band.price).replace(".00", "") : extraLabels.get(key);
       };
 
       const syncStepper = (name) => {
