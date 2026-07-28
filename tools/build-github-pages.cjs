@@ -32,6 +32,8 @@ for (const file of files) {
   let contents = fs.readFileSync(file, 'utf8');
   contents = contents.replace(/\b(href|src|action)=(['"])(\/(?!\/)[^'"]*)\2/gi, (match, attribute, quote, url) => `${attribute}=${quote}${prefix(url)}${quote}`);
   contents = contents.replace(/url\((['"]?)(\/(?!\/)[^'")]+)\1\)/gi, (match, quote, url) => `url(${quote}${prefix(url)}${quote})`);
+  contents = contents.replace(/\/_astro\//g, base + '/_astro/');
+  contents = contents.replace(new RegExp(base + base + '/_astro/', 'g'), base + '/_astro/');
   contents = contents.replace(/(\.href\s*=\s*['"])(\/(?!\/))/g, (match, start, slash) => start + prefix(slash));
   fs.writeFileSync(file, contents);
 }
