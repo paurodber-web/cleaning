@@ -17,7 +17,7 @@ export const testimonials: Testimonial[] = [
   {
     quote: 'Everything felt fresh without that strong chemical smell. Booking was easy, communication was clear and the attention to our kitchen was excellent.',
     customer: 'Verified customer',
-    detail: 'Regular clean',
+    detail: 'Standard clean',
     source: 'Google',
     rating: 5,
   },

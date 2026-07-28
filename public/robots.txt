@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://maidathome.com.au/sitemap.xml

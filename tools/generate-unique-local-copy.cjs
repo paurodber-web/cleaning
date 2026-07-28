@@ -1,0 +1,42 @@
+const fs=require('node:fs'),path=require('node:path'),yaml=require('yaml');
+const dir=path.join(process.cwd(),'src','content','suburbs');
+function compact(value,limit){const s=String(value).replace(/\s+/g,' ').trim();if(s.length<=limit)return s;const part=s.slice(0,limit),comma=part.lastIndexOf(','),space=part.lastIndexOf(' ');return part.slice(0,comma>limit*.55?comma:space).trim();}
+const profiles=new Map(fs.readFileSync('tools/suburb-profiles.psv','utf8').trim().split(/\r?\n/).map(line=>{const a=line.split('|');return [a[1],{homes:compact(a[5],38),access:compact(a[6],32),parking:compact(a[7],30),focus:compact(a[8],38)}]}));
+const extras={'south-melbourne':{homes:'apartments, terraces and city-fringe townhouses',access:'intercoms, key collection and permits',parking:'short-term parking near the property',focus:'regular upkeep and move-related cleaning'},'north-melbourne':{homes:'terraces, apartments and townhouses',access:'intercoms, keys and building entry',parking:'permits and practical nearby parking',focus:'selected tasks and broader home resets'},'east-melbourne':{homes:'heritage apartments, terraces and compact homes',access:'intercoms, keys and gated entry',parking:'permits and timed street parking',focus:'careful upkeep across detailed interiors'},'west-melbourne':{homes:'apartments, terraces and city-fringe residences',access:'intercoms, keys and shared entrances',parking:'permits and time-limited parking',focus:'routine upkeep, one-off cleaning and moving support'}};
+Object.entries(extras).forEach(function(x){profiles.set(x[0],x[1])});
+const summaries=[
+ p=>'Properties here include '+p.homes+'. A useful booking also explains '+p.access+', then sets priorities around '+p.focus+'. Those details help the cleaner arrive prepared and direct the visit where it matters most.',
+ p=>'The local mix of '+p.homes+' can make a clear booking especially useful. Note '+p.access+' early, then choose a service that suits '+p.focus+'. It gives the appointment a practical starting point.',
+ p=>'A smoother clean begins with the property details: '+p.homes+', plus '+p.access+'. Add the rooms and tasks that matter most so the booking can reflect '+p.focus+' from the outset.',
+ p=>'Different local homes, including '+p.homes+', need different plans. Sharing '+p.access+' alongside the priority list makes it easier to organise '+p.focus+' without unnecessary back-and-forth.',
+ p=>'The booking works best when it reflects '+p.homes+' and any '+p.access+'. Set out the main tasks in advance, particularly where the home needs '+p.focus+'.',
+ p=>'Local cleaning plans can be more accurate when '+p.access+' is known before arrival. That matters for '+p.homes+', where the requested outcome may involve '+p.focus+'.',
+ p=>'Start with the way the property is used. For '+p.homes+', notes about '+p.access+' and the areas needing attention help shape '+p.focus+' into a workable visit.',
+ p=>'A clear brief helps the cleaner understand both the property and the priorities. This is particularly useful for '+p.homes+', where '+p.access+' can affect '+p.focus+'.',
+ p=>'Every address has its own practical details. Explain '+p.access+', then identify the rooms that matter most in '+p.homes+' so the service can support '+p.focus+'.',
+ p=>'Planning ahead makes the appointment easier to manage. Describe '+p.homes+' and '+p.access+', then use the task list to guide '+p.focus+'.'
+];
+const summaryShort=[
+ p=>'Homes here include '+p.homes+'. Add '+p.access+' to the booking, then choose priorities around '+p.focus+'. This gives the cleaner a clear plan before the visit.',
+ p=>'The local mix of '+p.homes+' benefits from clear notes about '+p.access+'. Set the task list around '+p.focus+' so the appointment has a practical direction.',
+ p=>'For '+p.homes+', the booking can explain '+p.access+' and the rooms that matter most. Those details help plan '+p.focus+' without guesswork.',
+ p=>'A useful local brief covers '+p.homes+', along with '+p.access+'. Add the key priorities so '+p.focus+' can be organised clearly from the start.',
+ p=>'Different homes need different plans. Describe '+p.homes+' and '+p.access+', then use the booking notes to guide '+p.focus+'.'
+];const cards=[
+ [p=>'Arrival can be shaped by '+p.access+'. Add those notes alongside '+p.parking+', so the cleaner can reach the property and begin with a clear plan for the visit.',p=>p.focus+' calls for a clear choice of scope. Compare a focused hourly visit with regular or detailed cleaning, based on the home condition and task list.',p=>p.homes+' can each need a different cleaning order. Flag the rooms used most often, then include extras so the available time supports the result you want.'],
+ [p=>'Before the visit, explain '+p.access+' and '+p.parking+'. That preparation keeps the arrival practical and leaves more of the appointment for cleaning.',p=>'Choose the service around the amount of work involved. This is useful where '+p.focus+' is the goal, rather than a generic checklist.',p=>'Start the task list with the most-used rooms. For '+p.homes+', clear priorities help the cleaner work through the home in a sensible order.'],
+ [p=>'Good arrival notes cover '+p.access+', together with '+p.parking+'. They give the cleaner a reliable route into the property before work begins.',p=>'A home does not always need the same level of support. Consider '+p.focus+' when deciding between hourly, regular or more detailed cleaning.',p=>'Use the booking notes to explain how the household uses its rooms. This is especially helpful in '+p.homes+', where priorities can differ from one visit to the next.'],
+ [p=>'Include '+p.access+' before cleaning day and clarify '+p.parking+'. These practical details make the start of the visit simpler to organise.',p=>'The right format depends on the result you need. A targeted list can suit selected tasks, while '+p.focus+' may call for a broader service.',p=>'Make space in the booking for the rooms, surfaces and extras that matter most. That helps the cleaner set a useful order for '+p.homes+'.'],
+ [p=>'A clear arrival plan starts with '+p.access+'. Pair it with '+p.parking+' so the route to the home is understood before the appointment.',p=>'Compare service options against the actual workload. Homes needing '+p.focus+' may benefit from a different scope than a light routine visit.',p=>'List the rooms that carry the most daily activity, then add any extras. This keeps the available time focused across '+p.homes+'.']
+];
+function padCopy(text,min,max,fillers){let out=text;let guard=0;while(out.length<min&&guard<fillers.length){const valid=fillers.filter(s=>out.length+s.length<=max);if(!valid.length)break;out+=valid[valid.length-1];guard++;}return out;}const stats=[];
+for(const file of fs.readdirSync(dir).filter(f=>f.endsWith('.md')&&!f.startsWith('_'))){
+ const full=path.join(dir,file),raw=fs.readFileSync(full,'utf8'),end=raw.indexOf('\n---',4),data=yaml.parse(raw.slice(4,end)),slug=file.slice(0,-3),p=profiles.get(slug);
+ if(!p)throw new Error('Missing local profile for '+slug);
+ const index=stats.length,set=cards[index%cards.length];
+ data.summary=padCopy(summaryShort[index%summaryShort.length](p),230,255,[' It gives the appointment a practical direction.',' This keeps the booking clear.',' The cleaner can prepare with confidence.']);
+ data.localHighlights=data.localHighlights.slice(0,3).map((h,i)=>({title:h.title,text:(function(){let value=set[i](p);if(i===1&&value.length<176)value+=' This keeps the scope clear.';return padCopy(value,176,196,[' This keeps the plan clear.',' That gives the cleaner a clear plan.',' It makes the visit easier to manage.']);})()}));
+ stats.push({file:file,summary:data.summary.length,cards:data.localHighlights.map(h=>h.text.length)});
+ fs.writeFileSync(full,'---\n'+yaml.stringify(data)+'---\n','utf8');
+}
+const all=stats.flatMap(x=>x.cards);console.log(JSON.stringify({pages:stats.length,summaryMin:Math.min(...stats.map(x=>x.summary)),summaryMax:Math.max(...stats.map(x=>x.summary)),cardMin:Math.min(...all),cardMax:Math.max(...all),kew:stats.find(x=>x.file==='kew.md')},null,2));

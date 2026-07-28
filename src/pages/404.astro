@@ -1,0 +1,7 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+const styles = `main{display:grid;min-height:72vh;place-items:center;padding:140px 24px 80px;color:#183042;background:#f4fafc;text-align:center}.box{max-width:680px}.code{display:block;color:#286b9d;font:800 .78rem/1 "DM Sans",Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase}h1{margin:18px 0;font:700 clamp(2.7rem,7vw,5rem)/1 "Plus Jakarta Sans",Arial,sans-serif;letter-spacing:-.055em}p{margin:0 auto 28px;color:#526978;font-size:1.05rem}.actions{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}.actions a{display:inline-flex;min-height:52px;align-items:center;padding:0 22px;border-radius:999px;font-weight:800;text-decoration:none}.home{color:#fff;background:#286b9d}.services{color:#183042;background:#f4df9f}`;
+---
+<SiteLayout title="Page Not Found | Maid At Home" description="The Maid At Home page you requested could not be found. Return home, explore Melbourne cleaning services or contact our team for help." styles={styles} robots="noindex,follow" currentPath="">
+  <main id="main-content"><div class="box"><span class="code">Error 404</span><h1>This page has moved or does not exist.</h1><p>Return to the Melbourne house cleaning homepage or compare the services currently available.</p><div class="actions"><a class="home" href="/">Go to homepage</a><a class="services" href="/services/">View cleaning services</a></div></div></main>
+</SiteLayout>

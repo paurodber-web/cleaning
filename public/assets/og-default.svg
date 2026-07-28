@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">Maid At Home</title>
+  <desc id="description">Friendly professional house cleaning services across Melbourne.</desc>
+  <rect width="1200" height="630" fill="#153e60"/>
+  <circle cx="1060" cy="105" r="250" fill="#286b9d" opacity=".55"/>
+  <circle cx="1060" cy="105" r="165" fill="none" stroke="#a9d1e7" stroke-width="2" opacity=".7"/>
+  <rect x="88" y="88" width="76" height="76" rx="18" fill="#f4df9f"/>
+  <path d="M108 128l18-15 18 15v20h-36zm8 20v-12h20v12" fill="none" stroke="#153e60" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="184" y="140" fill="#fff" font-family="Arial,sans-serif" font-size="34" font-weight="700">Maid At Home</text>
+  <text x="88" y="300" fill="#fff" font-family="Arial,sans-serif" font-size="68" font-weight="700">House cleaning services</text>
+  <text x="88" y="378" fill="#f4df9f" font-family="Arial,sans-serif" font-size="68" font-weight="700">across Melbourne.</text>
+  <text x="88" y="468" fill="#cfe7f3" font-family="Arial,sans-serif" font-size="30">Friendly, professional home cleaning since 2017.</text>
+  <rect x="88" y="516" width="330" height="4" rx="2" fill="#f4df9f"/>
+</svg>

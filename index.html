@@ -3368,6 +3368,24 @@
       background: var(--blue-50, #f4fafc) !important;
       color: var(--blue-700, #286b9d) !important;
     }
+    /* WHY MAID AT HOME */
+    .why-us-section { overflow: hidden; background: var(--blue-50); }
+    .why-us-layout { display: grid; grid-template-columns: minmax(260px, .76fr) minmax(0, 1.24fr); gap: clamp(44px, 8vw, 108px); align-items: start; }
+    .why-us-intro { position: sticky; top: 118px; }
+    .why-us-intro h2 { margin-bottom: 19px; }
+    .why-us-intro > p { max-width: 360px; margin-bottom: 27px; font-size: .98rem; }
+    .why-us-note { display: inline-flex; align-items: center; gap: 10px; color: var(--blue-800); font-size: .75rem; font-weight: 750; }
+    .why-us-note svg { width: 22px; height: 22px; padding: 4px; border-radius: 50%; color: var(--blue-700); background: var(--white); }
+    .why-us-list { display: grid; gap: 1px; overflow: hidden; border-radius: 25px; background: var(--blue-200); }
+    .why-us-item { display: grid; grid-template-columns: 74px minmax(0, 1fr) auto; gap: 22px; align-items: center; min-height: 154px; padding: 27px clamp(23px, 3vw, 38px); background: var(--white); transition: background .3s var(--ease), transform .3s var(--ease); }
+    .why-us-item:hover { position: relative; z-index: 1; background: #fbfdfe; transform: translateX(-7px); }
+    .why-us-item__number { color: var(--blue-300); font-family: "Plus Jakarta Sans", Arial, sans-serif; font-size: 1.7rem; font-weight: 750; letter-spacing: -.07em; }
+    .why-us-item h3 { margin-bottom: 7px; font-size: 1.18rem; font-weight: 700; }
+    .why-us-item p { max-width: 470px; margin-bottom: 0; font-size: .81rem; line-height: 1.65; }
+    .why-us-item__icon { display: grid; width: 42px; height: 42px; place-items: center; border-radius: 50%; color: var(--blue-700); background: var(--blue-100); }
+    .why-us-item__icon svg { width: 20px; height: 20px; }
+    @media (max-width: 820px) { .why-us-layout { grid-template-columns: 1fr; } .why-us-intro { position: static; } }
+    @media (max-width: 540px) { .why-us-item { grid-template-columns: 49px minmax(0, 1fr); gap: 14px; min-height: 0; } .why-us-item__icon { display: none; } .why-us-item:hover { transform: none; } }
   </style>
   <link rel="stylesheet" href="assets/site-shell.css">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -3817,6 +3835,22 @@
       </div>
     </section>
 
+    <!-- WHY CHOOSE US -->
+    <section class="section why-us-section" id="why-maid-at-home" aria-labelledby="why-us-title">
+      <div class="shell why-us-layout">
+        <div class="why-us-intro reveal">
+          <div class="section-kicker">Why choose Maid At Home</div>
+          <h2 id="why-us-title">The clean is only part of what we take care of.</h2>
+          <p>We make it easier to hand over the housework, with clear expectations before the clean and support after it.</p>
+          <span class="why-us-note"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="m5 12 4.2 4.2L19 6.5" /></svg>Built around real homes and real schedules</span>
+        </div>
+        <div class="why-us-list reveal">
+          <article class="why-us-item"><span class="why-us-item__number">01</span><div><h3>A clear standard in every room.</h3><p>Our cleaners work from a considered checklist, so the details that make a home feel properly clean are not left to chance.</p></div><span class="why-us-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 12.5 9.5 17 19 7.5" /><path d="M12 22s8-3.7 8-10V5l-8-3-8 3v7c0 6.3 8 10 8 10Z" /></svg></span></article>
+          <article class="why-us-item"><span class="why-us-item__number">02</span><div><h3>Cleaning that works around your week.</h3><p>Choose the service, timing and frequency that suit your home. For recurring cleans, we keep the routine simple and the savings automatic.</p></div><span class="why-us-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="8.5" /><path d="M12 7v5l3.5 2" /></svg></span></article>
+          <article class="why-us-item"><span class="why-us-item__number">03</span><div><h3>Helpful people, before and after the visit.</h3><p>Booking details stay clear, and if something needs attention after the clean, contact us within 24 hours so we can make it right.</p></div><span class="why-us-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20 15.5a4 4 0 0 1-4 4H9l-5 3v-7a4 4 0 0 1-1-2.6V8.5a4 4 0 0 1 4-4h9a4 4 0 0 1 4 4Z" /><path d="M8 11.5h8M8 8.5h5" /></svg></span></article>
+        </div>
+      </div>
+    </section>
     <!-- HOW IT WORKS -->
     <section class="section process-section" id="how-it-works" aria-labelledby="process-title">
       <div class="shell">

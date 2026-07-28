@@ -110,7 +110,7 @@ A routine is still working if it helps you restart. Missing a day or an entire w
 
 Professional help can take over the recurring baseline while the household handles small daily resets. It is particularly useful when weekends are repeatedly being spent catching up, mobility makes certain tasks difficult, or the home needs a more reliable rhythm than the week allows.
 
-A [Standard Clean](/services/standard-clean/) is designed for routine maintenance of the main rooms and surfaces. For built-up detail work, a [Deep Clean](/services/deep-clean/) may be the better starting point before moving into regular care.
+A [Standard Clean](/services/standard-clean/) is designed for routine maintenance of the main rooms and surfaces and can be booked once or regularly. Before the first visit, use the [house cleaner preparation checklist](/blog/how-to-prepare-for-house-cleaner/) to protect the booked cleaning time. For built-up detail work, a [Deep Clean](/services/deep-clean/) may be the better starting point before moving into regular care.
 
 <div class="article-callout">
   <span>Choosing a frequency</span>

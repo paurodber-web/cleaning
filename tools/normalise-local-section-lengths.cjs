@@ -1,0 +1,5 @@
+const fs=require('node:fs');const path=require('node:path');const yaml=require('yaml');
+const dir=path.join(process.cwd(),'src','content','suburbs');
+function fit(value,target){let s=String(value||'').replace(/\s+/g,' ').trim();if(s.length>target){s=s.slice(0,target-1).replace(/\s+\S*$/,'').trim()+'.';}const pads=[' More detail can be added before booking.',' Include these details in the booking notes.',' Add the practical details before cleaning day.'];let i=0;while(s.length<target){const p=pads[i%pads.length];if(s.length+p.length<=target)s+=p;else{s+=p.slice(0,target-s.length);break;}i++;}return s.slice(0,target);}
+for(const file of fs.readdirSync(dir).filter(f=>f.endsWith('.md')&&!f.startsWith('_'))){const full=path.join(dir,file);const raw=fs.readFileSync(full,'utf8');const end=raw.indexOf('\n---',4);const data=yaml.parse(raw.slice(4,end));data.summary=fit(data.summary,247);data.localHighlights=data.localHighlights.map(h=>({...h,text:fit(h.text,186)}));fs.writeFileSync(full,'---\n'+yaml.stringify(data)+'---\n','utf8');}
+console.log('Normalised local section text lengths: summary=247, cards=186.');
