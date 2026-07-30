@@ -82,7 +82,7 @@ faqs:
   - question: "Which service suits an older Richmond terrace?"
     answer: "A maintained terrace may suit a Standard Clean. If there is accumulated dust, detailed buildup or a long gap since professional cleaning, a Deep Clean or Hourly Clean may be more realistic."
   - question: "Can I arrange recurring cleaning in Richmond?"
-    answer: "Recurring availability depends on the address, preferred day and current routes. Eligible weekly and fortnightly Standard or Deep Cleans receive a 10% saving from the second completed service."
+    answer: "Recurring availability depends on the address, preferred day and current routes. Eligible weekly and fortnightly Standard, Deep or Hourly Cleans receive a 10% saving from the second completed service."
   - question: "Do you provide end-of-lease cleaning in Richmond?"
     answer: "Yes, when the property and date fit current availability. Share the number of rooms, condition, access arrangements and any requested extras so the booking can be scoped appropriately."
   - question: "Can the cleaner enter while I am away?"

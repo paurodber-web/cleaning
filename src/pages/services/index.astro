@@ -1,5 +1,5 @@
 ---
-import { serviceCarePolicy } from '../../data/service-policy';
+import { recurringDiscountPolicy, serviceCarePolicy } from '../../data/service-policy';
 import SiteLayout from "../../layouts/SiteLayout.astro";
 import OptimizedImage from "../../components/OptimizedImage.astro";
 import { calculatorExtras } from "../../data/calculator-extras.mjs";
@@ -316,8 +316,7 @@ const content = withBase(`<main id="main-content">
     <section class="section recurring-section" id="recurring" aria-labelledby="recurring-title">
       <div class="recurring-layout shell">
         <div class="recurring-visual reveal">__ASTRO_IMAGE_6__
-          <div class="recurring-badge"><strong>10% off</strong><span>Weekly and fortnightly Standard or Deep
-              cleans.</span></div>
+          <div class="recurring-badge"><strong>10% off</strong><span>Weekly and fortnightly ${recurringDiscountPolicy.eligibleServices} services.</span></div>
         </div>
         <div class="recurring-content reveal">
           <div class="section-kicker">Recurring savings</div>

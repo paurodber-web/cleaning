@@ -10,3 +10,11 @@ export const serviceCarePolicy = {
   everydayConcernCopy: 'If an agreed task was missed, contact us within 48 hours where reasonably possible and include photos or details so we can assess the concern and arrange the appropriate remedy.',
   endOfLeaseConcernCopy: 'For an eligible, documented End of Lease concern, contact us within seven days of the original service with agent feedback and supporting photos.',
 } as const;
+
+export const recurringDiscountPolicy = {
+  eligibleServices: 'Standard, Deep and Hourly',
+  weeklyAndFortnightly: '10%',
+  everyThreeOrFourWeeks: '5%',
+  startsFrom: 'the second completed recurring service',
+  summary: 'Standard, Deep and Hourly recurring services save 10% weekly or fortnightly, and 5% every three or four weeks, from the second completed service.',
+} as const;

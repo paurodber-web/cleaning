@@ -9,6 +9,13 @@ const expect = (condition, message) => { if (!condition) failures.push(message);
 const policy = read('src/data/service-policy.ts');
 expect(policy.includes('everydayHours: 48'), 'central policy must define a 48-hour everyday-service window');
 expect(policy.includes('endOfLeaseDays: 7'), 'central policy must define a 7-day End of Lease window');
+expect(policy.includes("eligibleServices: 'Standard, Deep and Hourly'"), 'central policy must include Hourly in recurring savings');
+
+const recurringPages = ['src/pages/index.astro', 'src/pages/booking.astro', 'src/pages/faqs.astro', 'src/pages/terms-and-conditions.astro', 'src/pages/areas-we-serve/[slug].astro'];
+for (const page of recurringPages) {
+  const contents = read(page);
+  expect(contents.includes('recurringDiscountPolicy'), page + ' must use the central recurring-discount policy');
+}
 
 const pages = ['src/pages/index.astro', 'src/pages/about-us.astro', 'src/pages/faqs.astro', 'src/pages/booking.astro', 'src/pages/services/standard-clean.astro', 'src/pages/services/deep-clean.astro'];
 for (const page of pages) {

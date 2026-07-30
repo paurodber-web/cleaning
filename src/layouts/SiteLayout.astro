@@ -40,7 +40,7 @@ const contactPoint = {
   telephone: '+61 413 398 546',
   email: 'info@maidathome.com.au',
   contactType: 'customer service',
-  areaServed: 'AU',
+  areaServed: { '@type': 'City', name: 'Melbourne' },
   availableLanguage: 'English',
 };
 const isHome = Astro.url.pathname === base || Astro.url.pathname === '/';

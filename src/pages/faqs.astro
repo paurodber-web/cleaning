@@ -1,5 +1,5 @@
 ---
-import { serviceCarePolicy } from '../data/service-policy';
+import { recurringDiscountPolicy, serviceCarePolicy } from '../data/service-policy';
 import SiteLayout from "../layouts/SiteLayout.astro";
 import OptimizedImage from "../components/OptimizedImage.astro";
 
@@ -137,9 +137,7 @@ const content = withBase(`<main id="main-content">
                     discounts begin?<span class="faq-question__icon"></span></button></h3>
                 <div class="faq-answer" id="faq8" role="region" aria-labelledby="q8">
                   <div>
-                    <p>The first service is charged at the normal one-off price. Your applicable recurring discount
-                      begins from the second completed service: 10% for weekly or fortnightly services, and 5% for
-                      three-weekly or monthly services.</p>
+                    <p>${recurringDiscountPolicy.summary}</p>
                   </div>
                 </div>
               </article>

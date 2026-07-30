@@ -1,5 +1,5 @@
 ---
-import { serviceCarePolicy } from '../data/service-policy';
+import { recurringDiscountPolicy, serviceCarePolicy } from '../data/service-policy';
 import SiteLayout from '../layouts/SiteLayout.astro';
 import OptimizedImage from '../components/OptimizedImage.astro';
 import womanVacuuming from '../../assets-src/woman_vacuuming.jpeg';
@@ -468,7 +468,7 @@ const content = withBase(`<main id="main-content">
               <path d="M12 22s8-3.7 8-10V5l-8-3-8 3v7c0 6.3 8 10 8 10Z" />
               <path d="m8.5 12 2.2 2.2 4.8-5" />
             </svg></span>
-          <span><strong>Insured professionals</strong><span>Fully insured professionals.</span></span>
+          <span><strong>Insured professionals</strong><span>Clear standards for every booking.</span></span>
         </div>
         <div class="trust-item">
           <span class="trust-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -476,7 +476,7 @@ const content = withBase(`<main id="main-content">
               <path d="M12 3v18M3 12h18" />
               <path d="m5.6 5.6 12.8 12.8m0-12.8L5.6 18.4" opacity=".4" />
             </svg></span>
-          <span><strong>Local since 2017</strong><span>Serving homes across Melbourne</span></span>
+          <span><strong>One-off or recurring</strong><span>Choose the rhythm that suits your home.</span></span>
         </div>
         <div class="trust-item">
           <span class="trust-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -751,8 +751,7 @@ const content = withBase(`<main id="main-content">
       <div class="recurring-layout shell">
         <div class="recurring-photo reveal">
           __ASTRO_IMAGE_5__
-          <div class="recurring-photo__badge"><strong>10% off</strong><span>Weekly and fortnightly Standard or Deep
-              cleans</span></div>
+          <div class="recurring-photo__badge"><strong>10% off</strong><span>Weekly and fortnightly Standard, Deep or Hourly cleans</span></div>
         </div>
 
         <div class="recurring-content reveal">
@@ -1100,31 +1099,7 @@ const content = withBase(`<main id="main-content">
                   aria-hidden="true"></span></button></h3>
             <div class="faq-answer" id="faqAnswer4" role="region" aria-labelledby="faqQuestion4">
               <div>
-                <p>Weekly and fortnightly Standard or Deep cleans receive 10% off. Every three weeks and every four
-                  weeks receive 5% off. Your discount is applied automatically in the calculator and booking flow.</p>
-              </div>
-            </div>
-          </article>
-          <article class="faq-item">
-            <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faqAnswer5"
-                id="faqQuestion5">Does End of Lease cleaning guarantee my bond?<span class="faq-question__icon"
-                  aria-hidden="true"></span></button></h3>
-            <div class="faq-answer" id="faqAnswer5" role="region" aria-labelledby="faqQuestion5">
-              <div>
-                <p>Bond decisions are made by your landlord or property manager, so no cleaner can control the final
-                  outcome. Our service follows a detailed vacate checklist and includes re-clean support for eligible
-                  items reported ${serviceCarePolicy.endOfLeaseWindow}.</p>
-              </div>
-            </div>
-          </article>
-          <article class="faq-item">
-            <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faqAnswer6"
-                id="faqQuestion6">What if my plans change?<span class="faq-question__icon"
-                  aria-hidden="true"></span></button></h3>
-            <div class="faq-answer" id="faqAnswer6" role="region" aria-labelledby="faqQuestion6">
-              <div>
-                <p>Contact us as early as possible. Changes made with less than 24 hours' notice may incur a fee because
-                  that time has been reserved for your cleaner. We will always help find the best available option.</p>
+                <p>${recurringDiscountPolicy.summary} Your discount is applied automatically in the calculator and booking flow.</p>
               </div>
             </div>
           </article>

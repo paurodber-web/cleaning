@@ -1,5 +1,5 @@
 ---
-import { serviceCarePolicy } from '../../data/service-policy';
+import { recurringDiscountPolicy, serviceCarePolicy } from '../../data/service-policy';
 import { getCollection, type CollectionEntry } from "astro:content";
 import SiteLayout from "../../layouts/SiteLayout.astro";
 import OptimizedImage from "../../components/OptimizedImage.astro";
@@ -467,7 +467,7 @@ const scripts = `<script>(()=>{"use strict";const header=document.getElementById
             Your home.<br />Your schedule.
           </h2>
           <p>Choose a one-off visit or set up regular cleaning around the rhythm that suits your household.</p>
-          <p class="recurring__note">Eligible weekly and fortnightly Standard or Deep Cleans receive 10% off from the second completed service. Every three or four weeks receives 5%.</p>
+          <p class="recurring__note">${recurringDiscountPolicy.summary}</p>
           <a class="button button--primary" href={`${base}pricing#calculator`}
             >Compare frequencies <span class="button__icon" aria-hidden="true"
               ><svg viewBox="0 0 20 20" fill="none" stroke="currentColor"
