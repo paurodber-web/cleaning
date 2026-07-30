@@ -1,4 +1,5 @@
 ---
+import { serviceCarePolicy } from '../data/service-policy';
 import SiteLayout from '../layouts/SiteLayout.astro';
 import OptimizedImage from '../components/OptimizedImage.astro';
 import womanVacuuming from '../../assets-src/woman_vacuuming.jpeg';
@@ -8,7 +9,7 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 const withBase = (markup: string) => markup.replace(/(href|src)=([\"\'])\/(?!\/)/g, '$1=$2' + base);
 const withBaseStyles = (css: string) => css.replace(/url\((['"]?)\/(?!\/)/g, 'url($1' + base);
 const title = `House Cleaning Melbourne | Instant Prices | Maid At Home`;
-const description = `Trusted house cleaning services across Melbourne with clear online pricing, flexible one-off and recurring cleans, and a 48-hour care promise.`;
+const description = `Trusted house cleaning services across Melbourne with clear online pricing, flexible one-off and recurring cleans, and a ${serviceCarePolicy.everydayWindowLabel}.`;
 const capitaliseExtraKey = (value: string) => value.charAt(0).toUpperCase() + value.slice(1);
 
 const calculatorExtraConfigJson = JSON.stringify(calculatorExtraConfig);
@@ -483,7 +484,7 @@ const content = withBase(`<main id="main-content">
               <path d="M12 8v5l3 2" />
               <circle cx="12" cy="12" r="9" />
             </svg></span>
-          <span><strong>48-hour care promise</strong><span>Tell us quickly and we'll help</span></span>
+          <span><strong>${serviceCarePolicy.everydayWindowLabel}</strong><span>Tell us quickly and we'll help</span></span>
         </div>
       </div>
     </section>
@@ -684,7 +685,7 @@ const content = withBase(`<main id="main-content">
                 <path d="M4 10h11M11 6l4 4-4 4" />
               </svg></span>
           </a>
-          <a class="service-mini" href="/services/hourly-clean">
+          <a class="service-mini" href="/services/regular-house-cleaning">
             <span class="service-mini__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="1.6">
                 <circle cx="12" cy="12" r="9" />
@@ -697,7 +698,7 @@ const content = withBase(`<main id="main-content">
                 <path d="M4 10h11M11 6l4 4-4 4" />
               </svg></span>
           </a>
-          <a class="service-mini" href="/services/hourly-clean">
+          <a class="service-mini" href="/services/regular-house-cleaning">
             <span class="service-mini__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="1.6">
                 <circle cx="12" cy="12" r="9" />
@@ -769,7 +770,7 @@ const content = withBase(`<main id="main-content">
             <li><span class="frequency-list__num">04</span><span><strong>Every 4 weeks</strong><small>A reliable monthly
                   refresh</small></span><span class="frequency-list__discount">Save 5%</span></li>
           </ul>
-          <a class="button button--blue" href="/services/move-in-clean">Explore regular cleaning plans <span class="button__icon"
+          <a class="button button--blue" href="/services/regular-house-cleaning">Explore regular cleaning plans <span class="button__icon"
               aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7">
                 <path d="M4 10h11M11 6l4 4-4 4" />
               </svg></span></a>
@@ -779,7 +780,7 @@ const content = withBase(`<main id="main-content">
 
     <!-- WHY CHOOSE US -->
     <section class="section why-us-section" id="why-maid-at-home" aria-labelledby="why-us-title">
-      <div class="shell why-us-layout"><div class="why-us-intro reveal"><div class="section-kicker">Why choose Maid At Home</div><h2 id="why-us-title">A cleaner home, with more care.</h2><p>We make it easier to hand over the housework, with clear expectations before the clean and support after it. From the first booking to the final detail, our team keeps the experience thoughtful, organised and easy to trust.</p><a class="button button--blue why-us-intro__button" href="/about-us">Meet the team <span class="button__icon" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 10h11M11 6l4 4-4 4" /></svg></span></a></div><div class="why-us-story reveal"><article class="why-us-pledge"><span class="why-us-pledge__number">01 / OUR STANDARD</span><h3>A clear standard in every room.</h3><p>Our cleaners work from a considered checklist, so the details that make a home feel properly clean are not left to chance.</p></article><div class="why-us-details"><article class="why-us-detail"><span class="why-us-detail__number">02 / YOUR RHYTHM</span><h3>Cleaning that works around your week.</h3><p>Choose the service, timing and frequency that suit your home. For recurring cleans, the routine stays simple and the savings automatic.</p></article><article class="why-us-detail"><span class="why-us-detail__number">03 / OUR FOLLOW-THROUGH</span><h3>Helpful before and after the visit.</h3><p>Booking details stay clear, and if something needs attention, contact us within 24 hours so we can make it right.</p></article></div></div></div>
+      <div class="shell why-us-layout"><div class="why-us-intro reveal"><div class="section-kicker">Why choose Maid At Home</div><h2 id="why-us-title">A cleaner home, with more care.</h2><p>We make it easier to hand over the housework, with clear expectations before the clean and support after it. From the first booking to the final detail, our team keeps the experience thoughtful, organised and easy to trust.</p><a class="button button--blue why-us-intro__button" href="/about-us">Meet the team <span class="button__icon" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 10h11M11 6l4 4-4 4" /></svg></span></a></div><div class="why-us-story reveal"><article class="why-us-pledge"><span class="why-us-pledge__number">01 / OUR STANDARD</span><h3>A clear standard in every room.</h3><p>Our cleaners work from a considered checklist, so the details that make a home feel properly clean are not left to chance.</p></article><div class="why-us-details"><article class="why-us-detail"><span class="why-us-detail__number">02 / YOUR RHYTHM</span><h3>Cleaning that works around your week.</h3><p>Choose the service, timing and frequency that suit your home. For recurring cleans, the routine stays simple and the savings automatic.</p></article><article class="why-us-detail"><span class="why-us-detail__number">03 / OUR FOLLOW-THROUGH</span><h3>Helpful before and after the visit.</h3><p>Booking details stay clear, and if something needs attention, contact us ${serviceCarePolicy.everydayWindow} so we can make it right.</p></article></div></div></div>
     </section>
     <!-- HOW IT WORKS -->
     <section class="section process-section unified-how" id="how-it-works" aria-labelledby="process-title">
@@ -852,7 +853,7 @@ const content = withBase(`<main id="main-content">
               <path d="M12 22s8-3.7 8-10V5l-8-3-8 3v7c0 6.3 8 10 8 10Z" />
               <path d="m8.5 12 2.2 2.2 4.8-5" />
             </svg><span><strong>Our re-clean support:</strong> if your agent identifies something from the agreed
-              checklist, contact us within 7 days so we can review and coordinate a return where applicable. Bond
+              checklist, contact us ${serviceCarePolicy.endOfLeaseWindow} so we can review and coordinate a return where applicable. Bond
               decisions remain with your landlord or agent.</span></div>
           <a class="button button--primary" href="/services/end-of-lease-clean">Explore end-of-lease cleaning <span
               class="button__icon" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor"
@@ -1112,7 +1113,7 @@ const content = withBase(`<main id="main-content">
               <div>
                 <p>Bond decisions are made by your landlord or property manager, so no cleaner can control the final
                   outcome. Our service follows a detailed vacate checklist and includes re-clean support for eligible
-                  items reported within seven days.</p>
+                  items reported ${serviceCarePolicy.endOfLeaseWindow}.</p>
               </div>
             </div>
           </article>
@@ -1141,7 +1142,7 @@ const content = withBase(`<main id="main-content">
             <h2 id="final-cta-title">Make room for life, not house cleaning.</h2>
             <p>Choose your service, see your estimate and organise a cleaner in minutes. Your calmer week can start
               right here.</p>
-            <a class="button button--primary" href="/services/hourly-clean">Book your clean <span class="button__icon"
+            <a class="button button--primary" href="/booking">Book your clean <span class="button__icon"
                 aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7">
                   <path d="M4 10h11M11 6l4 4-4 4" />
                 </svg></span></a>

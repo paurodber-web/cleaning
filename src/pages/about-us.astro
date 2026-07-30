@@ -1,4 +1,5 @@
 ---
+import { serviceCarePolicy } from '../data/service-policy';
 import SiteLayout from "../layouts/SiteLayout.astro";
 import OptimizedImage from "../components/OptimizedImage.astro";
 
@@ -390,7 +391,7 @@ const content = withBase(`<main id="main-content">
           <article class="system-item"><span class="system-item__number">04</span>
             <div>
               <h3>Support after the clean</h3>
-              <p>If an agreed task was missed, contact us within 24 hours. We will assess the concern and arrange the appropriate remedy under our terms.
+              <p>If an agreed task was missed, contact us ${serviceCarePolicy.everydayWindow}. We will assess the concern and arrange the appropriate remedy under our terms.
               </p>
             </div>
           </article>
@@ -456,11 +457,11 @@ const content = withBase(`<main id="main-content">
           </article>
           <article class="faq-item">
             <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="aboutFaq5"
-                id="aboutQuestion5">What does your 24-hour care promise mean?<span class="faq-question__icon"
+                id="aboutQuestion5">What does your ${serviceCarePolicy.everydayWindowLabel} mean?<span class="faq-question__icon"
                   aria-hidden="true"></span></button></h3>
             <div class="faq-answer" id="aboutFaq5" role="region" aria-labelledby="aboutQuestion5">
               <div>
-                <p>If an agreed task was missed, let us know within 24 hours where reasonably possible and include
+                <p>If an agreed task was missed, let us know ${serviceCarePolicy.everydayWindow} where reasonably possible and include
                   photos or details. We will assess the concern and arrange an appropriate remedy under our terms and
                   Australian Consumer Law.</p>
               </div>
@@ -491,7 +492,7 @@ const content = withBase(`<main id="main-content">
             <h2 id="final-cta-title">We clean so you can enjoy home.</h2>
             <p>There's nothing like the feeling of a freshly cleaned space. Skip the chores this week and let our
               friendly team take care of the details for you. Grab your spot on our schedule today!</p>
-            <a class="button button--primary" href="/pricing#calculator">Book your clean <span
+            <a class="button button--primary" href="/booking">Book your clean <span
                 class="button__icon" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor"
                   stroke-width="1.7">
                   <path d="M4 10h11M11 6l4 4-4 4"></path>

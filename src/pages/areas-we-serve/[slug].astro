@@ -1,4 +1,5 @@
 ---
+import { serviceCarePolicy } from '../../data/service-policy';
 import { getCollection, type CollectionEntry } from "astro:content";
 import SiteLayout from "../../layouts/SiteLayout.astro";
 import OptimizedImage from "../../components/OptimizedImage.astro";
@@ -539,10 +540,10 @@ const scripts = `<script>(()=>{"use strict";const header=document.getElementById
 
     <section class="section guarantee soft" aria-labelledby="guarantee-title">
       <div class="shell">
-        <div class="section-head"><div><p class="kicker">Our cleaning guarantee</p><h2 id="guarantee-title">Support that continues after the clean.</h2></div><p>If an agreed task was missed, contact us within 48 hours for Standard, Deep, Move In or Hourly services, or within seven days for an eligible End of Lease concern.</p></div>
+        <div class="section-head"><div><p class="kicker">Our cleaning guarantee</p><h2 id="guarantee-title">Support that continues after the clean.</h2></div><p>If an agreed task was missed, contact us ${serviceCarePolicy.everydayWindow} for ${serviceCarePolicy.everydayServices} services, or ${serviceCarePolicy.endOfLeaseWindow} for an eligible, documented End of Lease concern.</p></div>
         <div class="guarantee-grid">
-          <article class="guarantee-main"><p class="kicker">Satisfaction Guarantee</p><h3>48-hour cleaning guarantee</h3><p>For Standard, Deep, Move In and Hourly services, contact us within 48 hours where reasonably possible if an agreed task was missed. Include photos or details so we can assess the concern and arrange the appropriate remedy where applicable.</p></article>
-          <article class="guarantee-detail"><h3>End of Lease support</h3><p>For an eligible End of Lease Clean or Move In Clean, contact us within seven days of the original service with the agent's feedback and supporting photos. Please allow reasonable access for any approved return visit.</p></article>
+          <article class="guarantee-main"><p class="kicker">Satisfaction Guarantee</p><h3>${serviceCarePolicy.everydayWindowLabel}</h3><p>${serviceCarePolicy.everydayConcernCopy}</p></article>
+          <article class="guarantee-detail"><h3>End of Lease support</h3><p>${serviceCarePolicy.endOfLeaseConcernCopy} Please allow reasonable access for any approved return visit.</p></article>
           <article class="guarantee-detail"><h3>Clear communication</h3><p>Our team remains available before and after the service whenever a booking detail, cleaning request or completed task needs clarification.</p></article>
         </div>
       </div>
