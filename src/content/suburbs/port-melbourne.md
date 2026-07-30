@@ -10,10 +10,10 @@ heroIntro: Choose a practical cleaning option for your Port Melbourne home,
   whether you need focused help, regular maintenance or a fuller clean. We use
   your notes about floors, balconies, high-use rooms and the practical details
   around property access to organise the service.
-summary: Port Melbourne combines high-rise apartments, modern townhouses and
-  older homes close to the bay, with lift access and coastal dust often
-  affecting the service. Sharing building procedures, parking and outdoor
-  priorities keeps the appointment organised.
+summary: The local housing mix ranges across waterfront apartments, townhouses
+  and workers cottages. Share concierge desks, service lifts and narrow cottage
+  entries before the visit, then use the task list to guide apartment care
+  shaped by buildings or compact cottage layouts in a practical way.
 localSectionTitle: Apartment and townhouse cleaning planned for Port Melbourne.
 servicesIntro: Start by deciding whether the home needs maintenance, a more
   detailed clean or help connected to a move. Then choose the option that fits
@@ -59,18 +59,17 @@ ctaImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=form
 ctaImageAlt: Bright interior after cleaning in Port Melbourne
 localHighlights:
   - title: Confirm loading and lift bookings
-    text: Some apartment buildings require service-lift reservations or access
-      through a loading area. Provide the approved time and entrance so the
-      cleaner can carry equipment directly to the apartment.
+    text: Share concierge desks, service lifts and narrow cottage entries early in
+      the booking. It gives the cleaner a clearer route into the property and
+      keeps the start of the visit straightforward.
   - title: Note coastal residue and exposed areas
-    text: Wind can leave fine dust across balconies, tracks and doors near the
-      waterfront. Identify the surfaces that need attention and add any outdoor
-      or glass-related extras before the booking.
+    text: When the aim is apartment care shaped by buildings or compact cottage
+      layouts, match the service to the workload. A priority list and a broader
+      clean should be planned differently.
   - title: Prepare carefully for move cleans
-    text: For move-in or end-of-lease work, confirm whether the property will be
-      empty, where keys are collected and how long building access is available.
-      These details are essential when the cleaner must work within a fixed lift
-      window.
+    text: The room list can guide the whole appointment. This is especially useful
+      for waterfront apartments, townhouses and workers cottages, where
+      different spaces may need attention first.
 homeTypes:
   - waterfront apartments
   - townhouses and workers cottages

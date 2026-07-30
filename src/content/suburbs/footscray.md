@@ -11,10 +11,10 @@ heroIntro: Find the right level of cleaning for apartments, terraces and
   townhouses in a busy inner-west hub in Footscray. You can choose the
   frequency, include optional extras and provide arrival details covering street
   parking, gates, intercoms, laneways and compact entrances.
-summary: Footscray combines apartments, terraces, family homes and converted
-  industrial spaces around busy streets and transport links. Exact entrance
-  details and an honest description of the layout help us plan around the
-  property instead of relying on a standard suburban setup.
+summary: For apartments, terraces and family homes near a dense centre, the
+  booking can set out secure buildings, rear lanes and narrow internal access
+  alongside the work that needs attention. Those details make it easier to
+  organise apartment cleaning, shared-home resets and moving services.
 localSectionTitle: Adaptable cleaning for Footscray’s diverse properties.
 servicesIntro: For apartments, terraces and townhouses in a busy inner-west hub,
   the best option depends on how much of the property needs attention. Compare
@@ -57,17 +57,17 @@ ctaImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=form
 ctaImageAlt: Bright interior after cleaning in Footscray
 localHighlights:
   - title: Locate the residential entrance
-    text: Some homes are accessed from a side street, laneway, shared foyer or
-      entrance separate from the building frontage. Include clear directions so
-      the cleaner reaches the correct door without searching.
+    text: Access can affect the start of cleaning day. Add secure buildings, rear
+      lanes and narrow internal access before confirmation so the cleaner has
+      the right information on arrival.
   - title: Account for converted floorplans
-    text: Open-plan lofts, mezzanines and repurposed rooms may not fit a typical
-      bedroom-and-bathroom description. Explain how the space is divided and
-      which zones are included in the clean.
+    text: Think about the outcome rather than a generic package. Homes needing
+      apartment cleaning, shared-home resets and moving services may suit a
+      different scope from a light maintenance visit.
   - title: Plan parking before arrival
-    text: Busy roads and timed spaces can make unloading difficult. Share a visitor
-      bay, driveway, nearby side street or legal set-down option that gives the
-      cleaner a practical start.
+    text: Set the priorities in the order they matter to the household. That helps
+      the cleaner work through apartments, terraces and family homes near a
+      dense centre with a clear purpose.
 homeTypes:
   - apartments
   - terraces and family homes near a dense centre
@@ -134,5 +134,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---

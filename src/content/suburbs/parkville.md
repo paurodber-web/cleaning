@@ -11,10 +11,11 @@ heroIntro: Organise a cleaner for apartments, terraces and established homes
   close to the city in Parkville without overcomplicating the booking. Set the
   frequency, identify the priority areas and add any instructions linked to
   intercoms, key collection, permits and parking near the property.
-summary: Parkville combines period residences, apartments and student-oriented
-  housing around busy hospital and university precincts. Noting parking limits,
-  shared access and the condition of older surfaces helps us match the service
-  to the home rather than treating every booking alike.
+summary: Different properties need different plans. Describe apartments,
+  terraces and larger homes near institutional precincts, confirm shared
+  entrances, permit-controlled streets and key handover plans and use the
+  booking notes to give flexible cleaning for mixed home sizes and carefully
+  selected priorities a clear direction.
 localSectionTitle: Thoughtful cleaning for Parkville homes and apartments.
 servicesIntro: The right booking may be a short list of priorities or a broader
   service across several rooms. In Parkville, you can choose between regular
@@ -57,18 +58,17 @@ ctaImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=form
 ctaImageAlt: Bright interior after cleaning in Parkville
 localHighlights:
   - title: Make arrival instructions specific
-    text: Permit zones and institutional traffic can make nearby parking less
-      predictable. Share the most reliable entrance, driveway or short-term
-      space so the cleaner can reach the property without circling the
-      surrounding streets.
+    text: Give the cleaner a practical arrival plan by noting shared entrances,
+      permit-controlled streets and key handover plans. It is a simple step that
+      helps the visit start without unnecessary uncertainty.
   - title: Identify older or delicate finishes
-    text: Original floorboards, decorative details and older bathroom surfaces may
-      need a more considered approach. Mention anything fragile, recently
-      restored or unsuitable for strong products before the cleaner begins work.
+    text: Compare the options against the real workload. flexible cleaning for mixed
+      home sizes and carefully selected priorities may call for a more detailed
+      plan than a routine clean. This keeps the booking clear.
   - title: Clarify shared household needs
-    text: Student apartments and shared homes often have different priorities in
-      each room. List the communal areas to cover, any bedrooms included and the
-      tasks that must be completed within the booked time.
+    text: Make the task list specific to the home. Clear priorities help the cleaner
+      organise work across apartments, terraces and larger homes near
+      institutional precincts and focus on what matters most.
 homeTypes:
   - apartments
   - terraces and larger homes near institutional precincts
@@ -135,5 +135,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---

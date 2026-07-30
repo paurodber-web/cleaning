@@ -11,10 +11,10 @@ heroIntro: Flexible home cleaning is available throughout North Melbourne, from
   targeted hourly bookings to broader flat-rate services. Tell us which areas
   matter most and note intercoms, key collection, permits and parking near the
   property.
-summary: North Melbourne combines terraces, apartments and townhouses near
-  hospital, university and city traffic, where permit parking and narrow streets
-  can affect arrival. Exact access notes and a clear room scope help us keep the
-  service efficient.
+summary: For terraces, apartments and townhouses near major institutions, the
+  booking can set out intercoms, key collection and building-entry details
+  alongside the work that needs attention. Those details make it easier to
+  organise selected tasks, regular upkeep and broader home resets.
 localSectionTitle: Cleaning planned around North Melbourne access and layouts.
 servicesIntro: From regular maintenance to a complete moving clean, each option
   serves a different purpose. Consider entry details, mixed property layouts and
@@ -58,17 +58,17 @@ ctaImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=form
 ctaImageAlt: Bright interior after cleaning in North Melbourne
 localHighlights:
   - title: Provide dependable parking guidance
-    text: Mention visitor permits, garage access or the nearest legal side street.
-      Busy institutional areas can make parking unpredictable, so local
-      instructions are more useful than relying on street availability.
+    text: Access can affect the start of cleaning day. Add intercoms, key collection
+      and building-entry details before confirmation so the cleaner has the
+      right information on arrival. This keeps the booking clear.
   - title: Explain narrow or vertical layouts
-    text: Terraces and townhouses may include steep stairs, compact rooms and
-      several levels. Include the full layout so movement between floors is
-      reflected in the booking.
+    text: Think about the outcome rather than a generic package. Homes needing
+      selected tasks, regular upkeep and broader home resets may suit a
+      different scope from a light maintenance visit.
   - title: Clarify apartment entry systems
-    text: Give the building name, buzzer, foyer and lift details for secure
-      complexes. This reduces calls at arrival and protects time for the
-      cleaning itself.
+    text: Set the priorities in the order they matter to the household. That helps
+      the cleaner work through terraces, apartments and townhouses near major
+      institutions with a clear purpose.
 homeTypes:
   - North Melbourne homes
   - Apartments, townhouses and family properties
@@ -137,5 +137,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---

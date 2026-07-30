@@ -10,10 +10,10 @@ heroIntro: House cleaning in St Kilda should fit the property rather than force
   every home into the same package. Select hourly or flat-rate service and
   include details about apartment entry, driveways, balconies and parking near
   the property.
-summary: St Kilda properties include older apartment blocks, modern developments
-  and houses exposed to sand, wind and busy street conditions. Clear access
-  notes and specific outdoor or pet-related priorities help the cleaner arrive
-  prepared for the environment around the home.
+summary: For apartments, older flats and houses near the bayside, the booking
+  can set out shared entrances, external stairs and secure foyers alongside the
+  work that needs attention. Those details make it easier to organise apartment
+  maintenance, move cleans and periodic deep care.
 localSectionTitle: Home cleaning prepared for St Kilda living.
 servicesIntro: Different homes call for different levels of help. Our St Kilda
   services cover regular cleaning, detailed one-off visits and moving cleans for
@@ -56,17 +56,17 @@ ctaImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=form
 ctaImageAlt: Bright interior after cleaning in St Kilda
 localHighlights:
   - title: Describe stairs and older buildings
-    text: Let us know if the apartment is reached by external steps, a narrow
-      stairwell or a lift that cannot carry equipment. This allows the cleaner
-      to plan what to bring and how to move safely through the building.
+    text: Access can affect the start of cleaning day. Add shared entrances,
+      external stairs and secure foyers before confirmation so the cleaner has
+      the right information on arrival. This keeps the booking clear.
   - title: Account for sand and balcony dust
-    text: Coastal air and regular beach visits can leave grit around entries,
-      floors, tracks and balconies. Mention the affected areas and add balcony
-      or interior-window cleaning when you want those surfaces included.
+    text: Think about the outcome rather than a generic package. Homes needing
+      apartment maintenance, move cleans and periodic deep care may suit a
+      different scope from a light maintenance visit.
   - title: Explain pets and building rules
-    text: Tell us about animals, secure gates and any restrictions on contractor
-      access or noise. These details help the cleaner work considerately in
-      shared buildings and prevent pets from escaping through common entrances.
+    text: Set the priorities in the order they matter to the household. That helps
+      the cleaner work through apartments, older flats and houses near the
+      bayside with a clear purpose. This keeps the booking clear.
 homeTypes:
   - apartments
   - older flats and houses near the bayside

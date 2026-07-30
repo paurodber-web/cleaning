@@ -11,10 +11,10 @@ heroIntro: House cleaning in Essendon should fit the property rather than force
   every home into the same package. Select hourly or flat-rate service and
   include details about driveways, parking, gates, stairs and equipment
   availability.
-summary: Essendon properties often include larger floorplans, several bathrooms,
-  stairs and active family spaces. Providing the full layout, driveway access
-  and pet details helps us recommend enough time and organise a service that
-  fits the household properly.
+summary: A clear local brief starts with established family homes, units and
+  apartments and any driveways, shared entries and internal stairs. Add the
+  important rooms and tasks so the appointment reflects scheduled maintenance
+  for varied property sizes.
 localSectionTitle: Well-planned cleaning for Essendon family homes.
 servicesIntro: Choose based on the outcome you need, not only the size of the
   home. We offer recurring cleaning for ongoing upkeep or a flat-rate clean when
@@ -58,17 +58,17 @@ ctaImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=form
 ctaImageAlt: Bright interior after cleaning in Essendon
 localHighlights:
   - title: Count all rooms and levels
-    text: Include studies, formal lounges, upstairs retreats, laundries and every
-      bathroom. A complete property outline is more useful than a bedroom count
-      when several separate zones need attention.
+    text: A smoother arrival begins with driveways, shared entries and internal
+      stairs. Include those details in the booking so the cleaner can focus time
+      inside the home rather than at the entry.
   - title: Confirm driveway and entry use
-    text: Tell us whether the cleaner may park in the driveway, use a side gate or
-      enter through the garage. Clear access reduces carrying time and avoids
-      blocking household vehicles.
+    text: Service choice should reflect scheduled maintenance for varied property
+      sizes. Use hourly cleaning for selected work, or choose a broader option
+      when more of the home needs care.
   - title: Build around family and pet traffic
-    text: Identify the rooms, hallways and entry points used most heavily each week.
-      The cleaner can then give stronger attention to floors, bathrooms and
-      shared areas that show daily wear fastest.
+    text: List the important rooms, surfaces and extras before cleaning day. For
+      established family homes, units and apartments, this makes the available
+      time easier to use well. This keeps the booking clear.
 homeTypes:
   - established family homes
   - units and apartments
@@ -135,5 +135,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---

@@ -11,10 +11,10 @@ heroIntro: Find the right level of cleaning for family homes, units and newer
   townhouses in Coburg. You can choose the frequency, include optional extras
   and provide arrival details covering driveways, parking, gates, stairs and
   equipment availability.
-summary: Coburg includes established family houses, renovated properties, units
-  and townhouses with very different floorplans. Telling us the number of
-  levels, bathrooms and active household areas helps us recommend a booking that
-  can cover the home properly.
+summary: For family houses, units and apartments on varied residential streets,
+  the booking can set out front drives, shared unit access and side gates
+  alongside the work that needs attention. Those details make it easier to
+  organise multi-room family cleaning and recurring household upkeep.
 localSectionTitle: A well-sized cleaning plan for Coburg homes.
 servicesIntro: Different homes call for different levels of help. Our Coburg
   services cover recurring cleaning for ongoing upkeep or a flat-rate clean when
@@ -57,18 +57,17 @@ ctaImage: https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=form
 ctaImageAlt: Bright interior after cleaning in Coburg
 localHighlights:
   - title: Describe the true size of the home
-    text: Include studies, extra living rooms, laundries and converted spaces rather
-      than only bedrooms and bathrooms. A complete room count gives a more
-      accurate picture of the workload and the time likely to be needed.
+    text: Access can affect the start of cleaning day. Add front drives, shared unit
+      access and side gates before confirmation so the cleaner has the right
+      information on arrival. This keeps the booking clear.
   - title: Mention extensions and level changes
-    text: Renovated homes may move between original rooms, new rear additions and
-      small internal steps. Noting these changes helps the cleaner organise the
-      route and avoid overlooking spaces that are not visible from the main
-      hallway.
+    text: Think about the outcome rather than a generic package. Homes needing
+      multi-room family cleaning and recurring household upkeep may suit a
+      different scope from a light maintenance visit.
   - title: Set priorities for active households
-    text: Families, pets and regular visitors can create heavier work in kitchens,
-      bathrooms and floors. Explain which areas build up fastest so recurring
-      cleaning can be structured around the home’s real maintenance needs.
+    text: Set the priorities in the order they matter to the household. That helps
+      the cleaner work through family houses, units and apartments on varied
+      residential streets with a clear purpose.
 homeTypes:
   - family houses
   - units and apartments on varied residential streets
@@ -136,5 +135,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---

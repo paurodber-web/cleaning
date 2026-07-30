@@ -10,10 +10,10 @@ description: Need a cleaner in Kew? Choose Standard, Deep, Hourly, End of Lease
 heroIntro: Book cleaning across Kew for everyday upkeep, a deeper reset or a
   move. Choose the service format that works best and provide practical notes
   about driveways, parking, gates, stairs and equipment availability.
-summary: Kew homes can include long driveways, sloping blocks, several levels
-  and generous room layouts, while apartments require a different access plan.
-  Clear property details help us understand the scale before arrival and
-  organise the visit without unnecessary backtracking.
+summary: Kew homes range from apartments and townhouses to substantial
+  established properties, often with gated entries, sloping access or more than
+  one level. Clear arrival notes and a room-by-room priority list keep the scope
+  useful for the home.
 localSectionTitle: A considered cleaning plan for Kew properties.
 servicesIntro: For family homes, apartments and larger residential properties,
   the best option depends on how much of the property needs attention. Compare
@@ -55,17 +55,17 @@ ctaImage: https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=form
 ctaImageAlt: Bright interior after cleaning in Kew
 localHighlights:
   - title: Explain gates and driveway access
-    text: Provide gate codes, intercom instructions and the preferred place to park
-      or unload. For homes set well back from the street, these details save
-      time and help the cleaner bring equipment through the correct entrance.
+    text: Access can affect the start of cleaning day. Add gated entries, shared
+      developments and sloping access before confirmation so the cleaner has the
+      right information on arrival. This keeps the booking clear.
   - title: Account for stairs and separated zones
-    text: List upper floors, lower levels, guest wings or detached rooms included in
-      the service. A spread-out layout requires a deliberate route and may need
-      more time than the same room count in a compact home.
+    text: Think about the outcome rather than a generic package. Homes needing
+      custom plans for multi-level homes and detailed one-off work may suit a
+      different scope from a light maintenance visit.
   - title: Protect special interior materials
-    text: Natural stone, timber, delicate fittings and custom finishes should be
-      identified before work begins. Mention manufacturer instructions or
-      restricted products so the cleaner can treat each area appropriately.
+    text: Set the priorities in the order they matter to the household. That helps
+      the cleaner work through apartments, townhouses and substantial
+      established homes with a clear purpose.
 homeTypes:
   - apartments
   - townhouses and substantial established homes

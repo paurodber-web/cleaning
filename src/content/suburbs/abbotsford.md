@@ -10,10 +10,11 @@ heroIntro: Book one-off or recurring cleaning for apartments, townhouses and
   homes across a varied inner-east setting in Abbotsford. Choose hourly or
   flat-rate service, add useful extras and provide street parking, gates,
   intercoms, laneways and compact entrances when you book.
-summary: Abbotsford offers compact terraces, newer apartments and converted
-  industrial buildings, sometimes with shared garages or indirect entrances. The
-  right details about access, pets and room priorities make the visit more
-  efficient and easier to tailor.
+summary: Homes in this area include riverside apartments, terraces and renovated
+  houses. A useful booking explains shared building access, townhouse stairs and
+  rear-lane entry and identifies the rooms that matter most, so the service can
+  be shaped around regular maintenance for compact rooms and active living
+  areas.
 localSectionTitle: Home cleaning that fits Abbotsford’s changing layouts.
 servicesIntro: Match the clean to what is actually needed at the property. For
   apartments, townhouses and homes across a varied inner-east setting, that
@@ -60,18 +61,17 @@ ctaImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=form
 ctaImageAlt: Bright interior after cleaning in Abbotsford
 localHighlights:
   - title: Outline garage or foyer access
-    text: If the property is reached through a basement, internal courtyard or
-      shared lobby, explain the route from the visitor entrance. This avoids
-      delays in larger developments where the street address serves several
-      separate buildings.
+    text: Before the visit, explain shared building access, townhouse stairs and
+      rear-lane entry. Clear arrival notes help the cleaner reach the home
+      prepared and begin the appointment with a practical plan.
   - title: Mention pets before arrival
-    text: Many homes near the river and local trails include active pets. Let us
-      know whether they will remain inside, need a gate kept closed or react to
-      vacuums so the cleaner can work safely and calmly.
+    text: Choose the service around regular maintenance for compact rooms and active
+      living areas. Compare a focused hourly visit with regular or detailed
+      cleaning, based on the condition of the property.
   - title: Separate routine and detailed tasks
-    text: A recurring clean may focus on maintenance, while a one-off reset can
-      require deeper attention to tracks, skirting boards or built-up kitchen
-      areas. Identify the result you need so the booking matches the workload.
+    text: For riverside apartments, terraces and renovated houses, flag the rooms
+      that receive the most daily use. Include extras at the same time so the
+      task order stays useful. This keeps the booking clear.
 homeTypes:
   - riverside apartments
   - terraces and renovated houses
@@ -139,5 +139,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---

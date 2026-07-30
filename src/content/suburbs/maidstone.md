@@ -11,10 +11,10 @@ heroIntro: Create a cleaning booking around your Maidstone property, schedule
   and priorities. One-off and recurring options are available, with space to
   explain multi-room layouts, bathrooms, floors and the spaces used most by the
   household.
-summary: Maidstone includes newer townhouses, family houses and multi-level
-  developments where garages, stairs and several bathrooms can expand the
-  workload. A complete layout and clear access notes help us plan the service
-  accurately from the beginning.
+summary: Homes in this area include family houses, units and newer townhouses. A
+  useful booking explains shared drives, garages and side-gate access and
+  identifies the rooms that matter most, so the service can be shaped around
+  whole-home care for family layouts and busy rooms.
 localSectionTitle: Cleaning organised for Maidstone’s modern family homes.
 servicesIntro: Choose recurring cleaning for ongoing upkeep or a flat-rate clean
   when more of the property needs attention. The booking can be shaped around
@@ -59,17 +59,17 @@ ctaImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=form
 ctaImageAlt: Bright interior after cleaning in Maidstone
 localHighlights:
   - title: Include all townhouse levels
-    text: List ground-floor rooms, upper bedrooms, studies, balconies and any
-      internal garage area included. Multi-storey properties need more than a
-      simple room count to estimate the work properly.
+    text: Before the visit, explain shared drives, garages and side-gate access.
+      Clear arrival notes help the cleaner reach the home prepared and begin the
+      appointment with a practical plan.
   - title: Note new-build dust concerns
-    text: Newer or recently completed homes can collect fine construction residue in
-      tracks, ledges and cabinetry. Mention recent building work so we can
-      distinguish routine cleaning from a more detailed post-construction reset.
+    text: Choose the service around whole-home care for family layouts and busy
+      rooms. Compare a focused hourly visit with regular or detailed cleaning,
+      based on the condition of the property.
   - title: Use garage access efficiently
-    text: If the garage provides the easiest entry, explain where the cleaner may
-      park and which internal door to use. This can reduce carrying time and
-      avoid disrupting the front of the property.
+    text: For family houses, units and newer townhouses, flag the rooms that receive
+      the most daily use. Include extras at the same time so the task order
+      stays useful. This keeps the booking clear.
 homeTypes:
   - family houses
   - units and newer townhouses
@@ -137,5 +137,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---

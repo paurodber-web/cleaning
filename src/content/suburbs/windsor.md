@@ -10,10 +10,10 @@ description: Flexible house cleaning for Windsor homes. Compare hourly and
 heroIntro: Maid At Home makes it simpler to book cleaning for apartments,
   terraces and smaller inner-south homes in Windsor. Pick the right level of
   help, note any access requirements and add specific tasks to the booking.
-summary: Windsor’s mix of small apartments, terraces and shared buildings calls
-  for a clear plan rather than a broad description. Entry instructions, parking
-  guidance and an honest list of priorities help us make a shorter or focused
-  booking genuinely worthwhile.
+summary: A clear local brief starts with compact apartments, terraces and
+  converted residences and any upper-floor stairs, intercom entry and narrow
+  corridors. Add the important rooms and tasks so the appointment reflects
+  hourly priorities and regular compact-home resets.
 localSectionTitle: Cleaning organised around Windsor’s compact homes.
 servicesIntro: Some Windsor homes need regular maintenance, while others need a
   focused list or a complete reset. Start with the service that reflects the
@@ -57,17 +57,17 @@ ctaImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=form
 ctaImageAlt: Bright interior after cleaning in Windsor
 localHighlights:
   - title: Make shared access unambiguous
-    text: Provide the apartment position, stairwell, gate code or rear-entry
-      instructions needed to find the home. This is especially useful in older
-      blocks where unit numbers are not visible from the street.
+    text: A smoother arrival begins with upper-floor stairs, intercom entry and
+      narrow corridors. Include those details in the booking so the cleaner can
+      focus time inside the home rather than at the entry.
   - title: Decide what must be completed first
-    text: For a limited-hour service, place kitchens, bathrooms, floors or another
-      priority in order. The cleaner can then work deliberately and avoid
-      leaving the most important task until the end of the appointment.
+    text: Service choice should reflect hourly priorities and regular compact-home
+      resets. Use hourly cleaning for selected work, or choose a broader option
+      when more of the home needs care.
   - title: Mention build-up before the visit
-    text: Grease, soap residue, pet hair or long-neglected areas may require more
-      time than routine upkeep. Describing the current condition helps us
-      suggest a deeper clean when a standard appointment would be too light.
+    text: List the important rooms, surfaces and extras before cleaning day. For
+      compact apartments, terraces and converted residences, this makes the
+      available time easier to use well. This keeps the booking clear.
 homeTypes:
   - compact apartments
   - terraces and converted residences
@@ -135,5 +135,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---

@@ -10,10 +10,10 @@ heroIntro: Cleaning in Kensington can be planned around the rooms, tasks and
   frequency that matter to you. Choose a one-off visit or recurring support and
   tell us about compact layouts, shared spaces and the rooms that need the
   biggest reset.
-summary: Kensington combines narrow terraces, multi-level townhouses and
-  apartments near busy transport corridors. Clear parking, stair and entry
-  information helps the cleaner move through the property efficiently and keeps
-  the scope realistic for the time booked.
+summary: The local housing mix ranges across terraces, apartments and townhouse
+  developments. Share shared courtyards, secure foyers and narrow entries before
+  the visit, then use the task list to guide adaptable cleaning for terraces,
+  apartments and shared homes in a practical way.
 localSectionTitle: Cleaning that fits Kensington terraces and apartments.
 servicesIntro: Use the service cards to compare everyday upkeep, deeper cleaning
   and moving support for terraces, apartments and townhouses close to the city.
@@ -58,17 +58,17 @@ ctaImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=form
 ctaImageAlt: Bright interior after cleaning in Kensington
 localHighlights:
   - title: Identify laneway and rear access
-    text: If the home uses a rear garage, side lane or entrance behind the main
-      frontage, provide exact directions. This prevents the cleaner from
-      unloading at the wrong end of a long or narrow property.
+    text: Share shared courtyards, secure foyers and narrow entries early in the
+      booking. It gives the cleaner a clearer route into the property and keeps
+      the start of the visit straightforward.
   - title: Include every internal level
-    text: Mention upper bedrooms, lower garages, split-level living areas and steep
-      staircases. Vertical layouts take additional movement and should be
-      reflected in the booking plan.
+    text: When the aim is adaptable cleaning for terraces, apartments and shared
+      homes, match the service to the workload. A priority list and a broader
+      clean should be planned differently.
   - title: Clarify apartment procedures
-    text: For secure buildings, include the buzzer, foyer, lift and visitor-parking
-      process. This allows the cleaner to arrive independently rather than
-      relying on last-minute instructions by phone.
+    text: The room list can guide the whole appointment. This is especially useful
+      for terraces, apartments and townhouse developments, where different
+      spaces may need attention first. This keeps the booking clear.
 homeTypes:
   - terraces
   - apartments and townhouse developments
@@ -136,5 +136,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---

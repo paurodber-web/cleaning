@@ -11,10 +11,10 @@ heroIntro: Keep cleaning easier to organise in Hampton with one-off, weekly,
   fortnightly and monthly options. Select the service that suits the home and
   include notes about apartment entry, driveways, balconies and parking near the
   property.
-summary: Hampton’s family houses, units and townhomes often balance busy
-  routines with sand, pets and multiple living areas. Sharing household timing
-  and the rooms that become untidy fastest helps us build a cleaning plan that
-  supports daily life rather than interrupts it.
+summary: A clear local brief starts with family homes, units and townhouses near
+  the bayside and any driveways, shared developments and side access. Add the
+  important rooms and tasks so the appointment reflects reliable recurring
+  support for family routines.
 localSectionTitle: Family-focused cleaning designed for Hampton homes.
 servicesIntro: Different homes call for different levels of help. Our Hampton
   services cover regular cleaning, detailed one-off visits and moving cleans for
@@ -57,17 +57,17 @@ ctaImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=form
 ctaImageAlt: Bright interior after cleaning in Hampton
 localHighlights:
   - title: Work around the household schedule
-    text: Tell us about school runs, home offices, naps or rooms that need to be
-      finished early. The cleaner can order the visit to reduce disruption while
-      still completing the most important work.
+    text: A smoother arrival begins with driveways, shared developments and side
+      access. Include those details in the booking so the cleaner can focus time
+      inside the home rather than at the entry.
   - title: Target sand and pet traffic
-    text: Identify the doors used after beach walks, garden time or pet outings.
-      These routes often need stronger vacuuming and floor care than quieter
-      parts of the home.
+    text: Service choice should reflect reliable recurring support for family
+      routines. Use hourly cleaning for selected work, or choose a broader
+      option when more of the home needs care.
   - title: Rotate guest and secondary rooms
-    text: Not every bedroom or lounge needs the same attention each visit. Mark
-      low-use areas that can be cleaned on a cycle so recurring time remains
-      focused on the household’s active spaces.
+    text: List the important rooms, surfaces and extras before cleaning day. For
+      family homes, units and townhouses near the bayside, this makes the
+      available time easier to use well. This keeps the booking clear.
 homeTypes:
   - family homes
   - units and townhouses near the bayside
@@ -135,5 +135,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---

@@ -10,10 +10,10 @@ heroIntro: For homes across West Melbourne, Maid At Home offers flexible
   cleaning that can follow a focused task list or cover a more complete reset.
   Tell us about entry details, mixed property layouts and the areas that need
   the most attention before the visit.
-summary: West Melbourne combines warehouse conversions, modern apartments and
-  traditional terraces close to busy roads and ongoing city activity. Specific
-  notes about loading, entrances and open-plan layouts help us prepare for the
-  property rather than a standard house format.
+summary: The local housing mix ranges across apartments, terraces and
+  city-fringe residences. Share intercoms, key collection and shared-entry
+  details before the visit, then use the task list to guide routine upkeep,
+  one-off cleaning and moving support in a practical way.
 localSectionTitle: Adaptable cleaning for West Melbourne’s urban spaces.
 servicesIntro: Rather than booking more or less than the home needs, compare
   each service by purpose. You can organise regular upkeep, one-off cleaning or
@@ -58,17 +58,17 @@ ctaImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=form
 ctaImageAlt: Bright interior after cleaning in West Melbourne
 localHighlights:
   - title: Locate loading and residential access
-    text: Converted or mixed-use buildings may have separate doors for residents,
-      visitors and deliveries. Include the correct entrance, lift and unloading
-      point so the cleaner reaches the home directly.
+    text: Share intercoms, key collection and shared-entry details early in the
+      booking. It gives the cleaner a clearer route into the property and keeps
+      the start of the visit straightforward.
   - title: Describe lofts and open-plan zones
-    text: Large open rooms, mezzanines and high-use kitchen areas need a different
-      time plan from several smaller rooms. Explain how the space is used and
-      which sections require the most attention.
+    text: When the aim is routine upkeep, one-off cleaning and moving support, match
+      the service to the workload. A priority list and a broader clean should be
+      planned differently. This keeps the booking clear.
   - title: Flag city dust near windows
-    text: Traffic and nearby works can leave visible residue on sills, tracks and
-      floors close to openings. Mention these areas and add interior windows
-      when a more detailed result is required.
+    text: The room list can guide the whole appointment. This is especially useful
+      for apartments, terraces and city-fringe residences, where different
+      spaces may need attention first. This keeps the booking clear.
 homeTypes:
   - West Melbourne homes
   - Apartments, townhouses and family properties
@@ -139,5 +139,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---

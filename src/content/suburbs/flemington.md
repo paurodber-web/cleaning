@@ -11,10 +11,10 @@ heroIntro: Organise a cleaner for apartments, terraces and rental homes near the
   city fringe in Flemington without overcomplicating the booking. Set the
   frequency, identify the priority areas and add any instructions linked to
   street parking, gates, intercoms, laneways and compact entrances.
-summary: Flemington includes terraces, apartment blocks and family homes in an
-  area where events and transport activity can affect parking. Sharing the best
-  arrival route, building access and room priorities keeps the cleaner focused
-  once the visit starts.
+summary: The local housing mix ranges across terraces, apartments and older
+  residential blocks. Share shared hallways, stairs and rear-lane entrances
+  before the visit, then use the task list to guide regular care for compact
+  inner-west homes in a practical way.
 localSectionTitle: Practical cleaning for Flemington’s busy streets and homes.
 servicesIntro: Some Flemington homes need regular maintenance, while others need
   a focused list or a complete reset. Start with the service that reflects the
@@ -58,17 +58,17 @@ ctaImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=form
 ctaImageAlt: Bright interior after cleaning in Flemington
 localHighlights:
   - title: Plan around event-day access
-    text: If local events regularly change parking or traffic near the property,
-      mention the preferred street, visitor space or alternate entrance. This is
-      particularly useful for appointments near major venues.
+    text: Share shared hallways, stairs and rear-lane entrances early in the
+      booking. It gives the cleaner a clearer route into the property and keeps
+      the start of the visit straightforward.
   - title: Explain older apartment layouts
-    text: External stairs, shared laundries and rear-positioned units are common in
-      some blocks. Provide the exact floor and route so the cleaner can bring
-      equipment through the correct entrance.
+    text: When the aim is regular care for compact inner-west homes, match the
+      service to the workload. A priority list and a broader clean should be
+      planned differently. This keeps the booking clear.
   - title: Choose priorities for compact homes
-    text: In terraces and smaller apartments, kitchens, bathrooms and floors often
-      create most of the visible difference. Rank these areas when the booking
-      time is limited.
+    text: The room list can guide the whole appointment. This is especially useful
+      for terraces, apartments and older residential blocks, where different
+      spaces may need attention first.
 homeTypes:
   - terraces
   - apartments and older residential blocks
@@ -137,5 +137,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---

@@ -11,10 +11,10 @@ heroIntro: Keep cleaning easier to organise in Newport with one-off, weekly,
   fortnightly and monthly options. Select the service that suits the home and
   include notes about apartment entry, driveways, balconies and parking near the
   property.
-summary: Newport combines period homes, newer townhouses and family properties
-  near the bay and rail corridor. Access, pet traffic and a mix of original and
-  renovated areas can all affect the visit, so useful booking notes make the
-  service more precise.
+summary: The local housing mix ranges across period houses, townhouses and
+  family residences. Share front paths, side gates and rear access before the
+  visit, then use the task list to guide recurring family care and detailed
+  period-home cleaning in a practical way.
 localSectionTitle: Home cleaning prepared for Newport’s family lifestyle.
 servicesIntro: Choose based on the outcome you need, not only the size of the
   home. We offer regular cleaning, detailed one-off visits and moving cleans for
@@ -60,17 +60,17 @@ ctaImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=form
 ctaImageAlt: Bright interior after cleaning in Newport
 localHighlights:
   - title: Point out rear lanes and garages
-    text: Some properties are easier to reach through a rear garage or side street
-      than the front entrance. Share the most practical route for parking,
-      unloading and entering the home.
+    text: Share front paths, side gates and rear access early in the booking. It
+      gives the cleaner a clearer route into the property and keeps the start of
+      the visit straightforward. This keeps the booking clear.
   - title: Identify sand and outdoor traffic
-    text: Mention the doors used after beach visits, garden time or dog walks.
-      Floors and mats near these entries may need stronger vacuuming and mopping
-      than quieter rooms.
+    text: When the aim is recurring family care and detailed period-home cleaning,
+      match the service to the workload. A priority list and a broader clean
+      should be planned differently. This keeps the booking clear.
   - title: Note mixed-age surfaces
-    text: Original timber and tiles can sit beside modern kitchens or extensions.
-      Explain any product restrictions or delicate areas so the cleaner can
-      adapt across the home.
+    text: The room list can guide the whole appointment. This is especially useful
+      for period houses, townhouses and family residences, where different
+      spaces may need attention first. This keeps the booking clear.
 homeTypes:
   - period houses
   - townhouses and family residences
@@ -137,5 +137,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---

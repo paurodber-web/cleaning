@@ -10,10 +10,10 @@ heroIntro: Arrange professional cleaning for apartments, terraces and compact
   homes near busy retail streets in Prahran, with hourly and flat-rate options
   available. Add extras where needed and share clear instructions about street
   parking, gates, intercoms, laneways and compact entrances.
-summary: Prahran combines apartments, terraces and compact houses around active
-  commercial streets, with parking and shared access often influencing the
-  visit. Precise booking notes help the cleaner arrive efficiently and organise
-  the work around your home’s actual layout.
+summary: For apartments, terraces and compact homes near commercial streets, the
+  booking can set out shared foyers, stairs and laneway entrances alongside the
+  work that needs attention. Those details make it easier to organise focused
+  cleaning for smaller layouts and moving preparation.
 localSectionTitle: A focused cleaning plan for busy Prahran homes.
 servicesIntro: Rather than booking more or less than the home needs, compare
   each service by purpose. You can organise routine cleaning for busy weeks,
@@ -56,17 +56,17 @@ ctaImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=form
 ctaImageAlt: Bright interior after cleaning in Prahran
 localHighlights:
   - title: Point out the residential entrance
-    text: Some apartments sit above shops or behind street-facing buildings, making
-      the correct doorway easy to miss. Include buzzer details, rear-lane
-      directions or a nearby landmark that leads directly to your entrance.
+    text: Access can affect the start of cleaning day. Add shared foyers, stairs and
+      laneway entrances before confirmation so the cleaner has the right
+      information on arrival. This keeps the booking clear.
   - title: Work around timed street parking
-    text: Tell us about visitor spaces, permit restrictions and clearway periods
-      near the property. Knowing the safest place to stop helps the cleaner
-      avoid delays, fines and unnecessary carrying of equipment.
+    text: Think about the outcome rather than a generic package. Homes needing
+      focused cleaning for smaller layouts and moving preparation may suit a
+      different scope from a light maintenance visit.
   - title: Set clear priorities for small spaces
-    text: A compact home may still need detailed attention in heavily used kitchens,
-      bathrooms and floors. For hourly cleaning, rank the tasks so the cleaner
-      does not spend time on lower-priority rooms first.
+    text: Set the priorities in the order they matter to the household. That helps
+      the cleaner work through apartments, terraces and compact homes near
+      commercial streets with a clear purpose.
 homeTypes:
   - apartments
   - terraces and compact homes near commercial streets

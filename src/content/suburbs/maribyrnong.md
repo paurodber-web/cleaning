@@ -10,10 +10,10 @@ heroIntro: Choose a practical cleaning option for your Maribyrnong home, whether
   you need focused help, regular maintenance or a fuller clean. We use your
   notes about multi-room layouts, bathrooms, floors and the spaces used most by
   the household to organise the service.
-summary: Maribyrnong includes riverside apartments, townhouses and larger family
-  homes with different access and maintenance needs. Details about secure
-  buildings, balconies, pets and room count help us choose a service that
-  matches the property rather than the postcode alone.
+summary: For riverside apartments, townhouses and family homes, the booking can
+  set out secure lifts, shared developments and driveways alongside the work
+  that needs attention. Those details make it easier to organise apartment and
+  family-home care shaped by building access.
 localSectionTitle: Cleaning planned for Maribyrnong homes by the river.
 servicesIntro: Rather than booking more or less than the home needs, compare
   each service by purpose. You can organise recurring cleaning for ongoing
@@ -57,17 +57,17 @@ ctaImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=form
 ctaImageAlt: Bright interior after cleaning in Maribyrnong
 localHighlights:
   - title: Confirm basement and lift access
-    text: For apartment complexes, note the correct tower, visitor parking level and
-      lift route. Large developments can have several entrances, so precise
-      instructions protect the booked cleaning time.
+    text: Access can affect the start of cleaning day. Add secure lifts, shared
+      developments and driveways before confirmation so the cleaner has the
+      right information on arrival. This keeps the booking clear.
   - title: Add outdoor areas intentionally
-    text: Balconies and courtyards may collect windblown dust, leaves and marks near
-      doors. Include them as extras when required and state whether floors,
-      tracks or accessible glass are the main concern.
+    text: Think about the outcome rather than a generic package. Homes needing
+      apartment and family-home care shaped by building access may suit a
+      different scope from a light maintenance visit.
   - title: Describe larger household layouts
-    text: For houses and townhomes, list extra living rooms, studies and every
-      bathroom. A complete layout helps us avoid recommending a service that is
-      too short for the property.
+    text: Set the priorities in the order they matter to the household. That helps
+      the cleaner work through riverside apartments, townhouses and family homes
+      with a clear purpose. This keeps the booking clear.
 homeTypes:
   - riverside apartments
   - townhouses and family homes
@@ -134,5 +134,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---

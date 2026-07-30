@@ -11,10 +11,10 @@ heroIntro: For homes across Middle Park, Maid At Home offers flexible cleaning
   that can follow a focused task list or cover a more complete reset. Tell us
   about floors, balconies, high-use rooms and the practical details around
   property access before the visit.
-summary: Middle Park properties often combine period details, compact blocks and
-  multiple levels close to the bay. Noting street access, internal stairs and
-  areas affected by sand or outdoor dust gives the cleaner a clear picture
-  before arriving.
+summary: Middle Park properties often combine period terraces, apartments and
+  compact bayside homes with front steps, narrow corridors or rear-lane access.
+  Explain the preferred arrival route and priority rooms so cleaning can be
+  planned around the layout.
 localSectionTitle: Cleaning planned for Middle Park’s narrow, coastal homes.
 servicesIntro: Select the cleaning format that suits the size, condition and
   priorities of the property. Options include regular cleaning, detailed one-off
@@ -59,17 +59,17 @@ ctaImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=form
 ctaImageAlt: Bright interior after cleaning in Middle Park
 localHighlights:
   - title: Plan for narrow street access
-    text: Provide the most reliable place to park or unload and mention any rear
-      lane that offers easier entry. This helps the cleaner avoid carrying
-      equipment along the full block when front parking is unavailable.
+    text: Give the cleaner a practical arrival plan by noting front steps, narrow
+      corridors and rear-lane options. It is a simple step that helps the visit
+      start without unnecessary uncertainty.
   - title: Count each level and landing
-    text: Upper bedrooms, attic rooms and split levels add movement even in a
-      compact house. Include every floor in the booking so the service allows
-      for stairs as well as the rooms themselves.
+    text: Compare the options against the real workload. regular maintenance for
+      compact yet detailed homes may call for a more detailed plan than a
+      routine clean. This keeps the booking clear.
   - title: Target sand near entry areas
-    text: Beach visits and coastal wind can bring grit into hallways, rugs and floor
-      edges. Point out the main entry route and any balcony or courtyard where
-      tracked-in debris is a recurring issue.
+    text: Make the task list specific to the home. Clear priorities help the cleaner
+      organise work across period terraces, apartments and compact bayside homes
+      and focus on what matters most.
 homeTypes:
   - period terraces
   - apartments and compact bayside homes

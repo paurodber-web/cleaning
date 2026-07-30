@@ -11,10 +11,10 @@ heroIntro: Create a cleaning booking around your Collingwood property, schedule
   and priorities. One-off and recurring options are available, with space to
   explain compact layouts, shared spaces and the rooms that need the biggest
   reset.
-summary: Collingwood includes warehouse conversions, modern apartments and
-  traditional terraces, often close to busy streets or narrow lanes. Good access
-  notes and a clear description of the interior help us plan around the building
-  rather than relying on a generic checklist.
+summary: Collingwood homes include converted apartments, terraces and
+  mixed-density residences where secure foyers, internal stairs or laneway
+  entries can affect arrival. Listing the access route and priority rooms makes
+  a compact-home clean more useful.
 localSectionTitle: A practical clean for Collingwood’s mixed spaces.
 servicesIntro: Select the cleaning format that suits the size, condition and
   priorities of the property. Options include routine cleaning for busy weeks,
@@ -58,17 +58,17 @@ ctaImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=form
 ctaImageAlt: Bright interior after cleaning in Collingwood
 localHighlights:
   - title: Pinpoint the correct entrance
-    text: Some properties have separate residential, rear or laneway access that is
-      not obvious from the street. Include the door location, buzzer details and
-      any landmarks that will guide the cleaner directly to the right entry.
+    text: A smoother arrival begins with secure foyers, internal stairs and
+      laneway-facing entrances. Include those details in the booking so the
+      cleaner can focus time inside the home rather than at the entry.
   - title: Explain open-plan or converted areas
-    text: Large converted rooms may need a different approach from smaller enclosed
-      spaces. Tell us how the property is arranged and which zones are used most
-      so the cleaner can divide the appointment sensibly.
+    text: Service choice should reflect targeted cleaning for kitchens, bathrooms
+      and compact rooms. Use hourly cleaning for selected work, or choose a
+      broader option when more of the home needs care.
   - title: Account for street access limits
-    text: Busy roads and timed parking can make unloading equipment difficult. Share
-      any visitor bay, garage access or nearby legal option that lets the
-      cleaner start promptly and avoid carrying supplies farther than necessary.
+    text: List the important rooms, surfaces and extras before cleaning day. For
+      converted apartments, terraces and mixed-density residences, this makes
+      the available time easier to use well.
 homeTypes:
   - converted apartments
   - terraces and mixed-density residences

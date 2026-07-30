@@ -11,10 +11,10 @@ heroIntro: House cleaning in Northcote should fit the property rather than force
   every home into the same package. Select hourly or flat-rate service and
   include details about street parking, gates, intercoms, laneways and compact
   entrances.
-summary: Northcote combines weatherboard houses, renovated townhomes and
-  apartments near active shopping strips. With details about pets, timber
-  floors, stairs and parking, we can shape the visit around the way the home is
-  used instead of following a one-size-fits-all plan.
+summary: A clear local brief starts with weatherboard houses, apartments and
+  renovated family homes and any front paths, side gates and shared driveways.
+  Add the important rooms and tasks so the appointment reflects recurring care
+  plus deeper resets for detailed older interiors.
 localSectionTitle: Flexible cleaning for Northcote’s lived-in homes.
 servicesIntro: Use the service cards to compare everyday upkeep, deeper cleaning
   and moving support for family homes, townhouses and apartments across a lively
@@ -59,17 +59,17 @@ ctaImage: https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=form
 ctaImageAlt: Bright interior after cleaning in Northcote
 localHighlights:
   - title: Note pets and secure exits
-    text: Let us know about indoor pets, side gates and doors that must stay closed.
-      This helps the cleaner move safely between rooms and outdoor access points
-      without disrupting animals or household routines.
+    text: A smoother arrival begins with front paths, side gates and shared
+      driveways. Include those details in the booking so the cleaner can focus
+      time inside the home rather than at the entry.
   - title: Highlight timber and renovated areas
-    text: Many homes combine original floorboards with newer kitchens or extensions.
-      Mention delicate timber, freshly painted surfaces or special finishes so
-      the cleaner can use a suitable method in each part of the property.
+    text: Service choice should reflect recurring care plus deeper resets for
+      detailed older interiors. Use hourly cleaning for selected work, or choose
+      a broader option when more of the home needs care.
   - title: Choose realistic household priorities
-    text: Busy family homes may need kitchens, bathrooms and floors handled before
-      lower-use rooms. Rank the tasks that matter most, especially for hourly
-      bookings where the available time determines how much can be completed.
+    text: List the important rooms, surfaces and extras before cleaning day. For
+      weatherboard houses, apartments and renovated family homes, this makes the
+      available time easier to use well.
 homeTypes:
   - weatherboard houses
   - apartments and renovated family homes
@@ -137,5 +137,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---

@@ -11,10 +11,10 @@ heroIntro: Arrange professional cleaning for period homes, townhouses and larger
   bayside properties in Williamstown, with hourly and flat-rate options
   available. Add extras where needed and share clear instructions about
   apartment entry, driveways, balconies and parking near the property.
-summary: Williamstown offers heritage houses, apartments and townhomes exposed
-  to coastal air, visitor traffic and varied street access. Sharing parking,
-  surface care and sand-related priorities helps us plan a service that suits
-  both the property and its location.
+summary: For period homes, apartments and larger bayside residences, the booking
+  can set out gated paths, shared buildings and multi-level interiors alongside
+  the work that needs attention. Those details make it easier to organise
+  regular care plus pre-event and moving support.
 localSectionTitle: Detailed cleaning for Williamstown homes by the water.
 servicesIntro: Select the cleaning format that suits the size, condition and
   priorities of the property. Options include regular cleaning, detailed one-off
@@ -57,17 +57,17 @@ ctaImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=form
 ctaImageAlt: Bright interior after cleaning in Williamstown
 localHighlights:
   - title: Prepare for busy local streets
-    text: If weekends or nearby attractions affect parking, provide a driveway,
-      permit or dependable side-street option. This helps the cleaner avoid
-      delays during busier periods.
+    text: Access can affect the start of cleaning day. Add gated paths, shared
+      buildings and multi-level interiors before confirmation so the cleaner has
+      the right information on arrival.
   - title: Protect heritage-style details
-    text: Older timber, decorative tiles, fireplaces and restored fittings may need
-      gentler products or less moisture. Flag these surfaces before the visit so
-      they receive suitable care.
+    text: Think about the outcome rather than a generic package. Homes needing
+      regular care plus pre-event and moving support may suit a different scope
+      from a light maintenance visit. This keeps the booking clear.
   - title: Target coastal residue
-    text: Sand, salt and windblown dust often show around entries, tracks, balconies
-      and accessible glass. Identify the affected areas and add outdoor or
-      window extras where required.
+    text: Set the priorities in the order they matter to the household. That helps
+      the cleaner work through period homes, apartments and larger bayside
+      residences with a clear purpose. This keeps the booking clear.
 homeTypes:
   - period homes
   - apartments and larger bayside residences
@@ -134,5 +134,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---

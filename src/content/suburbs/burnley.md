@@ -11,10 +11,10 @@ heroIntro: Arrange professional cleaning for compact homes, apartments and
   townhouses close to Richmond in Burnley, with hourly and flat-rate options
   available. Add extras where needed and share clear instructions about street
   parking, gates, intercoms, laneways and compact entrances.
-summary: Burnley includes apartments, compact houses and homes close to major
-  transport routes, where side access and short-term parking may be limited.
-  Useful booking notes help us plan the arrival, understand the layout and focus
-  the service on what your home needs most.
+summary: Different properties need different plans. Describe compact houses,
+  apartments and homes near transport corridors, confirm shared foyers, side
+  passages and limited set-down space and use the booking notes to give
+  efficient recurring cleaning and focused one-off resets a clear direction.
 localSectionTitle: A clearer cleaning plan for compact Burnley homes.
 servicesIntro: Start by deciding whether the home needs maintenance, a more
   detailed clean or help connected to a move. Then choose the option that fits
@@ -58,18 +58,17 @@ ctaImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=form
 ctaImageAlt: Bright interior after cleaning in Burnley
 localHighlights:
   - title: Map out the easiest arrival
-    text: Share the best entrance, available set-down point and any narrow side
-      passage the cleaner will use. This is particularly helpful where the front
-      door is not reached directly from the street or equipment must be carried
-      farther.
+    text: Give the cleaner a practical arrival plan by noting shared foyers, side
+      passages and limited set-down space. It is a simple step that helps the
+      visit start without unnecessary uncertainty.
   - title: Match the service to the workload
-    text: Choose recurring cleaning for regular upkeep, a one-off clean for a reset
-      or hourly service for selected priorities. A clear purpose prevents the
-      booking from becoming broader than the time or service allows.
+    text: Compare the options against the real workload. efficient recurring
+      cleaning and focused one-off resets may call for a more detailed plan than
+      a routine clean. This keeps the booking clear.
   - title: List equipment and home details
-    text: Tell us whether a vacuum and mop are available, if pets will be present
-      and which areas need extra attention. These practical details help us
-      assign appropriately and prepare before the cleaner reaches the property.
+    text: Make the task list specific to the home. Clear priorities help the cleaner
+      organise work across compact houses, apartments and homes near transport
+      corridors and focus on what matters most.
 homeTypes:
   - compact houses
   - apartments and homes near transport corridors
@@ -138,5 +137,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---

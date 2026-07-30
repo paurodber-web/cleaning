@@ -9,10 +9,10 @@ description: Maid At Home provides house cleaning across Carlton. Choose hourly
 heroIntro: Maid At Home makes it simpler to book cleaning for terraces,
   apartments and rental homes near the city in Carlton. Pick the right level of
   help, note any access requirements and add specific tasks to the booking.
-summary: Carlton has a strong mix of terraces, older apartments and shared
-  households near busy university streets. Confirming permit parking, common
-  entrances and exactly which rooms are included gives the cleaner a workable
-  plan before the appointment begins.
+summary: The local housing mix ranges across terraces, student apartments and
+  established city residences. Share shared entries, upper-floor stairs and key
+  collection before the visit, then use the task list to guide flexible choices
+  for shared households and compact apartments in a practical way.
 localSectionTitle: Cleaning planned for Carlton’s shared and period homes.
 servicesIntro: From regular maintenance to a complete moving clean, each option
   serves a different purpose. Consider entry details, mixed property layouts and
@@ -55,18 +55,17 @@ ctaImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=form
 ctaImageAlt: Bright interior after cleaning in Carlton
 localHighlights:
   - title: Clarify permits and entry points
-    text: Tell us where a visitor can legally stop and whether the home uses a front
-      gate, rear lane or shared building door. Accurate arrival notes are
-      valuable in streets where parking signs and entrances are easy to miss.
+    text: Share shared entries, upper-floor stairs and key collection early in the
+      booking. It gives the cleaner a clearer route into the property and keeps
+      the start of the visit straightforward.
   - title: Define rooms in shared homes
-    text: For student or house-share bookings, list the bedrooms, bathrooms and
-      common areas included in the service. This prevents uncertainty and
-      ensures the cleaner does not enter private rooms that were not part of the
-      request.
+    text: When the aim is flexible choices for shared households and compact
+      apartments, match the service to the workload. A priority list and a
+      broader clean should be planned differently.
   - title: Flag aged surfaces carefully
-    text: Older tiles, timber floors and painted finishes can show wear or react
-      differently to moisture and products. Point out any fragile, damaged or
-      recently restored area so it can be treated with appropriate care.
+    text: The room list can guide the whole appointment. This is especially useful
+      for terraces, student apartments and established city residences, where
+      different spaces may need attention first.
 homeTypes:
   - terraces
   - student apartments and established city residences
@@ -134,5 +133,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---

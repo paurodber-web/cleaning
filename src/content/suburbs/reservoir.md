@@ -10,10 +10,10 @@ heroIntro: From routine upkeep to moving cleans, we help customers in Reservoir
   choose a service that matches the condition of the property. Booking details
   can include multi-room layouts, bathrooms, floors and the spaces used most by
   the household.
-summary: Reservoir covers a wide area with freestanding homes, units and newer
-  developments that can differ greatly in size. Providing the full layout,
-  driveway details and household priorities helps us assign enough time and
-  avoid treating a larger property like a compact booking.
+summary: Different properties need different plans. Describe detached houses,
+  units and growing townhouse developments, confirm longer driveways, shared
+  unit paths and side access and use the booking notes to give whole-home
+  maintenance for larger layouts and busy family zones a clear direction.
 localSectionTitle: Cleaning scaled properly for Reservoir properties.
 servicesIntro: The right booking may be a short list of priorities or a broader
   service across several rooms. In Reservoir, you can choose between recurring
@@ -58,18 +58,17 @@ ctaImage: https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=form
 ctaImageAlt: Bright interior after cleaning in Reservoir
 localHighlights:
   - title: Give the complete floorplan
-    text: List all bedrooms, bathrooms, living zones, studies and separate
-      laundries. Larger or extended homes need an accurate room count so the
-      service can be priced and planned around the whole property.
+    text: Give the cleaner a practical arrival plan by noting longer driveways,
+      shared unit paths and side access. It is a simple step that helps the
+      visit start without unnecessary uncertainty.
   - title: Explain units and shared driveways
-    text: For rear units or multi-dwelling blocks, include the unit position,
-      driveway rules and the clearest way to identify your entrance. These notes
-      prevent the cleaner from stopping at the wrong residence.
+    text: Compare the options against the real workload. whole-home maintenance for
+      larger layouts and busy family zones may call for a more detailed plan
+      than a routine clean. This keeps the booking clear.
   - title: Focus recurring work intelligently
-    text: Choose the rooms that need attention every visit and identify lower-use
-      spaces that can rotate. A practical recurring plan keeps kitchens,
-      bathrooms and main floors consistent without over-servicing rarely used
-      areas.
+    text: Make the task list specific to the home. Clear priorities help the cleaner
+      organise work across detached houses, units and growing townhouse
+      developments and focus on what matters most.
 homeTypes:
   - detached houses
   - units and growing townhouse developments
@@ -136,5 +135,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---

@@ -10,10 +10,10 @@ description: Maid At Home provides house cleaning across Kingsville. Choose
 heroIntro: Book cleaning across Kingsville for everyday upkeep, a deeper reset
   or a move. Choose the service format that works best and provide practical
   notes about street parking, gates, intercoms, laneways and compact entrances.
-summary: Kingsville homes often sit on narrow blocks with period rooms,
-  renovated extensions, rear lanes and active family or pet areas. A few
-  specific details help us understand how the property flows and where cleaning
-  time will create the best result.
+summary: A clear local brief starts with compact houses, townhouses and period
+  residences and any front paths, narrow passages and rear access. Add the
+  important rooms and tasks so the appointment reflects efficient maintenance
+  for smaller family homes.
 localSectionTitle: Thoughtful cleaning for Kingsville’s compact properties.
 servicesIntro: Different homes call for different levels of help. Our Kingsville
   services cover routine cleaning for busy weeks, focused hourly visits or
@@ -55,17 +55,17 @@ ctaImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=form
 ctaImageAlt: Bright interior after cleaning in Kingsville
 localHighlights:
   - title: Explain front and rear access
-    text: Tell us whether the cleaner should use the front door, side path or rear
-      lane, and where parking is most practical. Narrow blocks can make the
-      closest entrance different from the obvious one.
+    text: A smoother arrival begins with front paths, narrow passages and rear
+      access. Include those details in the booking so the cleaner can focus time
+      inside the home rather than at the entry.
   - title: Describe renovated rear spaces
-    text: Original rooms may lead into larger modern kitchens, living areas or
-      outdoor transitions. Mention floor changes and internal steps so the
-      cleaner can move through the home in a logical order.
+    text: Service choice should reflect efficient maintenance for smaller family
+      homes. Use hourly cleaning for selected work, or choose a broader option
+      when more of the home needs care.
   - title: Focus on family and pet zones
-    text: Identify the rooms, hallways and doors that collect the most daily mess.
-      This allows recurring cleaning to concentrate on hair, crumbs, footprints
-      and high-touch surfaces where they build up fastest.
+    text: List the important rooms, surfaces and extras before cleaning day. For
+      compact houses, townhouses and period residences, this makes the available
+      time easier to use well. This keeps the booking clear.
 homeTypes:
   - compact houses
   - townhouses and period residences
@@ -134,5 +134,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---

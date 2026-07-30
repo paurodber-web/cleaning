@@ -10,10 +10,10 @@ heroIntro: Whether the home needs a quick reset or regular support, our South
   Melbourne cleaning options can be adjusted around the task list. Share
   information about entry details, mixed property layouts and the areas that
   need the most attention before cleaning day.
-summary: South Melbourne’s terraces, apartments and townhouses sit among active
-  market streets, offices and event routes, making parking and entry planning
-  important. Clear instructions help the cleaner arrive efficiently and focus on
-  the property’s main needs.
+summary: A clear local brief starts with apartments, terraces and townhouses on
+  the city fringe and any intercoms, key collection and permit requirements. Add
+  the important rooms and tasks so the appointment reflects regular upkeep,
+  targeted help and move-related cleaning.
 localSectionTitle: A smoother cleaning visit for South Melbourne homes.
 servicesIntro: Start by deciding whether the home needs maintenance, a more
   detailed clean or help connected to a move. Then choose the option that fits
@@ -58,17 +58,17 @@ ctaImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=form
 ctaImageAlt: Bright interior after cleaning in South Melbourne
 localHighlights:
   - title: Plan around market-area parking
-    text: If nearby activity affects spaces or loading, share the best visitor bay,
-      permit or quieter side street. This is especially helpful for morning
-      appointments and larger cleans with equipment.
+    text: A smoother arrival begins with intercoms, key collection and permit
+      requirements. Include those details in the booking so the cleaner can
+      focus time inside the home rather than at the entry.
   - title: Describe terrace stairs and rooms
-    text: Narrow homes may extend over several levels with small landings or rear
-      additions. Explain the layout so the cleaner can organise the route
-      without overlooking upper or lower areas.
+    text: Service choice should reflect regular upkeep, targeted help and
+      move-related cleaning. Use hourly cleaning for selected work, or choose a
+      broader option when more of the home needs care.
   - title: Separate regular from detailed work
-    text: Routine maintenance and a one-off reset require different time and effort.
-      Mention built-up kitchens, bathrooms or neglected surfaces so the booking
-      matches the current condition.
+    text: List the important rooms, surfaces and extras before cleaning day. For
+      apartments, terraces and townhouses on the city fringe, this makes the
+      available time easier to use well.
 homeTypes:
   - South Melbourne homes
   - Apartments, townhouses and family properties
@@ -138,5 +138,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---

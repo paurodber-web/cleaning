@@ -10,10 +10,10 @@ description: House cleaning in Malvern for apartments, units, townhouses and
 heroIntro: Book cleaning across Malvern for everyday upkeep, a deeper reset or a
   move. Choose the service format that works best and provide practical notes
   about driveways, parking, gates, stairs and equipment availability.
-summary: Malvern’s period houses, renovated family properties and apartments
-  often combine several bathrooms, polished floors and busy shared areas. A
-  structured scope keeps routine cleaning consistent while allowing more
-  detailed work when the home needs a reset.
+summary: Malvern combines family houses, units and renovated period properties
+  with different room counts and access routes. A practical booking sets out
+  driveway or side-gate details, multi-level floors and the rooms that need
+  regular care or a deeper reset.
 localSectionTitle: A dependable cleaning routine for Malvern homes.
 servicesIntro: Use the service cards to compare everyday upkeep, deeper cleaning
   and moving support for period homes, family properties and modern apartments.
@@ -58,17 +58,17 @@ ctaImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=form
 ctaImageAlt: Bright interior after cleaning in Malvern
 localHighlights:
   - title: Count bathrooms and powder rooms fully
-    text: Every ensuite, family bathroom and powder room adds separate surfaces and
-      fixtures. Listing them all ensures the booking reflects the real workload
-      instead of underestimating the property from bedroom numbers.
+    text: Share driveways, side gates and multi-level floor plans early in the
+      booking. It gives the cleaner a clearer route into the property and keeps
+      the start of the visit straightforward.
   - title: Protect polished and restored floors
-    text: Mention timber coatings, natural stone or recently restored areas that
-      need specific care. The cleaner can then avoid excessive moisture, strong
-      products or tools that may mark the finish.
+    text: When the aim is recurring family care and seasonal detailed resets, match
+      the service to the workload. A priority list and a broader clean should be
+      planned differently. This keeps the booking clear.
   - title: Set a repeatable maintenance order
-    text: For recurring visits, nominate the rooms that must be handled first and
-      any lower-use spaces to rotate. A stable order makes results more
-      consistent and easier to review from one service to the next.
+    text: The room list can guide the whole appointment. This is especially useful
+      for family houses, units and renovated period properties, where different
+      spaces may need attention first.
 homeTypes:
   - family houses
   - units and renovated period properties

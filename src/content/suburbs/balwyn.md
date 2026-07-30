@@ -11,10 +11,10 @@ heroIntro: Create a cleaning booking around your Balwyn property, schedule and
   priorities. One-off and recurring options are available, with space to explain
   multi-room layouts, bathrooms, floors and the spaces used most by the
   household.
-summary: Balwyn homes are often arranged across multiple bedrooms, bathrooms and
-  formal or family living areas. A structured recurring plan keeps high-use
-  rooms under control while giving less-used spaces attention at a frequency
-  that matches how the household actually lives.
+summary: Homes in this area include family homes, townhouses and spacious
+  multi-room properties. A useful booking explains driveways, gates and internal
+  stairs and identifies the rooms that matter most, so the service can be shaped
+  around recurring whole-home support with agreed priorities.
 localSectionTitle: Consistent cleaning for spacious Balwyn households.
 servicesIntro: Start by deciding whether the home needs maintenance, a more
   detailed clean or help connected to a move. Then choose the option that fits
@@ -59,18 +59,17 @@ ctaImage: https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=form
 ctaImageAlt: Bright interior after cleaning in Balwyn
 localHighlights:
   - title: Map the household’s main zones
-    text: Identify the kitchen, bathrooms, family room and bedrooms used every day,
-      then note guest or formal areas used less often. This lets the cleaner
-      create a practical order rather than dividing time equally across the
-      entire house.
+    text: Before the visit, explain driveways, gates and internal stairs. Clear
+      arrival notes help the cleaner reach the home prepared and begin the
+      appointment with a practical plan. This keeps the booking clear.
   - title: Rotate low-use rooms sensibly
-    text: Guest bedrooms, formal dining rooms and secondary lounges may not need
-      full cleaning on every visit. Rotating them through recurring appointments
-      can maintain the home without reducing attention in active areas.
+    text: Choose the service around recurring whole-home support with agreed
+      priorities. Compare a focused hourly visit with regular or detailed
+      cleaning, based on the condition of the property.
   - title: Allow for several bathrooms
-    text: Multiple bathrooms and powder rooms can add substantial detail even when
-      some are lightly used. Include every one in the booking and specify which
-      require full cleaning or only a lighter maintenance pass.
+    text: For family homes, townhouses and spacious multi-room properties, flag the
+      rooms that receive the most daily use. Include extras at the same time so
+      the task order stays useful.
 homeTypes:
   - family homes
   - townhouses and spacious multi-room properties

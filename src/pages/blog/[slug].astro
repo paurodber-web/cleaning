@@ -21,8 +21,7 @@ const { post } = Astro.props;
 const { Content, headings } = await render(post);
 const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 const tocHeadings = headings.filter((heading) => heading.depth === 2);
-const siteOrigin = new URL('https://maidathome.com.au');
-const canonicalUrl = new URL(`${base.replace(/^\//, '')}blog/${post.id}/`, siteOrigin).toString();
+const canonicalUrl = new URL(`${base.replace(/^\//, '')}blog/${post.id}/`, 'https://maidathome.com.au').toString();`r`nconst siteOrigin = 'https://maidathome.com.au';
 const shareEmailHref = `mailto:?subject=${encodeURIComponent(post.data.title)}&body=${encodeURIComponent(`I thought you might find this useful: ${canonicalUrl}`)}`;
 const publishedLabel = new Intl.DateTimeFormat('en-AU', {
   day: 'numeric',
@@ -72,7 +71,7 @@ const articleEnhancements = `
 .article-prose blockquote{position:relative;margin:44px 0;padding:31px 34px 27px;border:0;border-radius:22px;color:var(--white);background:var(--blue-900);box-shadow:0 18px 46px rgba(21,62,96,.15)}
 .article-prose blockquote::before{display:none}
 .article-prose blockquote p{position:relative;margin:0 0 22px;color:var(--white);font:600 clamp(1rem,1.6vw,1.18rem)/1.58 "Plus Jakarta Sans",Arial,sans-serif}
-.article-prose blockquote p::before{content:"“"}.article-prose blockquote p::after{content:"”"}
+.article-prose blockquote p::before{content:""}.article-prose blockquote p::after{content:""}
 .article-prose blockquote cite{display:block;color:var(--beige);font:800 .68rem/1 "DM Sans",Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;font-style:normal}
 .article-prose table{display:table;width:100%;margin:30px 0 38px;overflow:hidden;border:1px solid var(--blue-200);border-spacing:0;border-collapse:separate;border-radius:14px;color:var(--soft);font-size:.78rem;line-height:1.5}
 .article-prose th,.article-prose td{padding:15px 17px;border-bottom:1px solid var(--blue-200);text-align:left;vertical-align:top}
@@ -103,8 +102,8 @@ const articleEnhancements = `
 .related-card__body>span{letter-spacing:.08em}
 .related-card p{margin:10px 0 18px;color:var(--soft);font-size:.7rem;line-height:1.55}
 .related-card__meta{display:flex!important;align-items:center;justify-content:space-between;margin:auto 0 0!important;color:var(--soft)!important;font-size:.62rem!important;font-weight:700!important;letter-spacing:0!important;text-transform:none!important}
-                    <span class="related-card__arrow" aria-hidden="true">→</span>
-                    <span class="related-card__arrow" aria-hidden="true">→</span>
+                    <span class="related-card__arrow" aria-hidden="true">â†’</span>
+                    <span class="related-card__arrow" aria-hidden="true">â†’</span>
 .final-cta{padding:22px;background:var(--white)}
 .final-cta__panel{position:relative;min-height:500px;overflow:hidden;isolation:isolate;border-radius:38px;color:var(--white);background:var(--blue-700)}
 .final-cta__image{position:absolute;z-index:-3;inset:0;width:100%;height:100%;object-fit:cover}
@@ -207,7 +206,7 @@ const scripts = `<script>
           </aside>
         )}
         <div class="article-prose"><Content /></div>
-        <a class="back-blog" href={`${base}blog/`}>← Back to all articles</a>
+        <a class="back-blog" href={`${base}blog/`}>Back to all articles</a>
       </article>
       <aside class="article-share" aria-labelledby="article-share-title">
         <p class="article-sidebar-label" id="article-share-title">Share</p>
@@ -233,7 +232,7 @@ const scripts = `<script>
               <p class="related__kicker">Keep reading</p>
               <h2 id="related-title">More useful home-care guides.</h2>
             </div>
-            <a href={`${base}blog/`}>View all articles →</a>
+            <a href={`${base}blog/`}>View all articles</a>
           </div>
           <div class="related-grid">
             {relatedPosts.map((related) => (
@@ -251,7 +250,7 @@ const scripts = `<script>
                   <p>{related.data.description}</p>
                   <span class="related-card__meta">
                     {related.data.readingTime}
-                    <span class="related-card__arrow" aria-hidden="true">→</span>
+                    <span class="related-card__arrow" aria-hidden="true">&rarr;</span>
                   </span>
                 </div>
               </a>

@@ -11,10 +11,10 @@ heroIntro: Flexible home cleaning is available throughout Keilor East, from
   targeted hourly bookings to broader flat-rate services. Tell us which areas
   matter most and note driveways, parking, gates, stairs and equipment
   availability.
-summary: Keilor East properties commonly offer generous floorplans, garages,
-  several living areas and more than one level. A full room list and practical
-  entry details help us avoid underestimating the workload and create a plan
-  that covers the areas your household actually uses.
+summary: Homes in this area include detached family homes, townhouses and larger
+  blocks. A useful booking explains driveways, gates and longer paths and
+  identifies the rooms that matter most, so the service can be shaped around
+  whole-home recurring support for larger layouts.
 localSectionTitle: A properly scaled clean for Keilor East homes.
 servicesIntro: Match the clean to what is actually needed at the property. For
   family homes, larger layouts and multi-room properties, that could mean
@@ -61,17 +61,17 @@ ctaImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=form
 ctaImageAlt: Bright interior after cleaning in Keilor East
 localHighlights:
   - title: Include garages and utility spaces
-    text: Tell us whether internal garages, mudrooms, separate laundries or
-      storage-adjacent areas are part of the clean. These spaces are easily
-      missed when the booking only lists bedrooms and bathrooms.
+    text: Before the visit, explain driveways, gates and longer paths. Clear arrival
+      notes help the cleaner reach the home prepared and begin the appointment
+      with a practical plan. This keeps the booking clear.
   - title: Separate main and secondary zones
-    text: Identify daily-use kitchens, bathrooms and lounges, then note guest rooms
-      or formal areas used less often. This supports a sensible recurring
-      rotation across a larger home.
+    text: Choose the service around whole-home recurring support for larger layouts.
+      Compare a focused hourly visit with regular or detailed cleaning, based on
+      the condition of the property.
   - title: Confirm the easiest equipment route
-    text: Provide driveway, side-gate or garage-entry instructions so the cleaner
-      can bring supplies through the most practical door. This is useful where
-      the front entrance is distant from parking.
+    text: For detached family homes, townhouses and larger blocks, flag the rooms
+      that receive the most daily use. Include extras at the same time so the
+      task order stays useful. This keeps the booking clear.
 homeTypes:
   - detached family homes
   - townhouses and larger blocks
@@ -139,5 +139,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---
