@@ -20,6 +20,26 @@ const priority = fetchpriority === 'high';
 const dimensions = width && height ? { width, height } : { inferSize: true };
 const safeLoading = loading === 'lazy' ? 'lazy' : undefined;
 const quality = priority ? 72 : 60;
+const isUnsplash = typeof src === 'string' && src.includes('images.unsplash.com/');
+const sourceWidth = Number(width) || 1200;
+const responsiveWidths = [...new Set([320, 480, 640, 768, 960, 1200, sourceWidth])]
+  .filter((candidate) => candidate > 0 && candidate <= sourceWidth)
+  .sort((a, b) => a - b);
+const unsplashUrl = (candidate: number) => {
+  const url = new URL(src as string);
+  url.searchParams.set('auto', 'format');
+  url.searchParams.set('fit', 'crop');
+  url.searchParams.set('fm', 'webp');
+  url.searchParams.set('q', String(quality));
+  url.searchParams.set('w', String(candidate));
+  return url.toString();
+};
+const unsplashSrcset = isUnsplash
+  ? responsiveWidths.map((candidate) => `${unsplashUrl(candidate)} ${candidate}w`).join(', ')
+  : '';
+const responsiveSizes = priority
+  ? '(max-width: 820px) calc(100vw - 30px), 50vw'
+  : '(max-width: 820px) calc(100vw - 30px), 40vw';
 const mobileSourceWidth = mobileSrc && typeof mobileSrc === 'object' && 'width' in mobileSrc ? Number(mobileSrc.width) : 0;
 const mobileSourceHeight = mobileSrc && typeof mobileSrc === 'object' && 'height' in mobileSrc ? Number(mobileSrc.height) : 0;
 const mobileMaxWidth = mobileSourceHeight ? Math.min(mobileSourceWidth, Math.floor(mobileSourceHeight * mobileAspectRatio)) : mobileSourceWidth;
@@ -34,7 +54,20 @@ const mobileCandidates = mobileSrc
   : [];
 const mobileSrcset = mobileCandidates.map(({ width: candidate, image }) => image.src + ' ' + candidate + 'w').join(', ');
 ---
-{mobileSrc ? (
+{isUnsplash && !mobileSrc ? (
+  <img
+    src={unsplashUrl(sourceWidth)}
+    srcset={unsplashSrcset}
+    sizes={responsiveSizes}
+    alt={alt}
+    width={width}
+    height={height}
+    loading={priority ? 'eager' : safeLoading}
+    decoding={priority ? 'sync' : 'async'}
+    fetchpriority={priority ? 'high' : undefined}
+    {...attributes}
+  />
+) : mobileSrc ? (
   <picture>
     <source media={'(max-width: ' + mobileBreakpoint + ')'} srcset={mobileSrcset} sizes="100vw" type="image/webp" />
     <Image src={src} alt={alt} {...dimensions} quality={quality} priority={priority} loading={priority ? 'eager' : safeLoading} {...attributes} />
