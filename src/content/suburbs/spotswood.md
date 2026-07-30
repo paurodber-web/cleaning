@@ -9,10 +9,10 @@ description: Book house cleaning in Spotswood with hourly, flat-rate, one-off
 heroIntro: Maid At Home makes it simpler to book cleaning for family homes,
   townhouses and newer residential properties in Spotswood. Pick the right level
   of help, note any access requirements and add specific tasks to the booking.
-summary: Spotswood includes established houses, townhomes and apartments near
-  rail and industrial corridors, where access and fine outdoor dust can shape
-  the cleaning needs. A clear plan helps us focus on the areas most affected by
-  daily movement and the surrounding environment.
+summary: The local housing mix ranges across compact houses, townhouses and
+  apartment pockets. Share front paths, shared entries and mixed-use streets
+  before the visit, then use the task list to guide practical recurring and
+  targeted one-off care in a practical way.
 localSectionTitle: Practical cleaning for Spotswood’s compact urban homes.
 servicesIntro: Match the clean to what is actually needed at the property. For
   family homes, townhouses and newer residential properties, that could mean
@@ -56,17 +56,17 @@ ctaImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=form
 ctaImageAlt: Bright interior after cleaning in Spotswood
 localHighlights:
   - title: Describe access near busy roads
-    text: Provide the safest parking or unloading point, particularly where the
-      front street is difficult to stop on. A side entrance or rear lane may
-      offer a much smoother arrival.
+    text: Share front paths, shared entries and mixed-use streets early in the
+      booking. It gives the cleaner a clearer route into the property and keeps
+      the start of the visit straightforward.
   - title: Flag dust around openings
-    text: Fine outdoor residue can gather on sills, tracks, doors and floors near
-      frequently opened windows. Mention these zones when they need more than
-      the usual surface maintenance.
+    text: When the aim is practical recurring and targeted one-off care, match the
+      service to the workload. A priority list and a broader clean should be
+      planned differently. This keeps the booking clear.
   - title: Prioritise compact high-use areas
-    text: In smaller homes, kitchens, bathrooms and entry floors often carry most of
-      the workload. Ranking them helps the cleaner create a noticeable result
-      without overextending the booking.
+    text: The room list can guide the whole appointment. This is especially useful
+      for compact houses, townhouses and apartment pockets, where different
+      spaces may need attention first. This keeps the booking clear.
 homeTypes:
   - compact houses
   - townhouses and apartment pockets
@@ -135,5 +135,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---

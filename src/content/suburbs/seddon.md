@@ -11,10 +11,10 @@ heroIntro: From routine upkeep to moving cleans, we help customers in Seddon
   choose a service that matches the condition of the property. Booking details
   can include compact layouts, shared spaces and the rooms that need the biggest
   reset.
-summary: Seddon properties are often compact period houses, townhomes or units
-  with narrow streets and small but heavily used rooms. A precise list of
-  priorities and access details helps us make efficient use of the booking
-  without overcomplicating the service.
+summary: For compact period houses, apartments and renovated townhouses, the
+  booking can set out narrow halls, rear access and shared entries alongside the
+  work that needs attention. Those details make it easier to organise focused
+  recurring care for compact homes.
 localSectionTitle: Focused cleaning for Seddon’s compact homes.
 servicesIntro: From regular maintenance to a complete moving clean, each option
   serves a different purpose. Consider compact layouts, shared spaces and the
@@ -58,17 +58,17 @@ ctaImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=form
 ctaImageAlt: Bright interior after cleaning in Seddon
 localHighlights:
   - title: Give the simplest entry route
-    text: Mention rear lanes, side gates, shared paths or permit restrictions that
-      affect arrival. Good directions are valuable where the nearest parking
-      space may not be directly in front of the property.
+    text: Access can affect the start of cleaning day. Add narrow halls, rear access
+      and shared entries before confirmation so the cleaner has the right
+      information on arrival. This keeps the booking clear.
   - title: Prioritise high-use small rooms
-    text: Compact kitchens and bathrooms can require detailed work despite their
-      size. Rank them clearly, especially when booking by the hour, so the
-      cleaner starts with the areas that influence the home most.
+    text: Think about the outcome rather than a generic package. Homes needing
+      focused recurring care for compact homes may suit a different scope from a
+      light maintenance visit. This keeps the booking clear.
   - title: Mention pets and small yards
-    text: Tell us about animals, secure gates and any courtyard or entry floor that
-      collects outdoor dirt. These details help the cleaner manage access safely
-      and target tracked-in debris.
+    text: Set the priorities in the order they matter to the household. That helps
+      the cleaner work through compact period houses, apartments and renovated
+      townhouses with a clear purpose.
 homeTypes:
   - compact period houses
   - apartments and renovated townhouses
@@ -135,5 +135,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---

@@ -10,10 +10,11 @@ description: Book a cleaner for your Fitzroy home with flexible service types,
 heroIntro: Book cleaning across Fitzroy for everyday upkeep, a deeper reset or a
   move. Choose the service format that works best and provide practical notes
   about street parking, gates, intercoms, laneways and compact entrances.
-summary: Fitzroy properties range from narrow terraces to apartments and
-  converted commercial spaces, each with different access and cleaning demands.
-  Describing the layout, floor types and rear or laneway entry helps us prepare
-  for the property you actually live in.
+summary: Homes in this area include terraces, warehouse apartments and compact
+  period homes. A useful booking explains narrow entries, stairs and shared
+  apartment corridors and identifies the rooms that matter most, so the service
+  can be shaped around detailed cleaning for high-use inner-city homes with
+  varied layouts.
 localSectionTitle: Cleaning shaped around Fitzroy’s varied homes.
 servicesIntro: Choose based on the outcome you need, not only the size of the
   home. We offer routine cleaning for busy weeks, focused hourly visits or
@@ -57,17 +58,17 @@ ctaImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=form
 ctaImageAlt: Bright interior after cleaning in Fitzroy
 localHighlights:
   - title: Describe narrow or rear access
-    text: Let us know if the main entrance is through a laneway, side gate or shared
-      stairwell. Clear directions are useful where street numbers are difficult
-      to see or the closest legal parking is not directly outside.
+    text: Before the visit, explain narrow entries, stairs and shared apartment
+      corridors. Clear arrival notes help the cleaner reach the home prepared
+      and begin the appointment with a practical plan.
   - title: Note mixed surfaces and levels
-    text: A single home may combine old timber, tiles, polished concrete and steep
-      stairs. Highlight delicate finishes or unusual levels so the cleaner can
-      organise equipment and move through the property safely.
+    text: Choose the service around detailed cleaning for high-use inner-city homes
+      with varied layouts. Compare a focused hourly visit with regular or
+      detailed cleaning, based on the condition of the property.
   - title: Set priorities for compact rooms
-    text: Terraces and converted spaces can have small rooms with heavy daily use.
-      Point out the kitchen, bathroom or living areas needing the most attention
-      so the booked time is spent where it creates the clearest result.
+    text: For terraces, warehouse apartments and compact period homes, flag the
+      rooms that receive the most daily use. Include extras at the same time so
+      the task order stays useful. This keeps the booking clear.
 homeTypes:
   - terraces
   - warehouse apartments and compact period homes
@@ -133,5 +134,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---

@@ -10,10 +10,10 @@ heroIntro: Organise a cleaner for larger homes, apartments and properties with
   detailed cleaning needs in Toorak without overcomplicating the booking. Set
   the frequency, identify the priority areas and add any instructions linked to
   driveways, parking, gates, stairs and equipment availability.
-summary: Toorak homes can include expansive floorplans, secure apartment
-  buildings and premium surfaces that require careful handling. Clear
-  instructions about gates, privacy, room use and material care help us deliver
-  a well-organised service without assumptions.
+summary: Toorak bookings may involve large residences, apartments or multi-level
+  townhouses with gates, intercoms and longer driveways. Confirm the arrival
+  route and prioritise the rooms that need attention so a detailed plan fits the
+  property.
 localSectionTitle: Discreet, detailed cleaning for Toorak residences.
 servicesIntro: From regular maintenance to a complete moving clean, each option
   serves a different purpose. Consider multi-room layouts, bathrooms, floors and
@@ -57,17 +57,17 @@ ctaImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=form
 ctaImageAlt: Bright interior after cleaning in Toorak
 localHighlights:
   - title: Arrange secure access in advance
-    text: Provide gate codes, concierge procedures, alarm instructions or the
-      contact person meeting the cleaner. Confirming the sequence beforehand
-      avoids unnecessary calls and respects household privacy.
+    text: Before the visit, explain gates, intercoms, long driveways and internal
+      stairs. Clear arrival notes help the cleaner reach the home prepared and
+      begin the appointment with a practical plan.
   - title: Identify rooms by actual use
-    text: Large homes may contain formal rooms, guest suites and secondary kitchens
-      that are not used equally. Explain which spaces need full service, light
-      maintenance or no entry during the visit.
+    text: Choose the service around structured cleaning for larger, carefully
+      prioritised interiors. Compare a focused hourly visit with regular or
+      detailed cleaning, based on the condition of the property.
   - title: Record specialist surface guidance
-    text: Natural stone, fine timber, plated fittings and custom finishes may have
-      strict product requirements. Share any manufacturer advice or household
-      preferences so the cleaner can use an appropriate method.
+    text: For large residences, apartments and multi-level townhouses, flag the
+      rooms that receive the most daily use. Include extras at the same time so
+      the task order stays useful. This keeps the booking clear.
 homeTypes:
   - large residences
   - apartments and multi-level townhouses

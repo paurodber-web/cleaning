@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
+# This crawler powers OpenAI Search. GPTBot policy is intentionally unchanged.
+User-agent: OAI-SearchBot
+Allow: /
+
 Sitemap: https://maidathome.com.au/sitemap.xml

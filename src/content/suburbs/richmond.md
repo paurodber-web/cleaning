@@ -10,10 +10,11 @@ heroIntro: Keep cleaning easier to organise in Richmond with one-off, weekly,
   fortnightly and monthly options. Select the service that suits the home and
   include notes about street parking, gates, intercoms, laneways and compact
   entrances.
-summary: Richmond combines terraces, townhouses and apartment buildings across
-  streets where parking and access can change quickly. Sharing the layout, entry
-  point and most important rooms helps the cleaner begin on time and work
-  through the home with a clear order.
+summary: Homes in this area include apartments, terraces and family houses
+  across busy residential pockets. A useful booking explains intercoms, narrow
+  hallways and address-specific rear access and identifies the rooms that matter
+  most, so the service can be shaped around adaptable cleaning for apartments,
+  shared homes and multi-room properties.
 localSectionTitle: Straightforward cleaning for busy Richmond homes.
 servicesIntro: For terraces, apartments and townhouses in a busy inner suburb,
   the best option depends on how much of the property needs attention. Compare
@@ -55,17 +56,17 @@ ctaImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=form
 ctaImageAlt: Bright interior after cleaning in Richmond
 localHighlights:
   - title: Give a reliable parking option
-    text: If your street has permit limits or clearways, note the nearest visitor
-      space, garage or side street that normally works. Practical parking
-      guidance reduces arrival delays and makes carrying equipment much easier.
+    text: Before the visit, explain intercoms, narrow hallways and address-specific
+      rear access. Clear arrival notes help the cleaner reach the home prepared
+      and begin the appointment with a practical plan.
   - title: Point out stairs and split levels
-    text: Narrow terraces and newer townhouses can include several floors, small
-      landings or rooftop rooms. Mention the number of levels so the cleaner can
-      allow for movement between areas and bring suitable equipment.
+    text: Choose the service around adaptable cleaning for apartments, shared homes
+      and multi-room properties. Compare a focused hourly visit with regular or
+      detailed cleaning, based on the condition of the property.
   - title: Choose whole-home or focused work
-    text: Use flat-rate cleaning when you want the full home covered, or book hourly
-      cleaning for selected rooms and priorities. Choosing the format
-      intentionally makes expectations clearer for both you and the cleaner.
+    text: For apartments, terraces and family houses across busy residential
+      pockets, flag the rooms that receive the most daily use. Include extras at
+      the same time so the task order stays useful.
 homeTypes:
   - apartments
   - terraces and family houses across busy residential pockets

@@ -11,10 +11,10 @@ heroIntro: Find the right level of cleaning for heritage apartments, terraces
   and compact city-fringe homes in East Melbourne. You can choose the frequency,
   include optional extras and provide arrival details covering intercoms, key
   collection, permits and parking near the property.
-summary: East Melbourne includes heritage terraces, established apartments and
-  secure residences near major event precincts. Parking changes, original
-  finishes and building access all deserve clear notes so the cleaner can work
-  efficiently and respectfully.
+summary: Homes in this area include heritage apartments, terraces and compact
+  city-fringe homes. A useful booking explains intercoms, key collection and
+  permit requirements and identifies the rooms that matter most, so the service
+  can be shaped around careful upkeep across detailed interiors.
 localSectionTitle: Careful cleaning for East Melbourne’s refined homes.
 servicesIntro: Use the service cards to compare everyday upkeep, deeper cleaning
   and moving support for heritage apartments, terraces and compact city-fringe
@@ -59,17 +59,17 @@ ctaImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=form
 ctaImageAlt: Bright interior after cleaning in East Melbourne
 localHighlights:
   - title: Check access on event days
-    text: Nearby events can alter traffic, permits and available parking. Provide
-      the most reliable entrance or off-street option when the appointment falls
-      during a busy period.
+    text: Before the visit, explain intercoms, key collection and permit
+      requirements. Clear arrival notes help the cleaner reach the home prepared
+      and begin the appointment with a practical plan.
   - title: Identify heritage-sensitive surfaces
-    text: Original floorboards, decorative trim, stone and aged tiles may need
-      gentle products and limited moisture. Mention any known restrictions or
-      restored areas before cleaning begins.
+    text: Choose the service around careful upkeep across detailed interiors.
+      Compare a focused hourly visit with regular or detailed cleaning, based on
+      the condition of the property. This keeps the booking clear.
   - title: Explain secure building procedures
-    text: For apartments, include concierge, intercom, lift and key-collection
-      instructions. A complete process avoids delays in buildings where access
-      cannot be granted directly from the apartment.
+    text: For heritage apartments, terraces and compact city-fringe homes, flag the
+      rooms that receive the most daily use. Include extras at the same time so
+      the task order stays useful.
 homeTypes:
   - East Melbourne homes
   - Apartments, townhouses and family properties
@@ -136,5 +136,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---

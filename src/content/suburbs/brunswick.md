@@ -11,10 +11,10 @@ heroIntro: Flexible home cleaning is available throughout Brunswick, from
   targeted hourly bookings to broader flat-rate services. Tell us which areas
   matter most and note street parking, gates, intercoms, laneways and compact
   entrances.
-summary: Brunswick homes vary from narrow terraces and older apartments to
-  converted buildings with open layouts. Sharing parking, access, pets and floor
-  details helps us prepare for the quirks of the property and use the
-  appointment where it will have the strongest effect.
+summary: A clear local brief starts with terraces, apartments, share houses and
+  renovated period homes and any narrow hallways, apartment stairs and rear-lane
+  access. Add the important rooms and tasks so the appointment reflects regular
+  resets for shared kitchens, bathrooms and living rooms.
 localSectionTitle: Cleaning that makes sense for Brunswick spaces.
 servicesIntro: Some Brunswick homes need regular maintenance, while others need
   a focused list or a complete reset. Start with the service that reflects the
@@ -58,18 +58,17 @@ ctaImage: https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=form
 ctaImageAlt: Bright interior after cleaning in Brunswick
 localHighlights:
   - title: Describe laneway or shared entry
-    text: Include any rear gate, external staircase, coded door or shared corridor
-      the cleaner must use. Precise directions are especially useful when the
-      residential entrance is separate from the street-facing shop or building
-      frontage.
+    text: A smoother arrival begins with narrow hallways, apartment stairs and
+      rear-lane access. Include those details in the booking so the cleaner can
+      focus time inside the home rather than at the entry.
   - title: Note varied flooring throughout
-    text: Timber, tile, concrete and rugs can sit within the same home and require
-      different handling. Tell us about delicate boards, loose mats or areas
-      that should not be mopped so the cleaner can work confidently.
+    text: Service choice should reflect regular resets for shared kitchens,
+      bathrooms and living rooms. Use hourly cleaning for selected work, or
+      choose a broader option when more of the home needs care.
   - title: Plan around pets and busy rooms
-    text: Mention pets, litter areas and the rooms that see the most daily use. This
-      allows the cleaner to prioritise hair, tracked-in dirt and high-touch
-      surfaces rather than distributing time evenly across low-use spaces.
+    text: List the important rooms, surfaces and extras before cleaning day. For
+      terraces, apartments, share houses and renovated period homes, this makes
+      the available time easier to use well.
 homeTypes:
   - terraces
   - apartments
@@ -137,5 +136,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---

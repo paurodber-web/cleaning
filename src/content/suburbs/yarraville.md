@@ -11,10 +11,10 @@ heroIntro: For homes across Yarraville, Maid At Home offers flexible cleaning
   that can follow a focused task list or cover a more complete reset. Tell us
   about compact layouts, shared spaces and the rooms that need the biggest reset
   before the visit.
-summary: Yarraville’s period homes, townhouses and family properties often
-  combine narrow access with renovated rear spaces and busy village streets.
-  Sharing parking, extension and household details helps us make the service
-  feel specific to the home.
+summary: Different properties need different plans. Describe period houses,
+  townhouses and village apartments, confirm front paths, rear lanes and shared
+  developments and use the booking notes to give care balancing period details
+  and active family areas a clear direction.
 localSectionTitle: Home cleaning shaped around Yarraville living.
 servicesIntro: Start by deciding whether the home needs maintenance, a more
   detailed clean or help connected to a move. Then choose the option that fits
@@ -58,17 +58,17 @@ ctaImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=form
 ctaImageAlt: Bright interior after cleaning in Yarraville
 localHighlights:
   - title: Note village-area parking limits
-    text: If the property sits near active shopping streets, mention the most
-      dependable legal space or rear access. This reduces time spent looking for
-      parking during busy parts of the day.
+    text: Give the cleaner a practical arrival plan by noting front paths, rear
+      lanes and shared developments. It is a simple step that helps the visit
+      start without unnecessary uncertainty.
   - title: Describe old and new sections
-    text: Many homes connect original front rooms with modern kitchens or family
-      extensions. Point out floor changes, internal steps and special finishes
-      so each area receives suitable care.
+    text: Compare the options against the real workload. care balancing period
+      details and active family areas may call for a more detailed plan than a
+      routine clean. This keeps the booking clear.
   - title: Set family priorities clearly
-    text: Identify the kitchen, bathrooms, play areas or pet zones that need the
-      strongest attention. For hourly bookings, ordering these tasks ensures the
-      most important work is completed first.
+    text: Make the task list specific to the home. Clear priorities help the cleaner
+      organise work across period houses, townhouses and village apartments and
+      focus on what matters most.
 homeTypes:
   - period houses
   - townhouses and village apartments
@@ -136,5 +136,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---

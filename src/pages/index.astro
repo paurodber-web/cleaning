@@ -7,8 +7,8 @@ import { calculatorExtraConfig, calculatorExtras, hourlyExtrasNotice } from '../
 const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 const withBase = (markup: string) => markup.replace(/(href|src)=([\"\'])\/(?!\/)/g, '$1=$2' + base);
 const withBaseStyles = (css: string) => css.replace(/url\((['"]?)\/(?!\/)/g, 'url($1' + base);
-const title = `House Cleaning Services Melbourne | Maid At Home`;
-const description = `Professional house cleaning services across Melbourne. Compare Standard, Deep and moving cleans, see clear pricing and book online with Maid At Home.`;
+const title = `House Cleaning Melbourne | Instant Prices | Maid At Home`;
+const description = `Trusted house cleaning services across Melbourne with clear online pricing, flexible one-off and recurring cleans, and a 24-hour care promise.`;
 const capitaliseExtraKey = (value: string) => value.charAt(0).toUpperCase() + value.slice(1);
 
 const calculatorExtraConfigJson = JSON.stringify(calculatorExtraConfig);
@@ -429,17 +429,17 @@ const content = withBase(`<main id="main-content">
               <path d="M10 18s6-4.7 6-10A6 6 0 0 0 4 8c0 5.3 6 10 6 10Z" />
               <circle cx="10" cy="8" r="2" />
             </svg>
-            House cleaning service in Melbourne
+            Trusted house cleaning services in Melbourne
           </h1>
           <div class="hero__headline" aria-hidden="true">A cleaner home.<br>A <em>lighter</em> week.</div>
           <p class="hero__copy">Reliable house cleaning services in Melbourne, with clear pricing and flexible options.
             Choose what you need online, then leave the details to our local team.</p>
           <div class="hero__actions">
-            <a class="button button--primary" href="#price-calculator">Calculate my price <span class="button__icon"
+            <a class="button button--primary" href="#price-calculator">Get an instant price <span class="button__icon"
                 aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7">
                   <path d="m6 8 4 4 4-4" />
                 </svg></span></a>
-            <a class="button button--ghost" href="#services">Explore services <span class="button__icon"
+            <a class="button button--ghost" href="#services">Explore cleaning services <span class="button__icon"
                 aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7">
                   <path d="m6 8 4 4 4-4" />
                 </svg></span></a>
@@ -452,7 +452,7 @@ const content = withBase(`<main id="main-content">
           <p>Melbourne families trust us to care for the places that matter most.
 
           </p>
-          <div class="hero__proof-meta"><strong>500+</strong><span>Melbourne homes cleaned since 2017</span></div>
+          <div class="hero__proof-meta"><strong>Since 2017</strong><span>Local Melbourne service</span></div>
         </aside>
       </div>
     </section>
@@ -890,8 +890,8 @@ const content = withBase(`<main id="main-content">
             and thoughtful support from booking to follow-up.</p>
           <div class="about-stats">
             <div class="about-stat"><strong>2017</strong><span>Founded locally</span></div>
-            <div class="about-stat"><strong>70+</strong><span>Melbourne suburbs</span></div>
-            <div class="about-stat"><strong>500+</strong><span>Homes cleaned since 2017</span></div>
+            <div class="about-stat"><strong>Melbourne</strong><span>Service area</span></div>
+            <div class="about-stat"><strong>Flexible</strong><span>One-off or recurring</span></div>
           </div>
           <a class="text-link" href="#testimonials">Hear from our customers <svg aria-hidden="true" viewBox="0 0 20 20"
               fill="none" stroke="currentColor">
@@ -1141,7 +1141,7 @@ const content = withBase(`<main id="main-content">
             <h2 id="final-cta-title">Make room for life, not house cleaning.</h2>
             <p>Choose your service, see your estimate and organise a cleaner in minutes. Your calmer week can start
               right here.</p>
-            <a class="button button--primary" href="/services/hourly-clean">Build my clean <span class="button__icon"
+            <a class="button button--primary" href="/services/hourly-clean">Book your clean <span class="button__icon"
                 aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7">
                   <path d="M4 10h11M11 6l4 4-4 4" />
                 </svg></span></a>

@@ -10,10 +10,10 @@ heroIntro: House cleaning in Altona should fit the property rather than force
   every home into the same package. Select hourly or flat-rate service and
   include details about apartment entry, driveways, balconies and parking near
   the property.
-summary: Altona homes include freestanding houses, units and townhouses where
-  larger floorplans, beach sand and outdoor access can influence the service.
-  Sharing the complete room list and main entry routes helps us size and
-  prioritise the booking correctly.
+summary: For family homes, units and apartments on bayside streets, the booking
+  can set out driveways, shared developments and side access alongside the work
+  that needs attention. Those details make it easier to organise recurring
+  family support and detailed bayside cleans.
 localSectionTitle: Family home cleaning with Altona’s coastal setting in mind.
 servicesIntro: For family homes, units and beachside properties, the best option
   depends on how much of the property needs attention. Compare routine,
@@ -56,17 +56,17 @@ ctaImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=form
 ctaImageAlt: Bright interior after cleaning in Altona
 localHighlights:
   - title: Include all household zones
-    text: List studies, second living rooms, laundries and every bathroom, not only
-      bedrooms. This gives a realistic picture of the work in larger family
-      properties.
+    text: Access can affect the start of cleaning day. Add driveways, shared
+      developments and side access before confirmation so the cleaner has the
+      right information on arrival. This keeps the booking clear.
   - title: Identify sand-carrying entrances
-    text: Tell us which doors are used after beach trips, garden time or pet walks.
-      The cleaner can then focus on mats, hallways and nearby floors where grit
-      collects most often.
+    text: Think about the outcome rather than a generic package. Homes needing
+      recurring family support and detailed bayside cleans may suit a different
+      scope from a light maintenance visit.
   - title: Clarify units and shared driveways
-    text: For rear units or grouped dwellings, provide the exact unit position and
-      parking arrangement. Clear directions prevent confusion where several
-      homes share one access point.
+    text: Set the priorities in the order they matter to the household. That helps
+      the cleaner work through family homes, units and apartments on bayside
+      streets with a clear purpose. This keeps the booking clear.
 homeTypes:
   - family homes
   - units and apartments on bayside streets
@@ -133,5 +133,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---

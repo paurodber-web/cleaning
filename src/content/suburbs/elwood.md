@@ -11,10 +11,10 @@ heroIntro: From routine upkeep to moving cleans, we help customers in Elwood
   choose a service that matches the condition of the property. Booking details
   can include floors, balconies, high-use rooms and the practical details around
   property access.
-summary: Elwood includes older apartments, family homes and townhouses where
-  pets, balconies and coastal sand can shape the cleaning workload. Practical
-  notes about entry points and the areas that gather the most debris help us
-  tailor the visit to everyday life near the bay.
+summary: Elwood homes can combine apartments, period houses and family
+  residences near the coast. Note shared entries, garden paths, side gates and
+  the rooms affected by sand, pets or humidity so the clean reflects the home
+  rather than a generic checklist.
 localSectionTitle: Relaxed home cleaning with Elwood’s coastal needs in mind.
 servicesIntro: Match the clean to what is actually needed at the property. For
   apartments, family homes and beachside properties, that could mean regular
@@ -59,17 +59,17 @@ ctaImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=form
 ctaImageAlt: Bright interior after cleaning in Elwood
 localHighlights:
   - title: Mention beach and garden entry routes
-    text: Tell us which door is used after walks, beach visits or time in the
-      garden. The cleaner can prioritise the floors, mats and nearby surfaces
-      that collect the most sand, leaves and outdoor dirt.
+    text: Access can affect the start of cleaning day. Add shared apartment entries,
+      garden paths and side gates before confirmation so the cleaner has the
+      right information on arrival. This keeps the booking clear.
   - title: Include balconies or courtyards deliberately
-    text: Outdoor spaces are not always part of a standard clean. Add them when
-      required and clarify whether the priority is sweeping, accessible glass,
-      door tracks or a more detailed reset.
+    text: Think about the outcome rather than a generic package. Homes needing
+      recurring care for sandy traffic and family routines may suit a different
+      scope from a light maintenance visit.
   - title: Prepare for pets at home
-    text: Explain where pets will be, which gates must stay secured and where hair
-      builds up most heavily. This helps the cleaner work safely and focus
-      vacuuming on the areas that genuinely need it.
+    text: Set the priorities in the order they matter to the household. That helps
+      the cleaner work through apartments, period houses and family homes near
+      the coast with a clear purpose.
 homeTypes:
   - apartments
   - period houses and family homes near the coast

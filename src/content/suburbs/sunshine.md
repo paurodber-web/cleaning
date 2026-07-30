@@ -11,10 +11,10 @@ heroIntro: Book one-off or recurring cleaning for family homes, units and
   townhouses across a well-connected western centre in Sunshine. Choose hourly
   or flat-rate service, add useful extras and provide driveways, parking, gates,
   stairs and equipment availability when you book.
-summary: Sunshine properties range from established family houses and units to
-  newer townhomes with different room sizes and household routines. Describing
-  the full layout, access and most-used spaces helps us tailor the service
-  without making assumptions about the home.
+summary: A clear local brief starts with family homes, units and apartments near
+  a western centre and any driveways, shared unit paths and secure entries. Add
+  the important rooms and tasks so the appointment reflects flexible services
+  for homes, apartments and moves.
 localSectionTitle: Flexible cleaning for Sunshine’s broad mix of homes.
 servicesIntro: The right booking may be a short list of priorities or a broader
   service across several rooms. In Sunshine, you can choose between recurring
@@ -58,17 +58,17 @@ ctaImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=form
 ctaImageAlt: Bright interior after cleaning in Sunshine
 localHighlights:
   - title: List extra rooms beyond bedrooms
-    text: Studies, second kitchens, enclosed verandas, playrooms and separate
-      laundries can significantly change the scope. Include every area you
-      expect the cleaner to cover.
+    text: A smoother arrival begins with driveways, shared unit paths and secure
+      entries. Include those details in the booking so the cleaner can focus
+      time inside the home rather than at the entry.
   - title: Clarify front, side or rear entry
-    text: Larger blocks and multi-dwelling sites may have several possible
-      entrances. Tell us the correct gate, unit position and parking point so
-      the cleaner reaches your residence directly.
+    text: Service choice should reflect flexible services for homes, apartments and
+      moves. Use hourly cleaning for selected work, or choose a broader option
+      when more of the home needs care.
   - title: Build a practical recurring rotation
-    text: Choose the kitchens, bathrooms and main floors that need attention every
-      visit, then rotate lower-use rooms. This keeps a larger household
-      maintained without spreading time too thinly.
+    text: List the important rooms, surfaces and extras before cleaning day. For
+      family homes, units and apartments near a western centre, this makes the
+      available time easier to use well.
 homeTypes:
   - family homes
   - units and apartments near a western centre
@@ -135,5 +135,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---

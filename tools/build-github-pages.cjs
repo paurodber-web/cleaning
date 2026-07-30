@@ -10,7 +10,7 @@ const astroCommand = command === 'preview' ? ['astro', 'preview', ...args] : ['a
 
 const result = spawnSync(npx, astroCommand, {
   stdio: 'inherit',
-  env: { ...process.env, ASTRO_BASE: base },
+  env: { ...process.env, ASTRO_BASE: base, PUBLIC_DEPLOY_TARGET: 'github-pages' },
   shell: process.platform === 'win32',
 });
 if (result.status !== 0) process.exit(result.status ?? 1);

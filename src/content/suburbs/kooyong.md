@@ -11,10 +11,10 @@ heroIntro: Create a cleaning booking around your Kooyong property, schedule and
   priorities. One-off and recurring options are available, with space to explain
   multi-room layouts, bathrooms, floors and the spaces used most by the
   household.
-summary: Kooyong homes are often set behind gates, gardens or longer driveways,
-  making arrival instructions as important as the cleaning list. Explaining
-  access, separate zones and surface requirements allows the cleaner to work
-  efficiently and with minimal disruption.
+summary: Different properties need different plans. Describe established houses,
+  townhouses and low-density residences, confirm private drives, gates and paths
+  and use the booking notes to give careful maintenance for lower-density
+  multi-room homes a clear direction.
 localSectionTitle: Quietly organised cleaning for Kooyong properties.
 servicesIntro: Rather than booking more or less than the home needs, compare
   each service by purpose. You can organise recurring cleaning for ongoing
@@ -56,17 +56,17 @@ ctaImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=form
 ctaImageAlt: Bright interior after cleaning in Kooyong
 localHighlights:
   - title: Give precise gate and driveway guidance
-    text: Include entry codes, which gate to use and where the cleaner may park
-      without blocking household vehicles. For homes set back from the street,
-      these notes prevent uncertainty at the boundary.
+    text: Give the cleaner a practical arrival plan by noting private drives, gates
+      and paths. It is a simple step that helps the visit start without
+      unnecessary uncertainty. This keeps the booking clear.
   - title: Include detached or lower areas
-    text: Guest rooms, studios, lower levels or rooms reached from outside may not
-      be obvious from the main house. List every included zone so the cleaner
-      can plan the route and equipment properly.
+    text: Compare the options against the real workload. careful maintenance for
+      lower-density multi-room homes may call for a more detailed plan than a
+      routine clean. This keeps the booking clear.
   - title: Note privacy and household timing
-    text: Mention occupied work areas, sleeping children or rooms that should remain
-      closed until a certain time. The service can then be ordered around the
-      household without repeated interruptions.
+    text: Make the task list specific to the home. Clear priorities help the cleaner
+      organise work across established houses, townhouses and low-density
+      residences and focus on what matters most.
 homeTypes:
   - established houses
   - townhouses and low-density residences
@@ -134,5 +134,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---

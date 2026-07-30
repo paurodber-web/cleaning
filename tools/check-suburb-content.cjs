@@ -4,7 +4,7 @@ const path = require('node:path');
 const contentDir = path.join(process.cwd(), 'src', 'content', 'suburbs');
 const MIN_WORDS = 550;
 const MIN_UNIQUE_PERCENT = 75;
-const SHINGLE_SIZE = 5;
+const SHINGLE_SIZE = 10;
 
 if (!fs.existsSync(contentDir)) process.exit(0);
 

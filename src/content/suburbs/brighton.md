@@ -11,10 +11,10 @@ heroIntro: Book one-off or recurring cleaning for family homes, apartments and
   larger bayside properties in Brighton. Choose hourly or flat-rate service, add
   useful extras and provide apartment entry, driveways, balconies and parking
   near the property when you book.
-summary: Brighton includes large family residences, apartments and multi-level
-  townhouses where coastal sand, extensive glass and several living zones can
-  increase the workload. A complete layout and clear extras help us prepare a
-  service that matches the property’s scale.
+summary: For large family homes, apartments and bayside townhouses, the booking
+  can set out gated drives, secure buildings and multi-level interiors alongside
+  the work that needs attention. Those details make it easier to organise
+  regular multi-room care for larger household layouts.
 localSectionTitle: Thorough cleaning for Brighton homes near the bay.
 servicesIntro: Some Brighton homes need regular maintenance, while others need a
   focused list or a complete reset. Start with the service that reflects the
@@ -58,17 +58,17 @@ ctaImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=form
 ctaImageAlt: Bright interior after cleaning in Brighton
 localHighlights:
   - title: Account for multiple living zones
-    text: Include formal rooms, family areas, studies, guest spaces and every level.
-      Larger homes need a full room picture so the cleaner can follow a sensible
-      route and sufficient time can be booked.
+    text: Access can affect the start of cleaning day. Add gated drives, secure
+      buildings and multi-level interiors before confirmation so the cleaner has
+      the right information on arrival.
   - title: Identify glass and coastal priorities
-    text: Salt residue, windblown dust and sand may show around windows, tracks,
-      doors and balconies. Add interior windows or outdoor areas when needed
-      rather than assuming they are included in routine cleaning.
+    text: Think about the outcome rather than a generic package. Homes needing
+      regular multi-room care for larger household layouts may suit a different
+      scope from a light maintenance visit.
   - title: Plan regular work by frequency
-    text: High-use kitchens, bathrooms and floors may need every-visit attention,
-      while guest rooms can rotate. A tailored recurring plan keeps the home
-      maintained without treating every room identically.
+    text: Set the priorities in the order they matter to the household. That helps
+      the cleaner work through large family homes, apartments and bayside
+      townhouses with a clear purpose. This keeps the booking clear.
 homeTypes:
   - large family homes
   - apartments and bayside townhouses

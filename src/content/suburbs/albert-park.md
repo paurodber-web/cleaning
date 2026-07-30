@@ -11,10 +11,10 @@ heroIntro: Find the right level of cleaning for terraces, family homes and
   townhouses near the bay in Albert Park. You can choose the frequency, include
   optional extras and provide arrival details covering apartment entry,
   driveways, balconies and parking near the property.
-summary: Albert Park’s terraces and townhouses often feature narrow layouts,
-  permit-controlled streets and carefully maintained original details. Good
-  parking notes and a clear description of stairs, floors and delicate finishes
-  help us prepare for the home rather than only its room count.
+summary: The local housing mix ranges across terraces, townhouses and refined
+  period residences. Share narrow halls, rear access and multi-level interiors
+  before the visit, then use the task list to guide consistent care for detailed
+  interiors and multiple living spaces in a practical way.
 localSectionTitle: A considered clean for Albert Park’s period homes.
 servicesIntro: Choose based on the outcome you need, not only the size of the
   home. We offer regular cleaning, detailed one-off visits and moving cleans for
@@ -58,17 +58,17 @@ ctaImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=form
 ctaImageAlt: Bright interior after cleaning in Albert Park
 localHighlights:
   - title: Share permit and loading details
-    text: Let us know where the cleaner can legally stop, whether a visitor permit
-      is available and which entrance is closest. This reduces carrying distance
-      on streets where parking directly outside is rarely guaranteed.
+    text: Share narrow halls, rear access and multi-level interiors early in the
+      booking. It gives the cleaner a clearer route into the property and keeps
+      the start of the visit straightforward.
   - title: Map narrow rooms and staircases
-    text: Terraces can extend over several levels with tight passages or steep
-      stairs. Mention the full layout so the cleaner can organise equipment
-      without repeatedly moving it through confined areas.
+    text: When the aim is consistent care for detailed interiors and multiple living
+      spaces, match the service to the workload. A priority list and a broader
+      clean should be planned differently.
   - title: Flag heritage-style finishes
-    text: Original floorboards, fireplaces, decorative trim and older tiles may need
-      gentle methods. Identify surfaces with special care requirements so they
-      are cleaned without unnecessary moisture or abrasion.
+    text: The room list can guide the whole appointment. This is especially useful
+      for terraces, townhouses and refined period residences, where different
+      spaces may need attention first.
 homeTypes:
   - terraces
   - townhouses and refined period residences

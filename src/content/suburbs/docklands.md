@@ -11,10 +11,11 @@ heroIntro: Cleaning in Docklands can be planned around the rooms, tasks and
   frequency that matter to you. Choose a one-off visit or recurring support and
   tell us about access instructions, compact layouts and the rooms used most
   often.
-summary: Docklands bookings are often shaped by tower access, building
-  management rules and waterfront exposure. Clear instructions about lifts,
-  visitor parking and balconies allow the cleaner to arrive prepared and keep
-  the service focused from the moment access is granted.
+summary: Different properties need different plans. Describe waterfront
+  apartments and newer multi-residential buildings, confirm building managers,
+  secure lifts and apartment-level entry instructions and use the booking notes
+  to give scheduled apartment cleaning that accounts for vertical access and
+  building rules a clear direction.
 localSectionTitle: A better cleaning plan for Docklands apartment living.
 servicesIntro: Different homes call for different levels of help. Our Docklands
   services cover focused hourly cleaning for selected rooms or a flat-rate
@@ -57,18 +58,17 @@ ctaImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=form
 ctaImageAlt: Bright interior after cleaning in Docklands
 localHighlights:
   - title: Check building management rules
-    text: Tell us whether the building requires advance registration, a key
-      collection process or approval for contractors. Confirming this early
-      prevents the cleaner from being held at reception or redirected on
-      arrival.
+    text: Give the cleaner a practical arrival plan by noting building managers,
+      secure lifts and apartment-level entry instructions. It is a simple step
+      that helps the visit start without unnecessary uncertainty.
   - title: Reserve the practical access points
-    text: If a service lift or loading area is needed, include the booking window
-      and entry location. This is especially important when the cleaner is
-      carrying a vacuum, mop or supplies through a large residential complex.
+    text: Compare the options against the real workload. scheduled apartment
+      cleaning that accounts for vertical access and building rules may call for
+      a more detailed plan than a routine clean.
   - title: Include balconies in the scope
-    text: Wind and exposed waterfront conditions can leave dust across balcony
-      floors, doors and nearby glass. Add the balcony when required and clarify
-      whether outdoor glass or only the accessible floor area needs attention.
+    text: Make the task list specific to the home. Clear priorities help the cleaner
+      organise work across waterfront apartments and newer multi-residential
+      buildings and focus on what matters most.
 homeTypes:
   - Docklands homes
   - Apartments, townhouses and family properties

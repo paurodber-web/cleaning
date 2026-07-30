@@ -11,10 +11,10 @@ heroIntro: Whether the home needs a quick reset or regular support, our
   Fairfield cleaning options can be adjusted around the task list. Share
   information about compact layouts, shared spaces and the rooms that need the
   biggest reset before cleaning day.
-summary: Fairfield’s mix of established houses, units and newer townhomes often
-  means different room sizes, outdoor access and household routines. Describing
-  the property and the people or pets using it helps us organise a service that
-  feels relevant from the first visit.
+summary: Different properties need different plans. Describe established houses,
+  townhouses and low-rise apartments, confirm driveways, shared paths and rear
+  or side entrances and use the booking notes to give balanced whole-home care
+  and periodic detailed attention a clear direction.
 localSectionTitle: Reliable cleaning for Fairfield’s family homes.
 servicesIntro: Rather than booking more or less than the home needs, compare
   each service by purpose. You can organise routine cleaning for busy weeks,
@@ -57,17 +57,17 @@ ctaImage: https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=form
 ctaImageAlt: Bright interior after cleaning in Fairfield
 localHighlights:
   - title: Explain driveway and side access
-    text: Tell us whether the cleaner can use the driveway, a rear entrance or a
-      side gate. Knowing the simplest route is useful for homes set back from
-      the street or units sharing a common driveway.
+    text: Give the cleaner a practical arrival plan by noting driveways, shared
+      paths and rear or side entrances. It is a simple step that helps the visit
+      start without unnecessary uncertainty.
   - title: Build around the family routine
-    text: Mention sleeping children, work-from-home areas or rooms that should be
-      completed first. A sensible order lets the cleaner work with less
-      disruption while still covering the main household priorities.
+    text: Compare the options against the real workload. balanced whole-home care
+      and periodic detailed attention may call for a more detailed plan than a
+      routine clean. This keeps the booking clear.
   - title: Identify older high-use areas
-    text: Established homes can have kitchens, bathrooms or flooring that need more
-      than routine maintenance. Point out built-up areas in advance so we can
-      recommend enough time or a more detailed cleaning option.
+    text: Make the task list specific to the home. Clear priorities help the cleaner
+      organise work across established houses, townhouses and low-rise
+      apartments and focus on what matters most.
 homeTypes:
   - established houses
   - townhouses and low-rise apartments
@@ -135,5 +135,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---

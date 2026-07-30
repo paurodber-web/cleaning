@@ -11,10 +11,10 @@ heroIntro: Maid At Home makes it simpler to book cleaning for apartments, family
   homes and townhouses around a busy local centre in Moonee Ponds. Pick the
   right level of help, note any access requirements and add specific tasks to
   the booking.
-summary: Moonee Ponds combines established family homes, townhouses and
-  apartment buildings around a busy centre. The right plan depends on parking,
-  secure access, property size and whether you need routine maintenance or a
-  more detailed one-off service.
+summary: Homes in this area include apartments, period homes and larger family
+  residences. A useful booking explains secure foyers, driveways and multi-level
+  access and identifies the rooms that matter most, so the service can be shaped
+  around apartment resets, family cleaning and moving services.
 localSectionTitle: A practical cleaning plan for Moonee Ponds living.
 servicesIntro: The right booking may be a short list of priorities or a broader
   service across several rooms. In Moonee Ponds, you can choose between routine
@@ -56,17 +56,17 @@ ctaImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=form
 ctaImageAlt: Bright interior after cleaning in Moonee Ponds
 localHighlights:
   - title: Match access notes to the property
-    text: For apartments, include foyer and lift instructions; for houses, note
-      driveway or side entry details. Giving the correct access type prevents a
-      generic arrival plan from causing avoidable delays.
+    text: Before the visit, explain secure foyers, driveways and multi-level access.
+      Clear arrival notes help the cleaner reach the home prepared and begin the
+      appointment with a practical plan.
   - title: List every active household zone
-    text: Second lounges, studies, play areas and extra bathrooms can add meaningful
-      work. Include them at booking so the cleaner understands the complete home
-      rather than only its basic bedroom count.
+    text: Choose the service around apartment resets, family cleaning and moving
+      services. Compare a focused hourly visit with regular or detailed
+      cleaning, based on the condition of the property.
   - title: Choose maintenance or reset cleaning
-    text: A regularly serviced property needs a different approach from one with
-      accumulated dust or neglected wet areas. Explain the recent cleaning
-      history so the service level suits the current condition.
+    text: For apartments, period homes and larger family residences, flag the rooms
+      that receive the most daily use. Include extras at the same time so the
+      task order stays useful. This keeps the booking clear.
 homeTypes:
   - apartments
   - period homes and larger family residences
@@ -133,5 +133,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---

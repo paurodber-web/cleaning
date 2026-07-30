@@ -11,10 +11,10 @@ heroIntro: Flexible home cleaning is available throughout Ripponlea, from
   targeted hourly bookings to broader flat-rate services. Tell us which areas
   matter most and note street parking, gates, intercoms, laneways and compact
   entrances.
-summary: Ripponlea combines period houses, older apartments and compact
-  residences with finishes that may need more consideration than a standard
-  modern interior. Describing the surfaces, access and room use helps us plan a
-  service that respects the property while remaining efficient.
+summary: The local housing mix ranges across apartments, period houses and
+  smaller residential blocks. Share shared entries, front paths and narrow side
+  access before the visit, then use the task list to guide measured plans for
+  smaller homes and moving support in a practical way.
 localSectionTitle: Careful cleaning for Ripponlea’s character-filled homes.
 servicesIntro: The right booking may be a short list of priorities or a broader
   service across several rooms. In Ripponlea, you can choose between routine
@@ -55,17 +55,17 @@ ctaImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=form
 ctaImageAlt: Bright interior after cleaning in Ripponlea
 localHighlights:
   - title: Identify original materials
-    text: Point out older timber, decorative tiles, leadlight, painted cabinetry or
-      other finishes that need gentle handling. Product restrictions are easier
-      to follow when they are noted before the cleaner starts.
+    text: Share shared entries, front paths and narrow side access early in the
+      booking. It gives the cleaner a clearer route into the property and keeps
+      the start of the visit straightforward.
   - title: Explain hidden or side entrances
-    text: Some homes sit behind front buildings, gardens or shared paths. Give clear
-      directions to the correct gate or unit so the cleaner does not lose time
-      searching along the property boundary.
+    text: When the aim is measured plans for smaller homes and moving support, match
+      the service to the workload. A priority list and a broader clean should be
+      planned differently. This keeps the booking clear.
   - title: Separate preservation from deep cleaning
-    text: Delicate age-related marks are not always removable through ordinary
-      cleaning. Tell us which areas need maintenance and which have heavy
-      residue so expectations remain realistic and surfaces are not overworked.
+    text: The room list can guide the whole appointment. This is especially useful
+      for apartments, period houses and smaller residential blocks, where
+      different spaces may need attention first.
 homeTypes:
   - apartments
   - period houses and smaller residential blocks
@@ -133,5 +133,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---

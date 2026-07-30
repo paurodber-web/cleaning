@@ -10,10 +10,10 @@ heroIntro: Choose a practical cleaning option for your Hawthorn home, whether
   you need focused help, regular maintenance or a fuller clean. We use your
   notes about compact layouts, shared spaces and the rooms that need the biggest
   reset to organise the service.
-summary: Hawthorn includes period houses, multi-level townhomes and apartment
-  buildings, often with polished floors and carefully finished interiors. A
-  precise scope helps us account for stairs, special surfaces and the difference
-  between routine upkeep and detailed work.
+summary: Hawthorn cleaning can involve apartments, period homes and larger
+  family residences with secure buildings, sloped paths or stairs between
+  floors. Confirm the entry details and order the main rooms to match the home’s
+  daily routine.
 localSectionTitle: Detailed cleaning for Hawthorn homes of every scale.
 servicesIntro: Select the cleaning format that suits the size, condition and
   priorities of the property. Options include routine cleaning for busy weeks,
@@ -58,17 +58,17 @@ ctaImage: https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=form
 ctaImageAlt: Bright interior after cleaning in Hawthorn
 localHighlights:
   - title: Count levels, not only rooms
-    text: Tell us how many floors the cleaner will cover, including basements, upper
-      retreats or separate studies. Movement between levels adds time and
-      affects how equipment should be organised during the visit.
+    text: Give the cleaner a practical arrival plan by noting secure buildings,
+      sloped paths and multi-level access. It is a simple step that helps the
+      visit start without unnecessary uncertainty.
   - title: Identify premium or delicate finishes
-    text: Natural stone, polished timber, brass fittings and custom cabinetry may
-      require specific care. Mention any surface with product restrictions so
-      the cleaner can avoid unsuitable chemicals or abrasive tools.
+    text: Compare the options against the real workload. scoped cleaning for
+      apartments, stairs and family routines may call for a more detailed plan
+      than a routine clean. This keeps the booking clear.
   - title: Separate maintenance from restoration
-    text: Regular cleaning can maintain a well-kept home, but built-up marks,
-      neglected areas or renovation dust may need a deeper service. Describe the
-      current condition so expectations reflect the actual work involved.
+    text: Make the task list specific to the home. Clear priorities help the cleaner
+      organise work across apartments, period houses and larger family
+      residences and focus on what matters most.
 homeTypes:
   - apartments
   - period houses and larger family residences

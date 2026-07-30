@@ -11,10 +11,10 @@ heroIntro: Whether the home needs a quick reset or regular support, our Pascoe
   Vale cleaning options can be adjusted around the task list. Share information
   about multi-room layouts, bathrooms, floors and the spaces used most by the
   household before cleaning day.
-summary: Pascoe Vale homes range from established houses and units to newer
-  townhouses on sloping blocks, where stairs and split levels can add more work
-  than the room count suggests. Describing the layout accurately helps us plan
-  time and equipment sensibly.
+summary: Homes in this area include family houses, villa units and townhouse
+  developments. A useful booking explains sloping drives, shared paths and side
+  gates and identifies the rooms that matter most, so the service can be shaped
+  around family-home cleaning and practical one-off resets.
 localSectionTitle: Cleaning prepared for Pascoe Vale’s varied levels.
 servicesIntro: Select the cleaning format that suits the size, condition and
   priorities of the property. Options include recurring cleaning for ongoing
@@ -58,17 +58,17 @@ ctaImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=form
 ctaImageAlt: Bright interior after cleaning in Pascoe Vale
 localHighlights:
   - title: Explain split levels and stairs
-    text: Mention internal steps, lower living rooms, upper bedrooms and any
-      external staircase used to reach the home. This gives the cleaner a
-      realistic idea of movement throughout the appointment.
+    text: Before the visit, explain sloping drives, shared paths and side gates.
+      Clear arrival notes help the cleaner reach the home prepared and begin the
+      appointment with a practical plan.
   - title: Identify rear units clearly
-    text: For homes behind another dwelling, provide the unit position,
-      shared-driveway rules and the correct entrance. These details prevent
-      confusion where several residences use one street number.
+    text: Choose the service around family-home cleaning and practical one-off
+      resets. Compare a focused hourly visit with regular or detailed cleaning,
+      based on the condition of the property.
   - title: Size the service to the condition
-    text: A maintained family home may suit regular cleaning, while built-up
-      bathrooms or neglected floors may need a deeper first visit. Describe the
-      current state so the booking starts at the right level.
+    text: For family houses, villa units and townhouse developments, flag the rooms
+      that receive the most daily use. Include extras at the same time so the
+      task order stays useful. This keeps the booking clear.
 homeTypes:
   - family houses
   - villa units and townhouse developments
@@ -136,5 +136,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---

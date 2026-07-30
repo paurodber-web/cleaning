@@ -11,10 +11,10 @@ heroIntro: Organise a cleaner for larger family homes, period properties and
   modern apartments in Camberwell without overcomplicating the booking. Set the
   frequency, identify the priority areas and add any instructions linked to
   driveways, parking, gates, stairs and equipment availability.
-summary: Camberwell properties often include several living areas, multiple
-  bathrooms, stairs and a mix of original and renovated rooms. Listing the
-  complete layout and the spaces used most frequently helps us build a service
-  that covers the home in a sensible order.
+summary: Camberwell bookings often suit larger family houses, renovated period
+  homes and units with multi-level interiors. Sharing driveway, side-gate and
+  room-order details helps shape whole-home cleaning around the spaces the
+  household uses most.
 localSectionTitle: Cleaning planned around larger Camberwell homes.
 servicesIntro: Match the clean to what is actually needed at the property. For
   larger family homes, period properties and modern apartments, that could mean
@@ -61,17 +61,17 @@ ctaImage: https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=form
 ctaImageAlt: Bright interior after cleaning in Camberwell
 localHighlights:
   - title: Include secondary living spaces
-    text: Formal lounges, family rooms, studies and upstairs retreats all add to the
-      cleaning scope. Naming them at booking gives a more realistic view than
-      the bedroom count alone and helps us allow enough time.
+    text: Before the visit, explain driveways, side gates and multi-level interiors.
+      Clear arrival notes help the cleaner reach the home prepared and begin the
+      appointment with a practical plan.
   - title: Decide what happens every visit
-    text: For recurring cleaning, choose the kitchens, bathrooms, bedrooms and main
-      floors that need consistent attention. Less-used rooms can be rotated so
-      the plan remains thorough without becoming inefficient.
+    text: Choose the service around structured whole-home care for larger room
+      counts. Compare a focused hourly visit with regular or detailed cleaning,
+      based on the condition of the property.
   - title: Flag original and renovated finishes
-    text: Older timber and decorative details may sit beside new stone, glass or
-      cabinetry. Tell us about any care requirements so the cleaner can move
-      between surfaces without applying the same method everywhere.
+    text: For larger family houses, units and renovated period homes, flag the rooms
+      that receive the most daily use. Include extras at the same time so the
+      task order stays useful. This keeps the booking clear.
 homeTypes:
   - larger family houses
   - units and renovated period homes

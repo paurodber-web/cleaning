@@ -11,10 +11,10 @@ heroIntro: Choose a practical cleaning option for your Southbank home, whether
   you need focused help, regular maintenance or a fuller clean. We use your
   notes about access instructions, compact layouts and the rooms used most often
   to organise the service.
-summary: Southbank homes are commonly reached through secure foyers, concierge
-  desks and shared lifts, while busy roads and event traffic can affect arrival.
-  A few precise booking notes make access smoother and leave more of the
-  appointment for the cleaning itself.
+summary: Southbank residents may need cleaning organised around tower
+  apartments, concierge desks and booked service lifts. Share the building
+  process, loading window and priority rooms early so the visit can focus on the
+  apartment rather than access delays.
 localSectionTitle: High-rise cleaning without losing time at the door.
 servicesIntro: Choose focused hourly cleaning for selected rooms or a flat-rate
   service for a more complete apartment reset. The booking can be shaped around
@@ -59,19 +59,17 @@ ctaImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=form
 ctaImageAlt: Bright interior after cleaning in Southbank
 localHighlights:
   - title: Explain the entry sequence
-    text: Include the tower name, apartment number and the exact way visitors enter.
-      If the cleaner must collect a swipe card, call from reception or meet you
-      in the foyer, noting it in advance removes unnecessary confusion.
+    text: Before the visit, explain concierge desks, intercom access and booked
+      service lifts. Clear arrival notes help the cleaner reach the home
+      prepared and begin the appointment with a practical plan.
   - title: Plan around busy arrival periods
-    text: Parking and loading can become difficult during nearby events or peak
-      traffic. Mention the best entrance, approved visitor space or safest
-      set-down point so the cleaner can arrive with fewer delays and carry
-      equipment efficiently.
+    text: Choose the service around one-off and regular cleaning organised around
+      high-rise access restrictions. Compare a focused hourly visit with regular
+      or detailed cleaning, based on the condition of the property.
   - title: Flag glass and balcony priorities
-    text: Apartments with large windows and balconies often collect visible dust
-      around tracks, doors and exposed surfaces. Identify the areas that matter
-      most and add interior windows or balcony cleaning when they fall outside
-      the standard scope.
+    text: For tower apartments, riverside residences and compact inner-city homes,
+      flag the rooms that receive the most daily use. Include extras at the same
+      time so the task order stays useful.
 homeTypes:
   - tower apartments
   - riverside residences and compact inner-city homes

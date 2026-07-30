@@ -10,10 +10,10 @@ heroIntro: Arrange professional cleaning for family homes, terraces and
   apartments near the inner north-west in Ascot Vale, with hourly and flat-rate
   options available. Add extras where needed and share clear instructions about
   street parking, gates, intercoms, laneways and compact entrances.
-summary: Ascot Vale includes period houses, units and newer townhomes with
-  varied access, floorplans and family needs. Details about driveways, rear
-  entries, pets and extensions help us understand how the property works before
-  the cleaner begins.
+summary: A clear local brief starts with family houses, townhouses and apartment
+  developments and any shared driveways, front paths and secure entries. Add the
+  important rooms and tasks so the appointment reflects balanced family-home
+  care and focused apartment cleaning.
 localSectionTitle: Flexible cleaning for Ascot Vale’s established homes.
 servicesIntro: Choose routine cleaning for busy weeks, focused hourly visits or
   detailed help around a move. The booking can be shaped around the condition of
@@ -59,17 +59,17 @@ ctaImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=form
 ctaImageAlt: Bright interior after cleaning in Ascot Vale
 localHighlights:
   - title: Explain shared or rear access
-    text: For units, laneway entrances or homes behind another property, provide the
-      clearest route and parking arrangement. This avoids the cleaner stopping
-      at the wrong dwelling or entering through an unsuitable gate.
+    text: A smoother arrival begins with shared driveways, front paths and secure
+      entries. Include those details in the booking so the cleaner can focus
+      time inside the home rather than at the entry.
   - title: Describe extensions and added rooms
-    text: Older homes may include rear living areas, converted studies or separate
-      laundries not reflected in the original layout. Listing these spaces gives
-      the booking a realistic scope.
+    text: Service choice should reflect balanced family-home care and focused
+      apartment cleaning. Use hourly cleaning for selected work, or choose a
+      broader option when more of the home needs care.
   - title: Prioritise floors used by pets
-    text: Tell us where animals sleep, enter the home and spend most of their time.
-      The cleaner can then focus on hair, tracked dirt and marks in the zones
-      that need stronger maintenance.
+    text: List the important rooms, surfaces and extras before cleaning day. For
+      family houses, townhouses and apartment developments, this makes the
+      available time easier to use well. This keeps the booking clear.
 homeTypes:
   - family houses
   - townhouses and apartment developments
@@ -136,5 +136,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---

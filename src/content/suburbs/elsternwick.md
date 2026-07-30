@@ -10,10 +10,10 @@ heroIntro: Cleaning in Elsternwick can be planned around the rooms, tasks and
   frequency that matter to you. Choose a one-off visit or recurring support and
   tell us about floors, balconies, high-use rooms and the practical details
   around property access.
-summary: Elsternwick properties range from period family homes to apartments and
-  renovated townhouses, often with several living areas or a mix of older and
-  newer finishes. A complete room list and clear priorities help us size the
-  service properly.
+summary: The local housing mix ranges across apartments, family houses and
+  period residences. Share shared driveways, secure entries and side paths
+  before the visit, then use the task list to guide whole-home cleaning across
+  different property sizes in a practical way.
 localSectionTitle: Cleaning balanced for Elsternwick’s varied households.
 servicesIntro: For apartments, family homes and established residential
   properties, the best option depends on how much of the property needs
@@ -59,17 +59,17 @@ ctaImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=form
 ctaImageAlt: Bright interior after cleaning in Elsternwick
 localHighlights:
   - title: Include every living and work area
-    text: Studies, formal lounges, playrooms and rear extensions can change the
-      workload significantly. Naming each included space gives a more accurate
-      scope than bedrooms and bathrooms alone.
+    text: Share shared driveways, secure entries and side paths early in the
+      booking. It gives the cleaner a clearer route into the property and keeps
+      the start of the visit straightforward.
   - title: Distinguish old from new finishes
-    text: Original timber, decorative tiles and older joinery may sit beside modern
-      stone and cabinetry. Mention any care instructions so the cleaner can
-      adjust products and techniques across the property.
+    text: When the aim is whole-home cleaning across different property sizes, match
+      the service to the workload. A priority list and a broader clean should be
+      planned differently. This keeps the booking clear.
   - title: Structure recurring family cleaning
-    text: Choose the rooms that need full attention each visit and those that can
-      rotate. A planned cycle keeps busy kitchens, bathrooms and floors
-      consistent while still maintaining guest or formal spaces.
+    text: The room list can guide the whole appointment. This is especially useful
+      for apartments, family houses and period residences, where different
+      spaces may need attention first. This keeps the booking clear.
 homeTypes:
   - apartments
   - family houses and period residences
@@ -138,5 +138,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---

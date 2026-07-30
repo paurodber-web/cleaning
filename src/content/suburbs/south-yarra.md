@@ -10,10 +10,10 @@ heroIntro: Keep cleaning easier to organise in South Yarra with one-off, weekly,
   fortnightly and monthly options. Select the service that suits the home and
   include notes about street parking, gates, intercoms, laneways and compact
   entrances.
-summary: South Yarra bookings often involve secure apartments, compact
-  townhouses and busy streets where access can take longer than expected.
-  Sharing concierge, parking and layout details helps the cleaner reach the home
-  smoothly and spend the appointment on the areas that matter.
+summary: Different properties need different plans. Describe apartments,
+  terraces and polished multi-level residences, confirm concierge buildings,
+  intercoms and narrow internal stairs and use the booking notes to give regular
+  apartment care and presentation-focused detailed resets a clear direction.
 localSectionTitle: Apartment and townhouse cleaning made easier in South Yarra.
 servicesIntro: Use the service cards to compare everyday upkeep, deeper cleaning
   and moving support for apartments, townhouses and compact homes in a
@@ -58,18 +58,17 @@ ctaImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=form
 ctaImageAlt: Bright interior after cleaning in South Yarra
 localHighlights:
   - title: Explain concierge and lift access
-    text: Include the building name, apartment number and whether the cleaner must
-      register, collect a swipe card or use a service lift. A complete entry
-      sequence avoids delays in developments with several towers or reception
-      points.
+    text: Give the cleaner a practical arrival plan by noting concierge buildings,
+      intercoms and narrow internal stairs. It is a simple step that helps the
+      visit start without unnecessary uncertainty.
   - title: Identify a workable parking option
-    text: Permit zones, clearways and busy retail streets can make unloading
-      difficult. Note any visitor bay, garage space or nearby legal parking that
-      allows the cleaner to carry equipment without a long walk.
+    text: Compare the options against the real workload. regular apartment care and
+      presentation-focused detailed resets may call for a more detailed plan
+      than a routine clean. This keeps the booking clear.
   - title: Focus on high-use apartment areas
-    text: Compact kitchens, bathrooms and living spaces can accumulate visible wear
-      quickly. Rank your priorities and add extras such as interior windows or
-      balcony cleaning when they sit outside the standard service.
+    text: Make the task list specific to the home. Clear priorities help the cleaner
+      organise work across apartments, terraces and polished multi-level
+      residences and focus on what matters most.
 homeTypes:
   - apartments
   - terraces and polished multi-level residences

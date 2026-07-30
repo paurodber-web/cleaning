@@ -11,10 +11,10 @@ heroIntro: For homes across Preston, Maid At Home offers flexible cleaning that
   can follow a focused task list or cover a more complete reset. Tell us about
   multi-room layouts, bathrooms, floors and the spaces used most by the
   household before the visit.
-summary: Preston ranges from older freestanding houses and family units to newer
-  apartments around major transport and shopping areas. A clear description of
-  the layout, access and current condition helps us choose a service that is
-  neither too light nor unnecessarily broad.
+summary: A clear local brief starts with family homes, townhouses, units and
+  newer apartments and any driveways, shared developments and apartment
+  intercoms. Add the important rooms and tasks so the appointment reflects
+  flexible recurring cleaning across different home sizes.
 localSectionTitle: Practical cleaning across Preston’s varied homes.
 servicesIntro: Choose recurring cleaning for ongoing upkeep or a flat-rate clean
   when more of the property needs attention. The booking can be shaped around
@@ -59,19 +59,17 @@ ctaImage: https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=form
 ctaImageAlt: Bright interior after cleaning in Preston
 localHighlights:
   - title: Include every usable room
-    text: Studies, second lounges, enclosed verandas and utility spaces can add
-      meaningful work. Listing them at booking gives the cleaner a complete
-      scope and helps avoid last-minute surprises when the property is larger
-      than the basic bedroom count suggests.
+    text: A smoother arrival begins with driveways, shared developments and
+      apartment intercoms. Include those details in the booking so the cleaner
+      can focus time inside the home rather than at the entry.
   - title: Explain parking near busy areas
-    text: If the home is close to a shopping strip, station or apartment complex,
-      share the most dependable visitor or off-street option. This helps the
-      cleaner unload equipment and begin without losing time to restricted
-      parking.
+    text: Service choice should reflect flexible recurring cleaning across different
+      home sizes. Use hourly cleaning for selected work, or choose a broader
+      option when more of the home needs care.
   - title: Be clear about current condition
-    text: Say whether the home receives regular cleaning or needs a stronger reset
-      after a busy period. Honest condition notes help us recommend hourly,
-      standard or deeper cleaning based on the work actually required.
+    text: List the important rooms, surfaces and extras before cleaning day. For
+      family homes, townhouses, units and newer apartments, this makes the
+      available time easier to use well. This keeps the booking clear.
 homeTypes:
   - family homes
   - townhouses
@@ -140,5 +138,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---

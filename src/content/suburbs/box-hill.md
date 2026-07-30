@@ -11,10 +11,11 @@ heroIntro: Book one-off or recurring cleaning for apartments, townhouses and
   family homes around a busy activity centre in Box Hill. Choose hourly or
   flat-rate service, add useful extras and provide driveways, parking, gates,
   stairs and equipment availability when you book.
-summary: Box Hill combines high-rise apartment living around the centre with
-  established family homes on surrounding streets. The best booking plan depends
-  on secure-building access, parking, property size and whether the service is
-  regular maintenance or a larger reset.
+summary: The local housing mix ranges across apartments, units and family homes
+  near a major centre. Share secure apartment entry, shared lifts and
+  residential driveways before the visit, then use the task list to guide
+  apartment care and family-home maintenance shaped by access in a practical
+  way.
 localSectionTitle: Cleaning adapted to Box Hill apartments and homes.
 servicesIntro: From regular maintenance to a complete moving clean, each option
   serves a different purpose. Consider multi-room layouts, bathrooms, floors and
@@ -55,17 +56,17 @@ ctaImage: https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=form
 ctaImageAlt: Bright interior after cleaning in Box Hill
 localHighlights:
   - title: Confirm tower and lift details
-    text: For apartment bookings, provide the building name, entrance, apartment
-      number and any lift or concierge procedure. Clear directions are essential
-      where several towers or lobbies share one street address.
+    text: Share secure apartment entry, shared lifts and residential driveways early
+      in the booking. It gives the cleaner a clearer route into the property and
+      keeps the start of the visit straightforward.
   - title: Give a full count for larger homes
-    text: For houses, include studies, extra lounges, laundries and every bathroom
-      rather than relying only on bedrooms. This helps us understand the actual
-      floor area and recommend a service with enough time.
+    text: When the aim is apartment care and family-home maintenance shaped by
+      access, match the service to the workload. A priority list and a broader
+      clean should be planned differently.
   - title: Choose the right level of cleaning
-    text: Routine upkeep, post-renovation dust and move-related cleaning require
-      very different workloads. Explain the reason for the booking so we can
-      point you toward the option that best fits the current condition.
+    text: The room list can guide the whole appointment. This is especially useful
+      for apartments, units and family homes near a major centre, where
+      different spaces may need attention first.
 homeTypes:
   - apartments
   - units and family homes near a major centre
@@ -133,5 +134,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---

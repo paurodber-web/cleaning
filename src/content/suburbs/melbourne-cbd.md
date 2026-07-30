@@ -10,10 +10,10 @@ heroIntro: From routine upkeep to moving cleans, we help customers in Melbourne
   CBD choose a service that matches the condition of the property. Booking
   details can include access instructions, compact layouts and the rooms used
   most often.
-summary: City apartments often come with concierge desks, secure lifts, loading
-  restrictions and little nearby parking. Sharing the building process before
-  the visit helps us organise access, protect the booked cleaning time and avoid
-  delays at reception or the loading bay.
+summary: A clear local brief starts with high-rise apartments and compact city
+  residences and any concierge entry, lift bookings and loading-bay timing. Add
+  the important rooms and tasks so the appointment reflects apartment resets
+  shaped around secure access and concentrated kitchen and bathroom use.
 localSectionTitle: Apartment cleaning planned around life in the CBD.
 servicesIntro: Some Melbourne CBD homes need regular maintenance, while others
   need a focused list or a complete reset. Start with the service that reflects
@@ -56,18 +56,18 @@ ctaImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=form
 ctaImageAlt: Bright interior after cleaning in Melbourne CBD
 localHighlights:
   - title: Confirm the building procedure
-    text: Provide the apartment number, intercom instructions and any concierge
-      requirements. Some buildings require visitor registration or lift access,
-      so these details help the cleaner reach your door without using valuable
-      service time.
+    text: A smoother arrival begins with concierge entry, lift bookings and
+      loading-bay timing. Include those details in the booking so the cleaner
+      can focus time inside the home rather than at the entry.
   - title: Arrange lift and loading access
-    text: Let us know whether a service lift, loading bay or short-term parking
-      space must be reserved. A clear arrival plan is particularly useful for
-      larger cleans, move-ins and end-of-lease bookings with equipment.
+    text: Service choice should reflect apartment resets shaped around secure access
+      and concentrated kitchen and bathroom use. Use hourly cleaning for
+      selected work, or choose a broader option when more of the home needs
+      care.
   - title: Prioritise compact living areas
-    text: CBD apartments can be smaller but still need detailed work across
-      kitchens, bathrooms and high-use surfaces. List your main priorities so
-      the cleaner can give the most important areas the attention they require.
+    text: List the important rooms, surfaces and extras before cleaning day. For
+      high-rise apartments and compact city residences, this makes the available
+      time easier to use well. This keeps the booking clear.
 homeTypes:
   - Melbourne CBD homes
   - Apartments, townhouses and family properties

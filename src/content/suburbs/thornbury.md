@@ -11,10 +11,10 @@ heroIntro: Cleaning in Thornbury can be planned around the rooms, tasks and
   frequency that matter to you. Choose a one-off visit or recurring support and
   tell us about compact layouts, shared spaces and the rooms that need the
   biggest reset.
-summary: Thornbury blends older houses, townhouses and apartments around busy
-  local streets, often with pets, timber floors and compact access. Sharing
-  these details gives the cleaner a realistic picture of the home and makes the
-  service easier to organise around daily life.
+summary: Different properties need different plans. Describe period houses,
+  apartments and compact townhouses, confirm front paths, apartment entries and
+  narrow side passages and use the booking notes to give regular care for active
+  kitchens and mixed old-new interiors a clear direction.
 localSectionTitle: Home cleaning tuned to Thornbury’s everyday rhythm.
 servicesIntro: Choose based on the outcome you need, not only the size of the
   home. We offer routine cleaning for busy weeks, focused hourly visits or
@@ -58,18 +58,17 @@ ctaImage: https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=form
 ctaImageAlt: Bright interior after cleaning in Thornbury
 localHighlights:
   - title: Mark the best street or rear entry
-    text: Let us know whether the front, side or laneway entrance is simplest and
-      where equipment can be unloaded. Clear directions are useful on narrow
-      streets or properties where the residential door is set behind another
-      building.
+    text: Give the cleaner a practical arrival plan by noting front paths, apartment
+      entries and narrow side passages. It is a simple step that helps the visit
+      start without unnecessary uncertainty.
   - title: Point out pet-heavy areas
-    text: Identify where pets sleep, eat or spend most of their time, along with any
-      doors that must remain closed. This helps the cleaner prioritise hair, paw
-      marks and floors without creating a safety issue.
+    text: Compare the options against the real workload. regular care for active
+      kitchens and mixed old-new interiors may call for a more detailed plan
+      than a routine clean. This keeps the booking clear.
   - title: Protect older floorboards
-    text: Mention original timber, damaged coatings or sections that should receive
-      minimal moisture. These notes allow the cleaner to adjust the method and
-      avoid treating every hard floor as if it has the same finish.
+    text: Make the task list specific to the home. Clear priorities help the cleaner
+      organise work across period houses, apartments and compact townhouses and
+      focus on what matters most.
 homeTypes:
   - period houses
   - apartments and compact townhouses
@@ -135,5 +134,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---

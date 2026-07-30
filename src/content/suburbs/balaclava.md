@@ -11,10 +11,10 @@ heroIntro: Whether the home needs a quick reset or regular support, our
   Balaclava cleaning options can be adjusted around the task list. Share
   information about compact layouts, shared spaces and the rooms that need the
   biggest reset before cleaning day.
-summary: Balaclava homes are often compact, older and reached through shared
-  entries or streets with limited parking. Providing the exact access route,
-  floor level and key cleaning priorities helps the visit begin smoothly and
-  remain realistic within the booked time.
+summary: Different properties need different plans. Describe apartments,
+  terraces and compact family residences, confirm shared hallways, rear paths
+  and stair access and use the booking notes to give practical recurring care
+  for compact, busy homes a clear direction.
 localSectionTitle: Practical cleaning for Balaclava apartments and terraces.
 servicesIntro: Choose routine cleaning for busy weeks, focused hourly visits or
   detailed help around a move. The booking can be shaped around the condition of
@@ -58,17 +58,17 @@ ctaImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=form
 ctaImageAlt: Bright interior after cleaning in Balaclava
 localHighlights:
   - title: Clarify the unit’s exact location
-    text: Include the building entrance, staircase and whether the apartment is at
-      the front, rear or above another residence. Good directions reduce
-      confusion in blocks where numbering is inconsistent or hidden.
+    text: Give the cleaner a practical arrival plan by noting shared hallways, rear
+      paths and stair access. It is a simple step that helps the visit start
+      without unnecessary uncertainty.
   - title: Flag older kitchens and bathrooms
-    text: Aged grout, worn surfaces and long-term residue can need more effort than
-      routine cleaning. Mention visible build-up so the booking can allow for
-      detail rather than assuming every area is already maintained.
+    text: Compare the options against the real workload. practical recurring care
+      for compact, busy homes may call for a more detailed plan than a routine
+      clean. This keeps the booking clear.
   - title: Protect time from parking delays
-    text: Share the best nearby space, permit arrangement or short-term loading
-      option. When street parking is tight, a practical suggestion can save
-      enough time to make a noticeable difference inside the home.
+    text: Make the task list specific to the home. Clear priorities help the cleaner
+      organise work across apartments, terraces and compact family residences
+      and focus on what matters most.
 homeTypes:
   - apartments
   - terraces and compact family residences
@@ -134,5 +134,5 @@ seoReview:
   reviewed: true
   uniqueContentEstimate: 99
   localFactsCheckedAt: 2026-07-28
-draft: false
+draft: true
 ---
