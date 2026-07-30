@@ -8,7 +8,7 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 const withBase = (markup: string) => markup.replace(/(href|src)=([\"\'])\/(?!\/)/g, '$1=$2' + base);
 const withBaseStyles = (css: string) => css.replace(/url\((['"]?)\/(?!\/)/g, 'url($1' + base);
 const title = `House Cleaning Melbourne | Instant Prices | Maid At Home`;
-const description = `Trusted house cleaning services across Melbourne with clear online pricing, flexible one-off and recurring cleans, and a 24-hour care promise.`;
+const description = `Trusted house cleaning services across Melbourne with clear online pricing, flexible one-off and recurring cleans, and a 48-hour care promise.`;
 const capitaliseExtraKey = (value: string) => value.charAt(0).toUpperCase() + value.slice(1);
 
 const calculatorExtraConfigJson = JSON.stringify(calculatorExtraConfig);
@@ -452,7 +452,7 @@ const content = withBase(`<main id="main-content">
           <p>Melbourne families trust us to care for the places that matter most.
 
           </p>
-          <div class="hero__proof-meta"><strong>Since 2017</strong><span>Local Melbourne service</span></div>
+          <div class="hero__proof-meta"><strong>Since 2017</strong><span>Serving Melbourne families</span></div>
         </aside>
       </div>
     </section>
@@ -483,7 +483,7 @@ const content = withBase(`<main id="main-content">
               <path d="M12 8v5l3 2" />
               <circle cx="12" cy="12" r="9" />
             </svg></span>
-          <span><strong>24-hour care promise</strong><span>Tell us quickly and we'll help</span></span>
+          <span><strong>48-hour care promise</strong><span>Tell us quickly and we'll help</span></span>
         </div>
       </div>
     </section>
