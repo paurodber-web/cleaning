@@ -11,7 +11,7 @@ const walk = (dir) => fs.readdirSync(dir, { withFileTypes: true }).flatMap((entr
 const htmlFiles = walk(dist).filter((file) => file.endsWith('.html'));
 const errors = [];
 const warnings = [];
-const encodingIssue = /(?:â|Ã|Â|ðŸ)/;
+const encodingIssue = /(?:Ã¢|Ãƒ|Ã‚|Ã°Å¸)/;
 const titles = new Map();
 const publicRoutes = new Set(htmlFiles.map((file) => {
   const relative = path.relative(dist, file).replace(/\\/g, '/');
@@ -19,6 +19,8 @@ const publicRoutes = new Set(htmlFiles.map((file) => {
   if (relative.endsWith('/index.html')) return `/${relative.slice(0, -'index.html'.length)}`;
   return `/${relative}`;
 }));
+const basePath = '/maidathome';
+const withoutBasePath = (value) => value === basePath ? '/' : (value.startsWith(basePath + '/') ? value.slice(basePath.length) : value);
 
 const text = (html, pattern) => html.match(pattern)?.[1]?.trim();
 for (const file of htmlFiles) {
@@ -54,7 +56,7 @@ for (const file of htmlFiles) {
   for (const link of html.matchAll(/<a\b[^>]*href=["']([^"']+)["']/gi)) {
     const href = link[1];
     if (!href.startsWith('/') || href.startsWith('//')) continue;
-    const clean = href.split('#')[0].split('?')[0];
+    const clean = withoutBasePath(href.split('#')[0].split('?')[0]);
     if (!clean) continue;
     const normalised = clean.endsWith('/') ? clean : `${clean}/`;
     if (!publicRoutes.has(clean) && !publicRoutes.has(normalised) && !publicRoutes.has(`${clean}.html`)) errors.push(`${route}: broken internal link ${href}`);
@@ -77,7 +79,7 @@ for (const root of sourceRoots) {
 const deepCleanPath = path.join(dist, 'services', 'deep-clean', 'index.html');
 if (fs.existsSync(deepCleanPath)) {
   const deepCleanHtml = fs.readFileSync(deepCleanPath, 'utf8');
-  const standardComparison = /Choose Standard[\s\S]{0,1800}href=\"\/services\/standard-clean\">Explore Standard Clean/.test(deepCleanHtml);
+  const standardComparison = /Choose Standard[\s\S]{0,1800}href=\"(?:\/maidathome)?\/services\/standard-clean\">Explore Standard Clean/.test(deepCleanHtml);
   if (!standardComparison) errors.push('services/deep-clean/index.html: Standard comparison CTA must link to Standard Clean');
 }
 

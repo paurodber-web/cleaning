@@ -21,8 +21,8 @@ const { post } = Astro.props;
 const { Content, headings } = await render(post);
 const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 const tocHeadings = headings.filter((heading) => heading.depth === 2);
-const canonicalUrl = new URL(`${base.replace(/^\//, '')}blog/${post.id}/`, Astro.site ?? Astro.url.origin).toString();
-const siteOrigin = Astro.site ?? Astro.url.origin;
+const siteOrigin = new URL('https://maidathome.com.au');
+const canonicalUrl = new URL(`${base.replace(/^\//, '')}blog/${post.id}/`, siteOrigin).toString();
 const shareEmailHref = `mailto:?subject=${encodeURIComponent(post.data.title)}&body=${encodeURIComponent(`I thought you might find this useful: ${canonicalUrl}`)}`;
 const publishedLabel = new Intl.DateTimeFormat('en-AU', {
   day: 'numeric',
@@ -103,8 +103,8 @@ const articleEnhancements = `
 .related-card__body>span{letter-spacing:.08em}
 .related-card p{margin:10px 0 18px;color:var(--soft);font-size:.7rem;line-height:1.55}
 .related-card__meta{display:flex!important;align-items:center;justify-content:space-between;margin:auto 0 0!important;color:var(--soft)!important;font-size:.62rem!important;font-weight:700!important;letter-spacing:0!important;text-transform:none!important}
-.related-card__arrow{display:grid!important;width:28px;height:28px;place-items:center;margin:0!important;border:1px solid var(--blue-200);border-radius:50%;color:var(--blue-700);transition:background .25s,color .25s}
-.related-card:hover .related-card__arrow{color:var(--white);background:var(--blue-700)}
+                    <span class="related-card__arrow" aria-hidden="true">→</span>
+                    <span class="related-card__arrow" aria-hidden="true">→</span>
 .final-cta{padding:22px;background:var(--white)}
 .final-cta__panel{position:relative;min-height:500px;overflow:hidden;isolation:isolate;border-radius:38px;color:var(--white);background:var(--blue-700)}
 .final-cta__image{position:absolute;z-index:-3;inset:0;width:100%;height:100%;object-fit:cover}

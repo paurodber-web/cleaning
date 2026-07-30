@@ -9,8 +9,8 @@ const staticPages = [
 
 const escapeXml = (value: string) => value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
-export const GET: APIRoute = async ({ site }) => {
-  const origin = site ?? new URL('https://maidathome.com.au');
+export const GET: APIRoute = async () => {
+  const origin = new URL('https://maidathome.com.au');
   const now = new Date();
   const posts = await getCollection('blog', ({ data }) => !data.draft && data.publishedAt <= now);
   const suburbs = await getCollection('suburbs', ({ id, data }) => id !== '_suburb-template' && !data.draft && data.seoReview.reviewed);

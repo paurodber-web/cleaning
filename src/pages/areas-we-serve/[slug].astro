@@ -27,7 +27,7 @@ const data = isTemplatePreview
   ? {
       ...sourceData,
       suburb: "[SUBURB]", postcode: "[POSTCODE]", regionLabel: "[REGION]",
-      title: "[SEO TITLE] | Maid At Home", description: "[SEO DESCRIPTION]",
+      title: "[SEO TITLE] | Maid At Home", description: "[SEO DESCRIPTION: a unique, locally relevant summary of Maid At Home house cleaning services, options, availability and booking guidance for this Melbourne suburb.]",
       heroIntro: "[DYNAMIC HERO INTRODUCTION]", summary: "[DYNAMIC LOCAL SUMMARY]",
       localSectionTitle: "[DYNAMIC LOCAL SECTION TITLE]", servicesIntro: "[DYNAMIC SERVICES INTRO]",
       prioritiesIntro: "[DYNAMIC PRIORITIES INTRO]",
@@ -44,7 +44,7 @@ const data = isTemplatePreview
   : sourceData;
 const heroHeading = data.title.replace(/\s*\|\s*Maid At Home\s*$/i, "");
 const base = import.meta.env.BASE_URL.replace(/\/?$/, "/");
-const origin = Astro.site ?? Astro.url.origin;
+const origin = new URL('https://maidathome.com.au');
 const canonicalUrl = isTemplatePreview
   ? undefined
   : new URL(
