@@ -4,7 +4,7 @@ description: "Use this practical Victorian end-of-lease cleaning checklist to pr
 intro: "A good vacate clean is easier when the property is empty, utilities still work and the tenant compares the result with the condition report before returning every key."
 takeaway: "Remove belongings and rubbish first, keep electricity and hot water connected, confirm carpet and agent requirements, clean room by room, then inspect before key handover."
 publishedAt: 2026-07-17
-updatedAt: 2026-07-26
+updatedAt: 2026-07-30
 category: "moving"
 categoryLabel: "Moving"
 image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=84"
@@ -20,7 +20,7 @@ draft: false
 
 ## What Victorian rental rules say about cleaning
 
-Consumer Affairs Victoria says renters must leave a property **reasonably clean** and in the same condition as at the start of the rental agreement, allowing for fair wear and tear. A rental provider cannot automatically demand professional cleaning for every tenancy signed from 29 March 2021. Professional cleaning can be required where the property needs to be returned to its starting state—for example, if it was professionally cleaned before the renter moved in—or where its condition requires professional cleaning.
+Consumer Affairs Victoria says renters must leave a property **reasonably clean** and in the same condition as at the start of the rental agreement, allowing for fair wear and tear. A rental provider cannot automatically demand professional cleaning for every tenancy signed from 29 March 2021. Professional cleaning can be required where the property needs to be returned to its starting state - for example, if it was professionally cleaned before the renter moved in - or where its condition requires professional cleaning.
 
 Review the current [Consumer Affairs Victoria condition-report and cleaning guidance](https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/condition-reports) and your own agreement. This checklist helps organise cleaning; it is not legal advice and does not promise a bond outcome.
 
@@ -93,7 +93,7 @@ The cleaner needs uninterrupted access while the service is underway. Returning 
 
 ## Final inspection checklist
 
-Walk through in daylight where possible and compare each room with the condition report. Check the agreed cleaning scope, take dated photographs and send any cleaning-specific concern promptly. Maid At Home asks customers to report an agreed missed item within 24 hours so the service can be reviewed.
+Walk through in daylight where possible and compare each room with the condition report. Check the agreed cleaning scope, take dated photographs and send any cleaning-specific concern promptly. Maid At Home asks customers to report an agreed missed item within 48 hours so the service can be reviewed.
 
 Keep cleaning invoices, carpet receipts, emails and photographs together. Give the property manager every key, remote and fob according to the agreed process, but allow enough time for your own inspection first.
 
@@ -110,7 +110,7 @@ Read the live [terms and conditions](/terms-and-conditions/) and ask questions b
 3. Complete the [End of Lease Clean](/services/end-of-lease-clean/).
 4. Allow separately booked carpet work to dry.
 5. Inspect against the condition report and take photos.
-6. Report any eligible cleaning concern within 24 hours.
+6. Report any eligible cleaning concern within 48 hours.
 7. Return keys after the property has been checked.
 
 Maid At Home's End of Lease Cleaning starts from $410 for a one-bedroom property as of July 2026. The oven and empty cabinet interiors are included in the core scope; carpet steam cleaning is separate. If you are also entering a new property, keep that work separate with the [move-in cleaning checklist](/blog/move-in-cleaning-melbourne/). Use the [price calculator](/pricing/#calculator) or [book the vacate clean](/booking/) once the property date and access are confirmed.

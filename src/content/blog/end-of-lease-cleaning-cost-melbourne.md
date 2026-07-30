@@ -4,7 +4,7 @@ description: "See current 2026 end-of-lease cleaning prices in Melbourne by prop
 intro: "End-of-lease cleaning costs more than routine house cleaning because the property is empty, the scope is broader and the result is checked during handover. The useful question is not only the price, but exactly what that price includes."
 takeaway: "Maid At Home prices start at $410 for one bedroom and rise by property size. Oven and empty cabinet interiors are included; carpet steam cleaning and selected extras remain separate."
 publishedAt: 2026-04-15
-updatedAt: 2026-07-26
+updatedAt: 2026-07-30
 category: "moving"
 categoryLabel: "Moving"
 image: "https://maidathome.com.au/assets/img/blog/end-of-lease-cleaning-cost-melbourne.webp"
@@ -72,7 +72,7 @@ Do not add the oven or empty cabinets twice: those tasks are already part of the
 
 **Two-bedroom apartment without carpet treatment:** the current core price is $440. Adding interior windows at $70 produces a planning total of $510, assuming the property fits the standard configuration.
 
-**Three-bedroom rental with two carpeted rooms:** the core price is $500 and two carpet rooms add $110, producing a planning total of $610. Schedule carpet work early enough to allow the typical [6–12 hour drying window](/blog/how-long-does-carpet-cleaning-take-melbourne/).
+**Three-bedroom rental with two carpeted rooms:** the core price is $500 and two carpet rooms add $110, producing a planning total of $610. Schedule carpet work early enough to allow the typical [6-12 hour drying window](/blog/how-long-does-carpet-cleaning-take-melbourne/).
 
 **Four-bedroom home with fridge and balcony extras:** the core price is $570. Inside fridge at $30 and balcony at $35 produce a planning total of $635 before any non-standard layout or condition adjustment.
 
@@ -129,12 +129,12 @@ Ask every provider the same questions:
 9. What access, parking and utilities are required?
 10. Is any claim about a bond limited to cleaning issues within the booked scope?
 
-A written checklist is more useful than broad language such as “full bond clean”.
+A written checklist is more useful than broad language such as "full bond clean".
 
 ## How to keep the final price predictable
 
 Finish moving first, remove rubbish, keep electricity and hot water connected and supply the agent's written checklist before the booking. Confirm keys, fobs, lifts and legal parking. If the property has heavy grease, mould concerns, delicate finishes or extra rooms, disclose them with current photographs.
 
-Book the clean before key handover, not at the final available hour. Leave enough time to inspect and report an included missed item. Maid At Home asks customers to raise agreed cleaning concerns within 24 hours so the service can be reviewed.
+Book the clean before key handover, not at the final available hour. Leave enough time to inspect and report an included missed item. Maid At Home asks customers to raise agreed cleaning concerns within 48 hours so the service can be reviewed.
 
 For broader comparisons between hourly, Standard and Deep services, read the main [Melbourne house cleaning cost guide](/blog/how-much-does-house-cleaning-cost-in-melbourne/). When the property date is confirmed, [calculate the current price](/pricing/#calculator) or [book the end-of-lease clean](/booking/).

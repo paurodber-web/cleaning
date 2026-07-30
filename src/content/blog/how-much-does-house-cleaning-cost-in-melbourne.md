@@ -1,10 +1,10 @@
 ---
 title: "Melbourne House Cleaning Costs: Price Guide"
 description: "A straightforward guide to the factors that influence house cleaning prices in Melbourne and how to compare hourly and flat-rate services."
-intro: "Understanding how house cleaning is priced helps you choose the right service and compare quotes fairly. The final cost usually depends on the size of the property, its condition and the level of detail required."
-takeaway: "Compare the scope, estimated time and inclusions—not only the headline price. A realistic quote should reflect the home's current condition and the result you expect."
+intro: "Maid At Home house cleaning in Melbourne currently starts at $155 for a one-bedroom Standard Clean, $215 for a one-bedroom Deep Clean and $60 per booked team hour for Hourly Cleaning."
+takeaway: "Current one-bedroom prices start at $155 for Standard Cleaning and $215 for Deep Cleaning. Compare scope, condition, extras and equipment expectations before booking."
 publishedAt: 2026-05-07
-updatedAt: 2026-07-17
+updatedAt: 2026-07-30
 category: "cleaning-guides"
 categoryLabel: "Cleaning guides"
 image: "https://maidathome.com.au/assets/img/blog/cleaning_cost_melbourne.webp"
@@ -113,6 +113,6 @@ The cheapest headline figure is not cheaper if it excludes the tasks you actuall
 
 ## What to ask before booking
 
-Ask whether the price includes GST, how team hours are counted, which products or equipment must be available, when recurring savings start and what happens if an agreed item is missed. For Maid At Home, service issues should be reported within 24 hours so the scope can be reviewed and the appropriate follow-up coordinated.
+Ask whether the price includes GST, how team hours are counted, which products or equipment must be available, when recurring savings start and what happens if an agreed item is missed. For Maid At Home, service issues should be reported within 48 hours so the scope can be reviewed and the appropriate follow-up coordinated.
 
 Prices can change, so verify the live [pricing page](/pricing/) before booking. This guide was reviewed on **17 July 2026** and should be used as a transparent planning reference, not a property-specific quotation.

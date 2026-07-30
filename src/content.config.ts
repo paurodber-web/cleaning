@@ -7,8 +7,8 @@ const blog = defineCollection({
   schema: z.object({
     title: z.string().min(1),
     description: z.string().min(1),
-    intro: z.string().min(1).optional(),
-    takeaway: z.string().min(1).optional(),
+    intro: z.string().min(80),
+    takeaway: z.string().min(80),
     publishedAt: z.coerce.date(),
     updatedAt: z.coerce.date().optional(),
     category: z.enum(['home-care', 'cleaning-guides', 'moving', 'local-living']),
