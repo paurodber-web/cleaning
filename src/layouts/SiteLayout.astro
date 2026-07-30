@@ -231,7 +231,7 @@ const mobileConversionStyles = `@media(max-width:760px){body{padding-bottom:calc
         let footerVisible = false;
         const updateVisibility = () => {
           const editing = Boolean(document.querySelector('input:focus, select:focus, textarea:focus'));
-          bar.classList.toggle('is-hidden', footerVisible || editing || window.scrollY < 320);
+          bar.classList.toggle('is-hidden', footerVisible || editing || window.scrollY < 160);
         };
         new IntersectionObserver(([entry]) => { footerVisible = entry.isIntersecting; updateVisibility(); }, { threshold: 0.05 }).observe(footer);
         window.addEventListener('scroll', updateVisibility, { passive: true });
