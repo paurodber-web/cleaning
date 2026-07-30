@@ -88,23 +88,31 @@ const whyUsStyles = `.recurring-section{background:var(--white)}.why-us-section{
       /* --------------------------------------------------------------
          Reveal motion
          -------------------------------------------------------------- */
-      const revealItems = document.querySelectorAll(".reveal");
-      if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-        const revealObserver = new IntersectionObserver((entries, observer) => {
-          entries.forEach((entry) => {
-            if (!entry.isIntersecting) return;
-            entry.target.classList.add("is-visible");
-            observer.unobserve(entry.target);
-          });
-        }, { threshold: .1, rootMargin: "0px 0px -35px" });
-        revealItems.forEach((item) => revealObserver.observe(item));
+      const initialiseReveals = () => {
+        const revealItems = document.querySelectorAll(".reveal");
+        if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+          const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach((entry) => {
+              if (!entry.isIntersecting) return;
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            });
+          }, { threshold: .1, rootMargin: "0px 0px -35px" });
+          revealItems.forEach((item) => revealObserver.observe(item));
+        } else {
+          revealItems.forEach((item) => item.classList.add("is-visible"));
+        }
+      };
+      if ("requestIdleCallback" in window) {
+        window.requestIdleCallback(initialiseReveals, { timeout: 1200 });
       } else {
-        revealItems.forEach((item) => item.classList.add("is-visible"));
+        window.setTimeout(initialiseReveals, 250);
       }
 
       /* --------------------------------------------------------------
          Interactive calculator
          -------------------------------------------------------------- */
+      const initialiseCalculator = () => {
       const serviceConfig = {
         standard: { name: "Standard clean", prices: [155, 175, 195, 235, 285, 315] },
         deep: { name: "Deep clean", prices: [215, 245, 275, 315, 375, 415] },
@@ -305,6 +313,19 @@ const whyUsStyles = `.recurring-section{background:var(--white)}.why-us-section{
           if (input) { input.checked = true; updateServiceUI(); calculatePrice(); }
         });
       });
+
+      };
+      const calculatorSection = document.getElementById("price-calculator");
+      if ("IntersectionObserver" in window && calculatorSection) {
+        const calculatorObserver = new IntersectionObserver((entries, observer) => {
+          if (!entries.some((entry) => entry.isIntersecting)) return;
+          observer.disconnect();
+          initialiseCalculator();
+        }, { rootMargin: "600px 0px" });
+        calculatorObserver.observe(calculatorSection);
+      } else {
+        initialiseCalculator();
+      }
 
       /* --------------------------------------------------------------
          Area tabs and suburb search

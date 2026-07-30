@@ -13,6 +13,7 @@ const errors = [];
 const warnings = [];
 const encodingIssue = /(?:Ã¢|Ãƒ|Ã‚|Ã°Å¸)/;
 const titles = new Map();
+const descriptions = new Map();
 const publicRoutes = new Set(htmlFiles.map((file) => {
   const relative = path.relative(dist, file).replace(/\\/g, '/');
   if (relative === 'index.html') return '/';
@@ -33,6 +34,7 @@ for (const file of htmlFiles) {
   const canonical = text(html, /<link\s+rel=["']canonical["']\s+href=["']([^"']*)/i);
   const robots = text(html, /<meta\s+name=["']robots["']\s+content=["']([^"']*)/i);
   const h1Count = (html.match(/<h1\b/gi) || []).length;
+  const htmlLang = text(html, /<html\b[^>]*\blang=["']([^"']+)/i);
 
   if (encodingIssue.test(html)) errors.push(route + ': contains mojibake');
 
@@ -41,6 +43,12 @@ for (const file of htmlFiles) {
   if (!canonical && !isRedirect) errors.push(`${route}: missing canonical`);
   if (canonical && !canonical.startsWith('https://maidathome.com.au/')) errors.push(`${route}: non-production canonical ${canonical}`);
   if (!isRedirect && !is404 && h1Count !== 1) errors.push(`${route}: expected one H1, found ${h1Count}`);
+  if (!isRedirect && !htmlLang) errors.push(`${route}: missing html lang`);
+  if (!isRedirect && !is404 && !/<main\b/i.test(html)) errors.push(`${route}: missing main landmark`);
+  if (route === 'index.html') {
+    const homeH1 = text(html, /<h1\b[^>]*>([\s\S]*?)<\/h1>/i)?.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+    if (homeH1 !== 'House cleaning services in Melbourne') errors.push(`${route}: protected homepage H1 changed`);
+  }
   if (is404 && !robots?.includes('noindex')) errors.push(`${route}: 404 must be noindex`);
   if (title) {
     if (titles.has(title) && !isRedirect) errors.push(`${route}: duplicate title also used by ${titles.get(title)}`);
@@ -48,6 +56,14 @@ for (const file of htmlFiles) {
     if (!isRedirect && (title.length < 25 || title.length > 65)) warnings.push(`${route}: title length ${title.length}`);
   }
   if (description && !isRedirect && (description.length < 110 || description.length > 165)) warnings.push(`${route}: description length ${description.length}`);
+  if (description && !isRedirect) {
+    if (descriptions.has(description)) errors.push(`${route}: duplicate description also used by ${descriptions.get(description)}`);
+    else descriptions.set(description, route);
+  }
+
+  for (const image of html.matchAll(/<img\b[^>]*>/gi)) {
+    if (!/\balt=["'][^"']*["']/i.test(image[0])) errors.push(`${route}: image missing alt attribute`);
+  }
 
   for (const block of html.matchAll(/<script[^>]+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)) {
     try { JSON.parse(block[1]); } catch (error) { errors.push(`${route}: invalid JSON-LD (${error.message})`); }
