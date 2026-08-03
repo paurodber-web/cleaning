@@ -504,14 +504,14 @@ const content = withBase(`<main id="main-content">
 const contentParts = content.split(/__ASTRO_IMAGE_\d+__/);
 const images: Array<Record<string, any>> = [
   {
-    src: "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=1000&q=84",
+    src: "/assets/generated/about/about-hero-new.png",
     alt: "Professional cleaner taking care of a bright Melbourne home",
     width: 1000,
     height: 667,
     fetchpriority: "high",
   },
   {
-    src: "https://images.unsplash.com/photo-1563453392212-326f5e854473?auto=format&fit=crop&w=1100&q=84",
+    src: "/assets/generated/about/about-story-new.png",
     alt: "Home cleaning products prepared with care in a bright room",
     width: 1100,
     height: 1467,
@@ -519,7 +519,7 @@ const images: Array<Record<string, any>> = [
     class: "story-collage__main",
   },
   {
-    src: "https://images.unsplash.com/photo-1556912167-f556f1f39fdf?auto=format&fit=crop&w=700&q=82",
+    src: "/assets/generated/about/about-detail-new.png",
     alt: "A clean and welcoming kitchen ready to enjoy",
     width: 700,
     height: 700,
@@ -548,7 +548,7 @@ const images: Array<Record<string, any>> = [
     loading: "lazy",
   },
   {
-    src: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2200&q=86",
+    src: "/assets/generated/about/about-cta-new.png",
     alt: "A calm sunlit home with space to relax",
     width: 2200,
     height: 1467,
@@ -579,3 +579,4 @@ const images: Array<Record<string, any>> = [
     ))
   }
 </SiteLayout>
+

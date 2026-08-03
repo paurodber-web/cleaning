@@ -35,9 +35,9 @@ carpetTitle: Lift built-up dirt from carpeted rooms.
 carpetIntro: Carpeted rooms often need separate attention from hard floors and
   surfaces. In Coburg, you can add steam cleaning for two or more rooms as part
   of a broader clean.
-carpetImage: https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Coburg home
-whyImage: https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Coburg home
 whyIntro: From the first booking email to the cleaner assignment, we keep the
   important details clear. Notes about driveways, parking, gates, stairs and
@@ -49,11 +49,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Coburg.
 ctaIntro: Whether the home needs maintenance or a fuller reset, choose the right
   service and organise your Coburg clean online.
-image: https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=84
+image: /assets/empty-melbourne-home.png
 imageAlt: A clean and welcoming Coburg home
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Coburg
 localHighlights:
   - title: Describe the true size of the home

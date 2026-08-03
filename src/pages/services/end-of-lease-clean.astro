@@ -76,28 +76,28 @@ const content = withBase(`<main id="main">
 const contentParts = content.split(/__ASTRO_IMAGE_\d+__/);
 const images: Array<Record<string, any>> = [
   {
-    src: "https://maidathome.com.au/assets/img/services/end-of-lease-cleaning-banner.webp",
+    src: "/assets/empty-melbourne-home.png",
     alt: "Empty Melbourne rental prepared with end of lease cleaning",
     width: 1200,
     height: 900,
     fetchpriority: "high",
   },
   {
-    src: "https://maidathome.com.au/assets/img/services/end-of-lease-cleaning-banner.webp",
+    src: "/assets/empty-melbourne-home.png",
     alt: "Empty rental ready for final inspection",
     width: 1100,
     height: 1400,
     loading: "lazy",
   },
   {
-    src: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1100&q=84",
+    src: "/assets/empty-melbourne-home.png",
     alt: "Empty Melbourne rental prepared for final inspection",
     width: 1100,
     height: 1400,
     loading: "lazy",
   },
   {
-    src: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=2200&q=86",
+    src: "/assets/empty-melbourne-home.png",
     alt: "Empty rental ready for inspection and handover",
     width: 2200,
     height: 1467,
@@ -105,6 +105,9 @@ const images: Array<Record<string, any>> = [
     class: "cta-image",
   },
 ];
+images[0] = { ...images[0], src: '/assets/generated/services/end-of-lease-clean.png', alt: 'Cleaner preparing an empty Melbourne rental for final inspection' };
+images[2] = { ...images[2], src: '/assets/generated/services/end-of-lease-handover-family.png', alt: 'Happy family moving out of a spotless Melbourne home with moving boxes' };
+images[3] = { ...images[3], src: '/assets/generated/services/end-of-lease-final-cta.png', alt: 'Parent and child carrying the final moving box from a spotless Melbourne home' };
 ---
 
 <SiteLayout
@@ -128,3 +131,4 @@ const images: Array<Record<string, any>> = [
     ))
   }
 </SiteLayout>
+

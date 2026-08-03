@@ -35,9 +35,9 @@ carpetIntro: For a more complete reset, include steam cleaning for larger
   bedrooms, hallways and family living areas that collect everyday dust and foot
   traffic. Customers in Reservoir can book the service for a minimum of two
   rooms.
-carpetImage: https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Reservoir home
-whyImage: https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Reservoir home
 whyIntro: Your booking details guide the assignment and help the cleaner
   prepare. For larger family homes, units and multi-room properties, include
@@ -50,11 +50,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Reservoir.
 ctaIntro: Set the scope, select any extras and share the important details. Your
   next cleaning booking in Reservoir can begin here.
-image: https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=84
+image: /assets/empty-melbourne-home.png
 imageAlt: A clean and welcoming Reservoir home
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Reservoir
 localHighlights:
   - title: Give the complete floorplan

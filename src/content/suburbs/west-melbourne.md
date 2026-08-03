@@ -36,9 +36,9 @@ carpetIntro: Steam carpet cleaning can be added when vacuuming alone is not
   routine vacuuming. It is available for a minimum of two rooms and can
   accompany selected home cleaning services. This option is available for
   eligible bookings in West Melbourne.
-carpetImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a West Melbourne home
-whyImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a West Melbourne home
 whyIntro: A smoother clean comes from clear expectations before the visit. Tell
   us about entry details, mixed property layouts and the areas that need the
@@ -50,11 +50,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in West Melbourne.
 ctaIntro: Set the scope, select any extras and share the important details. Your
   next cleaning booking in West Melbourne can begin here.
-image: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
+image: /assets/empty-melbourne-home.png
 imageAlt: A clean and welcoming West Melbourne home
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in West Melbourne
 localHighlights:
   - title: Locate loading and residential access

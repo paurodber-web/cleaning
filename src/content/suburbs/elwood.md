@@ -38,9 +38,9 @@ carpetIntro: Treat carpeted rooms as their own part of the booking. For bedrooms
   indoor-outdoor movement, select steam cleaning for two or more rooms and
   include any access notes. This option is available for eligible bookings in
   Elwood.
-carpetImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Elwood home
-whyImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Elwood home
 whyIntro: Choose the service, confirm the details and receive updates by email.
   For a property in Elwood, clear notes about apartment entry, driveways,
@@ -51,11 +51,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Elwood.
 ctaIntro: From a focused hourly visit to a complete flat-rate clean, organise
   the option that works best for your Elwood property.
-image: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
-imageAlt: A clean and welcoming Elwood home
+image: /assets/generated/suburbs/elwood.webp
+imageAlt: Elwood neighbourhood streetscape and local homes
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Elwood
 localHighlights:
   - title: Mention beach and garden entry routes

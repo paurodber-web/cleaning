@@ -37,9 +37,9 @@ carpetIntro: Carpet cleaning is useful when you want to treat well-used
   separately from the rest of the home. Book two or more rooms and add it to an
   eligible service. This option is available for eligible bookings in Ascot
   Vale.
-carpetImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Ascot Vale home
-whyImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Ascot Vale home
 whyIntro: Organising cleaning for family homes, terraces and apartments near the
   inner north-west should not require repeated follow-ups. Add the key
@@ -51,11 +51,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Ascot Vale.
 ctaIntro: Choose the service, frequency and extras that suit the property, then
   tell us what matters most for your Ascot Vale clean.
-image: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+image: /assets/empty-melbourne-home.png
 imageAlt: A clean and welcoming Ascot Vale home
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Ascot Vale
 localHighlights:
   - title: Explain shared or rear access

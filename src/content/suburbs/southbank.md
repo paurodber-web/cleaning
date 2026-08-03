@@ -37,9 +37,9 @@ carpetIntro: Treat carpeted rooms as their own part of the booking. For bedrooms
   and living areas where regular foot traffic can leave carpets looking tired,
   select steam cleaning for two or more rooms and include any access notes. This
   option is available for eligible bookings in Southbank.
-carpetImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Southbank home
-whyImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Southbank home
 whyIntro: Organising cleaning for high-rise apartments, serviced buildings and
   inner-city homes should not require repeated follow-ups. Add the key
@@ -51,11 +51,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Southbank.
 ctaIntro: Whether the home needs maintenance or a fuller reset, choose the right
   service and organise your Southbank clean online.
-image: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
-imageAlt: A clean and welcoming Southbank home
+image: /assets/generated/suburbs/southbank.webp
+imageAlt: Southbank Melbourne skyline and waterfront
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Southbank
 localHighlights:
   - title: Explain the entry sequence

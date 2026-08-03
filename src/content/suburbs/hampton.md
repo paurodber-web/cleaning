@@ -35,9 +35,9 @@ carpetTitle: A deeper clean for carpets across Hampton.
 carpetIntro: A regular clean covers vacuuming, while steam cleaning is designed
   for a deeper carpet treatment. It can be added for two or more rooms in a
   Hampton property.
-carpetImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Hampton home
-whyImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Hampton home
 whyIntro: Reliable cleaning depends on more than the task list. We also use your
   information about floors, balconies, high-use rooms and the practical details
@@ -49,11 +49,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Hampton.
 ctaIntro: Set the scope, select any extras and share the important details. Your
   next cleaning booking in Hampton can begin here.
-image: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+image: /assets/empty-melbourne-home.png
 imageAlt: A clean and welcoming Hampton home
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Hampton
 localHighlights:
   - title: Work around the household schedule

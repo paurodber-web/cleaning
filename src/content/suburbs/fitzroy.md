@@ -36,9 +36,9 @@ carpetIntro: Use carpet steam cleaning when well-used bedrooms, hallways and
   living spaces where dirt can settle below the surface need a fuller refresh.
   The service has a two-room minimum and can be arranged alongside selected
   bookings. This option is available for eligible bookings in Fitzroy.
-carpetImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Fitzroy home
-whyImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Fitzroy home
 whyIntro: From the first booking email to the cleaner assignment, we keep the
   important details clear. Notes about street parking, gates, intercoms,
@@ -50,11 +50,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Fitzroy.
 ctaIntro: Set the scope, select any extras and share the important details. Your
   next cleaning booking in Fitzroy can begin here.
-image: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
+image: /assets/empty-melbourne-home.png
 imageAlt: A clean and welcoming Fitzroy home
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Fitzroy
 localHighlights:
   - title: Describe narrow or rear access

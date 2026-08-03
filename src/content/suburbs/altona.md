@@ -34,9 +34,9 @@ carpetTitle: Lift built-up dirt from carpeted rooms.
 carpetIntro: Carpeted rooms often need separate attention from hard floors and
   surfaces. In Altona, you can add steam cleaning for two or more rooms as part
   of a broader clean.
-carpetImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Altona home
-whyImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Altona home
 whyIntro: Reliable cleaning depends on more than the task list. We also use your
   information about floors, balconies, high-use rooms and the practical details
@@ -48,11 +48,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Altona.
 ctaIntro: Take a few minutes to build a cleaning service around the property.
   Select your priorities and request a booking in Altona.
-image: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+image: /assets/empty-melbourne-home.png
 imageAlt: A clean and welcoming Altona home
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Altona
 localHighlights:
   - title: Include all household zones

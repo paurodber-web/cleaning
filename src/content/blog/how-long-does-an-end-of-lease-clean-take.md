@@ -6,7 +6,7 @@ takeaway: "Reserve a substantial cleaning window plus inspection time before key
 publishedAt: 2026-07-30
 category: "moving"
 categoryLabel: "Moving"
-image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&q=84"
+image: "/assets/empty-melbourne-home.png"
 imageAlt: "Empty Melbourne property ready for an end of lease clean"
 imageWidth: 1600
 imageHeight: 1067

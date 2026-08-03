@@ -34,9 +34,9 @@ carpetTitle: Lift built-up dirt from carpeted rooms.
 carpetIntro: Carpeted rooms often need separate attention from hard floors and
   surfaces. In Ripponlea, you can add steam cleaning for two or more rooms as
   part of a broader clean.
-carpetImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Ripponlea home
-whyImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Ripponlea home
 whyIntro: Clear communication matters when a home has specific timing, access or
   priority requirements. For Ripponlea, include compact layouts, shared spaces
@@ -47,11 +47,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Ripponlea.
 ctaIntro: Choose the service, frequency and extras that suit the property, then
   tell us what matters most for your Ripponlea clean.
-image: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+image: /assets/empty-melbourne-home.png
 imageAlt: A clean and welcoming Ripponlea home
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Ripponlea
 localHighlights:
   - title: Identify original materials

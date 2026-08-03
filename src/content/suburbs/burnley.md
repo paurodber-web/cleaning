@@ -37,9 +37,9 @@ carpetIntro: For well-used bedrooms, hallways and living spaces where dirt can
   settle below the surface, a steam clean offers a more detailed treatment than
   routine vacuuming. Add at least two rooms and include the service with an
   eligible Burnley booking.
-carpetImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Burnley home
-whyImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Burnley home
 whyIntro: Keep the process simple by sharing everything important at the start.
   Customers in Burnley can include service priorities, extras and street
@@ -50,11 +50,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Burnley.
 ctaIntro: From a focused hourly visit to a complete flat-rate clean, organise
   the option that works best for your Burnley property.
-image: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
+image: /assets/empty-melbourne-home.png
 imageAlt: A clean and welcoming Burnley home
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Burnley
 localHighlights:
   - title: Map out the easiest arrival

@@ -7,7 +7,7 @@ publishedAt: 2026-04-15
 updatedAt: 2026-07-30
 category: "moving"
 categoryLabel: "Moving"
-image: "https://maidathome.com.au/assets/img/blog/end-of-lease-cleaning-cost-melbourne.webp"
+image: "/assets/empty-melbourne-home.png"
 imageAlt: "Professional cleaner preparing a Melbourne rental for end-of-lease inspection"
 imageWidth: 1200
 imageHeight: 800

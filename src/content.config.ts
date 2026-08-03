@@ -2,6 +2,8 @@ import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
+const imagePath = z.union([z.url(), z.string().regex(/^\/assets\//)]);
+
 const blog = defineCollection({
   loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/blog' }),
   schema: z.object({
@@ -13,7 +15,7 @@ const blog = defineCollection({
     updatedAt: z.coerce.date().optional(),
     category: z.enum(['home-care', 'cleaning-guides', 'moving', 'local-living']),
     categoryLabel: z.string().min(1),
-    image: z.url(),
+    image: imagePath,
     imageAlt: z.string().min(1),
     imageWidth: z.number().int().positive().default(1200),
     imageHeight: z.number().int().positive().default(800),
@@ -43,19 +45,19 @@ const suburbs = defineCollection({
     recurringRecommendation: z.string().min(80),
     carpetTitle: z.string().min(20).max(80),
     carpetIntro: z.string().min(100).max(520),
-    carpetImage: z.url(),
+    carpetImage: imagePath,
     carpetImageAlt: z.string().min(10).max(125),
-    whyImage: z.url(),
+    whyImage: imagePath,
     whyImageAlt: z.string().min(10).max(125),
     whyIntro: z.string().min(100).max(520),
     nearbyIntro: z.string().min(80).max(1400),
     faqIntro: z.string().min(80),
     ctaIntro: z.string().min(80).max(400),
-    image: z.url(),
+    image: imagePath,
     imageAlt: z.string().min(10).max(125),
     imageWidth: z.number().int().positive().default(1600),
     imageHeight: z.number().int().positive().default(1067),
-    ctaImage: z.url(),
+    ctaImage: imagePath,
     ctaImageAlt: z.string().min(10).max(125),
     localHighlights: z.array(z.object({
       title: z.string().min(2),

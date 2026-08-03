@@ -6,7 +6,7 @@ takeaway: "Choose weekly cleaning for fast-returning floor, kitchen and bathroom
 publishedAt: 2026-07-17
 category: "home-care"
 categoryLabel: "Home care"
-image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1600&q=84"
+image: "/assets/cleaner-hero.png"
 imageAlt: "Weekly and fortnightly house cleaning schedule in Melbourne"
 imageWidth: 1600
 imageHeight: 1067

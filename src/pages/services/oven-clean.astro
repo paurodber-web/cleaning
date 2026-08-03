@@ -80,14 +80,14 @@ const images: Array<Record<string, any>> = [
     loading: "lazy",
   },
   {
-    src: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1100&q=84",
+    src: "/assets/empty-melbourne-home.png",
     alt: "Clean kitchen prepared for professional oven cleaning",
     width: 1100,
     height: 1400,
     loading: "lazy",
   },
   {
-    src: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=2200&q=86",
+    src: "/assets/empty-melbourne-home.png",
     alt: "Clean oven ready to use in a bright kitchen",
     width: 2200,
     height: 1467,
@@ -95,6 +95,10 @@ const images: Array<Record<string, any>> = [
     class: "cta-image",
   },
 ];
+images[0] = { ...images[0], src: '/assets/generated/services/oven-clean-hero.png', alt: 'Cleaner degreasing the inside of an oven in a Melbourne kitchen' };
+images[1] = { ...images[1], src: '/assets/generated/services/oven-clean-fit.png', alt: 'Clean oven cavity, racks and glass after professional degreasing' };
+images[2] = { ...images[2], src: '/assets/generated/services/oven-clean-routine.png', alt: 'Cleaner checking a removable oven rack before cleaning' };
+images[3] = { ...images[3], src: '/assets/generated/services/oven-clean-cta.png', alt: 'Spotless oven ready to use in a bright Melbourne kitchen' };
 ---
 
 <SiteLayout

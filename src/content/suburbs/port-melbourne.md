@@ -37,9 +37,9 @@ carpetIntro: Use carpet steam cleaning when bedrooms and living spaces affected
   fuller refresh. The service has a two-room minimum and can be arranged
   alongside selected bookings. This option is available for eligible bookings in
   Port Melbourne.
-carpetImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Port Melbourne home
-whyImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Port Melbourne home
 whyIntro: A smoother clean comes from clear expectations before the visit. Tell
   us about floors, balconies, high-use rooms and the practical details around
@@ -51,11 +51,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Port Melbourne.
 ctaIntro: Create a booking around the way the home is used. Choose the
   frequency, service and priorities for cleaning in Port Melbourne.
-image: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
-imageAlt: A clean and welcoming Port Melbourne home
+image: /assets/generated/suburbs/port-melbourne.webp
+imageAlt: Port Melbourne beach and foreshore
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Port Melbourne
 localHighlights:
   - title: Confirm loading and lift bookings

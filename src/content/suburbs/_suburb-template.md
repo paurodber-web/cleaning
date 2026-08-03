@@ -14,19 +14,19 @@ recurringIntro: "Richmond apartments and shared homes often benefit from shorter
 recurringRecommendation: "Weekly or fortnightly visits often suit busy shared homes and households that want a consistent baseline. A three- or four-week rhythm can work for smaller, actively maintained properties that need periodic professional support."
 carpetTitle: "Carpet cleaning for Richmond homes"
 carpetIntro: "Carpeted bedrooms, stairs and living areas may need more than routine vacuuming. Tell us about stains, fibres, room access and parking so the service can be assessed separately."
-carpetImage: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84"
+carpetImage: "/assets/empty-melbourne-home.png"
 carpetImageAlt: "Bright Richmond-style living room with a large clean carpet and upholstered seating"
-whyImage: "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=1600&q=84"
+whyImage: "/assets/cleaner-kitchen.png"
 whyImageAlt: "Professional home cleaner carefully vacuuming a bright Melbourne living room"
 whyIntro: "[DYNAMIC: Summarise why address details, service choice and access planning matter for reliable cleaning coordination in this suburb.]"
 nearbyIntro: "Maid At Home also coordinates house cleaning across Richmond's surrounding inner-Melbourne suburbs. Open a nearby area to see its local services, access guidance and booking information."
 faqIntro: "Quick answers about Richmond access, service selection, recurring cleaning and move-related bookings."
 ctaIntro: "[DYNAMIC: Invite the visitor to share the suburb address, selected service, access requirements and preferred appointment date.]"
-image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84"
+image: "/assets/empty-melbourne-home.png"
 imageAlt: "Bright living room in an inner Melbourne home"
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1800&q=84"
+ctaImage: "/assets/empty-melbourne-home.png"
 ctaImageAlt: "Contemporary home interior similar to properties found in inner Melbourne"
 localHighlights:
   - title: "Apartments and shared entry"

@@ -37,9 +37,9 @@ carpetIntro: Treat carpeted rooms as their own part of the booking. For carpeted
   bedrooms, stairs and living areas that need more than routine vacuuming,
   select steam cleaning for two or more rooms and include any access notes. This
   option is available for eligible bookings in East Melbourne.
-carpetImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a East Melbourne home
-whyImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a East Melbourne home
 whyIntro: From the first booking email to the cleaner assignment, we keep the
   important details clear. Notes about intercoms, key collection, permits and
@@ -51,11 +51,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in East Melbourne.
 ctaIntro: Choose a practical cleaning option for the property and leave clear
   instructions for the team arranging your East Melbourne booking.
-image: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
+image: /assets/empty-melbourne-home.png
 imageAlt: A clean and welcoming East Melbourne home
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in East Melbourne
 localHighlights:
   - title: Check access on event days

@@ -34,9 +34,9 @@ carpetTitle: A deeper clean for carpets across Prahran.
 carpetIntro: A regular clean covers vacuuming, while steam cleaning is designed
   for a deeper carpet treatment. It can be added for two or more rooms in a
   Prahran property.
-carpetImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Prahran home
-whyImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Prahran home
 whyIntro: A smoother clean comes from clear expectations before the visit. Tell
   us about compact layouts, shared spaces and the rooms that need the biggest
@@ -48,11 +48,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Prahran.
 ctaIntro: Make the next clean easier to manage by selecting the right service
   and explaining what your Prahran home needs.
-image: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
-imageAlt: A clean and welcoming Prahran home
+image: /assets/generated/suburbs/prahran.webp
+imageAlt: Prahran local streetscape and commercial district
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Prahran
 localHighlights:
   - title: Point out the residential entrance

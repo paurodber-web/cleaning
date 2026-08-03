@@ -37,9 +37,9 @@ carpetIntro: Treat carpeted rooms as their own part of the booking. For
   well-used bedrooms, hallways and living spaces where dirt can settle below the
   surface, select steam cleaning for two or more rooms and include any access
   notes. This option is available for eligible bookings in Yarraville.
-carpetImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Yarraville home
-whyImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Yarraville home
 whyIntro: Keep the process simple by sharing everything important at the start.
   Customers in Yarraville can include service priorities, extras and street
@@ -50,11 +50,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Yarraville.
 ctaIntro: Take a few minutes to build a cleaning service around the property.
   Select your priorities and request a booking in Yarraville.
-image: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+image: /assets/empty-melbourne-home.png
 imageAlt: A clean and welcoming Yarraville home
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Yarraville
 localHighlights:
   - title: Note village-area parking limits

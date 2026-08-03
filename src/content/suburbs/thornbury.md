@@ -36,9 +36,9 @@ carpetIntro: Treat carpeted rooms as their own part of the booking. For
   well-used bedrooms, hallways and living spaces where dirt can settle below the
   surface, select steam cleaning for two or more rooms and include any access
   notes. This option is available for eligible bookings in Thornbury.
-carpetImage: https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Thornbury home
-whyImage: https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Thornbury home
 whyIntro: We coordinate the booking around the selected service, cleaner
   availability and the details you provide. That includes practical information
@@ -50,11 +50,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Thornbury.
 ctaIntro: Choose the service, frequency and extras that suit the property, then
   tell us what matters most for your Thornbury clean.
-image: https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=84
+image: /assets/empty-melbourne-home.png
 imageAlt: A clean and welcoming Thornbury home
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Thornbury
 localHighlights:
   - title: Mark the best street or rear entry

@@ -34,9 +34,9 @@ carpetTitle: Refresh carpets as part of your Toorak clean.
 carpetIntro: When carpets need more than surface maintenance, steam cleaning can
   form part of the booking. It is available across Toorak with a minimum of two
   rooms.
-carpetImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Toorak home
-whyImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Toorak home
 whyIntro: Your booking details guide the assignment and help the cleaner
   prepare. For larger homes, apartments and properties with detailed cleaning
@@ -49,11 +49,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Toorak.
 ctaIntro: Take a few minutes to build a cleaning service around the property.
   Select your priorities and request a booking in Toorak.
-image: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
-imageAlt: A clean and welcoming Toorak home
+image: /assets/generated/suburbs/suburb-leafy.png
+imageAlt: Leafy family home in Toorak, Melbourne
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Toorak
 localHighlights:
   - title: Arrange secure access in advance

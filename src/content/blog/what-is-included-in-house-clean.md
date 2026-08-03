@@ -7,7 +7,7 @@ publishedAt: 2026-07-17
 updatedAt: 2026-07-30
 category: "cleaning-guides"
 categoryLabel: "Cleaning guides"
-image: "https://images.unsplash.com/photo-1563453392212-326f5e854473?auto=format&fit=crop&w=1600&q=84"
+image: "/assets/cleaner-hero.png"
 imageAlt: "Room-by-room professional house cleaning checklist"
 imageWidth: 1600
 imageHeight: 1067

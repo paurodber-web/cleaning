@@ -37,9 +37,9 @@ carpetIntro: Steam carpet cleaning can be added when vacuuming alone is not
   settle below the surface. It is available for a minimum of two rooms and can
   accompany selected home cleaning services. This option is available for
   eligible bookings in Seddon.
-carpetImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Seddon home
-whyImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Seddon home
 whyIntro: Clear communication matters when a home has specific timing, access or
   priority requirements. For Seddon, include compact layouts, shared spaces and
@@ -50,11 +50,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Seddon.
 ctaIntro: Make the next clean easier to manage by selecting the right service
   and explaining what your Seddon home needs.
-image: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+image: /assets/empty-melbourne-home.png
 imageAlt: A clean and welcoming Seddon home
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Seddon
 localHighlights:
   - title: Give the simplest entry route

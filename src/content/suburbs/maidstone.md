@@ -37,9 +37,9 @@ carpetIntro: For larger bedrooms, hallways and family living areas that collect
   everyday dust and foot traffic, a steam clean offers a more detailed treatment
   than routine vacuuming. Add at least two rooms and include the service with an
   eligible Maidstone booking.
-carpetImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Maidstone home
-whyImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Maidstone home
 whyIntro: A smoother clean comes from clear expectations before the visit. Tell
   us about multi-room layouts, bathrooms, floors and the spaces used most by the
@@ -51,11 +51,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Maidstone.
 ctaIntro: Find the service that matches the home and schedule, then provide the
   notes needed to arrange cleaning across Maidstone.
-image: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+image: /assets/empty-melbourne-home.png
 imageAlt: A clean and welcoming Maidstone home
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Maidstone
 localHighlights:
   - title: Include all townhouse levels

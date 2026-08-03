@@ -34,9 +34,9 @@ recurringRecommendation: Fortnightly cleaning is a useful comparison point for
 carpetTitle: Bring a cleaner feel back to your carpets.
 carpetIntro: Where daily use has left carpets needing a deeper clean, add steam
   treatment to your Richmond booking. A minimum of two carpeted rooms applies.
-carpetImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Richmond home
-whyImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Richmond home
 whyIntro: We coordinate the booking around the selected service, cleaner
   availability and the details you provide. That includes practical information
@@ -48,11 +48,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Richmond.
 ctaIntro: Start with the type of clean you need and add the practical details.
   We will use your booking to organise the next steps in Richmond.
-image: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
-imageAlt: A clean and welcoming Richmond home
+image: /assets/generated/suburbs/richmond.webp
+imageAlt: Richmond local streetscape and neighbourhood architecture
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Richmond
 localHighlights:
   - title: Give a reliable parking option

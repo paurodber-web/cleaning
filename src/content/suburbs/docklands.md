@@ -36,9 +36,9 @@ carpetTitle: Add a deeper carpet clean to your booking.
 carpetIntro: For a more complete reset, include steam cleaning for bedrooms and
   living areas where regular foot traffic can leave carpets looking tired.
   Customers in Docklands can book the service for a minimum of two rooms.
-carpetImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Docklands home
-whyImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Docklands home
 whyIntro: Reliable cleaning depends on more than the task list. We also use your
   information about access instructions, compact layouts and the rooms used most
@@ -50,11 +50,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Docklands.
 ctaIntro: Make the next clean easier to manage by selecting the right service
   and explaining what your Docklands home needs.
-image: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
-imageAlt: A clean and welcoming Docklands home
+image: /assets/generated/suburbs/docklands.webp
+imageAlt: Docklands waterfront and marina at dusk
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Docklands
 localHighlights:
   - title: Check building management rules

@@ -27,7 +27,7 @@ const sourceData = suburbPage.data;
 const data = isTemplatePreview
   ? {
       ...sourceData,
-      suburb: "[SUBURB]", postcode: "[POSTCODE]", regionLabel: "[REGION]",
+      suburb: "[SUBURB]", postcode: "[POSTCODE]", regionLabel: "[REGION]", image: "/assets/generated/suburbs/suburb-victorian.png", imageAlt: "Victorian terrace homes in inner Melbourne",
       title: "[SEO TITLE] | Maid At Home", description: "[SEO DESCRIPTION: a unique, locally relevant summary of Maid At Home house cleaning services, options, availability and booking guidance for this Melbourne suburb.]",
       heroIntro: "[DYNAMIC HERO INTRODUCTION]", summary: "[DYNAMIC LOCAL SUMMARY]",
       localSectionTitle: "[DYNAMIC LOCAL SECTION TITLE]", servicesIntro: "[DYNAMIC SERVICES INTRO]",
@@ -44,6 +44,7 @@ const data = isTemplatePreview
     }
   : sourceData;
 const heroHeading = data.title.replace(/\s*\|\s*Maid At Home\s*$/i, "");
+const usesDirectSuburbHero = data.image.startsWith("/assets/generated/suburbs/") && data.image.endsWith(".webp");
 const base = import.meta.env.BASE_URL.replace(/\/?$/, "/");
 const origin = 'https://maidathome.com.au';
 const canonicalUrl = isTemplatePreview
@@ -214,14 +215,18 @@ const scripts = `<script>(()=>{"use strict";const header=document.getElementById
               >
             </div>
           </div>
-          <OptimizedImage
-            src={data.image}
-            alt={data.imageAlt}
-            width={data.imageWidth}
-            height={data.imageHeight}
-            fetchpriority="high"
-            class="hero__image"
-          />
+          {usesDirectSuburbHero ? (
+            <img src={data.image} alt={data.imageAlt} loading="eager" decoding="sync" fetchpriority="high" class="hero__image" />
+          ) : (
+            <OptimizedImage
+              src={data.image}
+              alt={data.imageAlt}
+              width={data.imageWidth}
+              height={data.imageHeight}
+              fetchpriority="high"
+              class="hero__image"
+            />
+          )}
         </div>
       </div>
     </section>
@@ -257,7 +262,7 @@ const scripts = `<script>(()=>{"use strict";const header=document.getElementById
 
         <div class="services-layout">
           <a class="service-card service-card--large" href={`${base}services/standard-clean/`} aria-label="Explore Standard Clean">
-            <OptimizedImage src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1100&q=82" alt="Bright and freshly cleaned modern living room" width={1100} height={1466} loading="lazy" class="service-card__image" />
+            <OptimizedImage src="/assets/generated/services/standard-clean.png" alt="Professional cleaner completing a standard clean" width={1100} height={1466} loading="lazy" class="service-card__image" />
             <span class="service-card__top">Most popular</span>
             <span class="service-card__content"><span>
               <h3>Standard clean</h3>
@@ -265,7 +270,7 @@ const scripts = `<script>(()=>{"use strict";const header=document.getElementById
             </span><span class="service-card__arrow" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 10h11M11 6l4 4-4 4" /></svg></span></span>
           </a>
           <a class="service-card" href={`${base}services/deep-clean/`} aria-label="Explore Deep Cleaning">
-            <OptimizedImage src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=1000&q=82" alt="Professional cleaner carefully cleaning a bright home" width={1000} height={667} loading="lazy" class="service-card__image" />
+            <OptimizedImage src="/assets/generated/services/deep-clean.png" alt="Professional cleaner completing a detailed deep clean" width={1000} height={667} loading="lazy" class="service-card__image" />
             <span class="service-card__top">Detailed reset</span>
             <span class="service-card__content"><span>
               <h3>Deep clean</h3>
@@ -273,7 +278,7 @@ const scripts = `<script>(()=>{"use strict";const header=document.getElementById
             </span><span class="service-card__arrow" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 10h11M11 6l4 4-4 4" /></svg></span></span>
           </a>
           <a class="service-card" href={`${base}services/end-of-lease-clean/`} aria-label="Learn about End of Lease Cleaning">
-            <OptimizedImage src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=82" alt="Empty, spotless home prepared for a final inspection" width={1000} height={667} loading="lazy" class="service-card__image" />
+            <OptimizedImage src="/assets/generated/services/end-of-lease-clean.png" alt="Professional cleaner preparing an empty rental for final inspection" width={1000} height={667} loading="lazy" class="service-card__image" />
             <span class="service-card__top">Move with confidence</span>
             <span class="service-card__content"><span>
               <h3>End of lease</h3>
@@ -382,8 +387,8 @@ const scripts = `<script>(()=>{"use strict";const header=document.getElementById
         </div>
         <div class="carpet__visual">
           <OptimizedImage
-            src={data.carpetImage}
-            alt={data.carpetImageAlt}
+            src="/assets/generated/home/steam-clean.webp"
+            alt="Professional carpet steam cleaning in a Melbourne home"
             width={1600}
             height={1067}
             loading="lazy"
@@ -403,8 +408,8 @@ const scripts = `<script>(()=>{"use strict";const header=document.getElementById
       <div class="why__layout shell">
         <div class="why__visual">
           <OptimizedImage
-            src={data.whyImage}
-            alt={data.whyImageAlt}
+            src="/assets/generated/suburbs/why-maid-at-home.png"
+            alt="Maid At Home cleaner greeting a resident at a Melbourne home"
             width={1600}
             height={1067}
             loading="lazy"
@@ -467,7 +472,7 @@ const scripts = `<script>(()=>{"use strict";const header=document.getElementById
             Your home.<br />Your schedule.
           </h2>
           <p>Choose a one-off visit or set up regular cleaning around the rhythm that suits your household.</p>
-          <p class="recurring__note">${recurringDiscountPolicy.summary}</p>
+          <p class="recurring__note">{recurringDiscountPolicy.summary}</p>
           <a class="button button--primary" href={`${base}pricing#calculator`}
             >Compare frequencies <span class="button__icon" aria-hidden="true"
               ><svg viewBox="0 0 20 20" fill="none" stroke="currentColor"
@@ -540,10 +545,10 @@ const scripts = `<script>(()=>{"use strict";const header=document.getElementById
 
     <section class="section guarantee soft" aria-labelledby="guarantee-title">
       <div class="shell">
-        <div class="section-head"><div><p class="kicker">Our cleaning guarantee</p><h2 id="guarantee-title">Support that continues after the clean.</h2></div><p>If an agreed task was missed, contact us ${serviceCarePolicy.everydayWindow} for ${serviceCarePolicy.everydayServices} services, or ${serviceCarePolicy.endOfLeaseWindow} for an eligible, documented End of Lease concern.</p></div>
+        <div class="section-head"><div><p class="kicker">Our cleaning guarantee</p><h2 id="guarantee-title">Support that continues after the clean.</h2></div><p>If an agreed task was missed, contact us {serviceCarePolicy.everydayWindow} for {serviceCarePolicy.everydayServices} services, or {serviceCarePolicy.endOfLeaseWindow} for an eligible, documented End of Lease concern.</p></div>
         <div class="guarantee-grid">
-          <article class="guarantee-main"><p class="kicker">Satisfaction Guarantee</p><h3>${serviceCarePolicy.everydayWindowLabel}</h3><p>${serviceCarePolicy.everydayConcernCopy}</p></article>
-          <article class="guarantee-detail"><h3>End of Lease support</h3><p>${serviceCarePolicy.endOfLeaseConcernCopy} Please allow reasonable access for any approved return visit.</p></article>
+          <article class="guarantee-main"><p class="kicker">Satisfaction Guarantee</p><h3>{serviceCarePolicy.everydayWindowLabel}</h3><p>{serviceCarePolicy.everydayConcernCopy}</p></article>
+          <article class="guarantee-detail"><h3>End of Lease support</h3><p>{serviceCarePolicy.endOfLeaseConcernCopy} Please allow reasonable access for any approved return visit.</p></article>
           <article class="guarantee-detail"><h3>Clear communication</h3><p>Our team remains available before and after the service whenever a booking detail, cleaning request or completed task needs clarification.</p></article>
         </div>
       </div>
@@ -638,8 +643,8 @@ const scripts = `<script>(()=>{"use strict";const header=document.getElementById
     <section class="final" aria-labelledby="cta-title">
       <div class="final__panel">
         <OptimizedImage
-          src={data.ctaImage}
-          alt={data.ctaImageAlt}
+          src="/assets/generated/suburbs/suburb-final-cta.png"
+          alt="Fresh, welcoming Melbourne home ready to enjoy"
           width={1600}
           height={1067}
           loading="lazy"

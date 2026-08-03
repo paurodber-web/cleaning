@@ -6,7 +6,7 @@ takeaway: "For a maintained apartment, start with the bedroom-based Standard Cle
 publishedAt: 2026-07-30
 category: "local-living"
 categoryLabel: "Melbourne living"
-image: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1600&q=84"
+image: "/assets/cleaner-kitchen.png"
 imageAlt: "Modern Melbourne apartment prepared for professional cleaning"
 imageWidth: 1600
 imageHeight: 1067

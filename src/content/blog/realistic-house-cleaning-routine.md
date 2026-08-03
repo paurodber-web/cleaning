@@ -6,7 +6,7 @@ takeaway: "Reset one area each day and protect ten minutes for the basics. Keep 
 publishedAt: 2026-05-14
 category: "home-care"
 categoryLabel: "Home care"
-image: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84"
+image: "/assets/empty-melbourne-home.png"
 imageAlt: "Tidy, sunlit Melbourne living room"
 imageWidth: 1600
 imageHeight: 1067
@@ -28,7 +28,7 @@ Instead of beginning with a long list of everything that could be cleaned, start
 This gives the week a useful order. Essential tasks stay visible, while lower-priority work can move without making the entire routine feel unsuccessful.
 
 <figure class="article-figure">
-  <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&amp;fit=crop&amp;w=1600&amp;q=84" alt="Bright, orderly kitchen prepared for a quick daily reset" width="1600" height="1067" loading="lazy" decoding="async" />
+  <img src="/assets/cleaner-kitchen.png" alt="Bright, orderly kitchen prepared for a quick daily reset" width="1600" height="1067" loading="lazy" decoding="async" />
   <figcaption>Clear benches make short kitchen resets much easier to complete.</figcaption>
 </figure>
 
@@ -90,7 +90,7 @@ Fresh linen, accessible floors and clear bedside surfaces usually create the gre
 Focus on the routes people walk and the surfaces everyone sees. A quick reset of cushions, visible clutter and the main floor area often does more than detailed work in an unused corner.
 
 <figure class="article-figure">
-  <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&amp;fit=crop&amp;w=1600&amp;q=84" alt="Comfortable, tidy living room with clear floors and surfaces" width="1600" height="1067" loading="lazy" decoding="async" />
+  <img src="/assets/empty-melbourne-home.png" alt="Comfortable, tidy living room with clear floors and surfaces" width="1600" height="1067" loading="lazy" decoding="async" />
   <figcaption>Prioritise the visible surfaces and traffic areas that influence the whole room.</figcaption>
 </figure>
 

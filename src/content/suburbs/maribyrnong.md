@@ -35,9 +35,9 @@ carpetTitle: Refresh carpets as part of your Maribyrnong clean.
 carpetIntro: When carpets need more than surface maintenance, steam cleaning can
   form part of the booking. It is available across Maribyrnong with a minimum of
   two rooms.
-carpetImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Maribyrnong home
-whyImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Maribyrnong home
 whyIntro: Organising cleaning for apartments, townhouses and family homes near
   the river precinct should not require repeated follow-ups. Add the key
@@ -49,11 +49,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Maribyrnong.
 ctaIntro: Choose a practical cleaning option for the property and leave clear
   instructions for the team arranging your Maribyrnong booking.
-image: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+image: /assets/empty-melbourne-home.png
 imageAlt: A clean and welcoming Maribyrnong home
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Maribyrnong
 localHighlights:
   - title: Confirm basement and lift access

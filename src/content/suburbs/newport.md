@@ -38,9 +38,9 @@ carpetIntro: Carpet cleaning is useful when you want to treat bedrooms and
   indoor-outdoor movement separately from the rest of the home. Book two or more
   rooms and add it to an eligible service. This option is available for eligible
   bookings in Newport.
-carpetImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Newport home
-whyImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Newport home
 whyIntro: We coordinate the booking around the selected service, cleaner
   availability and the details you provide. That includes practical information
@@ -52,11 +52,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Newport.
 ctaIntro: From a focused hourly visit to a complete flat-rate clean, organise
   the option that works best for your Newport property.
-image: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+image: /assets/empty-melbourne-home.png
 imageAlt: A clean and welcoming Newport home
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Newport
 localHighlights:
   - title: Point out rear lanes and garages

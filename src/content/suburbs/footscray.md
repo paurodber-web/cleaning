@@ -35,9 +35,9 @@ carpetTitle: Add a deeper carpet clean to your booking.
 carpetIntro: For a more complete reset, include steam cleaning for well-used
   bedrooms, hallways and living spaces where dirt can settle below the surface.
   Customers in Footscray can book the service for a minimum of two rooms.
-carpetImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Footscray home
-whyImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Footscray home
 whyIntro: We coordinate the booking around the selected service, cleaner
   availability and the details you provide. That includes practical information
@@ -49,11 +49,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Footscray.
 ctaIntro: Create a booking around the way the home is used. Choose the
   frequency, service and priorities for cleaning in Footscray.
-image: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+image: /assets/empty-melbourne-home.png
 imageAlt: A clean and welcoming Footscray home
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Footscray
 localHighlights:
   - title: Locate the residential entrance

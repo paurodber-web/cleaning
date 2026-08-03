@@ -34,9 +34,9 @@ carpetTitle: Carpet cleaning that reaches beyond the surface.
 carpetIntro: Steam cleaning can help refresh carpeted spaces as part of a
   one-off or moving service. In Moonee Ponds, it is available when at least two
   rooms are selected.
-carpetImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Moonee Ponds home
-whyImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Moonee Ponds home
 whyIntro: Choose the service, confirm the details and receive updates by email.
   For a property in Moonee Ponds, clear notes about street parking, gates,
@@ -48,11 +48,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Moonee Ponds.
 ctaIntro: Find the service that matches the home and schedule, then provide the
   notes needed to arrange cleaning across Moonee Ponds.
-image: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+image: /assets/empty-melbourne-home.png
 imageAlt: A clean and welcoming Moonee Ponds home
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Moonee Ponds
 localHighlights:
   - title: Match access notes to the property

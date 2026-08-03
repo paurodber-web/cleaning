@@ -36,9 +36,9 @@ carpetIntro: Use carpet steam cleaning when well-used bedrooms, hallways and
   living spaces where dirt can settle below the surface need a fuller refresh.
   The service has a two-room minimum and can be arranged alongside selected
   bookings. This option is available for eligible bookings in Kensington.
-carpetImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Kensington home
-whyImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Kensington home
 whyIntro: Reliable cleaning depends on more than the task list. We also use your
   information about compact layouts, shared spaces and the rooms that need the
@@ -50,11 +50,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Kensington.
 ctaIntro: Whether the home needs maintenance or a fuller reset, choose the right
   service and organise your Kensington clean online.
-image: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+image: /assets/empty-melbourne-home.png
 imageAlt: A clean and welcoming Kensington home
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Kensington
 localHighlights:
   - title: Identify laneway and rear access

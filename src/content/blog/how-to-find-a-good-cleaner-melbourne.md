@@ -7,7 +7,7 @@ publishedAt: 2026-04-15
 updatedAt: 2026-07-26
 category: "local-living"
 categoryLabel: "Local living"
-image: "https://maidathome.com.au/assets/img/meet.webp"
+image: "/assets/cleaner-hero.png"
 imageAlt: "House cleaner preparing for a service in a Melbourne home"
 imageWidth: 1200
 imageHeight: 800

@@ -35,9 +35,9 @@ recurringRecommendation: Fortnightly cleaning is a useful comparison point for
 carpetTitle: Bring a cleaner feel back to your carpets.
 carpetIntro: Where daily use has left carpets needing a deeper clean, add steam
   treatment to your Box Hill booking. A minimum of two carpeted rooms applies.
-carpetImage: https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Box Hill home
-whyImage: https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Box Hill home
 whyIntro: Choose the service, confirm the details and receive updates by email.
   For a property in Box Hill, clear notes about driveways, parking, gates,
@@ -48,11 +48,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Box Hill.
 ctaIntro: Create a booking around the way the home is used. Choose the
   frequency, service and priorities for cleaning in Box Hill.
-image: https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=84
+image: /assets/empty-melbourne-home.png
 imageAlt: A clean and welcoming Box Hill home
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Box Hill
 localHighlights:
   - title: Confirm tower and lift details

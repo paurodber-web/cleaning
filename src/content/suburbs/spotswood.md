@@ -35,9 +35,9 @@ carpetIntro: Create a fuller result by combining home cleaning with steam
   treatment for well-used bedrooms, hallways and living spaces where dirt can
   settle below the surface. The carpet service starts from two rooms. This
   option is available for eligible bookings in Spotswood.
-carpetImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Spotswood home
-whyImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Spotswood home
 whyIntro: Clear communication matters when a home has specific timing, access or
   priority requirements. For Spotswood, include compact layouts, shared spaces
@@ -48,11 +48,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Spotswood.
 ctaIntro: Create a booking around the way the home is used. Choose the
   frequency, service and priorities for cleaning in Spotswood.
-image: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+image: /assets/empty-melbourne-home.png
 imageAlt: A clean and welcoming Spotswood home
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Spotswood
 localHighlights:
   - title: Describe access near busy roads

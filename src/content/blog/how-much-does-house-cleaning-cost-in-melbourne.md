@@ -7,7 +7,7 @@ publishedAt: 2026-05-07
 updatedAt: 2026-07-30
 category: "cleaning-guides"
 categoryLabel: "Cleaning guides"
-image: "https://maidathome.com.au/assets/img/blog/cleaning_cost_melbourne.webp"
+image: "/assets/empty-melbourne-home.png"
 imageAlt: "House cleaning cost guide for a Melbourne home"
 imageWidth: 900
 imageHeight: 600
@@ -23,7 +23,7 @@ draft: false
 A larger home normally needs more cleaning time, but condition matters just as much as the number of rooms. A maintained two-bedroom home can require less work than a smaller property with significant buildup.
 
 <figure class="article-figure">
-  <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&amp;fit=crop&amp;w=1600&amp;q=84" alt="Bright home prepared for a cleaning price assessment" width="1600" height="1067" loading="lazy" decoding="async" />
+  <img src="/assets/empty-melbourne-home.png" alt="Bright home prepared for a cleaning price assessment" width="1600" height="1067" loading="lazy" decoding="async" />
   <figcaption>The home's size, condition and priorities all shape a realistic cleaning quote.</figcaption>
 </figure>
 
@@ -61,7 +61,7 @@ Choosing the correct service from the beginning reduces the chance of an unreali
 Before confirming, check which rooms, tasks and extras are included. A transparent quote should make it easy to understand what result the service is designed to deliver.
 
 <figure class="article-figure">
-  <img src="https://images.unsplash.com/photo-1556912167-f556f1f39fdf?auto=format&amp;fit=crop&amp;w=1600&amp;q=84" alt="Clean kitchen after a professional home service" width="1600" height="1067" loading="lazy" decoding="async" />
+  <img src="/assets/cleaner-kitchen.png" alt="Clean kitchen after a professional home service" width="1600" height="1067" loading="lazy" decoding="async" />
   <figcaption>A clear scope helps the service match the home's actual needs.</figcaption>
 </figure>
 

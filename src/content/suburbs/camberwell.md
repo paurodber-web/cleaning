@@ -39,9 +39,9 @@ carpetIntro: Use carpet steam cleaning when larger bedrooms, hallways and family
   refresh. The service has a two-room minimum and can be arranged alongside
   selected bookings. This option is available for eligible bookings in
   Camberwell.
-carpetImage: https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Camberwell home
-whyImage: https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Camberwell home
 whyIntro: Clear communication matters when a home has specific timing, access or
   priority requirements. For Camberwell, include multi-room layouts, bathrooms,
@@ -53,11 +53,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Camberwell.
 ctaIntro: Start with the type of clean you need and add the practical details.
   We will use your booking to organise the next steps in Camberwell.
-image: https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=84
-imageAlt: A clean and welcoming Camberwell home
+image: /assets/generated/suburbs/suburb-leafy.png
+imageAlt: Leafy family home in Camberwell, Melbourne
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Camberwell
 localHighlights:
   - title: Include secondary living spaces

@@ -36,9 +36,9 @@ carpetIntro: Add steam carpet cleaning to target bedrooms and living spaces
   affected by everyday grit, foot traffic and frequent indoor-outdoor movement.
   Select at least two rooms and combine it with a suitable home or moving clean.
   This option is available for eligible bookings in Albert Park.
-carpetImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Albert Park home
-whyImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Albert Park home
 whyIntro: Reliable cleaning depends on more than the task list. We also use your
   information about floors, balconies, high-use rooms and the practical details
@@ -50,11 +50,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Albert Park.
 ctaIntro: Find the service that matches the home and schedule, then provide the
   notes needed to arrange cleaning across Albert Park.
-image: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
-imageAlt: A clean and welcoming Albert Park home
+image: /assets/generated/suburbs/albert-park.webp
+imageAlt: Albert Park local streetscape and parkland
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Albert Park
 localHighlights:
   - title: Share permit and loading details

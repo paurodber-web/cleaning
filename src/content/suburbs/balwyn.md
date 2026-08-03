@@ -37,9 +37,9 @@ carpetIntro: Vacuuming handles routine upkeep, but steam cleaning goes further
   for larger bedrooms, hallways and family living areas that collect everyday
   dust and foot traffic. Add the required two-room minimum when organising your
   Balwyn clean.
-carpetImage: https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Balwyn home
-whyImage: https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Balwyn home
 whyIntro: Organising cleaning for spacious family homes, units and multi-room
   properties should not require repeated follow-ups. Add the key information
@@ -51,11 +51,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Balwyn.
 ctaIntro: Book one-off or recurring cleaning for your Balwyn home and include
   the rooms, tasks and access notes that matter.
-image: https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=84
-imageAlt: A clean and welcoming Balwyn home
+image: /assets/generated/suburbs/balwyn.webp
+imageAlt: Balwyn streetscape and local homes
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Balwyn
 localHighlights:
   - title: Map the household’s main zones

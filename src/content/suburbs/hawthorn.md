@@ -37,9 +37,9 @@ carpetIntro: Steam carpet cleaning can be added when vacuuming alone is not
   settle below the surface. It is available for a minimum of two rooms and can
   accompany selected home cleaning services. This option is available for
   eligible bookings in Hawthorn.
-carpetImage: https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Hawthorn home
-whyImage: https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Hawthorn home
 whyIntro: Keep the process simple by sharing everything important at the start.
   Customers in Hawthorn can include service priorities, extras and street
@@ -50,11 +50,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Hawthorn.
 ctaIntro: Find the service that matches the home and schedule, then provide the
   notes needed to arrange cleaning across Hawthorn.
-image: https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=84
-imageAlt: A clean and welcoming Hawthorn home
+image: /assets/generated/suburbs/hawthorn.webp
+imageAlt: Hawthorn local streetscape and landmark views
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Hawthorn
 localHighlights:
   - title: Count levels, not only rooms

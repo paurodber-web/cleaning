@@ -36,9 +36,9 @@ carpetTitle: Refresh carpets as part of your Collingwood clean.
 carpetIntro: When carpets need more than surface maintenance, steam cleaning can
   form part of the booking. It is available across Collingwood with a minimum of
   two rooms.
-carpetImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Collingwood home
-whyImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Collingwood home
 whyIntro: A smoother clean comes from clear expectations before the visit. Tell
   us about compact layouts, shared spaces and the rooms that need the biggest
@@ -50,11 +50,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Collingwood.
 ctaIntro: Choose the service, frequency and extras that suit the property, then
   tell us what matters most for your Collingwood clean.
-image: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
-imageAlt: A clean and welcoming Collingwood home
+image: /assets/generated/suburbs/collingwood.webp
+imageAlt: Collingwood Town Hall and local streetscape
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Collingwood
 localHighlights:
   - title: Pinpoint the correct entrance

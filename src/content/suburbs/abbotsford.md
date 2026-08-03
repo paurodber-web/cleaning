@@ -38,9 +38,9 @@ carpetIntro: Vacuuming handles routine upkeep, but steam cleaning goes further
   for well-used bedrooms, hallways and living spaces where dirt can settle below
   the surface. Add the required two-room minimum when organising your Abbotsford
   clean.
-carpetImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Abbotsford home
-whyImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Abbotsford home
 whyIntro: Your booking details guide the assignment and help the cleaner
   prepare. For apartments, townhouses and homes across a varied inner-east
@@ -53,11 +53,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Abbotsford.
 ctaIntro: Find the service that matches the home and schedule, then provide the
   notes needed to arrange cleaning across Abbotsford.
-image: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
+image: /assets/empty-melbourne-home.png
 imageAlt: A clean and welcoming Abbotsford home
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Abbotsford
 localHighlights:
   - title: Outline garage or foyer access

@@ -36,9 +36,9 @@ carpetIntro: Create a fuller result by combining home cleaning with steam
   treatment for larger bedrooms, hallways and family living areas that collect
   everyday dust and foot traffic. The carpet service starts from two rooms. This
   option is available for eligible bookings in Essendon.
-carpetImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Essendon home
-whyImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Essendon home
 whyIntro: From the first booking email to the cleaner assignment, we keep the
   important details clear. Notes about driveways, parking, gates, stairs and
@@ -50,11 +50,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Essendon.
 ctaIntro: Start with the type of clean you need and add the practical details.
   We will use your booking to organise the next steps in Essendon.
-image: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+image: /assets/empty-melbourne-home.png
 imageAlt: A clean and welcoming Essendon home
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Essendon
 localHighlights:
   - title: Count all rooms and levels

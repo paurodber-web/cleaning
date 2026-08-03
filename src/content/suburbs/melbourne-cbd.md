@@ -35,9 +35,9 @@ carpetIntro: Add steam carpet cleaning to target bedrooms and living areas where
   regular foot traffic can leave carpets looking tired. Select at least two
   rooms and combine it with a suitable home or moving clean. This option is
   available for eligible bookings in Melbourne CBD.
-carpetImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Melbourne CBD home
-whyImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Melbourne CBD home
 whyIntro: Clear communication matters when a home has specific timing, access or
   priority requirements. For Melbourne CBD, include access instructions, compact
@@ -48,11 +48,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Melbourne CBD.
 ctaIntro: Take a few minutes to build a cleaning service around the property.
   Select your priorities and request a booking in Melbourne CBD.
-image: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
-imageAlt: A clean and welcoming Melbourne CBD home
+image: /assets/generated/suburbs/melbourne-cbd.webp
+imageAlt: Melbourne CBD skyline from Southbank
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Melbourne CBD
 localHighlights:
   - title: Confirm the building procedure

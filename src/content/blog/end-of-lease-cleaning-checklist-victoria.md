@@ -7,7 +7,7 @@ publishedAt: 2026-07-17
 updatedAt: 2026-07-30
 category: "moving"
 categoryLabel: "Moving"
-image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=84"
+image: "/assets/empty-melbourne-home.png"
 imageAlt: "Empty Victorian rental prepared with an end of lease cleaning checklist"
 imageWidth: 1600
 imageHeight: 1067

@@ -37,9 +37,9 @@ carpetIntro: Add steam carpet cleaning to target larger bedrooms, hallways and
   family living areas that collect everyday dust and foot traffic. Select at
   least two rooms and combine it with a suitable home or moving clean. This
   option is available for eligible bookings in Preston.
-carpetImage: https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Preston home
-whyImage: https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Preston home
 whyIntro: A smoother clean comes from clear expectations before the visit. Tell
   us about multi-room layouts, bathrooms, floors and the spaces used most by the
@@ -51,11 +51,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Preston.
 ctaIntro: Choose a practical cleaning option for the property and leave clear
   instructions for the team arranging your Preston booking.
-image: https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=84
+image: /assets/empty-melbourne-home.png
 imageAlt: A clean and welcoming Preston home
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Preston
 localHighlights:
   - title: Include every usable room

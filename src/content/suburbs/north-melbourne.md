@@ -36,9 +36,9 @@ carpetTitle: Add a deeper carpet clean to your booking.
 carpetIntro: For a more complete reset, include steam cleaning for carpeted
   bedrooms, stairs and living areas that need more than routine vacuuming.
   Customers in North Melbourne can book the service for a minimum of two rooms.
-carpetImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a North Melbourne home
-whyImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a North Melbourne home
 whyIntro: Choose the service, confirm the details and receive updates by email.
   For a property in North Melbourne, clear notes about intercoms, key
@@ -50,11 +50,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in North Melbourne.
 ctaIntro: Whether the home needs maintenance or a fuller reset, choose the right
   service and organise your North Melbourne clean online.
-image: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
+image: /assets/empty-melbourne-home.png
 imageAlt: A clean and welcoming North Melbourne home
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in North Melbourne
 localHighlights:
   - title: Provide dependable parking guidance

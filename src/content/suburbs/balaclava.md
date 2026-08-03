@@ -37,9 +37,9 @@ carpetIntro: Create a fuller result by combining home cleaning with steam
   treatment for well-used bedrooms, hallways and living spaces where dirt can
   settle below the surface. The carpet service starts from two rooms. This
   option is available for eligible bookings in Balaclava.
-carpetImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Balaclava home
-whyImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Balaclava home
 whyIntro: Keep the process simple by sharing everything important at the start.
   Customers in Balaclava can include service priorities, extras and street
@@ -50,11 +50,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Balaclava.
 ctaIntro: Set the scope, select any extras and share the important details. Your
   next cleaning booking in Balaclava can begin here.
-image: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+image: /assets/empty-melbourne-home.png
 imageAlt: A clean and welcoming Balaclava home
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Balaclava
 localHighlights:
   - title: Clarify the unit’s exact location

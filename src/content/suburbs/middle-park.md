@@ -37,9 +37,9 @@ carpetIntro: For a more complete reset, include steam cleaning for bedrooms and
   living spaces affected by everyday grit, foot traffic and frequent
   indoor-outdoor movement. Customers in Middle Park can book the service for a
   minimum of two rooms.
-carpetImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Middle Park home
-whyImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Middle Park home
 whyIntro: Organising cleaning for period homes, terraces and compact bayside
   residences should not require repeated follow-ups. Add the key information
@@ -51,11 +51,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Middle Park.
 ctaIntro: Start with the type of clean you need and add the practical details.
   We will use your booking to organise the next steps in Middle Park.
-image: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
-imageAlt: A clean and welcoming Middle Park home
+image: /assets/generated/suburbs/middle-park.webp
+imageAlt: Middle Park streetscape and local homes
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Middle Park
 localHighlights:
   - title: Plan for narrow street access

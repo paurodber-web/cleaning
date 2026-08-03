@@ -36,9 +36,9 @@ carpetIntro: For bedrooms and living spaces affected by everyday grit, foot
   traffic and frequent indoor-outdoor movement, a steam clean offers a more
   detailed treatment than routine vacuuming. Add at least two rooms and include
   the service with an eligible Brighton booking.
-carpetImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Brighton home
-whyImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Brighton home
 whyIntro: Clear communication matters when a home has specific timing, access or
   priority requirements. For Brighton, include floors, balconies, high-use rooms
@@ -50,11 +50,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Brighton.
 ctaIntro: Choose a practical cleaning option for the property and leave clear
   instructions for the team arranging your Brighton booking.
-image: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
-imageAlt: A clean and welcoming Brighton home
+image: /assets/generated/suburbs/brighton.webp
+imageAlt: Brighton beach and Melbourne coastline
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Brighton
 localHighlights:
   - title: Account for multiple living zones

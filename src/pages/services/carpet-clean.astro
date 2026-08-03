@@ -61,28 +61,28 @@ const content = withBase(`<main id="main">
 const contentParts = content.split(/__ASTRO_IMAGE_\d+__/);
 const images: Array<Record<string, any>> = [
   {
-    "src": "https://maidathome.com.au/assets/img/services/carpet-cleaning-banner.webp",
+    "src": "/assets/carpet-specialist.png",
     "alt": "Professional carpet steam cleaning in Melbourne",
     "width": 1200,
     "height": 900,
     "fetchpriority": "high"
   },
   {
-    "src": "https://maidathome.com.au/assets/img/services/carpet-cleaning-banner.webp",
+    "src": "/assets/carpet-specialist.png",
     "alt": "Fresh carpet after professional steam cleaning",
     "width": 1100,
     "height": 1400,
     "loading": "lazy"
   },
   {
-    "src": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1100&q=84",
+    "src": "/assets/empty-melbourne-home.png",
     "alt": "Freshly cleaned carpet drying in a Melbourne home",
     "width": 1100,
     "height": 1400,
     "loading": "lazy"
   },
   {
-    "src": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=2200&q=86",
+    "src": "/assets/empty-melbourne-home.png",
     "alt": "Freshly steam-cleaned carpet in a comfortable home",
     "width": 2200,
     "height": 1467,
@@ -90,6 +90,10 @@ const images: Array<Record<string, any>> = [
     "class": "cta-image"
   }
 ];
+images[0] = { ...images[0], src: '/assets/generated/services/carpet-clean-hero.png', alt: 'Carpet specialist steam cleaning a Melbourne living room' };
+images[1] = { ...images[1], src: '/assets/generated/services/carpet-clean-fit.png', alt: 'Carpet specialist inspecting a treated carpet edge' };
+images[2] = { ...images[2], src: '/assets/generated/services/carpet-clean-routine.png', alt: 'Freshly steam-cleaned carpet drying in a bright Melbourne living room' };
+images[3] = { ...images[3], src: '/assets/generated/services/carpet-clean-cta.png', alt: 'Carpet specialist finishing a steam-cleaning visit' };
 ---
 <SiteLayout title={title} description={description} styles={styles} scripts={scripts} preHeader={preHeader} legacyHeader={true} skipLink={false} yearId="year" currentPath="/services/carpet-clean" bodyClass="">
   {contentParts.map((part, index) => (<>

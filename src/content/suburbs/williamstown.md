@@ -36,9 +36,9 @@ carpetTitle: Carpet cleaning that reaches beyond the surface.
 carpetIntro: Steam cleaning can help refresh carpeted spaces as part of a
   one-off or moving service. In Williamstown, it is available when at least two
   rooms are selected.
-carpetImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Williamstown home
-whyImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Williamstown home
 whyIntro: Keep the process simple by sharing everything important at the start.
   Customers in Williamstown can include service priorities, extras and apartment
@@ -49,11 +49,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Williamstown.
 ctaIntro: Book one-off or recurring cleaning for your Williamstown home and
   include the rooms, tasks and access notes that matter.
-image: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+image: /assets/empty-melbourne-home.png
 imageAlt: A clean and welcoming Williamstown home
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Williamstown
 localHighlights:
   - title: Prepare for busy local streets

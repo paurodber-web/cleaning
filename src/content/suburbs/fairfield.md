@@ -35,9 +35,9 @@ carpetTitle: Carpet cleaning that reaches beyond the surface.
 carpetIntro: Steam cleaning can help refresh carpeted spaces as part of a
   one-off or moving service. In Fairfield, it is available when at least two
   rooms are selected.
-carpetImage: https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Fairfield home
-whyImage: https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Fairfield home
 whyIntro: Organising cleaning for family homes, units and townhouses in a
   quieter inner-north setting should not require repeated follow-ups. Add the
@@ -49,11 +49,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Fairfield.
 ctaIntro: Take a few minutes to build a cleaning service around the property.
   Select your priorities and request a booking in Fairfield.
-image: https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=84
+image: /assets/empty-melbourne-home.png
 imageAlt: A clean and welcoming Fairfield home
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Fairfield
 localHighlights:
   - title: Explain driveway and side access

@@ -35,9 +35,9 @@ carpetTitle: A deeper clean for carpets across Sunshine.
 carpetIntro: A regular clean covers vacuuming, while steam cleaning is designed
   for a deeper carpet treatment. It can be added for two or more rooms in a
   Sunshine property.
-carpetImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Sunshine home
-whyImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Sunshine home
 whyIntro: Your booking details guide the assignment and help the cleaner
   prepare. For family homes, units and townhouses across a well-connected
@@ -50,11 +50,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Sunshine.
 ctaIntro: Start with the type of clean you need and add the practical details.
   We will use your booking to organise the next steps in Sunshine.
-image: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+image: /assets/empty-melbourne-home.png
 imageAlt: A clean and welcoming Sunshine home
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Sunshine
 localHighlights:
   - title: List extra rooms beyond bedrooms

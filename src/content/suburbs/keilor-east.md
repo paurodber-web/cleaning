@@ -38,9 +38,9 @@ carpetIntro: Add steam carpet cleaning to target larger bedrooms, hallways and
   family living areas that collect everyday dust and foot traffic. Select at
   least two rooms and combine it with a suitable home or moving clean. This
   option is available for eligible bookings in Keilor East.
-carpetImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Keilor East home
-whyImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Keilor East home
 whyIntro: Your booking details guide the assignment and help the cleaner
   prepare. For family homes, larger layouts and multi-room properties, include
@@ -53,11 +53,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Keilor East.
 ctaIntro: Book one-off or recurring cleaning for your Keilor East home and
   include the rooms, tasks and access notes that matter.
-image: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+image: /assets/empty-melbourne-home.png
 imageAlt: A clean and welcoming Keilor East home
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Keilor East
 localHighlights:
   - title: Include garages and utility spaces

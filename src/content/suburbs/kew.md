@@ -33,9 +33,9 @@ carpetTitle: Refresh carpets as part of your Kew clean.
 carpetIntro: When carpets need more than surface maintenance, steam cleaning can
   form part of the booking. It is available across Kew with a minimum of two
   rooms.
-carpetImage: https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Kew home
-whyImage: https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Kew home
 whyIntro: Reliable cleaning depends on more than the task list. We also use your
   information about multi-room layouts, bathrooms, floors and the spaces used
@@ -47,11 +47,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Kew.
 ctaIntro: From a focused hourly visit to a complete flat-rate clean, organise
   the option that works best for your Kew property.
-image: https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=84
-imageAlt: A clean and welcoming Kew home
+image: /assets/generated/suburbs/kew.webp
+imageAlt: Kew local streetscape and landmark views
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Kew
 localHighlights:
   - title: Explain gates and driveway access

@@ -37,9 +37,9 @@ carpetIntro: Carpet cleaning is useful when you want to treat well-used
   bedrooms, hallways and living spaces where dirt can settle below the surface
   separately from the rest of the home. Book two or more rooms and add it to an
   eligible service. This option is available for eligible bookings in Northcote.
-carpetImage: https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Northcote home
-whyImage: https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Northcote home
 whyIntro: Reliable cleaning depends on more than the task list. We also use your
   information about compact layouts, shared spaces and the rooms that need the
@@ -51,11 +51,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Northcote.
 ctaIntro: Create a booking around the way the home is used. Choose the
   frequency, service and priorities for cleaning in Northcote.
-image: https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=84
+image: /assets/empty-melbourne-home.png
 imageAlt: A clean and welcoming Northcote home
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Northcote
 localHighlights:
   - title: Note pets and secure exits

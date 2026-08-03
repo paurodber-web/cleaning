@@ -6,7 +6,7 @@ takeaway: "Tidy loose belongings, identify priorities, secure pets and provide r
 publishedAt: 2026-07-26
 category: "cleaning-guides"
 categoryLabel: "Cleaning guides"
-image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1600&q=84"
+image: "/assets/cleaner-hero.png"
 imageAlt: "Melbourne home prepared for a professional house cleaner"
 imageWidth: 1600
 imageHeight: 1067

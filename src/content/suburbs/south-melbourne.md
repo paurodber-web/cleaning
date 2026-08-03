@@ -36,9 +36,9 @@ carpetIntro: Add steam carpet cleaning to target carpeted bedrooms, stairs and
   living areas that need more than routine vacuuming. Select at least two rooms
   and combine it with a suitable home or moving clean. This option is available
   for eligible bookings in South Melbourne.
-carpetImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a South Melbourne home
-whyImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a South Melbourne home
 whyIntro: Organising cleaning for apartments, terraces and townhouses on the
   city fringe should not require repeated follow-ups. Add the key information
@@ -50,11 +50,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in South Melbourne.
 ctaIntro: Make the next clean easier to manage by selecting the right service
   and explaining what your South Melbourne home needs.
-image: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+image: /assets/empty-melbourne-home.png
 imageAlt: A clean and welcoming South Melbourne home
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in South Melbourne
 localHighlights:
   - title: Plan around market-area parking

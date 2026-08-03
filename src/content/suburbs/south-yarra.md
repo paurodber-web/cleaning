@@ -36,9 +36,9 @@ carpetIntro: For well-used bedrooms, hallways and living spaces where dirt can
   settle below the surface, a steam clean offers a more detailed treatment than
   routine vacuuming. Add at least two rooms and include the service with an
   eligible South Yarra booking.
-carpetImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a South Yarra home
-whyImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a South Yarra home
 whyIntro: From the first booking email to the cleaner assignment, we keep the
   important details clear. Notes about street parking, gates, intercoms,
@@ -50,11 +50,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in South Yarra.
 ctaIntro: Take a few minutes to build a cleaning service around the property.
   Select your priorities and request a booking in South Yarra.
-image: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
-imageAlt: A clean and welcoming South Yarra home
+image: /assets/generated/suburbs/south-yarra.webp
+imageAlt: South Yarra streetscape and local architecture
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in South Yarra
 localHighlights:
   - title: Explain concierge and lift access

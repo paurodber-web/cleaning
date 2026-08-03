@@ -36,9 +36,9 @@ carpetIntro: Steam carpet cleaning can be added when vacuuming alone is not
   and frequent indoor-outdoor movement. It is available for a minimum of two
   rooms and can accompany selected home cleaning services. This option is
   available for eligible bookings in Elsternwick.
-carpetImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Elsternwick home
-whyImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Elsternwick home
 whyIntro: From the first booking email to the cleaner assignment, we keep the
   important details clear. Notes about apartment entry, driveways, balconies and
@@ -51,11 +51,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Elsternwick.
 ctaIntro: Book one-off or recurring cleaning for your Elsternwick home and
   include the rooms, tasks and access notes that matter.
-image: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+image: /assets/empty-melbourne-home.png
 imageAlt: A clean and welcoming Elsternwick home
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Elsternwick
 localHighlights:
   - title: Include every living and work area

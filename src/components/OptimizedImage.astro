@@ -1,5 +1,38 @@
 ---
 import { Image, getImage } from 'astro:assets';
+import cleanerHero from '../../assets-src/cleaner-hero.png';
+import homeHero from '../../assets-src/home-hero.png';
+import homeCarpet from '../../assets-src/home-carpet.png';
+import homeRegular from '../../assets-src/home-regular.png';
+import homeEndLease from '../../assets-src/home-end-lease.png';
+import aboutCare from '../../assets-src/about-care.png';
+import aboutResult from '../../assets-src/about-result.png';
+import aboutCareKitchen from '../../assets-src/generated/about/about-care-kitchen.webp';
+import aboutResultKitchen from '../../assets-src/generated/about/about-result-kitchen.webp';
+import globalCta from '../../assets-src/global-cta.png';
+import servicesHero from '../../assets-src/services-hero.png';
+import cleanerKitchen from '../../assets-src/cleaner-kitchen.png';
+import emptyMelbourneHome from '../../assets-src/empty-melbourne-home.png';
+import carpetSpecialist from '../../assets-src/carpet-specialist.png';
+import cleanerKitchenService from '../../assets-src/cleaner-kitchen-service.png';
+import cleanerBathroomService from '../../assets-src/cleaner-bathroom-service.png';
+import endOfLeaseService from '../../assets-src/end-of-lease-service.png';
+import steamMopService from '../../assets-src/steam-mop-service.png';
+import standardCleanService from '../../assets-src/generated/services/standard-clean.png';
+import deepCleanService from '../../assets-src/generated/services/deep-clean.png';
+import endOfLeaseCleanService from '../../assets-src/generated/services/end-of-lease-clean.png';
+import regularCleanService from '../../assets-src/generated/services/regular-clean.webp';
+import carpetHome from '../../assets-src/generated/home/steam-clean.webp';
+import endLeaseLanding from '../../assets-src/generated/home/end-of-lease-inspection.webp';
+import finalCta from '../../assets-src/generated/home/final-cta.webp';
+import suburbWhy from '../../assets-src/generated/suburbs/why-maid-at-home.png';
+import suburbFinalCta from '../../assets-src/generated/suburbs/suburb-final-cta.png';
+import suburbCbd from '../../assets-src/generated/suburbs/suburb-cbd.png';
+import suburbCbdTimeout from '../../assets-src/generated/suburbs/melbourne-cbd.webp';
+import suburbVictorian from '../../assets-src/generated/suburbs/suburb-victorian.png';
+import suburbLeafy from '../../assets-src/generated/suburbs/suburb-leafy.png';
+import suburbBayside from '../../assets-src/generated/suburbs/suburb-bayside.png';
+import suburbWaterside from '../../assets-src/generated/suburbs/suburb-waterside.png';
 
 interface Props {
   src?: any;
@@ -17,7 +50,44 @@ interface Props {
 
 const { src = '', mobileSrc, mobileBreakpoint = '620px', mobileAspectRatio = 390 / 844, mobilePosition = 'center', alt = '', width, height, loading, fetchpriority, ...attributes } = Astro.props;
 const priority = fetchpriority === 'high';
+const localImageMap: Record<string, unknown> = {
+  '/assets/cleaner-hero.png': cleanerHero,
+    '/assets/home-hero.png': homeHero,
+    '/assets/home-carpet.png': homeCarpet,
+    '/assets/home-regular.png': homeRegular,
+    '/assets/home-end-lease.png': homeEndLease,
+    '/assets/about-care.png': aboutCare,
+    '/assets/about-result.png': aboutResult,
+    '/assets/generated/about/about-care-kitchen.webp': aboutCareKitchen,
+    '/assets/generated/about/about-result-kitchen.webp': aboutResultKitchen,
+    '/assets/global-cta.png': globalCta,
+    '/assets/services-hero.png': servicesHero,
+  '/assets/cleaner-kitchen.png': cleanerKitchen,
+  '/assets/empty-melbourne-home.png': emptyMelbourneHome,
+  '/assets/carpet-specialist.png': carpetSpecialist,
+    '/assets/cleaner-kitchen-service.png': cleanerKitchenService,
+    '/assets/cleaner-bathroom-service.png': cleanerBathroomService,
+    '/assets/end-of-lease-service.png': endOfLeaseService,
+    '/assets/steam-mop-service.png': steamMopService,
+    '/assets/generated/services/standard-clean.png': standardCleanService,
+    '/assets/generated/services/deep-clean.png': deepCleanService,
+    '/assets/generated/services/end-of-lease-clean.png': endOfLeaseCleanService,
+    '/assets/generated/services/regular-clean.webp': regularCleanService,
+    '/assets/generated/home/steam-clean.webp': carpetHome,
+    '/assets/generated/home/end-of-lease-inspection.webp': endLeaseLanding,
+    '/assets/generated/home/final-cta.webp': finalCta,
+    '/assets/generated/suburbs/why-maid-at-home.png': suburbWhy,
+    '/assets/generated/suburbs/suburb-final-cta.png': suburbFinalCta,
+    '/assets/generated/suburbs/suburb-cbd.png': suburbCbd,
+    '/assets/generated/suburbs/melbourne-cbd.webp': suburbCbdTimeout,
+    '/assets/generated/suburbs/suburb-victorian.png': suburbVictorian,
+    '/assets/generated/suburbs/suburb-leafy.png': suburbLeafy,
+    '/assets/generated/suburbs/suburb-bayside.png': suburbBayside,
+    '/assets/generated/suburbs/suburb-waterside.png': suburbWaterside,
+};
+const resolvedSrc = typeof src === 'string' && localImageMap[src] ? localImageMap[src] : src;
 const dimensions = width && height ? { width, height } : { inferSize: true };
+const imageSrc = resolvedSrc;
 const safeLoading = loading === 'lazy' ? 'lazy' : undefined;
 const quality = priority ? 72 : 60;
 const isUnsplash = typeof src === 'string' && src.includes('images.unsplash.com/');
@@ -70,8 +140,17 @@ const mobileSrcset = mobileCandidates.map(({ width: candidate, image }) => image
 ) : mobileSrc ? (
   <picture>
     <source media={'(max-width: ' + mobileBreakpoint + ')'} srcset={mobileSrcset} sizes="100vw" type="image/webp" />
-    <Image src={src} alt={alt} {...dimensions} quality={quality} priority={priority} loading={priority ? 'eager' : safeLoading} {...attributes} />
+    <Image src={imageSrc} alt={alt} {...dimensions} quality={quality} priority={priority} loading={priority ? 'eager' : safeLoading} {...attributes} />
   </picture>
 ) : (
-  <Image src={src} alt={alt} {...dimensions} quality={quality} priority={priority} loading={priority ? 'eager' : safeLoading} {...attributes} />
+  <Image src={imageSrc} alt={alt} {...dimensions} quality={quality} priority={priority} loading={priority ? 'eager' : safeLoading} {...attributes} />
 )}
+
+
+
+
+
+
+
+
+

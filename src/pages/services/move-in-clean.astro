@@ -76,28 +76,28 @@ const content = withBase(`<main id="main">
 const contentParts = content.split(/__ASTRO_IMAGE_\d+__/);
 const images: Array<Record<string, any>> = [
   {
-    src: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=86",
+    src: "/assets/empty-melbourne-home.png",
     alt: "Empty clean home ready for moving in",
     width: 1200,
     height: 900,
     fetchpriority: "high",
   },
   {
-    src: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=86",
+    src: "/assets/empty-melbourne-home.png",
     alt: "Clean empty home ready before furniture arrives",
     width: 1100,
     height: 1400,
     loading: "lazy",
   },
   {
-    src: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1100&q=84",
+    src: "/assets/empty-melbourne-home.png",
     alt: "Empty home ready for move-in cleaning",
     width: 1100,
     height: 1400,
     loading: "lazy",
   },
   {
-    src: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=2200&q=86",
+    src: "/assets/empty-melbourne-home.png",
     alt: "Fresh empty home ready for moving day",
     width: 2200,
     height: 1467,
@@ -105,6 +105,10 @@ const images: Array<Record<string, any>> = [
     class: "cta-image",
   },
 ];
+images[0] = { ...images[0], src: '/assets/generated/services/move-in-clean-hero.png', alt: 'Fresh empty Melbourne apartment ready for move-in' };
+images[1] = { ...images[1], src: '/assets/generated/services/move-in-clean-fit.png', alt: 'Cleaner preparing a move-in kitchen before furniture arrives' };
+images[2] = { ...images[2], src: '/assets/generated/services/move-in-clean-routine.png', alt: 'Happy couple carrying boxes into a freshly cleaned home' };
+images[3] = { ...images[3], src: '/assets/generated/services/move-in-clean-cta.png', alt: 'Fresh empty home ready for unpacking on move-in day' };
 ---
 
 <SiteLayout

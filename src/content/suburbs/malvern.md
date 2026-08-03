@@ -36,9 +36,9 @@ carpetIntro: Vacuuming handles routine upkeep, but steam cleaning goes further
   for larger bedrooms, hallways and family living areas that collect everyday
   dust and foot traffic. Add the required two-room minimum when organising your
   Malvern clean.
-carpetImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Malvern home
-whyImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Malvern home
 whyIntro: We coordinate the booking around the selected service, cleaner
   availability and the details you provide. That includes practical information
@@ -50,11 +50,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Malvern.
 ctaIntro: Make the next clean easier to manage by selecting the right service
   and explaining what your Malvern home needs.
-image: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
-imageAlt: A clean and welcoming Malvern home
+image: /assets/generated/suburbs/suburb-leafy.png
+imageAlt: Leafy family home in Malvern, Melbourne
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Malvern
 localHighlights:
   - title: Count bathrooms and powder rooms fully

@@ -7,7 +7,7 @@ publishedAt: 2026-04-15
 updatedAt: 2026-07-26
 category: "cleaning-guides"
 categoryLabel: "Cleaning guides"
-image: "https://maidathome.com.au/assets/img/blog/how-long-does-carpet-cleaning-take-melbourne.webp"
+image: "/assets/carpet-specialist.png"
 imageAlt: "Professional carpet cleaning equipment in a Melbourne home"
 imageWidth: 1200
 imageHeight: 800

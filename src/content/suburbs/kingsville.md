@@ -33,9 +33,9 @@ recurringRecommendation: Fortnightly cleaning is a useful comparison point for
 carpetTitle: Bring a cleaner feel back to your carpets.
 carpetIntro: Where daily use has left carpets needing a deeper clean, add steam
   treatment to your Kingsville booking. A minimum of two carpeted rooms applies.
-carpetImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Kingsville home
-whyImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Kingsville home
 whyIntro: From the first booking email to the cleaner assignment, we keep the
   important details clear. Notes about street parking, gates, intercoms,
@@ -47,11 +47,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Kingsville.
 ctaIntro: Choose the service, frequency and extras that suit the property, then
   tell us what matters most for your Kingsville clean.
-image: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+image: /assets/empty-melbourne-home.png
 imageAlt: A clean and welcoming Kingsville home
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Kingsville
 localHighlights:
   - title: Explain front and rear access

@@ -36,9 +36,9 @@ carpetIntro: Vacuuming handles routine upkeep, but steam cleaning goes further
   for well-used bedrooms, hallways and living spaces where dirt can settle below
   the surface. Add the required two-room minimum when organising your Flemington
   clean.
-carpetImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Flemington home
-whyImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Flemington home
 whyIntro: Choose the service, confirm the details and receive updates by email.
   For a property in Flemington, clear notes about street parking, gates,
@@ -50,11 +50,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Flemington.
 ctaIntro: Set the scope, select any extras and share the important details. Your
   next cleaning booking in Flemington can begin here.
-image: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+image: /assets/empty-melbourne-home.png
 imageAlt: A clean and welcoming Flemington home
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Flemington
 localHighlights:
   - title: Plan around event-day access

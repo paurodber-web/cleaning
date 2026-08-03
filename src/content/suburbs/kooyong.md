@@ -35,9 +35,9 @@ recurringRecommendation: Fortnightly cleaning is a useful comparison point for
 carpetTitle: Bring a cleaner feel back to your carpets.
 carpetIntro: Where daily use has left carpets needing a deeper clean, add steam
   treatment to your Kooyong booking. A minimum of two carpeted rooms applies.
-carpetImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+carpetImage: /assets/empty-melbourne-home.png
 carpetImageAlt: Carpet cleaning in a Kooyong home
-whyImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+whyImage: /assets/empty-melbourne-home.png
 whyImageAlt: Professional cleaner working in a Kooyong home
 whyIntro: Keep the process simple by sharing everything important at the start.
   Customers in Kooyong can include service priorities, extras and driveways,
@@ -48,11 +48,11 @@ faqIntro: Practical answers about service choices, access and booking details
   for residential cleaning in Kooyong.
 ctaIntro: Whether the home needs maintenance or a fuller reset, choose the right
   service and organise your Kooyong clean online.
-image: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+image: /assets/empty-melbourne-home.png
 imageAlt: A clean and welcoming Kooyong home
 imageWidth: 1600
 imageHeight: 1067
-ctaImage: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=84
+ctaImage: /assets/empty-melbourne-home.png
 ctaImageAlt: Bright interior after cleaning in Kooyong
 localHighlights:
   - title: Give precise gate and driveway guidance
