@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,follow">
+    <title>Redirecting | Maid At Home</title>
+    <script>
+      (() => {
+        const path = window.location.pathname.replace(/^\/maidathome(?=\/|$)/, '').replace(/\/$/, '') || '/';
+        const redirects = {
+          '/contact-us': '/contact/',
+          '/terms-conditions': '/terms-and-conditions/',
+          '/locations': '/areas-we-serve/',
+          '/services/standard-cleaning-melbourne': '/services/standard-clean/',
+          '/services/deep-cleaning-melbourne': '/services/deep-clean/',
+          '/services/end-of-lease-cleaning-melbourne': '/services/end-of-lease-clean/',
+          '/services/carpet-cleaning-melbourne': '/services/carpet-clean/',
+          '/services/oven-cleaning-melbourne': '/services/oven-clean/',
+          '/services/bed-changing-melbourne': '/services/',
+          '/services/balcony-cleaning-melbourne': '/services/',
+          '/services/blind-cleaning-melbourne': '/services/',
+          '/services/cabinet-cleaning-melbourne': '/services/',
+          '/services/dish-washing-melbourne': '/services/',
+          '/services/fridge-cleaning-melbourne': '/services/',
+          '/services/wall-cleaning-melbourne': '/services/',
+          '/services/window-cleaning-melbourne': '/services/',
+          '/blog/airbnb-cleaning-melbourne': '/blog/airbnb-cleaning-service-melbourne/',
+          '/blog/house-cleaning-schedule-melbourne': '/blog/realistic-house-cleaning-routine/',
+          '/blog/house-cleaning-tips-melbourne-families': '/blog/realistic-house-cleaning-routine/',
+          '/blog/regular-house-cleaning-service-melbourne': '/services/regular-house-cleaning/'
+        };
+        const destination = path.startsWith('/locations/house-cleaning-')
+          ? '/areas-we-serve/'
+          : redirects[path] || (path.startsWith('/blog/') ? '/blog/' : '/');
+        window.location.replace(destination + window.location.search + window.location.hash);
+      })();
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to <a href="/">Maid At Home</a>…</p>
+  </body>
+</html>

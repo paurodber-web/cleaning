@@ -147,30 +147,13 @@ const mobileConversionStyles = `@media(max-width:760px){body{padding-bottom:calc
     <meta name="twitter:image" content={socialImage} />
     {schemaBlocks.map((schema) => <script is:inline type="application/ld+json" set:html={JSON.stringify(schema).replace(/</g, '\\u003c')} />)}
     <script is:inline define:vars={{ gtmId }}>
-      (() => {
-        window.dataLayer = window.dataLayer || [];
-        let loaded = false;
-        let fallbackTimer = 0;
-        const loadGtm = () => {
-          if (loaded) return;
-          loaded = true;
-          window.clearTimeout(fallbackTimer);
-          window.dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
-          const firstScript = document.getElementsByTagName('script')[0];
-          const script = document.createElement('script');
-          script.async = true;
-          script.src = 'https://www.googletagmanager.com/gtm.js?id=' + gtmId;
-          firstScript.parentNode.insertBefore(script, firstScript);
-        };
-        const scheduleAfterInteraction = () => window.setTimeout(loadGtm, 1200);
-        window.__loadMaidAtHomeGtm = loadGtm;
-        window.addEventListener('pointerdown', scheduleAfterInteraction, { once: true, passive: true });
-        window.addEventListener('keydown', scheduleAfterInteraction, { once: true });
-        window.addEventListener('scroll', scheduleAfterInteraction, { once: true, passive: true });
-        window.addEventListener('load', () => {
-          fallbackTimer = window.setTimeout(loadGtm, 10000);
-        }, { once: true });
-      })();
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
+      const firstScript = document.getElementsByTagName('script')[0];
+      const gtmScript = document.createElement('script');
+      gtmScript.async = true;
+      gtmScript.src = 'https://www.googletagmanager.com/gtm.js?id=' + gtmId;
+      firstScript.parentNode.insertBefore(gtmScript, firstScript);
     </script>
     <link rel="icon" type="image/png" href={`${base}assets/favicon.png?v=2`} />
     {bodyClass.includes('home-page') && <link rel="preload" href={`${base}assets/logo-white-brand-96.webp`} as="image" type="image/webp" />}
