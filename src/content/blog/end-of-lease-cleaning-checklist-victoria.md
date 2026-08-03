@@ -7,7 +7,7 @@ publishedAt: 2026-07-17
 updatedAt: 2026-07-30
 category: "moving"
 categoryLabel: "Moving"
-image: "/assets/empty-melbourne-home.png"
+image: "/assets/generated/blog/end-of-lease-cleaning-checklist-victoria.png"
 imageAlt: "Empty Victorian rental prepared with an end of lease cleaning checklist"
 imageWidth: 1600
 imageHeight: 1067

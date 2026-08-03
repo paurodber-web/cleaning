@@ -6,7 +6,7 @@ takeaway: "Choose Standard Cleaning for a maintained home. Choose Deep Cleaning 
 publishedAt: 2026-07-17
 category: "cleaning-guides"
 categoryLabel: "Cleaning guides"
-image: "/assets/cleaner-kitchen.png"
+image: "/assets/generated/blog/standard-vs-deep-cleaning.png"
 imageAlt: "Professional cleaner comparing standard and deep cleaning needs"
 imageWidth: 1600
 imageHeight: 1067

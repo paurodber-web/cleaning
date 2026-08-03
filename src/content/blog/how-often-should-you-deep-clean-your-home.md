@@ -6,7 +6,7 @@ takeaway: "Use the home's condition rather than a rigid calendar: deep clean whe
 publishedAt: 2026-07-30
 category: "home-care"
 categoryLabel: "Home care"
-image: "/assets/cleaner-hero.png"
+image: "/assets/generated/blog/how-often-should-you-deep-clean-your-home.png"
 imageAlt: "Cleaner completing a detailed deep clean in a maintained home"
 imageWidth: 1600
 imageHeight: 1067

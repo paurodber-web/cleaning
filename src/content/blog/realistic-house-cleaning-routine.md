@@ -6,7 +6,7 @@ takeaway: "Reset one area each day and protect ten minutes for the basics. Keep 
 publishedAt: 2026-05-14
 category: "home-care"
 categoryLabel: "Home care"
-image: "/assets/empty-melbourne-home.png"
+image: "/assets/generated/blog/realistic-house-cleaning-routine.png"
 imageAlt: "Tidy, sunlit Melbourne living room"
 imageWidth: 1600
 imageHeight: 1067

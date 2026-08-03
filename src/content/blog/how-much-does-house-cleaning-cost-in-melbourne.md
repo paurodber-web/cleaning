@@ -7,7 +7,7 @@ publishedAt: 2026-05-07
 updatedAt: 2026-07-30
 category: "cleaning-guides"
 categoryLabel: "Cleaning guides"
-image: "/assets/empty-melbourne-home.png"
+image: "/assets/generated/blog/how-much-does-house-cleaning-cost-in-melbourne.png"
 imageAlt: "House cleaning cost guide for a Melbourne home"
 imageWidth: 900
 imageHeight: 600

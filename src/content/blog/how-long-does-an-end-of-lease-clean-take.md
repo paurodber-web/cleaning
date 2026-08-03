@@ -6,7 +6,7 @@ takeaway: "Reserve a substantial cleaning window plus inspection time before key
 publishedAt: 2026-07-30
 category: "moving"
 categoryLabel: "Moving"
-image: "/assets/empty-melbourne-home.png"
+image: "/assets/generated/blog/how-long-does-an-end-of-lease-clean-take.png"
 imageAlt: "Empty Melbourne property ready for an end of lease clean"
 imageWidth: 1600
 imageHeight: 1067

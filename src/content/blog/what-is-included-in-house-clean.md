@@ -7,7 +7,7 @@ publishedAt: 2026-07-17
 updatedAt: 2026-07-30
 category: "cleaning-guides"
 categoryLabel: "Cleaning guides"
-image: "/assets/cleaner-hero.png"
+image: "/assets/generated/blog/what-is-included-in-house-clean.png"
 imageAlt: "Room-by-room professional house cleaning checklist"
 imageWidth: 1600
 imageHeight: 1067

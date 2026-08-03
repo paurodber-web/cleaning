@@ -6,7 +6,7 @@ takeaway: "Use hourly cleaning for a prioritised list, not an unlimited whole-ho
 publishedAt: 2026-07-17
 category: "cleaning-guides"
 categoryLabel: "Cleaning guides"
-image: "/assets/cleaner-hero.png"
+image: "/assets/generated/blog/how-many-cleaning-hours.png"
 imageAlt: "Clock and cleaning plan used to estimate house cleaning hours"
 imageWidth: 1600
 imageHeight: 1067

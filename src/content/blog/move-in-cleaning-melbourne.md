@@ -7,7 +7,7 @@ publishedAt: 2026-04-10
 updatedAt: 2026-07-26
 category: "moving"
 categoryLabel: "Moving"
-image: "/assets/empty-melbourne-home.png"
+image: "/assets/generated/blog/move-in-cleaning-melbourne.png"
 imageAlt: "Bright empty Melbourne home prepared with a move-in cleaning checklist"
 imageWidth: 900
 imageHeight: 600

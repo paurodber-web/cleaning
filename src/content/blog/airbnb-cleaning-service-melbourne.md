@@ -7,7 +7,7 @@ publishedAt: 2026-04-15
 updatedAt: 2026-07-26
 category: "local-living"
 categoryLabel: "Local living"
-image: "/assets/cleaner-kitchen.png"
+image: "/assets/generated/blog/airbnb-cleaning-service-melbourne.png"
 imageAlt: "Prepared Melbourne short-stay property after an Airbnb turnover clean"
 imageWidth: 900
 imageHeight: 600

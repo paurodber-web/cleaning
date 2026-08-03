@@ -7,7 +7,7 @@ publishedAt: 2026-03-09
 updatedAt: 2026-07-26
 category: "cleaning-guides"
 categoryLabel: "Cleaning guides"
-image: "/assets/cleaner-hero.png"
+image: "/assets/generated/blog/deep-cleaning-checklist-melbourne.png"
 imageAlt: "Room-by-room deep cleaning checklist for a Melbourne home"
 imageWidth: 1200
 imageHeight: 800

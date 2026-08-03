@@ -7,7 +7,7 @@ publishedAt: 2026-04-15
 updatedAt: 2026-07-26
 category: "cleaning-guides"
 categoryLabel: "Cleaning guides"
-image: "https://maidathome.com.au/assets/img/end-of-lease-cleaning-banner.webp"
+image: "/assets/generated/blog/oven-cleaning-melbourne.png"
 imageAlt: "Clean oven interior and racks in a Melbourne kitchen"
 imageWidth: 1200
 imageHeight: 800
