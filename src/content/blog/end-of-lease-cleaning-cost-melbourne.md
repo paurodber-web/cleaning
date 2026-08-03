@@ -64,7 +64,7 @@ Other currently published extras include:
 | Balcony | $35 |
 | Targeted wall cleaning | $25 |
 | Wet-wipe blinds | $20 |
-| Change bed linen | $15 |
+| Change bed linen | $10 |
 
 Do not add the oven or empty cabinets twice: those tasks are already part of the Maid At Home end-of-lease core scope. Exterior windows, unsafe-height work, rubbish removal, repairs, pest treatment and specialist remediation require separate assessment or another provider.
 

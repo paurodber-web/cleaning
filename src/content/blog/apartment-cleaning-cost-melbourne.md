@@ -57,7 +57,7 @@ Current optional prices include:
 | Interior windows | $70 |
 | Balcony | $35 |
 | Inside empty cabinets | $45 |
-| Change bed linen | $15 |
+| Change bed linen | $10 |
 
 Carpet steam cleaning is priced separately according to room quantities. Review [Carpet Cleaning](/services/carpet-clean/) if vacuuming is not enough.
 

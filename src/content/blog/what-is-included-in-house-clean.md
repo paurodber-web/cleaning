@@ -63,7 +63,7 @@ Maid At Home's July 2026 extra prices include:
 | Targeted wall cleaning | $25 |
 | Wet-wipe blinds | $20 |
 | Inside empty cabinets | $45 |
-| Change bed linen | $15 |
+| Change bed linen | $10 |
 
 Extras must remain safely accessible. Interior windows do not imply unsafe-height exterior glass; wall cleaning does not guarantee removal of permanent marks; appliance cleaning does not include repair or dismantling sealed components.
 

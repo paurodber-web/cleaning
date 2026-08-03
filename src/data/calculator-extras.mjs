@@ -83,8 +83,8 @@ export const calculatorExtras = [
   {
     key: "linen",
     name: "Change bed linen",
-    price: 15,
-    priceLabel: "$15 per bed",
+    price: 10,
+    priceLabel: "$10 per bed",
     description: "Fresh customer-provided linen fitted to the selected beds.",
     quantity: { label: "Beds", min: 1, max: 6, step: 1 },
   },
