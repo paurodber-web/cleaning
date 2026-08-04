@@ -30,7 +30,7 @@ const { title, description, styles = '', scripts = '', preHeader = '', legacyHea
 const isPreviewBuild = import.meta.env.PUBLIC_DEPLOY_TARGET === 'github-pages';
 const effectiveRobots = isPreviewBuild && !robots.includes('noindex') ? 'noindex,follow' : robots;
 const pageUrl = canonicalUrl ?? new URL(Astro.url.pathname, siteOrigin).toString();
-const socialImage = ogImage ?? new URL(`${base.replace(/^\//, '')}assets/og-default.svg`, siteOrigin).toString();
+const socialImage = ogImage ?? new URL(`${base.replace(/^\//, '')}assets/og-default.png`, siteOrigin).toString();
 const organisationId = new URL('/#organisation', siteOrigin).toString();
 const localBusinessId = new URL('/#local-business', siteOrigin).toString();
 const googleProfile = 'https://share.google/qCmogE26ZAerwedX6';
