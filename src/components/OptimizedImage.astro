@@ -89,11 +89,11 @@ const resolvedSrc = typeof src === 'string' && localImageMap[src] ? localImageMa
 const dimensions = width && height ? { width, height } : { inferSize: true };
 const imageSrc = resolvedSrc;
 const safeLoading = loading === 'lazy' ? 'lazy' : undefined;
-const quality = priority ? 72 : 60;
+const quality = priority ? 40 : 60;
 const isUnsplash = typeof src === 'string' && src.includes('images.unsplash.com/');
 const sourceWidth = Number(width) || 1200;
 const responsiveWidths = [...new Set([320, 480, 640, 768, 960, 1200, sourceWidth])]
-  .filter((candidate) => candidate > 0 && candidate <= sourceWidth)
+  .filter((candidate) => candidate > 0 && candidate <= sourceWidth && (!priority || candidate <= 1200))
   .sort((a, b) => a - b);
 const unsplashUrl = (candidate: number) => {
   const url = new URL(src as string);
