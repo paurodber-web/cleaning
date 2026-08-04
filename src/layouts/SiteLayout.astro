@@ -169,7 +169,7 @@ const mobileConversionStyles = `@media(max-width:760px){body{padding-bottom:calc
       })();
     </script>
     <link rel="icon" type="image/png" href={`${base}assets/favicon.png?v=2`} />
-    {bodyClass.includes('home-page') && <link rel="preload" href={`${base}assets/logo-white-brand-96.webp`} as="image" type="image/webp" />}
+
     <link rel="preload" href={`${base}fonts/dm-sans-latin.woff2`} as="font" type="font/woff2" crossorigin />
     <link rel="preload" href={`${base}fonts/plus-jakarta-sans-latin.woff2`} as="font" type="font/woff2" crossorigin />
     {styles && <style is:inline set:html={styles} />}
@@ -267,18 +267,23 @@ const mobileConversionStyles = `@media(max-width:760px){body{padding-bottom:calc
         const bar = document.querySelector('#mobileConversionBar');
         const footer = document.querySelector('footer');
         if (!bar || !footer) return;
+        const threshold = document.createElement('span');
+        threshold.setAttribute('aria-hidden', 'true');
+        threshold.style.cssText = 'position:absolute;top:160px;width:1px;height:1px;pointer-events:none';
+        document.body.append(threshold);
         let footerVisible = false;
+        let beforeThreshold = true;
         let editing = false;
         let visibilityFrame = 0;
         const updateVisibility = () => {
           visibilityFrame = 0;
-          bar.classList.toggle('is-hidden', footerVisible || editing || window.scrollY < 160);
+          bar.classList.toggle('is-hidden', footerVisible || editing || beforeThreshold);
         };
         const scheduleVisibilityUpdate = () => {
           if (!visibilityFrame) visibilityFrame = requestAnimationFrame(updateVisibility);
         };
         new IntersectionObserver(([entry]) => { footerVisible = entry.isIntersecting; scheduleVisibilityUpdate(); }, { threshold: 0.05 }).observe(footer);
-        window.addEventListener('scroll', scheduleVisibilityUpdate, { passive: true });
+        new IntersectionObserver(([entry]) => { beforeThreshold = entry.isIntersecting; scheduleVisibilityUpdate(); }).observe(threshold);
         document.addEventListener('focusin', (event) => {
           if (event.target.matches('input, select, textarea')) editing = true;
           scheduleVisibilityUpdate();

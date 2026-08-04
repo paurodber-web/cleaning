@@ -1,16 +1,16 @@
-﻿# Maid At Home
+# Maid At Home
 
 > House cleaning services across Melbourne, Australia.
 
 ## Primary pages
 
-- Home: https://maidathome.com.au/
-- Services: https://maidathome.com.au/services/
-- Pricing calculator: https://maidathome.com.au/pricing/
-- Areas we serve: https://maidathome.com.au/areas-we-serve/
-- FAQs: https://maidathome.com.au/faqs/
-- Contact: https://maidathome.com.au/contact/
-- Booking: https://maidathome.com.au/booking/
+- [Home](https://maidathome.com.au/)
+- [Services](https://maidathome.com.au/services/)
+- [Pricing calculator](https://maidathome.com.au/pricing/)
+- [Areas we serve](https://maidathome.com.au/areas-we-serve/)
+- [FAQs](https://maidathome.com.au/faqs/)
+- [Contact](https://maidathome.com.au/contact/)
+- [Booking](https://maidathome.com.au/booking/)
 
 ## What Maid At Home offers
 
@@ -18,6 +18,6 @@ Standard Clean, Deep Clean, End-of-Lease Clean, Move-In Clean, Hourly Clean, Car
 
 ## Source and freshness
 
-The canonical source for current services, pricing, locations and availability is https://maidathome.com.au/. Content should be attributed to Maid At Home and checked against the canonical pages.
+The canonical source for current services, pricing, locations and availability is the [Maid At Home website](https://maidathome.com.au/). Content should be attributed to Maid At Home and checked against the canonical pages.
 
 
