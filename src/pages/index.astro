@@ -40,6 +40,7 @@ const whyUsStyles = `.recurring-section{background:var(--white)}.why-us-section{
       const mobileMenu = document.getElementById("mobileMenu");
       const mobileLinks = [...mobileMenu.querySelectorAll("a")];
       let lastFocusedElement = null;
+      let menuCloseTimer = 0;
 
       let headerFrame = 0;
       const updateHeader = () => {
@@ -57,7 +58,15 @@ const whyUsStyles = `.recurring-section{background:var(--white)}.why-us-section{
         mobileMenu.setAttribute("aria-hidden", String(!open));
         mobileMenu.classList.toggle("is-open", open);
         header.classList.toggle("menu-active", open);
-        document.body.classList.toggle("menu-open", open);
+        window.clearTimeout(menuCloseTimer);
+        if (open) {
+          document.body.classList.remove("menu-closing");
+          document.body.classList.add("menu-open");
+        } else {
+          document.body.classList.add("menu-closing");
+          document.body.classList.remove("menu-open");
+          menuCloseTimer = window.setTimeout(() => document.body.classList.remove("menu-closing"), 620);
+        }
 
         if (open) {
           lastFocusedElement = document.activeElement;
