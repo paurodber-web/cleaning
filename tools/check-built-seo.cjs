@@ -12,6 +12,7 @@ const htmlFiles = walk(dist).filter((file) => file.endsWith('.html'));
 const errors = [];
 const warnings = [];
 const encodingIssue = /(?:Ã¢|Ãƒ|Ã‚|Ã°Å¸)/;
+const malformedPriceDuration = /\$\s*\d+(?:\.\d+)?-hour\b/i;
 const titles = new Map();
 const descriptions = new Map();
 const publicRoutes = new Set(htmlFiles.map((file) => {
@@ -37,6 +38,7 @@ for (const file of htmlFiles) {
   const htmlLang = text(html, /<html\b[^>]*\blang=["']([^"']+)/i);
 
   if (encodingIssue.test(html)) errors.push(route + ': contains mojibake');
+  if (malformedPriceDuration.test(html)) errors.push(route + ': contains a malformed price-duration phrase');
 
   if (!title) errors.push(`${route}: missing title`);
   if (!description && !isRedirect) errors.push(`${route}: missing meta description`);

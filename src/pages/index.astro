@@ -9,7 +9,7 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 const withBase = (markup: string) => markup.replace(/(href|src)=([\"\'])\/(?!\/)/g, '$1=$2' + base);
 const withBaseStyles = (css: string) => css.replace(/url\((['"]?)\/(?!\/)/g, 'url($1' + base);
 const title = `House Cleaning Melbourne | Instant Prices | Maid At Home`;
-const description = `Trusted house cleaning services across Melbourne with clear online pricing, flexible one-off and recurring cleans, and a $${serviceCarePolicy.everydayWindowLabel}.`;
+const description = `Trusted house cleaning services across Melbourne with clear online pricing, flexible one-off and recurring cleans, and a ${serviceCarePolicy.everydayWindowLabel}.`;
 const capitaliseExtraKey = (value: string) => value.charAt(0).toUpperCase() + value.slice(1);
 
 const calculatorExtraConfigJson = JSON.stringify(calculatorExtraConfig);
