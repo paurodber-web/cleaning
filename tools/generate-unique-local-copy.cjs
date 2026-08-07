@@ -4,18 +4,6 @@ function compact(value,limit){const s=String(value).replace(/\s+/g,' ').trim();i
 const profiles=new Map(fs.readFileSync('tools/suburb-profiles.psv','utf8').trim().split(/\r?\n/).map(line=>{const a=line.split('|');return [a[1],{homes:compact(a[5],38),access:compact(a[6],32),parking:compact(a[7],30),focus:compact(a[8],38)}]}));
 const extras={'south-melbourne':{homes:'apartments, terraces and city-fringe townhouses',access:'intercoms, key collection and permits',parking:'short-term parking near the property',focus:'regular upkeep and move-related cleaning'},'north-melbourne':{homes:'terraces, apartments and townhouses',access:'intercoms, keys and building entry',parking:'permits and practical nearby parking',focus:'selected tasks and broader home resets'},'east-melbourne':{homes:'heritage apartments, terraces and compact homes',access:'intercoms, keys and gated entry',parking:'permits and timed street parking',focus:'careful upkeep across detailed interiors'},'west-melbourne':{homes:'apartments, terraces and city-fringe residences',access:'intercoms, keys and shared entrances',parking:'permits and time-limited parking',focus:'routine upkeep, one-off cleaning and moving support'}};
 Object.entries(extras).forEach(function(x){profiles.set(x[0],x[1])});
-const summaries=[
- p=>'Properties here include '+p.homes+'. A useful booking also explains '+p.access+', then sets priorities around '+p.focus+'. Those details help the cleaner arrive prepared and direct the visit where it matters most.',
- p=>'The local mix of '+p.homes+' can make a clear booking especially useful. Note '+p.access+' early, then choose a service that suits '+p.focus+'. It gives the appointment a practical starting point.',
- p=>'A smoother clean begins with the property details: '+p.homes+', plus '+p.access+'. Add the rooms and tasks that matter most so the booking can reflect '+p.focus+' from the outset.',
- p=>'Different local homes, including '+p.homes+', need different plans. Sharing '+p.access+' alongside the priority list makes it easier to organise '+p.focus+' without unnecessary back-and-forth.',
- p=>'The booking works best when it reflects '+p.homes+' and any '+p.access+'. Set out the main tasks in advance, particularly where the home needs '+p.focus+'.',
- p=>'Local cleaning plans can be more accurate when '+p.access+' is known before arrival. That matters for '+p.homes+', where the requested outcome may involve '+p.focus+'.',
- p=>'Start with the way the property is used. For '+p.homes+', notes about '+p.access+' and the areas needing attention help shape '+p.focus+' into a workable visit.',
- p=>'A clear brief helps the cleaner understand both the property and the priorities. This is particularly useful for '+p.homes+', where '+p.access+' can affect '+p.focus+'.',
- p=>'Every address has its own practical details. Explain '+p.access+', then identify the rooms that matter most in '+p.homes+' so the service can support '+p.focus+'.',
- p=>'Planning ahead makes the appointment easier to manage. Describe '+p.homes+' and '+p.access+', then use the task list to guide '+p.focus+'.'
-];
 const summaryShort=[
  p=>'Homes here include '+p.homes+'. Add '+p.access+' to the booking, then choose priorities around '+p.focus+'. This gives the cleaner a clear plan before the visit.',
  p=>'The local mix of '+p.homes+' benefits from clear notes about '+p.access+'. Set the task list around '+p.focus+' so the appointment has a practical direction.',

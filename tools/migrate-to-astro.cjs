@@ -122,7 +122,7 @@ function extractPage(sourceFile) {
   return { title, description, styles: minifyCss(styles), content: cleanText(content), images, scripts: cleanText(scripts), preHeader: cleanText(preHeader), legacy: /<header\b[^>]*\bid=(['\"])header\1/i.test(html), skipLink: /<a\b[^>]*class=(['\"])[^'\"]*\bskip-link\b[^'\"]*\1/i.test(extractBody(html)), yearId: /\bid=(['\"])currentYear\1/i.test(html) ? 'currentYear' : 'year', bodyClass: sourceFile === 'index.html' ? 'home-page' : '' };
 }
 
-function makeComponent(name, markup) {
+function makeComponent(_name, markup) {
   return `---\ninterface Props { currentPath?: string; }\nconst { currentPath = '' } = Astro.props;\nconst base = import.meta.env.BASE_URL.replace(/\\/?$/, '/');\nconst markup = \`${escapeTemplate(markup)}\`;\nconst withoutCurrent = markup.replace(/\\saria-current=(['\"])page\\1/g, '');\nconst current = currentPath.replace(/\\/+$/, '') || '/index.html';\nconst html = withoutCurrent.replace(new RegExp('(href=([\\\"\\\'])' + current + '\\\\2)', 'g'), '$1 aria-current=\\\"page\\\"');\nconst basedHtml = html.replace(/(href|src)=([\\\"\\\'])\\/(?!\\/)/g, '$1=$2' + base);\n---\n<Fragment set:html={basedHtml} />\n`;
 }
 

@@ -20,7 +20,7 @@ const { destination } = Astro.props;
     <meta name="robots" content="noindex,follow" />
     <link rel="canonical" href={`https://maidathome.com.au${destination}`} />
     <title>Page moved | Maid At Home</title>
-    <script define:vars={{ destination }}>
+    <script is:inline define:vars={{ destination }}>
       window.location.replace(destination + window.location.search + window.location.hash);
     </script>
   </head>
