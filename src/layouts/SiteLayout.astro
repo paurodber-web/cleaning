@@ -159,7 +159,14 @@ const mobileConversionStyles = `@media(max-width:760px){body{padding-bottom:calc
           const firstScript = document.getElementsByTagName('script')[0];
           const gtmScript = document.createElement('script');
           gtmScript.async = true;
-          gtmScript.src = 'https://www.googletagmanager.com/gtm.js?id=' + gtmId;
+          const previewQuery = new URLSearchParams(window.location.search);
+        const previewAuth = previewQuery.get('gtm_auth');
+        const previewMode = previewQuery.get('gtm_preview');
+        const previewCookies = previewQuery.get('gtm_cookies_win');
+        const previewParams = previewAuth && previewMode
+          ? `&gtm_auth=${encodeURIComponent(previewAuth)}&gtm_preview=${encodeURIComponent(previewMode)}&gtm_cookies_win=${encodeURIComponent(previewCookies || 'x')}`
+          : '';
+        gtmScript.src = 'https://www.googletagmanager.com/gtm.js?id=' + gtmId + previewParams;
           firstScript.parentNode.insertBefore(gtmScript, firstScript);
         };
         const loadAfterInteraction = () => window.setTimeout(loadGtm, 1200);
