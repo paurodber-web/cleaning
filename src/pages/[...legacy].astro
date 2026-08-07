@@ -1,0 +1,30 @@
+---
+import { legacyRedirects } from '../data/legacy-redirects';
+
+export function getStaticPaths() {
+  return Object.entries(legacyRedirects).map(([legacy, destination]) => ({
+    params: { legacy: legacy.replace(/^\//, '') },
+    props: { destination },
+  }));
+}
+
+const { destination } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="refresh" content={`0; url=${destination}`} />
+    <meta name="robots" content="noindex,follow" />
+    <link rel="canonical" href={`https://maidathome.com.au${destination}`} />
+    <title>Page moved | Maid At Home</title>
+    <script define:vars={{ destination }}>
+      window.location.replace(destination + window.location.search + window.location.hash);
+    </script>
+  </head>
+  <body>
+    <p>This page has moved. <a href={destination}>Continue to Maid At Home</a>.</p>
+  </body>
+</html>
